@@ -1,0 +1,24 @@
+@import './assets/css/variables';
+@import './assets/css/font';
+.button{
+  &:hover {
+    background-color: lighten($accent_color, 7%) !important;
+    transition: all ease-in-out .4s;
+  }
+}
+
+.button2{
+  &:hover {
+    background-color: darken($primary_color, 5%) !important;
+    transition: all ease-in-out .4s;
+  }
+}
+
+
+.button_fill{
+  &:hover {
+    background-color: $accent_color  !important;
+    color: $primary_color  !important;
+    transition: all ease-in-out .4s;
+  }
+}
