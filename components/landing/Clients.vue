@@ -80,6 +80,7 @@ export default {
                 font-family: $font_black
                 margin-bottom: 10px
                 font-size: 32px
+                text-align: center
                 span
                     display: inline
                     color: $accent_color
@@ -87,6 +88,7 @@ export default {
                 color: #353D48
                 font-family: $font_regular
                 font-size: 16px
+                text-align: center
         .clients_content
             display: grid
             grid-template-columns: repeat(3, 1fr)
@@ -176,7 +178,7 @@ export default {
                 grid-template-columns: repeat(1, 1fr)
                 padding-bottom: 1rem
                 grid-gap: 100px
-                height: 240px
+                height: 320px
                 overflow: hidden
                 aside
                     padding: 20px
@@ -214,7 +216,7 @@ export default {
             padding-right: 20px
             box-sizing: border-box
             .clients_content
-                height: 320px
+                height: 400px
                 padding-bottom: 1.5rem
                 padding-top: 3.5rem
                 aside i

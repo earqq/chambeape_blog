@@ -50,6 +50,7 @@ export default {
             color: #899AAC
             margin-bottom: 20px
             line-height: 1.7
+            text-align: center
             strong
               font-family: $font_black
               font-weight: normal

@@ -50,7 +50,7 @@
                             </li>
                             <li>
                                 <i class="icon icon-check"></i>
-                                <p>Envíos a whatsapp o correo de cliente</p>
+                                <p>Envíos a whatsapp y correo</p>
                             </li>                                                   
                             <li>
                                 <i class="icon icon-check"></i>
@@ -105,7 +105,7 @@
                             </li>  
                             <li>
                                 <i class="icon icon-check"></i>
-                                <p>Envíos a whatsapp o correo de cliente</p>
+                                <p>Envíos a whatsapp y correo</p>
                             </li>                                                   
                             <li>
                                 <i class="icon icon-check"></i>
@@ -162,7 +162,7 @@
                             </li>  
                             <li>
                                 <i class="icon icon-check"></i>
-                                <p>Envíos a whatsapp o correo de cliente</p>
+                                <p>Envíos a whatsapp y correo</p>
                             </li>                                                   
                             <li>
                                 <i class="icon icon-check"></i>
@@ -264,6 +264,7 @@ export default {
                 font-family: $font_black
                 margin-bottom: 10px
                 font-size: 32px
+                text-align: center
                 span
                     display: inline
                     color: $accent_color
@@ -271,6 +272,7 @@ export default {
                 color: #353D48
                 font-family: $font_regular
                 font-size: 16px
+                text-align: center
             .switch_plan
                 display: flex
                 align-items: center
@@ -283,7 +285,7 @@ export default {
                     color: $primary_color
                     transition: all ease-in-out .2s
                     &.mensual
-                        color: #b5b8bf
+                        color: #9ea2ab
                 .switch
                     display: block
                     width: 50px
@@ -317,7 +319,6 @@ export default {
             aside
                 background-color: white
                 border-radius: 2px
-                height: 520px
                 min-height: 500px
                 padding: 60px 30px
                 padding-bottom: 30px
@@ -343,6 +344,7 @@ export default {
                     font-family: $font_bold
                     color: $primary_color
                     font-size: 15px
+                    text-align: center
                 .price
                     display: flex
                     align-items: flex-start
@@ -429,7 +431,6 @@ export default {
                 aside
                     padding: 20px 20px
                     padding-top: 40px
-                    height: 450px
                     .pricing_items
                         li
                             margin-bottom: 12px
@@ -466,7 +467,6 @@ export default {
             .pricing_content
                 padding-top: 0
                 grid-template-columns: 1fr
-                width: 370px
                 aside
                     padding: 30px 50px
                     .pricing_items
