@@ -1,108 +1,90 @@
 <template>
-	<header class="header_blog_content">
-			<div class="article_cover">
-					<img :src="last_article.cover">
-			</div>
-			<div class="header_blog_wrapper">
-					<div class="header_blog_body">
-							<nav>
-									<a class="logo" href="/">
-											<div class="logo_wrapper"><img src="@/assets/img/logo_easybill.svg" alt="easybill facturacion electronica" /></div>
-									</a>
-									<div class="menu_right_top">
-											<div class="menu_mobile" @click="showMenu=true"><i class="icon icon-menu"></i></div>
-											<transition name="fade" mode="in-out">
-													<ul v-if="!mobile || (mobile && showMenu)">
-															<div class="close_menu" @click="showMenu=false">
-																	<i class="icon icon-close"></i>
-															</div>
-															<li> <a @click="
-																	gtag('event', 'Click boton', {'event_category': 'Landing page', 'event_label': 'Precios header', 'value': 1})
-																	showMenu=false" href="/#plans_section">Precios</a></li>
-															<li> <a @click="
-																	gtag('event', 'Click boton', {'event_category': 'Landing page', 'event_label': 'Clientes header', 'value': 1})
-																	showMenu=false" href="/#clients">Clientes</a></li>
-															<li> <a href="/blog" rel="noopener">Blog  </a></li>
-
-															<li> <a @click="
-																	gtag('event', 'Click boton', {'event_category': 'Landing page', 'event_label': 'Guia header', 'value': 1})" href="http://guia.easybill.pe" target="_blank">Guia  </a></li>
-															<li>
-																	<a @click="
-																	gtag('event', 'Click boton', {'event_category': 'Landing page', 'event_label': 'Ingresar header', 'value': 1})" class="button_login inline button_fill" href="https://app.easybill.pe">Ingresar</a>
-																	<a @click="
-																	gtag('event', 'Click boton', {'event_category': 'Landing page', 'event_label': 'Registrate header', 'value': 1});
-																	" href='https://app.easybill.pe/registro' class="button_login button">Regístrate</a>
-															</li>
-													</ul>
-											</transition>
-									</div>
-							</nav>
-							<div class="header_blog_main_content">
-									<div class="header_blog_main_text">
-											<small> Publicado el {{last_article.created_at | moment("DD [de] MMMM [de] YYYY")}} </small>
-											<h1>{{last_article.title}}<span>.</span></h1>
-											<a :href="'/blog/'+last_article._id" class="button_fill"> 
-													Continuar Leyendo
-											</a>
-									</div>
-							</div>
-					</div>
-			</div>
-	</header>
+    <header class="header_article_content">
+        <div class="article_cover">
+            <img :src="article.cover" >
+        </div>
+        <div class="header_article_wrapper">
+            <div class="header_article_body">
+                <nav>
+                    <a class="logo" href="/">
+                        <div class="logo_wrapper"><img src="@/assets/img/logo_easybill.svg" alt="easybill facturacion electronica" /></div>
+                    </a>
+                    <div class="menu_right_top">
+                        <div class="menu_mobile"  @click="showMenu=true"><i class="icon icon-menu"></i></div>
+                        <transition name="fade" mode="in-out" >
+                            <ul v-if="!mobile || (mobile && showMenu)">
+                                <div class="close_menu" @click="showMenu=false">
+                                    <i class="icon icon-close"></i>
+                                </div>
+                                <li> <a @click="
+                                    gtag('event', 'Click boton', {'event_category': 'Landing page', 'event_label': 'Precios header', 'value': 1})
+                                    showMenu=false"  
+                                    href="/#plans_section">Precios</a></li>
+                                <li> <a @click="
+                                    gtag('event', 'Click boton', {'event_category': 'Landing page', 'event_label': 'Clientes header', 'value': 1})
+                                    showMenu=false"  
+                                    href="/#clients">Clientes</a></li>
+                                 <li> <a href="/blog" rel="noopener" >Blog  </a></li>
+                                <li> <a 
+                                    @click="
+                                    gtag('event', 'Click boton', {'event_category': 'Landing page', 'event_label': 'Guia header', 'value': 1})"                                    
+                                    href="http://guia.easybill.pe" target="_blank">Guia  </a></li>
+                                <li>
+                                    <a
+                                    @click="
+                                    gtag('event', 'Click boton', {'event_category': 'Landing page', 'event_label': 'Ingresar header', 'value': 1})"                                     
+                                    class="button_login inline button_fill" href="https://app.easybill.pe">Ingresar</a>
+                                    <a 
+                                    @click="
+                                    gtag('event', 'Click boton', {'event_category': 'Landing page', 'event_label': 'Registrate header', 'value': 1});
+                                    "                                     
+                                    href='https://app.easybill.pe/registro'
+                                    class="button_login button"  >Regístrate</a>
+                                </li>
+                            </ul>
+                        </transition>
+                    </div>
+                </nav>
+                <div class="header_blog_main_content">
+                    <div class="header_blog_main_text">
+                        <small> Publicado el {{article.created_at | moment("DD [de] MMMM [de] YYYY")}} </small>
+                        <h1>{{article.title}}<span>.</span></h1>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
 </template>
 
 <script>
-import { firestore } from '~/plugins/firebase.js'
 export default {
-		data () {
-				return {
-						showMenu: false,
-						mobile: false,
-						last_article: [
-								{
-										_id: '',
-										title: '',
-										cover: '',
-										created_at: '',
-								}
-						]
-				}
-		},
-		// firestore ()  {
-		//     return {
-		//         last_article: firestore.collection('articles').orderBy("created_at", "desc").limit(1)
-		//     }
-		// },
-		methods: {
-				async getLastArticle() {
-					const ref = firestore.collection('articles').orderBy("created_at", "desc").limit(1)
-					let snap
-					try {snap = await ref.get()}
-					catch(e) {console.error(e)}
-					this.last_article = snap.docs[0].data()
-				}
-		},
-		created () {
-				this.getLastArticle()
-				if (process.client) { // en lado del servidor no existe windown, document, etc
+    props: ['article'],
+    data () {
+        return {
+            showMenu: false,
+            mobile: false,
+        }
+    },
+    created () {
+        if (process.client) { // en lado del servidor no existe windown, document, etc
+            if (window.innerWidth < 850) this.mobile = true
+            else this.mobile = false
 
-						if (window.innerWidth < 850) this.mobile = true
-						else this.mobile = false
-
-						this.$nextTick(() => {
-								window.addEventListener('resize', () => {
-										if (window.innerWidth < 850) this.mobile = true
-										else this.mobile = false
-								})
-						})
-				}
-		},
+            this.$nextTick(() => {
+                window.addEventListener('resize', () => {
+                    if (window.innerWidth < 850) this.mobile = true
+                    else this.mobile = false
+                })
+            })
+        }
+    },
 }
 </script>
 
+
 <style lang="sass">
 @import './assets/css/main'
-header.header_blog_content
+header.header_article_content
 	width: 100%
 	display: flex
 	position: relative
@@ -119,7 +101,7 @@ header.header_blog_content
 			object-fit: cover
 			height: 100%
 			width: 100%
-	.header_blog_wrapper
+	.header_article_wrapper
 		width: 100%
 		z-index: 2
 		nav
@@ -175,7 +157,7 @@ header.header_blog_content
 					path, circle
 						fill: $accent_color
 
-		.header_blog_body
+		.header_article_body
 			background-size: cover
 			text-align: left
 			display: flex
@@ -235,9 +217,9 @@ header.header_blog_content
 						color: $accent_color
 
 @media screen and (max-width: 1100px)
-	header.header_blog_content
+	header.header_article_content
 		height: 500px
-		.header_blog_wrapper
+		.header_article_wrapper
 			nav
 				width: $medium
 				.menu_right_top
@@ -245,7 +227,7 @@ header.header_blog_content
 						font-size: 14px
 						&.button_login
 							padding: 10px 15px
-			.header_blog_body
+			.header_article_body
 				.header_blog_main_content
 					width: $medium
 					.header_blog_3d
@@ -267,9 +249,9 @@ header.header_blog_content
 								padding: 20px 15px
 
 @media screen and (max-width: 850px)
-	header.header_blog_content
+	header.header_article_content
 		height: auto
-		.header_blog_wrapper
+		.header_article_wrapper
 			nav
 				width: $small
 				.logo
@@ -314,7 +296,7 @@ header.header_blog_content
 										margin-left: 0
 										&:hover
 											color: $primary_color
-			.header_blog_body
+			.header_article_body
 				min-height: 350px
 				.header_blog_main_content
 					width: $small
@@ -349,14 +331,14 @@ header.header_blog_content
 									margin-left: 17px
 
 @media screen and (max-width: 500px)
-	header.header_blog_content
-		.header_blog_wrapper
+	header.header_article_content
+		.header_article_wrapper
 			nav
 				width: $extra-small
 				padding: 0 20px
 				box-sizing: border-box
 				margin-top: 20px
-			.header_blog_body
+			.header_article_body
 				.header_blog_main_content
 					width: $extra-small
 					padding: 0 20px
@@ -377,3 +359,4 @@ header.header_blog_content
 							text-align: center
 							font-size: 14px
 </style>
+

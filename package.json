@@ -12,9 +12,11 @@
     "generate": "nuxt generate"
   },
   "dependencies": {
+    "@nuxtjs/axios": "^5.3.6",
     "cross-env": "^5.2.0",
     "express": "^4.16.4",
-    "@nuxtjs/axios": "^5.3.6",
+    "firebase": "^6.3.3",
+    "marked": "^0.7.0",
     "nuxt": "^2.0.0"
   },
   "devDependencies": {
@@ -30,6 +32,9 @@
     "pug-loader": "^2.4.0",
     "pug-plain-loader": "^1.0.0",
     "sass-loader": "^7.1.0",
-    "url-loader": "^2.1.0"
+    "url-loader": "^2.1.0",
+    "vue": "^2.6.10",
+    "vue-moment": "^4.0.0",
+    "vuefire": "^2.1.0"
   }
 }

@@ -30,7 +30,7 @@ module.exports = {
   /*
    ** Customize the progress-bar color
    */
-  loading: { color: "#fff" },
+  loading: { color: " #17de8b" },
   /*
    ** Global CSS
    */
@@ -38,7 +38,11 @@ module.exports = {
   /*
    ** Plugins to load before mounting the App
    */
-  plugins: [],
+  plugins: [
+    "~/plugins/firebase.js",
+    "~/plugins/vuefire.js",
+    "~/plugins/vue-moment.js"
+  ],
   /*
    ** Nuxt.js dev-modules
    */
