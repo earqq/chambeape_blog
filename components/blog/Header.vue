@@ -6,9 +6,9 @@
 			<div class="header_blog_wrapper">
 					<div class="header_blog_body">
 							<nav>
-									<a class="logo" href="/">
-											<div class="logo_wrapper"><img src="@/assets/img/logo_easybill.svg" alt="easybill facturacion electronica" /></div>
-									</a>
+									<nuxt-link to="/"  class="logo">
+										<div class="logo_wrapper"><img src="@/assets/img/logo_easybill.svg" alt="Logo easybill" /></div>
+									</nuxt-link>
 									<div class="menu_right_top">
 											<div class="menu_mobile" @click="showMenu=true"><i class="icon icon-menu"></i></div>
 											<transition name="fade" mode="in-out">
@@ -22,7 +22,8 @@
 															<li> <a @click="
 																	gtag('event', 'Click boton', {'event_category': 'Landing page', 'event_label': 'Clientes header', 'value': 1})
 																	showMenu=false" href="/#clients">Clientes</a></li>
-															<li> <a href="/blog" rel="noopener">Blog  </a></li>
+
+															<li> <nuxt-link to="/blog">Blog</nuxt-link></li>
 
 															<li> <a @click="
 																	gtag('event', 'Click boton', {'event_category': 'Landing page', 'event_label': 'Guia header', 'value': 1})" href="http://guia.easybill.pe" target="_blank">Guia  </a></li>
@@ -41,9 +42,9 @@
 									<div class="header_blog_main_text">
 											<small> Publicado el {{last_article.created_at | moment("DD [de] MMMM [de] YYYY")}} </small>
 											<h1>{{last_article.title}}<span>.</span></h1>
-											<a :href="'/blog/'+last_article._id" class="button_fill"> 
-													Continuar Leyendo
-											</a>
+											<nuxt-link :to="{name: 'blog-id-article', params: {id: last_article._id, article: last_article.slug}}"  class="button_fill">
+												Continuar Leyendo
+											</nuxt-link>
 									</div>
 							</div>
 					</div>

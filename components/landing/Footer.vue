@@ -1,11 +1,22 @@
 <template>
     <footer class="footer_section">
-        <div class="footer_wrapper"><a class="logo" href="/"><img src="@/assets/img/logo_easybill.svg" alt="Logo easybill"/></a>
+        <div class="footer_wrapper">
+            
+            <nuxt-link to="/"  class="logo">
+                <div class="logo_wrapper"><img src="@/assets/img/logo_easybill.svg" alt="Logo easybill" /></div>
+            </nuxt-link>
+
             <div class="footer_col"><span>+51 999 017 080</span><a class="link" href="mailto:contactos@easybill.pe">contactos@easybill.pe</a>
                 <div class="social"><a href="https://www.facebook.com/Easybill.pe/" rel="noopener" target="_blank"><i class="icon icon-social-facebook"></i></a><a href="https://www.youtube.com/channel/UCvz8-GgLr0z3Ty2cWffH_9w" rel="noopener" target="_blank"><i class="icon icon-youtube"></i></a><a href="https://www.facebook.com/Easybill.pe/"
                    rel="noopener"     target="_blank"><i class="icon icon-twitter"></i></a><a href="https://www.instagram.com/easybill.pe/" rel="noopener" target="_blank"><i class="icon icon-instagram"></i></a></div>
             </div>
-            <div class="footer_col"><a class="link" href="/terminos">Políticas de privacidad</a><a class="link" href="/terminos">Términos y condiciones</a>
+            <div class="footer_col">
+                <nuxt-link class="link"  to="/politicas"   >
+                    Políticas de privacidad
+                </nuxt-link>
+                 <nuxt-link class="link"  to="/terminos"   >
+                    Términos y condiciones
+                </nuxt-link>
                 <p>© 2019 easybill.pe, Todos los derechos reservados. </p>
             </div>
         </div>

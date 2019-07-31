@@ -53,6 +53,12 @@ export default {
     p
       line-height: 1.7
       font-size: 15px
+    a
+      color: #171B26
+    h1, h2, h3, h4, h5, h6
+      font-weight: normal
+      font-family: "c-bold", sans-serif
+      margin-top: 10px
 @media screen and (max-width: 1100px)
   .body_content
     main

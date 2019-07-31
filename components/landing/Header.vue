@@ -3,9 +3,10 @@
         <div class="header_wrapper">
             <div class="header_body">
                 <nav>
-                    <a class="logo" href="/">
-                        <div class="logo_wrapper"><img src="@/assets/img/logo_easybill.svg" alt="Logo easybill" /></div>
-                    </a>
+                    <nuxt-link to="/"  class="logo">
+                      <div class="logo_wrapper"><img src="@/assets/img/logo_easybill.svg" alt="Logo easybill" /></div>
+                    </nuxt-link>
+
                     <div class="menu_right_top">
                         <div class="menu_mobile"  @click="showMenu=true"><i class="icon icon-menu"></i></div>
                         <transition name="fade" mode="in-out" >
@@ -21,7 +22,7 @@
                                     gtag('event', 'Click boton', {'event_category': 'Landing page', 'event_label': 'Clientes header', 'value': 1})
                                     showMenu=false"  
                                     href="/#clients">Clientes</a></li>
-                                 <li> <a href="/blog" rel="noopener" >Blog  </a></li>
+  															<li> <nuxt-link to="/blog">Blog</nuxt-link></li>
                                 <li> <a 
                                     @click="
                                     gtag('event', 'Click boton', {'event_category': 'Landing page', 'event_label': 'Guia header', 'value': 1})"                                    
