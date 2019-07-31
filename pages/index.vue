@@ -10,7 +10,6 @@
 </template>
 
 <script>
-import Logo from '~/components/Logo.vue'
 import HeaderSection from '@/components/landing/Header'
 import AboutSection from '@/components/landing/About'
 import ServicesSection from '@/components/landing/Services'
@@ -20,7 +19,6 @@ import ClientsSection from '@/components/landing/Clients'
 import DemoSection from '@/components/landing/Demo'
 export default {
   components: {
-    Logo,
     HeaderSection,
     AboutSection,
     ServicesSection,
