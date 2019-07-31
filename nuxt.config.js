@@ -41,7 +41,9 @@ module.exports = {
   plugins: [
     "~/plugins/firebase.js",
     "~/plugins/vuefire.js",
-    "~/plugins/vue-moment.js"
+    "~/plugins/vue-moment.js",
+    { src: '~plugins/ga.js', ssr: false },
+    { src: '~plugins/fbq.js', ssr: false }
   ],
   /*
    ** Nuxt.js dev-modules
@@ -49,13 +51,19 @@ module.exports = {
   devModules: [
     // Doc: https://github.com/nuxt-community/eslint-module
     // '@nuxtjs/eslint-module'
+    // ['@nuxtjs/google-analytics', {
+    //   id: 'UA-123783343-3'
+    // }]
   ],
   /*
    ** Nuxt.js modules
    */
   modules: [
     // Doc: https://axios.nuxtjs.org/usage
-    "@nuxtjs/axios"
+    "@nuxtjs/axios",
+    // ['@nuxtjs/google-analytics', {
+    //   id: 'UA-123783343-3'
+    // }]
   ],
   /*
    ** Axios module configuration

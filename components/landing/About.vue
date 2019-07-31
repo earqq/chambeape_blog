@@ -41,12 +41,14 @@ export default {
             docs: 0,
             items: 0,
             tenants: 0,
-            // gtag: gtag,
-            // fbq: fbq
+            ga: {},
         }
     },
     created() {
-        // gtag('event', 'Vista', {'event_category': 'Landing page', 'event_label': 'Llegada a easybill', 'value': 1})   
+        if (process.client) {
+          this.ga=window.ga
+          window.ga('event', 'Vista', {'event_category': 'Landing page', 'event_label': 'Llegada a easybill', 'value': 1})   
+        }
         this.getData();
     },
     methods: {

@@ -14,26 +14,26 @@
                                     <i class="icon icon-close"></i>
                                 </div>
                                 <li> <a @click="
-                                    gtag('event', 'Click boton', {'event_category': 'Landing page', 'event_label': 'Precios header', 'value': 1})
+                                    ga('event', 'Click boton', {'event_category': 'Landing page', 'event_label': 'Precios header', 'value': 1})
                                     showMenu=false"  
                                     href="/#plans_section">Precios</a></li>
                                 <li> <a @click="
-                                    gtag('event', 'Click boton', {'event_category': 'Landing page', 'event_label': 'Clientes header', 'value': 1})
+                                    ga('event', 'Click boton', {'event_category': 'Landing page', 'event_label': 'Clientes header', 'value': 1})
                                     showMenu=false"  
                                     href="/#clients">Clientes</a></li>
                                  <li> <a href="/blog" rel="noopener" >Blog  </a></li>
                                 <li> <a 
                                     @click="
-                                    gtag('event', 'Click boton', {'event_category': 'Landing page', 'event_label': 'Guia header', 'value': 1})"                                    
+                                    ga('event', 'Click boton', {'event_category': 'Landing page', 'event_label': 'Guia header', 'value': 1})"                                    
                                     href="http://guia.easybill.pe" rel="noopener" target="_blank">Guia  </a></li>
                                 <li>
                                     <a
                                     @click="
-                                    gtag('event', 'Click boton', {'event_category': 'Landing page', 'event_label': 'Ingresar header', 'value': 1})"                                     
+                                    ga('event', 'Click boton', {'event_category': 'Landing page', 'event_label': 'Ingresar header', 'value': 1})"                                     
                                     class="button_login inline button_fill" href="https://app.easybill.pe">Ingresar</a>
                                     <a 
                                     @click="
-                                    gtag('event', 'Click boton', {'event_category': 'Landing page', 'event_label': 'Registrate header', 'value': 1});
+                                    ga('event', 'Click boton', {'event_category': 'Landing page', 'event_label': 'Registrate header', 'value': 1});
                                     "                                     
                                     href='https://app.easybill.pe/registro'
                                     class="button_login button"  >Regístrate</a>
@@ -50,7 +50,7 @@
                         <span>
 
                             <a  
-                                @click="gtag('event', 'Click Boton', {'event_category': 'Landing Page', 'event_label': 'Demostración ventas rápidas', 'value': 1});
+                                @click="ga('event', 'Click Boton', {'event_category': 'Landing Page', 'event_label': 'Demostración ventas rápidas', 'value': 1});
                                 fbq('track', 'StartTrial');
                                 " 
                                 href='http://demo.easybill.pe/pos'
@@ -61,7 +61,7 @@
                                 <i class="icon icon-log-in"> </i>
                             </a>
                             <a 
-                            @click="gtag('event', 'Click boton', {'event_category': 'Landing page', 'event_label': 'Consulta comprobantes', 'value': 1})" 
+                            @click="ga('event', 'Click boton', {'event_category': 'Landing page', 'event_label': 'Consulta comprobantes', 'value': 1})" 
                             class="button_fill" href="http://app.easybill.pe/consulta-comprobante-electronico">Consulta Comprobantes</a>
                         </span>
                     </div>
@@ -80,11 +80,13 @@ export default {
     data () {
         return {
             showMenu: false,
-            mobile: false
+            mobile: false,
+            ga:{},
+            fbq:{}
         }
     },
     created () {
-      if (process.client) { // en lado del servidor no existe windown, document, etc
+      if (process.client) { // en lado del servidor no existe window, document, etc
         if (window.innerWidth < 850) this.mobile = true
         else this.mobile = false
 
@@ -94,6 +96,8 @@ export default {
                 else this.mobile = false
             })
         })
+        this.ga=window.ga
+        this.fbq=window.fbq
       } 
     },
 }

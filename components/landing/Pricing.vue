@@ -67,7 +67,7 @@
                             </li>
                         </ul>
                         <a class="button2" 
-                        @click=" gtag('event', 'Click Boton', {'event_category': 'Landing Page', 'event_label': 'Plan basico', 'value': 1});
+                        @click=" ga('event', 'Click Boton', {'event_category': 'Landing Page', 'event_label': 'Plan basico', 'value': 1});
                         fbq('track', 'AddToCart');" 
                         href="https://app.easybill.pe/registro"> Empieza tu mes gratis </a>
                     </aside>
@@ -125,7 +125,7 @@
                             </li>
                         </ul>
                     <a class="button" 
-                        @click=" gtag('event', 'Click Boton', {'event_category': 'Landing Page', 'event_label': 'Plan estandar', 'value': 1})" 
+                        @click=" ga('event', 'Click Boton', {'event_category': 'Landing Page', 'event_label': 'Plan estandar', 'value': 1})" 
                         :class="{button2 : mobile }" href="https://app.easybill.pe/registro"> Empieza tu mes gratis </a>
                     </aside>
                 </transition>
@@ -182,7 +182,7 @@
                             </li>
                         </ul>
                         <a class="button2"  
-                        @click=" gtag('event', 'Click Boton', {'event_category': 'Landing Page', 'event_label': 'Plan premium', 'value': 1})" 
+                        @click=" ga('event', 'Click Boton', {'event_category': 'Landing Page', 'event_label': 'Plan premium', 'value': 1})" 
                         href="https://app.easybill.pe/registro"> Empieza tu mes gratis </a>
                     </aside>
                 </transition>
@@ -205,8 +205,8 @@ export default {
             premium: 99,
             selectPlan: 2,
             mobile: false,
-            // gtag: gtag,
-            // fbq: fbq
+            ga: {},
+            fbq: {}
         }
     },
     created () {
@@ -221,6 +221,8 @@ export default {
                     else this.mobile = false
                 })
             })
+            this.ga=window.ga
+            this.fbq=window.fbq
         }
     },
     methods: {

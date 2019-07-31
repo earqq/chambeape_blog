@@ -4,7 +4,7 @@
             <h2>Factura facilmente desde hoy<span>.</span></h2>
             <p>Regístrate gratis y prueba las funcionalidades que hemos creado para ti.</p>
             <a class="button"
-            @click="gtag('event', 'Click Boton', {'event_category': 'Landing Page', 'event_label': 'Probar demo seccion', 'value': 1}); fbq('track', 'StartTrial');" 
+            @click="ga('event', 'Click Boton', {'event_category': 'Landing Page', 'event_label': 'Probar demo seccion', 'value': 1}); fbq('track', 'StartTrial');" 
             href="http://demo.easybill.pe/pos" rel="noopener" target="_blank"> Probar Demo<i class="icon icon-log-in"> </i></a></div>
     </div>
 </template>
@@ -13,8 +13,14 @@
 export default {
     data(){
         return{
-            // gtag: gtag,
-            // fbq: fbq
+            ga: {},
+            fbq: {}
+        }
+    },
+    created(){
+        if (process.client) {
+            this.ga=window.ga
+            this.fbq=window.fbq
         }
     }
 }
