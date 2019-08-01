@@ -19,6 +19,11 @@ export default {
       article: {}
     }
   },
+  head () {
+    return {
+      title: 'Easybill | Blog | '+this.article.title
+    }
+  },
   // firestore ()  {
   //   return {
   //     article: firestore.collection('articles').where("_id", "==", this.getId)
@@ -50,9 +55,11 @@ export default {
     font-family: "c-book", sans-serif
     padding: 2rem 0
     color: #171B26
-    p
+    p, li
       line-height: 1.7
       font-size: 15px
+    li
+      margin-top: 10px
     a
       color: #171B26
     h1, h2, h3, h4, h5, h6

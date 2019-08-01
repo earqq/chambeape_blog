@@ -26,6 +26,11 @@ export default {
     FooterSection,
     ClientsSection,
     DemoSection
+  },
+  head () {
+    return {
+      title: 'Easybill | Facturación Electrónica Fácil'
+    }
   }
 }
 </script>

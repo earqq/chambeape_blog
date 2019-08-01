@@ -37,7 +37,7 @@ export default {
       width: $large
       display: flex
       align-items: center
-      padding: 5rem 0
+      padding: 3rem 0
       flex-direction: column
       .articles_content
           display: grid
@@ -88,4 +88,26 @@ export default {
                 margin-left: 10px
                 margin-top: -3px
                 font-size: 20px
+
+@media screen and (max-width: 1100px)
+  .articles_section
+    .articles_wrapper
+        width: $medium
+        .articles_content
+            grid-template-columns: repeat(2, 1fr)
+
+@media screen and (max-width: 850px)
+  .articles_section
+    .articles_wrapper
+        width: $small
+        padding: 2rem 0
+        .articles_content
+            grid-template-columns: 1fr
+
+@media screen and (max-width: 850px)
+  .articles_section
+    .articles_wrapper
+        padding: 20px
+        box-sizing: border-box
+        width: $extra-small
 </style>

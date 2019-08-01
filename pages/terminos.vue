@@ -55,6 +55,11 @@ export default {
   components: {
     HeaderSection,
     FooterSection
+  },
+  head () {
+    return {
+      title: 'Easybill | Términos y Condiciones'
+    }
   }
 }
 </script>

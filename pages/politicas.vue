@@ -40,6 +40,11 @@ export default {
   components: {
     HeaderSection,
     FooterSection
+  },
+  head () {
+    return {
+      title: 'Easybill | Políticas de Privacidad'
+    }
   }
 }
 </script>

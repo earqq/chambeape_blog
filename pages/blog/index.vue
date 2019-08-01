@@ -14,6 +14,11 @@ export default {
     HeaderSection,
     ListArticlesSection,
     FooterSection
+  },
+  head () {
+    return {
+      title: 'Easybill | Blog'
+    }
   }
 }
 </script>
