@@ -64,7 +64,7 @@ export default {
 }
 </script>
 
-<style lang="sass">
+<style lang="sass" scoped>
 @import './assets/css/main'
 .terminos_section
     background-color: white
@@ -82,7 +82,7 @@ export default {
           margin-bottom: 10px
           li
             font-family: $font_regular
-            font-size: 15px
+            font-size: 16px
             margin-bottom: 5px
         h1, h2
           font-family: $font_black
@@ -93,7 +93,7 @@ export default {
         h2
           font-size: 20px
         article
-          font-size: 15px
+          font-size: 16px
           font-family: $font_regular
           line-height: 1.7
           width: 100%
@@ -104,7 +104,7 @@ export default {
           margin-bottom: 15px
           p
             margin-bottom: 10px  
-            font-size: 15px
+            font-size: 16px
             font-family: $font_regular
             line-height: 1.7
             width: 100%

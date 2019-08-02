@@ -4,13 +4,33 @@
 			<img src="@/assets/img/logo_easybill.svg" alt="Logo easybill"  />
 		</a>
 		<div class="login_content">
-			<div class="login_wrapper">
-				<div class="overlay_error">
-					<i class="icon icon-alert-circle"></i>
-					<div>
-						<p></p>
-					</div>
-				</div>
+			<div v-if="result" class="login_wrapper box_results">
+        <aside>
+          <i @click="result = null" class="icon icon-keyboard_arrow_left"></i>
+          <span>
+            Resultados
+          </span>
+        </aside>
+        <div class="results">
+          <span>
+            <strong>DNI</strong>
+            <p>{{result.identification}}</p>
+          </span>
+          <span>
+            <strong>Nombres</strong>
+            <p>{{result.nombres}}</p>
+          </span>
+          <span>
+            <strong>Apellido Paterno</strong>
+            <p>{{result.apellido_paterno}}</p>
+          </span>
+          <span>
+            <strong>Apellido Materno</strong>
+            <p>{{result.apellido_materno}}</p>
+          </span>
+        </div>
+			</div>
+			<div v-else class="login_wrapper">
 				<h1>Consulta DNI</h1>
 				<h2>Ingrese el dni que desea consultar</h2>
 				<div class="login_form">
@@ -34,7 +54,8 @@ export default {
   data() {
     return {
       dni: '',
-      trigger: false
+      trigger: false,
+      result: null
     }
   },
   head () {
@@ -51,7 +72,7 @@ export default {
       let uri = "https://app.easybill.pe/tools/consult/identification/" + this.dni
       this.$axios.get(uri)
         .then(res => {
-          console.log(res.data)
+          this.result = res.data
         })
         .catch(err => {
           console.log(err)
@@ -140,6 +161,38 @@ $border_radius_button: 0.1rem
     font-family: $font_regular
     padding: 20px 20px
     min-height: 450px
+    &.box_results
+      padding: 0
+      justify-content: flex-start
+      width: 350px
+      aside
+        border-bottom: 1px solid rgba(black, .2)
+        width: 100%
+        display: flex
+        padding: 15px 10px
+        i
+          width: 20px
+          height: 20px
+          cursor: pointer
+          font-size: 20px
+        span
+          flex: 1
+          text-align: center
+          font-family: $font_bold
+      .results
+        width: 100%
+        span
+          width: 100%
+          border-bottom: 1px solid rgba(black, .1)
+          display: block
+          padding: 10px
+          strong
+            font-size: 13px
+            font-weight: normal
+            font-family: $font_bold
+            color: rgba(black, .77)
+          p
+            font-size: 14px
     img
       width: 220px
     h1

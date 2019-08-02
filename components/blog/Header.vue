@@ -116,7 +116,7 @@ header.header_blog_content
 		top: 0
 		height: 100%
 		width: 100%
-		opacity: .05
+		opacity: .15
 		img
 			object-fit: cover
 			height: 100%
@@ -206,7 +206,7 @@ header.header_blog_content
 						margin-bottom: 15px
 						display: block
 					h1
-						font-size: 30px
+						font-size: 32px
 						font-family: $font_black
 						color: white
 						text-align: center

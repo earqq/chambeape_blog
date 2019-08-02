@@ -104,7 +104,7 @@ export default {
         .articles_content
             grid-template-columns: 1fr
 
-@media screen and (max-width: 850px)
+@media screen and (max-width: 500px)
   .articles_section
     .articles_wrapper
         padding: 20px
