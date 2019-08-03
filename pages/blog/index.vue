@@ -37,7 +37,7 @@ section.main_blog
 aside.card_register
   height: fit-content
   border-radius: 2px
-  background-color: #4B3884
+  background-color: $primary_color
   overflow: hidden
   width: 1065px
   margin: 0 auto
@@ -64,7 +64,7 @@ aside.card_register
     .button_login
       padding: 12px 20px
       box-sizing: border-box
-      color: #4B3884
+      color: $primary_color
       border-radius: 2px
       background-color: $accent_color
       border: 1px solid $accent_color

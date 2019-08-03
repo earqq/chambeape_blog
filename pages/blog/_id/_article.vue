@@ -67,8 +67,10 @@ export default {
     height: fit-content
     margin-top: 2rem
     border-radius: 2px
-    background-color: #4B3884
+    background-color: $primary_color
     overflow: hidden
+    position: sticky
+    top: 20px
     .description
       padding: 20px
       box-sizing: border-box
@@ -89,7 +91,7 @@ export default {
       .button_login
         padding: 12px 20px
         box-sizing: border-box
-        color: #4B3884
+        color: $primary_color
         border-radius: 2px
         background-color: $accent_color
         border: 1px solid $accent_color
