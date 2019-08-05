@@ -10,12 +10,12 @@ import { setContext, getLocation, getRouteData, normalizeError } from './utils'
 
 /* Plugins */
 
-import nuxt_plugin_axios_1ea1bcd2 from 'nuxt_plugin_axios_1ea1bcd2' // Source: ./axios.js (mode: 'all')
-import nuxt_plugin_firebase_34d6f55a from 'nuxt_plugin_firebase_34d6f55a' // Source: ../plugins/firebase.js (mode: 'all')
-import nuxt_plugin_vuefire_9e9e389e from 'nuxt_plugin_vuefire_9e9e389e' // Source: ../plugins/vuefire.js (mode: 'all')
-import nuxt_plugin_vuemoment_732aa8ba from 'nuxt_plugin_vuemoment_732aa8ba' // Source: ../plugins/vue-moment.js (mode: 'all')
-import nuxt_plugin_ga_fb0a2534 from 'nuxt_plugin_ga_fb0a2534' // Source: ../plugins/ga.js (mode: 'client')
-import nuxt_plugin_fbq_694cdd8e from 'nuxt_plugin_fbq_694cdd8e' // Source: ../plugins/fbq.js (mode: 'client')
+import nuxt_plugin_axios_56855bcd from 'nuxt_plugin_axios_56855bcd' // Source: .\\axios.js (mode: 'all')
+import nuxt_plugin_firebase_34d6f55a from 'nuxt_plugin_firebase_34d6f55a' // Source: ..\\plugins\\firebase.js (mode: 'all')
+import nuxt_plugin_vuefire_9e9e389e from 'nuxt_plugin_vuefire_9e9e389e' // Source: ..\\plugins\\vuefire.js (mode: 'all')
+import nuxt_plugin_vuemoment_732aa8ba from 'nuxt_plugin_vuemoment_732aa8ba' // Source: ..\\plugins\\vue-moment.js (mode: 'all')
+import nuxt_plugin_ga_fb0a2534 from 'nuxt_plugin_ga_fb0a2534' // Source: ..\\plugins\\ga.js (mode: 'client')
+import nuxt_plugin_fbq_694cdd8e from 'nuxt_plugin_fbq_694cdd8e' // Source: ..\\plugins\\fbq.js (mode: 'client')
 
 // Component: <NoSsr>
 Vue.component(NoSsr.name, NoSsr)
@@ -134,8 +134,8 @@ async function createApp(ssrContext) {
 
   // Plugin execution
 
-  if (typeof nuxt_plugin_axios_1ea1bcd2 === 'function') {
-    await nuxt_plugin_axios_1ea1bcd2(app.context, inject)
+  if (typeof nuxt_plugin_axios_56855bcd === 'function') {
+    await nuxt_plugin_axios_56855bcd(app.context, inject)
   }
 
   if (typeof nuxt_plugin_firebase_34d6f55a === 'function') {

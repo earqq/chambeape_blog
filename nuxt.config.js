@@ -1,18 +1,29 @@
 
+// const { firestore } = require('./plugins/firebase.js')
+
 module.exports = {
   mode: "universal",
-  /*
-   ** Headers of the page
-   */
+  // generate: {
+  //   routes: function () {
+  //     return firestore.collection('articles').get()
+  //       .then((res) => {
+  //         let routesBlog = []
+  //         res.forEach(function (r) {
+  //           routesBlog.push(`/blog/${r.data()._id}/${r.data().slug}`)
+  //         });
+  //       return routesBlog
+  //     })
+  //   }
+  // },
   head: {
-    title: process.env.npm_package_name || "",
+    title: process.env.npm_package_name || '',
     meta: [
       { charset: "utf-8" },
       { name: "viewport", content: "width=device-width, initial-scale=1" },
       {
         hid: "description",
         name: "description",
-        content: process.env.npm_package_description || ""
+        content: process.env.npm_package_description || ''
       }
     ],
     link: [

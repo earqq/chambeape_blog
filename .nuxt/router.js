@@ -2,13 +2,13 @@ import Vue from 'vue'
 import Router from 'vue-router'
 import { interopDefault } from './utils'
 
-const _9244b8c0 = () => interopDefault(import('../pages/blog/index.vue' /* webpackChunkName: "pages/blog/index" */))
-const _9869b04e = () => interopDefault(import('../pages/politicas.vue' /* webpackChunkName: "pages/politicas" */))
-const _99f45f20 = () => interopDefault(import('../pages/terminos.vue' /* webpackChunkName: "pages/terminos" */))
-const _2f052680 = () => interopDefault(import('../pages/consulta/dni.vue' /* webpackChunkName: "pages/consulta/dni" */))
-const _4e9becbe = () => interopDefault(import('../pages/consulta/ruc.vue' /* webpackChunkName: "pages/consulta/ruc" */))
-const _087d270e = () => interopDefault(import('../pages/blog/_id/_article.vue' /* webpackChunkName: "pages/blog/_id/_article" */))
-const _1f53a127 = () => interopDefault(import('../pages/index.vue' /* webpackChunkName: "pages/index" */))
+const _acf3533e = () => interopDefault(import('..\\pages\\blog\\index.vue' /* webpackChunkName: "pages_blog_index" */))
+const _098bca35 = () => interopDefault(import('..\\pages\\politicas.vue' /* webpackChunkName: "pages_politicas" */))
+const _73b97294 = () => interopDefault(import('..\\pages\\terminos.vue' /* webpackChunkName: "pages_terminos" */))
+const _5886fc7b = () => interopDefault(import('..\\pages\\consulta\\dni.vue' /* webpackChunkName: "pages_consulta_dni" */))
+const _48bb995c = () => interopDefault(import('..\\pages\\consulta\\ruc.vue' /* webpackChunkName: "pages_consulta_ruc" */))
+const _3cdb6f80 = () => interopDefault(import('..\\pages\\blog\\_id\\_article.vue' /* webpackChunkName: "pages_blog__id__article" */))
+const _2f9bd183 = () => interopDefault(import('..\\pages\\index.vue' /* webpackChunkName: "pages_index" */))
 
 Vue.use(Router)
 
@@ -86,31 +86,31 @@ export function createRouter() {
 
     routes: [{
       path: "/blog",
-      component: _9244b8c0,
+      component: _acf3533e,
       name: "blog"
     }, {
       path: "/politicas",
-      component: _9869b04e,
+      component: _098bca35,
       name: "politicas"
     }, {
       path: "/terminos",
-      component: _99f45f20,
+      component: _73b97294,
       name: "terminos"
     }, {
       path: "/consulta/dni",
-      component: _2f052680,
+      component: _5886fc7b,
       name: "consulta-dni"
     }, {
       path: "/consulta/ruc",
-      component: _4e9becbe,
+      component: _48bb995c,
       name: "consulta-ruc"
     }, {
       path: "/blog/:id/:article?",
-      component: _087d270e,
+      component: _3cdb6f80,
       name: "blog-id-article"
     }, {
       path: "/",
-      component: _1f53a127,
+      component: _2f9bd183,
       name: "index"
     }],
 
