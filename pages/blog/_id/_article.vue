@@ -7,7 +7,7 @@
         .image_wrap
           img( src="@/assets/img/service_image_1.svg" alt="Laptop abierta" )
         .description
-          h1 Obtén 1 Mes Gratis de Facturación Electrónica
+          h3 Obtén 1 Mes Gratis de Facturación Electrónica
           p Registrate ahora y podras obtener 1 mes gratis en el sistema de facturacion Easybill
           a( href='https://app.easybill.pe/registro' class="button_login button" ) Comenzar Ahora!
     footer-section
@@ -74,7 +74,7 @@ export default {
     .description
       padding: 20px
       box-sizing: border-box
-      h1
+      h3
         font-family: $font_black
         font-weight: normal
         text-align: center
@@ -124,7 +124,7 @@ export default {
       margin-top: 5px
     a
       color: #171B26
-    h1, h2, h3, h4, h5, h6, strong
+      h2, h3, h4, h5, h6, strong
       font-weight: normal
       font-family: "c-bold", sans-serif
       margin-top: 10px
@@ -144,7 +144,7 @@ export default {
           margin-top: 0
           width: 200px
       .description
-        h1, p
+        h3, p
           text-align: left
         p
           margin-bottom: 15px
@@ -161,7 +161,7 @@ export default {
         img
           margin-top: 10px
       .description
-        h1, p
+        h3, p
           text-align: center
         p
           margin-bottom: 20px
