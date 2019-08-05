@@ -14,8 +14,8 @@ import nuxt_plugin_axios_1ea1bcd2 from 'nuxt_plugin_axios_1ea1bcd2' // Source: .
 import nuxt_plugin_firebase_34d6f55a from 'nuxt_plugin_firebase_34d6f55a' // Source: ../plugins/firebase.js (mode: 'all')
 import nuxt_plugin_vuefire_9e9e389e from 'nuxt_plugin_vuefire_9e9e389e' // Source: ../plugins/vuefire.js (mode: 'all')
 import nuxt_plugin_vuemoment_732aa8ba from 'nuxt_plugin_vuemoment_732aa8ba' // Source: ../plugins/vue-moment.js (mode: 'all')
-import nuxt_plugin_ga_fb0a2534 from 'nuxt_plugin_ga_fb0a2534' // Source: ../plugins/ga.js (mode: 'all')
-import nuxt_plugin_fbq_694cdd8e from 'nuxt_plugin_fbq_694cdd8e' // Source: ../plugins/fbq.js (mode: 'all')
+import nuxt_plugin_ga_fb0a2534 from 'nuxt_plugin_ga_fb0a2534' // Source: ../plugins/ga.js (mode: 'client')
+import nuxt_plugin_fbq_694cdd8e from 'nuxt_plugin_fbq_694cdd8e' // Source: ../plugins/fbq.js (mode: 'client')
 
 // Component: <NoSsr>
 Vue.component(NoSsr.name, NoSsr)
@@ -150,11 +150,11 @@ async function createApp(ssrContext) {
     await nuxt_plugin_vuemoment_732aa8ba(app.context, inject)
   }
 
-  if (typeof nuxt_plugin_ga_fb0a2534 === 'function') {
+  if (process.client && typeof nuxt_plugin_ga_fb0a2534 === 'function') {
     await nuxt_plugin_ga_fb0a2534(app.context, inject)
   }
 
-  if (typeof nuxt_plugin_fbq_694cdd8e === 'function') {
+  if (process.client && typeof nuxt_plugin_fbq_694cdd8e === 'function') {
     await nuxt_plugin_fbq_694cdd8e(app.context, inject)
   }
 
