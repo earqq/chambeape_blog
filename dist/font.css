@@ -1,0 +1,12 @@
+@font-face{
+    font-family: 'c-bold';
+    src: url("/font/CircularStd-Bold.otf");
+}
+@font-face{
+    font-family: 'c-medium';
+    src: url("/font/CircularStd-Medium.otf");
+}
+@font-face{
+    font-family: 'c-book';
+    src: url("/font/CircularStd-Book.otf");
+}
