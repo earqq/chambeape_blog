@@ -28,7 +28,7 @@ export default {
   },
   head () {
     return {
-      title: 'Easybill | Blog | '+this.article.title
+      title: this.article.title+' |Easybill'
     }
   },
   // firestore ()  {
