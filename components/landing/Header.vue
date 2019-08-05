@@ -63,7 +63,7 @@
                             </a>
                             <a 
                             @click="ga('event', 'Click boton', {'event_category': 'Landing page', 'event_label': 'Consulta comprobantes', 'value': 1})" 
-                            class="button_fill" href="http://app.easybill.pe/consulta-comprobante-electronico">Consulta Comprobantes</a>
+                            class="button_fill" href="http://app.easybill.pe/consulta-cpe-sunat">Consulta Comprobantes</a>
                         </span>
                     </div>
                     <div
