@@ -120,15 +120,17 @@ export default {
     p, li
       line-height: 1.8
       font-size: 17px
-    li
-      margin-top: 5px
     a
       color: #171B26
-      h2, h3, h4, h5, h6, strong
+    h2, h3, h4, h5, h6, strong
       font-weight: normal
       font-family: "c-bold", sans-serif
       margin-top: 10px
-      margin-bottom: 5px
+      margin-bottom: 10px
+      line-height: 1.2
+    blockquote
+      border-left: 2px solid $accent_color
+
 @media screen and (max-width: 1100px)
   .body_content
     grid-template-columns: 1fr
