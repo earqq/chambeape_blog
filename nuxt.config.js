@@ -1,6 +1,11 @@
 
 module.exports = {
   mode: "universal",
+  generate: {
+    'html.minify':{
+      collapseWhitespace:false
+    }
+  },
   /*
    ** Headers of the page
    */
@@ -42,8 +47,8 @@ module.exports = {
     "~/plugins/firebase.js",
     "~/plugins/vuefire.js",
     "~/plugins/vue-moment.js",
-    { src: '~plugins/ga.js' },
-    { src: '~plugins/fbq.js' }
+    { src: '~plugins/ga.js', ssr: false },
+    { src: '~plugins/fbq.js', ssr: false }
   ],
   /*
    ** Nuxt.js dev-modules
