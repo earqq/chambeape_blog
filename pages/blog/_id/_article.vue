@@ -28,7 +28,14 @@ export default {
   },
   head () {
     return {
-      title: this.article.title+' |Easybill'
+      htmlAttrs: {
+      lang: 'es',
+      },
+      title: this.article.title+' | Easybill',
+      meta: [
+        { 'http-equiv': 'X-UA-Compatible', content: 'IE=edge' },
+        { hid : 'description', name:'description', content:this.article.description_google },
+      ]
     }
   },
   // firestore ()  {

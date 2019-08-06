@@ -46,8 +46,8 @@
                 
                 <div class="header_main_content">
                     <div class="header_main_text">
-                        <h1>Facturación Electrónica para Pequeñas Empresas en Perú<span>.</span></h1>
-                        <p>Cientos de Empresas Minoristas en todo el Perú ya emiten electrónicamente con nosotros. Prueba nuestra módulo de ventas rápidas debajo.</p>
+                        <h1>Facturación Electrónica para Minimarkets en Perú<span>.</span></h1>
+                        <p>Cientos de Empresas en todo el Perú ya emiten rapidamente con Easybill. Gestiona tu negocio y acelera tus ventas desde hoy. Empieza tu mes gratis</p>
                         <span>
 
                             <a  

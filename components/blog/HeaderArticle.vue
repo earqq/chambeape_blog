@@ -1,7 +1,7 @@
 <template>
     <header class="header_article_content">
         <div class="article_cover">
-            <img :src="article.cover" >
+            <img alt='Imagen de fondo post' :src="article.cover" >
         </div>
         <div class="header_article_wrapper">
             <div class="header_article_body">

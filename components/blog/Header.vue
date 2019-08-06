@@ -1,7 +1,7 @@
 <template>
 	<header class="header_blog_content">
 			<div class="article_cover">
-					<img :src="last_article.cover">
+					<img alt='Imagen de fondo' :src="last_article.cover" >
 			</div>
 			<div class="header_blog_wrapper">
 					<div class="header_blog_body">
@@ -69,6 +69,7 @@ export default {
 						]
 				}
 		},
+		
 		// firestore ()  {
 		//     return {
 		//         last_article: firestore.collection('articles').orderBy("created_at", "desc").limit(1)
