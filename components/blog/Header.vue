@@ -41,7 +41,7 @@
 							<div class="header_blog_main_content">
 									<div class="header_blog_main_text">
 											<small> Publicado el {{last_article.created_at | moment("DD [de] MMMM [de] YYYY")}} </small>
-											<h3>{{last_article.title}}<span>.</span></h3>
+											<h1>{{last_article.title}}<span>.</span></h1>
 											<nuxt-link :to="{name: 'blog-id-article', params: {id: last_article._id, article: last_article.slug}}"  class="button_fill">
 												Continuar Leyendo
 											</nuxt-link>
@@ -205,7 +205,7 @@ header.header_blog_content
 						text-align: center
 						margin-bottom: 15px
 						display: block
-					h3
+					h1
 						font-size: 32px
 						font-family: $font_black
 						color: white
@@ -255,7 +255,7 @@ header.header_blog_content
 							width: 350px
 					.header_blog_main_text
 						width: $medium
-						h3
+						h1
 							font-size: 27px
 							margin-bottom: 15px
 						p
@@ -332,7 +332,7 @@ header.header_blog_content
 						flex-direction: column
 						align-items: center
 						text-align: center
-						h3
+						h1
 							font-size: 22px
 							margin-top: 10px
 						small
@@ -365,7 +365,7 @@ header.header_blog_content
 					box-sizing: border-box
 					.header_blog_main_text
 						width: $extra-small
-						h3
+						h1
 							width: 100%
 							text-align: center
 						span
