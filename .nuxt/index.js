@@ -10,7 +10,7 @@ import { setContext, getLocation, getRouteData, normalizeError } from './utils'
 
 /* Plugins */
 
-import nuxt_plugin_axios_0f7fe343 from 'nuxt_plugin_axios_0f7fe343' // Source: ./axios.js (mode: 'all')
+import nuxt_plugin_axios_1ea1bcd2 from 'nuxt_plugin_axios_1ea1bcd2' // Source: ./axios.js (mode: 'all')
 import nuxt_plugin_firebase_34d6f55a from 'nuxt_plugin_firebase_34d6f55a' // Source: ../plugins/firebase.js (mode: 'all')
 import nuxt_plugin_vuefire_9e9e389e from 'nuxt_plugin_vuefire_9e9e389e' // Source: ../plugins/vuefire.js (mode: 'all')
 import nuxt_plugin_vuemoment_732aa8ba from 'nuxt_plugin_vuemoment_732aa8ba' // Source: ../plugins/vue-moment.js (mode: 'all')
@@ -134,8 +134,8 @@ async function createApp(ssrContext) {
 
   // Plugin execution
 
-  if (typeof nuxt_plugin_axios_0f7fe343 === 'function') {
-    await nuxt_plugin_axios_0f7fe343(app.context, inject)
+  if (typeof nuxt_plugin_axios_1ea1bcd2 === 'function') {
+    await nuxt_plugin_axios_1ea1bcd2(app.context, inject)
   }
 
   if (typeof nuxt_plugin_firebase_34d6f55a === 'function') {
