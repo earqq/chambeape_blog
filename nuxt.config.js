@@ -2,7 +2,7 @@
 module.exports = {
   mode: "universal",
   generate: {
-    'html.minify':{
+    minify : {
       collapseWhitespace:false
     }
   },
