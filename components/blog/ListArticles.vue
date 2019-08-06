@@ -4,7 +4,7 @@
         section(class="articles_content")
           aside(v-for="a in articles" class="client_testimonial")
             small {{a.created_at | moment("DD [de] MMMM [de] YYYY") }}
-            h3 {{a.title}}
+            h2 {{a.title}}
             p {{a.body_preview}}
             nuxt-link( :to="{name: 'blog-id-article', params: {id: a._id, article: a.slug}}" )
               span Leer Articulo
@@ -57,7 +57,7 @@ export default {
                 margin-bottom: 15px
                 text-align: left
                 flex: 1
-            h3
+            h2
                 font-family: $font_black
                 font-size: 17px
                 text-align: left

@@ -48,7 +48,7 @@
                 <div class="header_blog_main_content">
                     <div class="header_blog_main_text">
                         <small> Publicado el {{article.created_at | moment("DD [de] MMMM [de] YYYY")}} </small>
-                        <h3>{{article.title}}<span>.</span></h3>
+                        <h1>{{article.title}}<span>.</span></h1>
                     </div>
                 </div>
             </div>
@@ -187,7 +187,7 @@ header.header_article_content
 						text-align: center
 						margin-bottom: 15px
 						display: block
-					h3
+					h1
 						font-size: 32px
 						font-family: $font_black
 						color: white
@@ -237,7 +237,7 @@ header.header_article_content
 							width: 350px
 					.header_blog_main_text
 						width: $medium
-						h3
+						h1
 							font-size: 27px
 							margin-bottom: 15px
 						p
@@ -314,7 +314,7 @@ header.header_article_content
 						flex-direction: column
 						align-items: center
 						text-align: center
-						h3
+						h1
 							font-size: 22px
 							margin-top: 10px
 						small
@@ -347,7 +347,7 @@ header.header_article_content
 					box-sizing: border-box
 					.header_blog_main_text
 						width: $extra-small
-						h3
+						h1
 							width: 100%
 							text-align: center
 						span
