@@ -6,28 +6,30 @@
 		<div class="login_content">
 			<div v-if="result" class="login_wrapper box_results">
         <aside>
-          <i @click="result = null" class="icon icon-keyboard_arrow_left"></i>
+          <i @click="result = null; dni=''" class="icon icon-keyboard_arrow_left"></i>
           <span>
             Resultados
           </span>
         </aside>
         <div class="results">
-          <span>
+          <span  @click='textCopy(result.identification)'>
             <strong>DNI</strong>
             <p>{{result.identification}}</p>
           </span>
-          <span>
+          <span title='Click para copiar'  @click='textCopy(result.nombres+" "+result.apellido_paterno+" "+result.apellido_materno)'>
             <strong>Nombres</strong>
             <p>{{result.nombres}}</p>
           </span>
-          <span>
+          <span title='Click para copiar'  @click='textCopy(result.nombres+" "+result.apellido_paterno+" "+result.apellido_materno)'>
             <strong>Apellido Paterno</strong>
             <p>{{result.apellido_paterno}}</p>
           </span>
-          <span>
+          <span title='Click para copiar' @click='textCopy(result.nombres+" "+result.apellido_paterno+" "+result.apellido_materno)'>
             <strong>Apellido Materno</strong>
             <p>{{result.apellido_materno}}</p>
           </span>
+          <br>
+          <a target='_blank' :href='"https://api.whatsapp.com/send?&text=DNI: "+result.identification+" | Datos: "+result.nombres+" "+result.apellido_paterno+" "+result.apellido_materno'>Enviar a Whatsapp</a>
         </div>
 			</div>
 			<div v-else class="login_wrapper">
@@ -36,13 +38,13 @@
 				<div class="login_form">
 					<div class="input_wrapper" :class="{validate_require: !validateDNI && trigger}">
 						<div class="validate_msg">dni inválido</div>
-						<input type="text" id="ruc_user" v-model="dni"  @keypress="isNumber($event)"  autocomplete="off"  placeholder="Escribe el DNI" maxlength="8"/>
+						<input type="text" id="ruc_user" v-model="dni" v-on:keyup.enter='sendDni'  @keypress="isNumber($event)"  autocomplete="off"  placeholder="Escribe el DNI" maxlength="8"/>
 					</div>
 					<button id="search_ruc"  @click="sendDni" class="button_wave"> 
 						<span> Consultar </span> 
 					</button>
-					<p class="link_to_register">¿No tienes una cuenta?  
-						<a href="https://app.easybill.pe/registro"> Regístrate </a>
+					<p class="link_to_register">¿Aún no facturas con Easybill?  
+						<a href="http://demo.easybill.pe/pos" target='_blank'> Pruebanos </a>
 					</p>
 				</div>
 			</div>
@@ -60,13 +62,31 @@ export default {
   },
   head () {
     return {
-      title: 'Easybill | Consulta DNI'
+      htmlAttrs: {
+      lang: 'es',
+      },
+      title: 'Consulta DNI de RENIEC rápido y confiable  | Easybill',
+      meta: [
+        { 'http-equiv': 'X-UA-Compatible', content: 'IE=edge' },
+        { hid : 'description', name:'description', content:'Realiza tus consultas DNI desde nuestra plataforma copia de forma sencilla o envia la información al whatsapp' },
+      ]
     }
   },
   methods: {
     sendDni () {
       this.trigger = true
       if (this.validateDNI) this.getDniClient()
+    },
+    textCopy(text){
+      if (process.client) {
+        var copyText = text
+        var textArea = document.createElement("textarea");
+        textArea.value = copyText
+        document.body.appendChild(textArea);
+        textArea.select();
+        document.execCommand("Copy");
+        textArea.remove();
+      }
     },
     getDniClient() {
       let uri = "https://app.easybill.pe/tools/consult/identification/" + this.dni

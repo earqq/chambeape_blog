@@ -6,17 +6,17 @@
 		<div class="login_content">
       <div v-if="result" class="login_wrapper box_results">
         <aside>
-          <i @click="result = null" class="icon icon-keyboard_arrow_left"></i>
+          <i @click="result = null;ruc=''" class="icon icon-keyboard_arrow_left"></i>
           <span>
             Resultados
           </span>
         </aside>
         <div class="results">
-          <span>
+          <span  @click='textCopy(result.RUC)'  title='Click para copiar' >
             <strong>RUC</strong>
             <p>{{result.RUC}}</p>
           </span>
-          <span>
+          <span @click='textCopy(result.RAZON)'  title='Click para copiar' >
             <strong>Razón Social</strong>
             <p>{{result.RAZON}}</p>
           </span>
@@ -28,10 +28,12 @@
             <strong>Tipo</strong>
             <p>{{result.TIPO}}</p>
           </span>
-          <span>
+          <span  @click='textCopy(result.DIRECCION)'  title='Click para copiar' >
             <strong>Dirección</strong>
             <p>{{result.DIRECCION}}</p>
           </span>
+          <br>
+          <a target='_blank' :href='"https://api.whatsapp.com/send?&text=RUC: "+result.RUC+" | RAZON SOCIAL: "+result.RAZON+" | DIRECCIÓN: "+result.DIRECCION'>Enviar a Whatsapp</a>
         </div>
 			</div>
 			<div v-else class="login_wrapper">
@@ -46,17 +48,20 @@
 				<div class="login_form">
 					<div class="input_wrapper" :class="{validate_require: !validateRuc && trigger}">
 						<div class="validate_msg">ruc inválido</div>
-						<input type="text" id="ruc_user" v-model="ruc" @keypress="isNumber($event)"  autocomplete="off"  placeholder="Escribe el RUC" maxlength="11"/>
+						<input type="text" id="ruc_user" v-model="ruc" @keypress="isNumber($event)"  autocomplete="off" v-on:keyup.enter='sendRuc' placeholder="Escribe el RUC" maxlength="11"/>
 					</div>
 					<button id="search_ruc"  @click="sendRuc" class="button_wave"> 
 						<span> Consultar </span> 
 					</button>
-					<p class="link_to_register">¿No tienes una cuenta?  
-						<a href="https://app.easybill.pe/registro"> Regístrate </a>
+					<p class="link_to_register">¿Aún no facturas con Easybill?  
+						<a href="http://demo.easybill.pe/pos" target='_blank'> Pruebanos </a>
 					</p>
 				</div>
 			</div>
-		</div>
+      <div id='divToCopy'>
+
+      </div>
+		</div>    
 	</section>
 </template>
 <script>
@@ -65,18 +70,38 @@ export default {
     return {
       ruc: '',
       trigger: false,
-      result: null
+      result: null,
+      textToCopy:'',
+      titleClipboard:'Click para copiar'
     }
   },
   head () {
     return {
-      title: 'Easybill | Consulta RUC'
+      htmlAttrs: {
+      lang: 'es',
+      },
+      title: 'Consulta RUC de SUNAT rápido y confiable | Easybill',
+      meta: [
+        { 'http-equiv': 'X-UA-Compatible', content: 'IE=edge' },
+        { hid : 'description', name:'description', content:'Realiza tus consultas RUC desde nuestra plataforma copia de forma sencilla o envia al whatsapp' },
+      ]
     }
   },
   methods: {
     sendRuc () {
       this.trigger = true
       if (this.validateRuc) this.getRucClient()
+    },
+    textCopy(text){
+      if (process.client) {
+        var copyText = text
+        var textArea = document.createElement("textarea");
+        textArea.value = copyText
+        document.body.appendChild(textArea);
+        textArea.select();
+        document.execCommand("Copy");
+        textArea.remove();
+      }
     },
     getRucClient() {
       let uri = "https://app.easybill.pe/tools/consult/identification/" + this.ruc
