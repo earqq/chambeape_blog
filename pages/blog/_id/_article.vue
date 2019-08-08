@@ -7,9 +7,13 @@
         .image_wrap
           img( src="@/assets/img/service_image_1.svg" alt="Laptop abierta" )
         .description
-          h3 Obtén 1 Mes Gratis de Facturación Electrónica
-          p Registrate ahora y podras obtener 1 mes gratis en el sistema de facturacion Easybill
-          a( href='https://app.easybill.pe/registro' class="button_login button" ) Comenzar Ahora!
+          h3 Asesoramiento gratuito sobre facturación electrónica.
+          p Nuestro asesor especializado se comunicara contigo para solucionar todas tus dudas :). 
+          input( v-if='showInputs' type='text' class='form_control' v-model='userName' placeholder='Nombre' )
+          input( v-if='showInputs' type='text' class='form_control' v-model='userEmail' placeholder='Email' )
+          input( v-if='showInputs' type='text' class='form_control' v-model='userPhone' placeholder='Celular' )
+          a( v-if='!showInputs' @click='showInputs=true' class="button_login button" ) ¡Quiero mi asesoramiento!
+          a( @click='call()' v-if='showInputs' class="button_login button" ) ¡Enviar!
     footer-section
 </template>
 
@@ -23,7 +27,11 @@ export default {
   components: { HeaderArticleSection, FooterSection },
   data() {
     return {
-      article: {}
+      article: {},
+      showInputs:false,
+      userName:'',
+      userEmail:'',
+      userPhone:''
     }
   },
   head () {
@@ -55,6 +63,16 @@ export default {
   methods: {
     toHtml (body) {
       return marked(body)
+    },
+    call(){
+      this.$axios.post('/api/sendEmail/'+this.userName+'/'+this.userEmail+'/'+this.userPhone,{
+      }).then(function(res){
+        alert("Información enviada con exito nuestro asesor se comunicara contigo muy pronto :)")
+      })
+      this.showInputs=false
+      this.userName=''
+      this.userEmail=''
+      this.userPhone=''
     }
   }
 }

@@ -8,6 +8,7 @@ module.exports = {
       }
     }
   },
+  serverMiddleware: ['~/api/index.js'],
   /*
    ** Headers of the page
    */
@@ -67,16 +68,20 @@ module.exports = {
    */
   modules: [
     // Doc: https://axios.nuxtjs.org/usage
-    "@nuxtjs/axios"
+    "@nuxtjs/axios",
+    '@nuxtjs/proxy'
     // ['@nuxtjs/google-analytics', {
     //   id: 'UA-123783343-3'
     // }]
+
   ],
   /*
    ** Axios module configuration
    ** See https://axios.nuxtjs.org/options
    */
-  axios: {},
+  axios: {
+    proxy:true
+  },
   /*
    ** Build configuration
    */

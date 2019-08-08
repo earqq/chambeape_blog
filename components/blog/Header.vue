@@ -59,14 +59,14 @@ export default {
 				return {
 						showMenu: false,
 						mobile: false,
-						last_article: [
-								{
-										_id: '',
-										title: '',
-										cover: '',
-										created_at: '',
-								}
-						]
+						last_article: 
+						{
+								_id: '',
+								title: '',
+								cover: '',
+								created_at: '',
+						}
+						
 				}
 		},
 		
