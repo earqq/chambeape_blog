@@ -7,9 +7,13 @@
         .image_wrap
           img( src="@/assets/img/service_image_1.svg" alt="Laptop abierta" )
         .description
-          h3 Obtén 1 Mes Gratis de Facturación Electrónica
-          p Registrate ahora y podras obtener 1 mes gratis en el sistema de facturacion Easybill
-          a( href='https://app.easybill.pe/registro' class="button_login button" ) Comenzar Ahora!
+          h3 Asesoramiento gratuito sobre facturación electrónica.
+          p Nuestro asesor especializado se comunicara contigo para solucionar todas tus dudas :). 
+          input( v-if='showInputs' type='text' class='form_control' v-model='userName' placeholder='Nombre' )
+          input( v-if='showInputs' type='text' class='form_control' v-model='userEmail' placeholder='Email' )
+          input( v-if='showInputs' type='text' class='form_control' v-model='userPhone' placeholder='Celular' )
+          a( v-if='!showInputs' @click='showInputs=true' class="button_login button" ) ¡Quiero mi asesoramiento!
+          a( @click='call()' v-if='showInputs' class="button_login button" ) ¡Enviar!
     footer-section
 </template>
 
@@ -23,12 +27,23 @@ export default {
   components: { HeaderArticleSection, FooterSection },
   data() {
     return {
-      article: {}
+      article: {},
+      showInputs:false,
+      userName:'',
+      userEmail:'',
+      userPhone:''
     }
   },
   head () {
     return {
-      title: 'Easybill | Blog | '+this.article.title
+      htmlAttrs: {
+      lang: 'es',
+      },
+      title: this.article.title+' | Easybill',
+      meta: [
+        { 'http-equiv': 'X-UA-Compatible', content: 'IE=edge' },
+        { hid : 'description', name:'description', content:this.article.description_google },
+      ]
     }
   },
   // firestore ()  {
@@ -48,6 +63,16 @@ export default {
   methods: {
     toHtml (body) {
       return marked(body)
+    },
+    call(){
+      this.$axios.post('/api/sendEmail/'+this.userName+'/'+this.userEmail+'/'+this.userPhone,{
+      }).then(function(res){
+        alert("Información enviada con exito nuestro asesor se comunicara contigo muy pronto :)")
+      })
+      this.showInputs=false
+      this.userName=''
+      this.userEmail=''
+      this.userPhone=''
     }
   }
 }
@@ -120,15 +145,17 @@ export default {
     p, li
       line-height: 1.8
       font-size: 17px
-    li
-      margin-top: 5px
     a
       color: #171B26
-      h2, h3, h4, h5, h6, strong
+    h2, h3, h4, h5, h6, strong
       font-weight: normal
       font-family: "c-bold", sans-serif
       margin-top: 10px
-      margin-bottom: 5px
+      margin-bottom: 10px
+      line-height: 1.2
+    blockquote
+      border-left: 2px solid $accent_color
+
 @media screen and (max-width: 1100px)
   .body_content
     grid-template-columns: 1fr

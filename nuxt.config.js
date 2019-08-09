@@ -3,18 +3,17 @@
 
 module.exports = {
   mode: "universal",
-  // generate: {
-  //   routes: function () {
-  //     return firestore.collection('articles').get()
-  //       .then((res) => {
-  //         let routesBlog = []
-  //         res.forEach(function (r) {
-  //           routesBlog.push(`/blog/${r.data()._id}/${r.data().slug}`)
-  //         });
-  //       return routesBlog
-  //     })
-  //   }
-  // },
+  generate: {
+    html: {
+      minify: {
+        collapseWhitespace: false
+      }
+    }
+  },
+  serverMiddleware: ['~/api/index.js'],
+  /*
+   ** Headers of the page
+   */
   head: {
     title: process.env.npm_package_name || '',
     meta: [
@@ -53,8 +52,8 @@ module.exports = {
     "~/plugins/firebase.js",
     "~/plugins/vuefire.js",
     "~/plugins/vue-moment.js",
-    { src: '~plugins/ga.js', ssr: false },
-    { src: '~plugins/fbq.js', ssr: false }
+    { src: "~plugins/ga.js", ssr: false },
+    { src: "~plugins/fbq.js", ssr: false }
   ],
   /*
    ** Nuxt.js dev-modules
@@ -72,15 +71,19 @@ module.exports = {
   modules: [
     // Doc: https://axios.nuxtjs.org/usage
     "@nuxtjs/axios",
+    '@nuxtjs/proxy'
     // ['@nuxtjs/google-analytics', {
     //   id: 'UA-123783343-3'
     // }]
+
   ],
   /*
    ** Axios module configuration
    ** See https://axios.nuxtjs.org/options
    */
-  axios: {},
+  axios: {
+    proxy:true
+  },
   /*
    ** Build configuration
    */

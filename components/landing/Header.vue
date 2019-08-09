@@ -46,8 +46,8 @@
                 
                 <div class="header_main_content">
                     <div class="header_main_text">
-                        <h1>Facturación Electrónica para Pequeñas Empresas en Perú<span>.</span></h1>
-                        <p>Cientos de Empresas Minoristas en todo el Perú ya emiten electrónicamente con nosotros. Prueba nuestra módulo de ventas rápidas debajo.</p>
+                        <h1>Facturación Electrónica y ventas rápidas en Perú<span>.</span></h1>
+                        <p>Cientos de Empresas en todo el Perú ya emiten con nosotros. Gestiona tu negocio y acelera tus ventas desde hoy. Empieza tu mes gratis</p>
                         <span>
 
                             <a  
@@ -63,7 +63,7 @@
                             </a>
                             <a 
                             @click="ga('event', 'Click boton', {'event_category': 'Landing page', 'event_label': 'Consulta comprobantes', 'value': 1})" 
-                            class="button_fill" href="http://app.easybill.pe/consulta-comprobante-electronico">Consulta Comprobantes</a>
+                            class="button_fill" href="http://app.easybill.pe/consulta-cpe-sunat">Consulta Comprobantes</a>
                         </span>
                     </div>
                     <div
