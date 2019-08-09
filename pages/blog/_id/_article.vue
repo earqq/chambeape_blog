@@ -5,15 +5,20 @@
       main( v-if="article.body" v-html="toHtml(article.body)")
       aside.card_register
         .image_wrap
-          img( src="@/assets/img/service_image_1.svg" alt="Laptop abierta" )
+          img( src="@/assets/img/about_image.svg" alt="Laptop abierta" )
         .description
-          h3 Asesoramiento gratuito sobre facturación electrónica.
-          p Nuestro asesor especializado se comunicara contigo para solucionar todas tus dudas :). 
-          input( v-if='showInputs' type='text' class='form_control' v-model='userName' placeholder='Nombre' )
-          input( v-if='showInputs' type='text' class='form_control' v-model='userEmail' placeholder='Email' )
-          input( v-if='showInputs' type='text' class='form_control' v-model='userPhone' placeholder='Celular' )
-          a( v-if='!showInputs' @click='showInputs=true' class="button_login button" ) ¡Quiero mi asesoramiento!
-          a( @click='call()' v-if='showInputs' class="button_login button" ) ¡Enviar!
+          h3 Asesoramiento gratuito sobre Facturación Electrónica.
+          .card_form
+            .input_wrapper( :class="{ require : !validateName && trigger }" )
+              .validate_msg Nombre muy corto
+              input(type='text' class='form_control' v-model='userName' placeholder='Nombre'  )
+            .input_wrapper( :class="{ require : !validateEmail && trigger }"  )
+              .validate_msg Email no es válido
+              input(type='text' class='form_control' v-model='userEmail' placeholder='Email'  )
+            .input_wrapper(  :class="{ require : !validatePhone && trigger }" )
+              .validate_msg Celular no es válido
+              input(type='tel' class='form_control' v-model='userPhone' placeholder='Celular')
+          a( @click='sendCall()' class="button_login button" ) Solicitar Asesoramiento
     footer-section
 </template>
 
@@ -28,10 +33,10 @@ export default {
   data() {
     return {
       article: {},
-      showInputs:false,
       userName:'',
       userEmail:'',
-      userPhone:''
+      userPhone:'',
+      trigger: false
     }
   },
   head () {
@@ -61,6 +66,10 @@ export default {
     return {article: snap.docs[0].data()}
   },          
   methods: {
+    sendCall () {
+      this.trigger = true
+      if (this.validateName && this.validateEmail && this.validatePhone) this.call()
+    },
     toHtml (body) {
       return marked(body)
     },
@@ -74,12 +83,25 @@ export default {
       this.userEmail=''
       this.userPhone=''
     }
+  },
+  computed: {
+    validateName () {
+      return this.userName.length > 2
+    },
+    validateEmail () {
+      return this.userEmail.length > 5
+    },
+    validatePhone () {
+      return this.userPhone.length > 5
+    }
   }
 }
 </script>
 
 <style lang="sass">
 @import './assets/css/main'
+$line_button_color: rgba(42, 48, 56, 0.25)
+$border_radius_button: 0.1rem
 
 .body_content
   display: grid
@@ -92,26 +114,59 @@ export default {
     height: fit-content
     margin-top: 2rem
     border-radius: 2px
-    background-color: $primary_color
+    border: 1px solid rgba($primary_color, .1)
     overflow: hidden
     position: sticky
     top: 20px
+    margin-bottom: 20px
     .description
       padding: 20px
       box-sizing: border-box
+      .card_form
+        margin-top: 10px
+        .input_wrapper
+          position: relative
+          margin-bottom: 15px
+          &.require 
+            input
+              border: 1px solid #ff3f41
+              border-radius: .1rem
+            .validate_msg
+              display: block
+          input
+            width: 100%
+            height: 40px
+            padding: 0 10px
+            font-family: $font_regular
+            color: $primary_color
+            border-radius: $border_radius_button
+            border: 1px solid $line_button_color
+            &:focus, &:active
+              outline: none
+          .validate_msg
+            position: absolute
+            right: 0px
+            top: -14px
+            background-color: #ff3f41
+            color: white
+            font-family: 'c-book', sans-serif
+            font-size: 10px
+            padding: 1px 5px
+            border-radius: .1rem .1rem 0 0
+            display: none	
       h3
         font-family: $font_black
         font-weight: normal
         text-align: center
         font-size: 20px
-        color: white
+        color: $primary_color
         line-height: 1.3
       p
         font-family: $font_regular
         margin-top: 15px
         margin-bottom: 30px
         text-align: center
-        color: rgba(white, .7)
+        color: rgba($primary_color, .7)
         line-height: 1.4
       .button_login
         padding: 12px 20px
@@ -129,10 +184,9 @@ export default {
     .image_wrap
       background-color: transparent
       img
-        width: 220px
+        width: 170px
         margin: 0 auto
         display: block
-        margin-top: 20px
   main
     font-family: "c-book", sans-serif
     padding: 2rem 0
@@ -155,7 +209,9 @@ export default {
       line-height: 1.2
     blockquote
       border-left: 2px solid $accent_color
-
+      padding: 5px
+      padding-left: 20px
+      background-color: #F2F4F5
 @media screen and (max-width: 1100px)
   .body_content
     grid-template-columns: 1fr

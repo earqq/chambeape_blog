@@ -14,16 +14,13 @@
 <script>
 import { firestore } from '~/plugins/firebase.js'
 export default {
-  data() {
-    return {
-      articles: [],
-    }
-  },
-  firestore ()  {
-    return {
-      articles: firestore.collection('articles').orderBy("created_at", "desc")
-    }
-  }
+  props: ['articles']
+  // firestore ()  {
+  //   return {
+  //     articles: firestore.collection('articles').orderBy("created_at", "desc")
+  //   }
+  // }
+  
 }
 </script>
 
