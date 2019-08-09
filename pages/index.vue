@@ -32,7 +32,7 @@ export default {
       htmlAttrs: {
       lang: 'es',
       },
-      title: 'Facturación Electrónica para Minimarkets en Perú - SUNAT | Easybill',
+      title: 'Facturación Electrónica y ventas rápidas en Perú - SUNAT | Easybill',
       meta: [
         { 'http-equiv': 'X-UA-Compatible', content: 'IE=edge' },
         { hid : 'description', name:'description', content:'Descubre nuestra innovadora solución a facturación electrónica. Ventas rápidas, reportes kardex, facturas, boletas, guías de remisión y mucho más. ' },

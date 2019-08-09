@@ -17,21 +17,21 @@
 																	<i class="icon icon-close"></i>
 															</div>
 															<li> <a @click="
-																	ga('event', 'Click boton', {'event_category': 'Landing page', 'event_label': 'Precios header', 'value': 1})
+																	ga('event', 'Click boton', {'event_category': 'Header blog', 'event_label': 'Precios header', 'value': 1})
 																	showMenu=false" href="/#plans_section">Precios</a></li>
 															<li> <a @click="
-																	ga('event', 'Click boton', {'event_category': 'Landing page', 'event_label': 'Clientes header', 'value': 1})
+																	ga('event', 'Click boton', {'event_category': 'Header blog', 'event_label': 'Clientes header', 'value': 1})
 																	showMenu=false" href="/#clients">Clientes</a></li>
 
 															<li> <nuxt-link to="/blog">Blog</nuxt-link></li>
 
-															<li> <a @click="
-																	ga('event', 'Click boton', {'event_category': 'Landing page', 'event_label': 'Guia header', 'value': 1})" href="http://guia.easybill.pe" target="_blank">Guia  </a></li>
+															<!-- <li> <a @click="
+																	ga('event', 'Click boton', {'event_category': 'Header blog', 'event_label': 'Guia header', 'value': 1})" href="http://guia.easybill.pe" target="_blank">Guia  </a></li> -->
 															<li>
 																	<a @click="
-																	ga('event', 'Click boton', {'event_category': 'Landing page', 'event_label': 'Ingresar header', 'value': 1})" class="button_login inline button_fill" href="https://app.easybill.pe">Ingresar</a>
+																	ga('event', 'Click boton', {'event_category': 'Header blog', 'event_label': 'Ingresar header', 'value': 1})" class="button_login inline button_fill" href="https://app.easybill.pe">Ingresar</a>
 																	<a @click="
-																	ga('event', 'Click boton', {'event_category': 'Landing page', 'event_label': 'Registrate header', 'value': 1});
+																	ga('event', 'Click boton', {'event_category': 'Header blog', 'event_label': 'Registrate header', 'value': 1});
 																	" href='https://app.easybill.pe/registro' class="button_login button">Regístrate</a>
 															</li>
 													</ul>
@@ -55,37 +55,21 @@
 <script>
 import { firestore } from '~/plugins/firebase.js'
 export default {
+		props: ['last_article'],
 		data () {
 				return {
 						showMenu: false,
 						mobile: false,
-						last_article: [
-								{
-										_id: '',
-										title: '',
-										cover: '',
-										created_at: '',
-								}
-						]
+						 
+						
 				}
 		},
-		
 		// firestore ()  {
 		//     return {
 		//         last_article: firestore.collection('articles').orderBy("created_at", "desc").limit(1)
 		//     }
 		// },
-		methods: {
-				async getLastArticle() {
-					const ref = firestore.collection('articles').orderBy("created_at", "desc").limit(1)
-					let snap
-					try {snap = await ref.get()}
-					catch(e) {console.error(e)}
-					this.last_article = snap.docs[0].data()
-				}
-		},
 		created () {
-				this.getLastArticle()
 				if (process.client) { // en lado del servidor no existe windown, document, etc
 
 						if (window.innerWidth < 850) this.mobile = true
