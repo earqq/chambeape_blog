@@ -55,37 +55,21 @@
 <script>
 import { firestore } from '~/plugins/firebase.js'
 export default {
+		props: ['last_article'],
 		data () {
 				return {
 						showMenu: false,
 						mobile: false,
-						last_article: 
-						{
-								_id: '',
-								title: '',
-								cover: '',
-								created_at: '',
-						}
+						 
 						
 				}
 		},
-		
 		// firestore ()  {
 		//     return {
 		//         last_article: firestore.collection('articles').orderBy("created_at", "desc").limit(1)
 		//     }
 		// },
-		methods: {
-				async getLastArticle() {
-					const ref = firestore.collection('articles').orderBy("created_at", "desc").limit(1)
-					let snap
-					try {snap = await ref.get()}
-					catch(e) {console.error(e)}
-					this.last_article = snap.docs[0].data()
-				}
-		},
 		created () {
-				this.getLastArticle()
 				if (process.client) { // en lado del servidor no existe windown, document, etc
 
 						if (window.innerWidth < 850) this.mobile = true

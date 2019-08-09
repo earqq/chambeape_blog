@@ -1,7 +1,7 @@
 <template lang="pug">
   section.main_blog
-    header-section
-    list-articles-section
+    header-section( :last_article="last_article" )
+    list-articles-section( :articles="articles" )
     aside.card_register
       .image_wrap
         img( src="@/assets/img/service_image_1.svg" alt="Laptop abierta" )
@@ -16,16 +16,35 @@
 import HeaderSection from '@/components/blog/Header'
 import ListArticlesSection from '@/components/blog/ListArticles'
 import FooterSection from '@/components/landing/Footer'
+import { firestore } from '~/plugins/firebase.js'
+
 export default {
   components: {
     HeaderSection,
     ListArticlesSection,
     FooterSection
   },
+  data() {
+    return {
+      articles: [],
+      last_article: {}
+    }
+  },
   head () {
     return {
       title: 'Easybill | Blog'
     }
+  },
+  async asyncData ({ params }) {
+    const ref = firestore.collection('articles').orderBy("created_at", "desc")
+    let snap
+    try {
+      snap = await ref.get()
+    }
+    catch(e) {console.error(e)}
+    let result = []
+    snap.docs.map(s => result.push(s.data()))
+    return {articles: result, last_article: snap.docs[0].data()}
   }
 }
 </script>
