@@ -9,23 +9,63 @@
 
 <url>
   <loc>https://easybill.pe/</loc>
-  <lastmod>2019-08-05T16:36:34+00:00</lastmod>
+  <lastmod>2019-08-09T16:45:21+00:00</lastmod>
   <priority>1.00</priority>
 </url>
 <url>
   <loc>https://easybill.pe/blog</loc>
-  <lastmod>2019-08-05T16:36:34+00:00</lastmod>
+  <lastmod>2019-08-09T16:45:21+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
   <loc>https://easybill.pe/politicas</loc>
-  <lastmod>2019-08-05T16:36:34+00:00</lastmod>
+  <lastmod>2019-08-09T16:45:21+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
   <loc>https://easybill.pe/terminos</loc>
-  <lastmod>2019-08-05T16:36:34+00:00</lastmod>
+  <lastmod>2019-08-09T16:45:21+00:00</lastmod>
   <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://easybill.pe/blog/1565306032877/datos-facturacion-electronica</loc>
+  <lastmod>2019-08-09T16:45:21+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://easybill.pe/blog/1565214488684/herramientas-facturacion-electr%C3%B3nica</loc>
+  <lastmod>2019-08-09T16:45:21+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://easybill.pe/blog/1565025667807/consejos-sistema-venta</loc>
+  <lastmod>2019-08-09T16:45:21+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://easybill.pe/blog/1565044349037/usuario-secundario-sunat</loc>
+  <lastmod>2019-08-09T16:45:21+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://easybill.pe/blog/1565045378146/certificado-digital-sunat</loc>
+  <lastmod>2019-08-09T16:45:21+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://easybill.pe/blog/4/guia-emisor-electronico</loc>
+  <lastmod>2019-08-09T16:45:21+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://easybill.pe/consulta/ruc</loc>
+  <lastmod>2019-08-09T16:45:21+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://easybill.pe/consulta/dni</loc>
+  <lastmod>2019-08-09T16:45:21+00:00</lastmod>
+  <priority>0.51</priority>
 </url>
 
 
