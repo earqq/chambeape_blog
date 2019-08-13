@@ -1,5 +1,5 @@
 <template>
-    <div class="pricing_section" >
+    <div class="pricing_section" id="plans_section" >
         <div class="pricing_wrapper">
             <div class="title">
                 <h2>Elije el plan apropiado para ti<span>.</span></h2>
