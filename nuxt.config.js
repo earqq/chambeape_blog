@@ -53,7 +53,8 @@ module.exports = {
     "~/plugins/vuefire.js",
     "~/plugins/vue-moment.js",
     { src: "~plugins/ga.js", ssr: false },
-    { src: "~plugins/fbq.js", ssr: false }
+    { src: "~plugins/fbq.js", ssr: false },
+    { src: "~plugins/hotjar.js", ssr: false }
   ],
   /*
    ** Nuxt.js dev-modules
