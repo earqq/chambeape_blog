@@ -141,6 +141,7 @@ header.header_article_content
 							text-decoration: none
 							font-family: $font_bold
 							font-weight: normal
+							cursor: pointer
 							&.button_login
 								padding: 12px 20px
 								box-sizing: border-box

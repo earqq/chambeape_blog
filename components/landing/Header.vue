@@ -115,6 +115,7 @@ export default {
             }else if(section == 2) {
               window.scrollTo(0, document.getElementById('clients').getBoundingClientRect().top)
             }
+            this.showMenu = false
           } else {
             this.$router.push({
               path: `/?section=${section}`
@@ -166,6 +167,7 @@ header.header_content
               text-decoration: none
               font-family: $font_bold
               font-weight: normal
+              cursor: pointer
               &.button_login
                 padding: 12px 20px
                 box-sizing: border-box
@@ -257,6 +259,7 @@ header.header_content
               box-sizing: border-box
               border-radius: 2px
               border: 1px solid $accent_color
+              cursor: pointer
               i
                   font-size: 22px
                   margin-left: 20px
