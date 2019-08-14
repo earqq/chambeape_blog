@@ -15,13 +15,11 @@
                                     <i class="icon icon-close"></i>
                                 </div>
                                 <li> <a @click="
-                                    ga('event', 'Click boton', {'event_category': 'Header Landing', 'event_label': 'Precios header', 'value': 1})
-                                    showMenu=false"  
-                                    href="/#plans_section">Precios</a></li>
+                                    ga('event', 'Click boton', {'event_category': 'Header Landing', 'event_label': 'Precios header', 'value': 1}); moveTo(1)"  
+                                   >Precios</a></li>
                                 <li> <a @click="
-                                    ga('event', 'Click boton', {'event_category': 'Header Landing', 'event_label': 'Clientes header', 'value': 1})
-                                    showMenu=false"  
-                                    href="/#clients">Clientes</a></li>
+                                    ga('event', 'Click boton', {'event_category': 'Header Landing', 'event_label': 'Clientes header', 'value': 1}); moveTo(2)"  
+                                   >Clientes</a></li>
   															<li> <nuxt-link to="/blog">Blog</nuxt-link></li>
                                 <!-- <li> <a 
                                     @click="
@@ -79,6 +77,7 @@
 
 <script>
 export default {
+    props: ['page'], 
     data () {
         return {
             showMenu: false,
@@ -99,9 +98,31 @@ export default {
             })
         })
         this.ga=window.ga
-        this.fbq=window.fbq
-      } 
+        this.fbq=window.fbq  
+      }
     },
+    mounted () {
+      setTimeout(() => {
+        if(this.$route.query.section) this.moveTo(this.$route.query.section)
+      }, 500);
+    },
+		methods: {
+			moveTo(section) {
+        if (process.client) { // en lado del servidor no existe window, document, etc
+          if ( this.page == 1 ) {
+            if (section == 1) {
+              window.scrollTo(0, document.getElementById('plans_section').getBoundingClientRect().top)
+            }else if(section == 2) {
+              window.scrollTo(0, document.getElementById('clients').getBoundingClientRect().top)
+            }
+          } else {
+            this.$router.push({
+              path: `/?section=${section}`
+            })
+          }
+        }
+      }
+		}
 }
 </script>
 <style lang="sass">

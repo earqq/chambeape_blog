@@ -1,4 +1,9 @@
 @import './assets/css/variables';
+
+html {
+  scroll-behavior: smooth;
+}
+
 .button{
   &:hover {
     background-color: lighten($accent_color, 7%) !important;

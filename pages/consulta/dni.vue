@@ -68,7 +68,14 @@ export default {
       title: 'Consulta DNI de RENIEC rápido y confiable  | Easybill',
       meta: [
         { 'http-equiv': 'X-UA-Compatible', content: 'IE=edge' },
-        { hid : 'description', name:'description', content:'Realiza tus consultas DNI desde nuestra plataforma copia de forma sencilla o envia la información al whatsapp' },
+        { name: 'theme-color', content:'#17de8b'},
+        { hid : 'description', name:'description', content:'Descubre nuestra innovadora solución a facturación electrónica. Ventas rápidas, reportes kardex, facturas, boletas, guías de remisión y mucho más. ' },
+        { property: 'og:title', content: 'Facturación Electrónica y ventas rápidas en Perú - SUNAT | Easybill' },
+        { property: 'og:description', content: 'Descubre nuestra innovadora solución a facturación electrónica. Ventas rápidas, reportes kardex, facturas, boletas, guías de remisión y mucho más. ' },
+        { property: 'og:image', content: 'https://firebasestorage.googleapis.com/v0/b/easybill-b9a91.appspot.com/o/landing%2Ffacebook-preview.png?alt=media&token=16577e76-02d9-4351-99f1-8663bbb90b92' },
+        { property: 'og:url', content: 'https://easybill.pe' },
+        { property: 'og:type', content: 'product' },
+        { property: 'fb:app_id', content: '1994748484137426' }
       ]
     }
   },

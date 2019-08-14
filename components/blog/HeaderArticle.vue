@@ -18,13 +18,9 @@
 										<i class="icon icon-close"></i>
 									</div>
 									<li> <a @click="
-										ga('event', 'Click boton', {'event_category': 'Header Blog', 'event_label': 'Precios header blog', 'value': 1})
-										showMenu=false"  
-										href="/#plans_section">Precios</a></li>
+										ga('event', 'Click boton', {'event_category': 'Header Blog', 'event_label': 'Precios header blog', 'value': 1}); moveTo(1)" >Precios</a></li>
 									<li> <a @click="
-										ga('event', 'Click boton', {'event_category': 'Header Blog', 'event_label': 'Clientes header blog', 'value': 1})
-										showMenu=false"  
-										href="/#clients">Clientes</a></li>
+										ga('event', 'Click boton', {'event_category': 'Header Blog', 'event_label': 'Clientes header blog', 'value': 1}); moveTo(2)">Clientes</a></li>
 									<li> <nuxt-link to="/blog">Blog</nuxt-link></li>
 									<!-- <li> <a 
 										@click="
@@ -81,7 +77,14 @@ export default {
 			})
 			this.ga=window.ga
         }
-    },
+	},
+	methods: {
+		moveTo (section) {
+			this.$router.push({
+				path: `/?section=${section}`
+			})
+		}
+	}
 }
 </script>
 
@@ -301,7 +304,7 @@ header.header_article_content
 										&:hover
 											color: $primary_color
 			.header_article_body
-				min-height: 350px
+				min-height: 450px
 				.header_blog_main_content
 					width: $small
 					flex-direction: column-reverse
