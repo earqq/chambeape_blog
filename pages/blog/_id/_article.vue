@@ -47,7 +47,7 @@ export default {
       title: this.article.title+' | Easybill',
       meta: [
         { 'http-equiv': 'X-UA-Compatible', content: 'IE=edge' },
-        { hid : 'description', name:'description', content:this.article.description_google },
+        { hid : 'description', name:'description', content:this.article.description_google }
       ]
     }
   },
