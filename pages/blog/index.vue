@@ -104,6 +104,7 @@ aside.card_register
       justify-content: center
       align-items: center
       font-family: $font_bold
+      font-size: 15px
   .image_wrap
     background-color: transparent
     padding: 10px 30px

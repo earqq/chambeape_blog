@@ -113,6 +113,8 @@ export default {
                 span, a, .social, p
                     font-size: 15px
                     margin-bottom: 10px
+                p
+                    margin-top: 20px
 
 @media screen and (max-width: 500px)
     .footer_section
@@ -124,6 +126,7 @@ export default {
             .footer_col
                 span, a, p
                     text-align: left
+                    
                 .social 
                     display: none
 </style>
