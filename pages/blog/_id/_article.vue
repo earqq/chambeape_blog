@@ -4,6 +4,11 @@
     .body_content
       main( v-if="article.body" v-html="toHtml(article.body)")
       aside.card_register
+        transition( name="fade" mode="in-out" )
+          .success_message( v-if="sent" )
+            i.icon.icon-check
+            h3 Solicitud Enviada
+            p Nos pondremos en contacto contigo tan pronto sea posible.
         .image_wrap
           img( src="@/assets/img/about_image.svg" alt="Laptop abierta" )
         .description
@@ -18,7 +23,7 @@
             .input_wrapper(  :class="{ require : !validatePhone && trigger }" )
               .validate_msg Celular no es válido
               input(type='tel' class='form_control' v-model='userPhone' placeholder='Celular')
-          a( @click='sendCall()' class="button_login button" ) Solicitar Asesoramiento
+          a( @click='sendCall()' class="button_login button2" ) Solicitar Asesoramiento
     footer-section
 </template>
 
@@ -36,7 +41,8 @@ export default {
       userName:'',
       userEmail:'',
       userPhone:'',
-      trigger: false
+      trigger: false,
+      sent: false
     }
   },
   head () {
@@ -44,10 +50,17 @@ export default {
       htmlAttrs: {
       lang: 'es',
       },
-      title: this.article.title+' | Easybill',
+      title: this.article.title + ' | Easybill',
       meta: [
         { 'http-equiv': 'X-UA-Compatible', content: 'IE=edge' },
-        { hid : 'description', name:'description', content:this.article.description_google }
+        { name: 'theme-color', content:'#17de8b'},
+        { hid : 'description', name:'description', content: this.article.description_google },
+        { property: 'og:title', content: this.article.title + ' | Easybill' },
+        { property: 'og:description', content: this.article.description_google },
+        { property: 'og:image', content: this.article.cover },
+        { property: 'og:url', content: `https://easybill.pe/blog/${this.article._id}/${this.article.slug}` },
+        { property: 'og:type', content: 'product' },
+        { property: 'fb:app_id', content: '1994748484137426' }
       ]
     }
   },
@@ -76,12 +89,15 @@ export default {
     call(){
       this.$axios.post('/api/sendEmail/'+this.userName+'/'+this.userEmail+'/'+this.userPhone,{
       }).then(function(res){
-        alert("Información enviada con exito nuestro asesor se comunicara contigo muy pronto :)")
+        this.sent = true
+        this.userName=''
+        this.userEmail=''
+        this.userPhone=''
+        this.trigger = false
+        setTimeout(() => {
+          this.sent = false
+        }, 5000);
       })
-      this.showInputs=false
-      this.userName=''
-      this.userEmail=''
-      this.userPhone=''
     }
   },
   computed: {
@@ -89,7 +105,8 @@ export default {
       return this.userName.length > 2
     },
     validateEmail () {
-      return this.userEmail.length > 5
+      let re = /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
+      return re.test(String(this.userEmail).toLowerCase());
     },
     validatePhone () {
       return this.userPhone.length > 5
@@ -119,8 +136,40 @@ $border_radius_button: 0.1rem
     position: sticky
     top: 20px
     margin-bottom: 20px
-    .description
+    .success_message
+      position: absolute
+      left: 0
+      top: 0
+      width: 100%
+      height: 100%
+      background-color: white
+      z-index: 2
+      display: flex
+      justify-content: center
+      align-items: center
+      flex-direction: column
+      text-align: center
       padding: 20px
+      box-sizing: border-box
+      font-family: $font_regular
+      i
+        color: $accent_color
+        width: 40px
+        height: 40px
+        border: 2px solid $accent_color
+        border-radius: 50%
+        display: flex
+        justify-content: center
+        align-items: center
+        margin-bottom: 10px
+      h3
+        font-family: $font_black
+        font-weight: normal
+      p
+        font-size: 14px
+        margin-top: 5px
+    .description
+      padding: 15px 20px
       box-sizing: border-box
       .card_form
         margin-top: 10px
@@ -158,7 +207,7 @@ $border_radius_button: 0.1rem
         font-family: $font_black
         font-weight: normal
         text-align: center
-        font-size: 20px
+        font-size: 18px
         color: $primary_color
         line-height: 1.3
       p
@@ -171,22 +220,24 @@ $border_radius_button: 0.1rem
       .button_login
         padding: 12px 20px
         box-sizing: border-box
-        color: $primary_color
+        color: white
         border-radius: 2px
-        background-color: $accent_color
-        border: 1px solid $accent_color
+        background-color: $primary_color
+        border: 1px solid $primary_color
         width: 100%
         display: flex
         text-decoration: none
         justify-content: center
         align-items: center
         font-family: $font_bold
+        cursor: pointer
+        font-size: 15px
     .image_wrap
-      background-color: transparent
       img
-        width: 170px
+        width: 200px
         margin: 0 auto
         display: block
+        padding-bottom: 10px
   main
     font-family: "c-book", sans-serif
     padding: 2rem 0
@@ -222,10 +273,11 @@ $border_radius_button: 0.1rem
       margin-bottom: 2rem
       align-items: center
       .image_wrap
-        padding: 10px 30px
+        padding: 0px 30px
         img
           margin-top: 0
-          width: 200px
+          width: 270px
+          margin-bottom: 15px
       .description
         h3, p
           text-align: left
@@ -233,16 +285,19 @@ $border_radius_button: 0.1rem
           margin-bottom: 15px
           margin-top: 10px
         .button_login
-          width: 200px
+          width: 100%
 @media screen and (max-width: 850px)
   .body_content
     width: 450px
+    main
+      padding: 1rem 0
     aside.card_register
       display: block
       .image_wrap
-        padding: 10px 20px
+        padding: 0px 20px
         img
-          margin-top: 10px
+          width: 200px
+          margin-bottom: 0px
       .description
         h3, p
           text-align: center
@@ -256,4 +311,14 @@ $border_radius_button: 0.1rem
     padding: 0 20px
     box-sizing: border-box
     width: 100%
+    main
+      p, li
+        line-height: 1.7
+        font-size: 15px
+      h1 
+        font-size: 22px
+      h2
+        font-size: 20px
+      h3
+        font-size: 18px
 </style>

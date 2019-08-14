@@ -17,23 +17,15 @@
 												<div class="close_menu" @click="showMenu=false">
 														<i class="icon icon-close"></i>
 												</div>
-												<li> <a @click="
-														ga('event', 'Click boton', {'event_category': 'Header blog', 'event_label': 'Precios header', 'value': 1})
-														showMenu=false" href="/#plans_section">Precios</a></li>
-												<li> <a @click="
-														ga('event', 'Click boton', {'event_category': 'Header blog', 'event_label': 'Clientes header', 'value': 1})
-														showMenu=false" href="/#clients">Clientes</a></li>
-
+												<li> <a @click="ga('event', 'Click boton', {'event_category': 'Header blog', 'event_label': 'Precios header', 'value': 1}); moveTo(1)" >Precios</a></li>
+												<li> <a @click="ga('event', 'Click boton', {'event_category': 'Header blog', 'event_label': 'Clientes header', 'value': 1}); moveTo(2)" >Clientes</a></li>
 												<li> <nuxt-link to="/blog">Blog</nuxt-link></li>
-
 												<!-- <li> <a @click="
 														ga('event', 'Click boton', {'event_category': 'Header blog', 'event_label': 'Guia header', 'value': 1})" href="http://guia.easybill.pe" target="_blank">Guia  </a></li> -->
 												<li>
-														<a @click="
-														ga('event', 'Click boton', {'event_category': 'Header blog', 'event_label': 'Ingresar header', 'value': 1})" class="button_login inline button_fill" href="https://app.easybill.pe">Ingresar</a>
-														<a @click="
-														ga('event', 'Click boton', {'event_category': 'Header blog', 'event_label': 'Registrate header', 'value': 1});
-														" href='https://app.easybill.pe/registro' class="button_login button">Regístrate</a>
+													<a @click="ga('event', 'Click boton', {'event_category': 'Header blog', 'event_label': 'Ingresar header', 'value': 1})" class="button_login inline button_fill" href="https://app.easybill.pe">Ingresar</a>
+													<a @click="ga('event', 'Click boton', {'event_category': 'Header blog', 'event_label': 'Registrate header', 'value': 1});
+													" href='https://app.easybill.pe/registro' class="button_login button">Regístrate</a>
 												</li>
 											</ul>
 										</transition>
@@ -66,26 +58,27 @@ export default {
 						
 				}
 		},
-		// firestore ()  {
-		//     return {
-		//         last_article: firestore.collection('articles').orderBy("created_at", "desc").limit(1)
-		//     }
-		// },
 		created () {
-				if (process.client) { // en lado del servidor no existe windown, document, etc
+			if (process.client) { // en lado del servidor no existe windown, document, etc
+				if (window.innerWidth < 850) this.mobile = true
+				else this.mobile = false
 
-						if (window.innerWidth < 850) this.mobile = true
-						else this.mobile = false
-
-						this.$nextTick(() => {
-								window.addEventListener('resize', () => {
-										if (window.innerWidth < 850) this.mobile = true
-										else this.mobile = false
-								})
+				this.$nextTick(() => {
+						window.addEventListener('resize', () => {
+								if (window.innerWidth < 850) this.mobile = true
+								else this.mobile = false
 						})
-						this.ga=window.ga
-				}
+				})
+				this.ga=window.ga
+			}
 		},
+		methods: {
+			moveTo (section) {
+				this.$router.push({
+					path: `/?section=${section}`
+				})
+			}
+		}
 }
 </script>
 
@@ -141,6 +134,7 @@ header.header_blog_content
 							text-decoration: none
 							font-family: $font_bold
 							font-weight: normal
+							cursor: pointer
 							&.button_login
 								padding: 12px 20px
 								box-sizing: border-box
@@ -304,7 +298,7 @@ header.header_blog_content
 										&:hover
 											color: $primary_color
 			.header_blog_body
-				min-height: 350px
+				min-height: 450px
 				.header_blog_main_content
 					width: $small
 					flex-direction: column-reverse
