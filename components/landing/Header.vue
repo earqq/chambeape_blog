@@ -6,8 +6,8 @@
                     <nuxt-link to="/"  class="logo">
                       <div class="logo_wrapper"><img src="@/assets/img/logo_easybill.svg" alt="Logo easybill" /></div>
                     </nuxt-link>
-
-                    <div class="menu_right_top">
+                    <no-ssr >
+                      <div class="menu_right_top">
                         <div class="menu_mobile"  @click="showMenu=true"><i class="icon icon-menu"></i></div>
                         <transition name="fade" mode="in-out" >
                             <ul v-if="!mobile || (mobile && showMenu)">
@@ -41,7 +41,8 @@
                                 </li>
                             </ul>
                         </transition>
-                    </div>
+                      </div>
+                    </no-ssr >
                 </nav>
                 
                 <div class="header_main_content">
