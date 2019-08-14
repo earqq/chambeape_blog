@@ -293,7 +293,7 @@ header.header_content
             p
               font-size: 16px
               width: 400px
-              margin-bottom: 15px
+              margin-bottom: 20px
             span
               width: 400px
               a
@@ -406,5 +406,5 @@ header.header_content
             p
               width: 100%
               text-align: center
-              font-size: 14px
+              font-size: 15px
 </style>

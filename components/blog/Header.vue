@@ -298,7 +298,7 @@ header.header_blog_content
 										&:hover
 											color: $primary_color
 			.header_blog_body
-				min-height: 450px
+				min-height: 500px
 				.header_blog_main_content
 					width: $small
 					flex-direction: column-reverse

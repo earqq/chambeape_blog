@@ -229,5 +229,5 @@ export default {
             .title
                 width: 100%
                 h2
-                    font-size: 23px
+                    font-size: 20px
 </style>

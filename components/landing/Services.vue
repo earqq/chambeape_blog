@@ -14,7 +14,6 @@
                         <b>01</b>
                         <h2>¿Qué es Easybill?<span>.</span></h2>
                         <p>Easybill es un sistema de ventas online que integra un sistema de ventas rápidas y un sistema de gestión administrativa, diseñado especialmente para impulsar el crecimiento de negocios minoristas como:
-                        </p><p>
                         Bodegas, Ferreterias, Minimarkets, Librerias, etc.</p>
                     </div>
                     <div class="service" v-if="currentService === 2">
@@ -200,9 +199,9 @@ export default {
                 align-items: center
                 text-align: left
                 p
-                    text-align: center
-                    font-size: 14px
+                    text-align: left
+                    font-size: 15px
                 h2
-                    font-size: 23px
+                    font-size: 20px
                     text-align: center
 </style>

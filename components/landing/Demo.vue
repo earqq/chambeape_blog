@@ -126,7 +126,7 @@ export default {
             p
                 width: 100%
                 text-align: center
-                font-size: 14px  
+                font-size: 15px  
             h2
                 text-align: center
                 font-size: 23px

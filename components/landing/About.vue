@@ -201,22 +201,24 @@ export default {
         text-align: center
         b
           font-size: 13px
+          margin-top: 20px
+          display: block
         h2
-          font-size: 23px
+          font-size: 20px
         p
-          font-size: 14px
+          font-size: 15px
+          text-align: left
     .about_numbers
       width: $extra-small
       padding-left: 20px
       padding-right: 20px
       box-sizing: border-box
       .number
-        text-align: center
+        text-align: left
         b
           font-size: 22px
         p
           font-size: 13px
           line-height: 1.4
 
-          
 </style>

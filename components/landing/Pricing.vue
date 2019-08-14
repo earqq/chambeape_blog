@@ -491,7 +491,7 @@ export default {
                 padding: 0 20px
                 box-sizing: border-box
                 h2
-                    font-size: 23px
+                    font-size: 20px
                 small
                     font-size: 13px
             .pricing_content
@@ -505,4 +505,5 @@ export default {
                 padding: 0 20px
                 box-sizing: border-box
                 margin-top: 30px
+                text-align: center
 </style>

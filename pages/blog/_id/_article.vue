@@ -258,6 +258,9 @@ $border_radius_button: 0.1rem
       margin-top: 10px
       margin-bottom: 10px
       line-height: 1.2
+      letter-spacing: -0.02rem
+    strong
+      display: block
     blockquote
       border-left: 2px solid $accent_color
       padding: 5px
@@ -312,6 +315,8 @@ $border_radius_button: 0.1rem
     box-sizing: border-box
     width: 100%
     main
+      line-height: 1.7
+      font-size: 15px
       p, li
         line-height: 1.7
         font-size: 15px
