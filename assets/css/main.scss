@@ -1,4 +1,9 @@
 @import './assets/css/variables';
+
+html {
+  scroll-behavior: smooth;
+}
+
 .button{
   &:hover {
     background-color: lighten($accent_color, 7%) !important;
@@ -20,4 +25,8 @@
     color: $primary_color  !important;
     transition: all ease-in-out .4s;
   }
+}
+
+h1, h2, h3, h4, h5, h6 {
+  letter-spacing: -0.015rem;
 }

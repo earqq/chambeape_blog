@@ -6,8 +6,8 @@
                     <nuxt-link to="/"  class="logo">
                       <div class="logo_wrapper"><img src="@/assets/img/logo_easybill.svg" alt="Logo easybill" /></div>
                     </nuxt-link>
-
-                    <div class="menu_right_top">
+                    <no-ssr >
+                      <div class="menu_right_top">
                         <div class="menu_mobile"  @click="showMenu=true"><i class="icon icon-menu"></i></div>
                         <transition name="fade" mode="in-out" >
                             <ul v-if="!mobile || (mobile && showMenu)">
@@ -15,13 +15,11 @@
                                     <i class="icon icon-close"></i>
                                 </div>
                                 <li> <a @click="
-                                    ga('event', 'Click boton', {'event_category': 'Header Landing', 'event_label': 'Precios header', 'value': 1})
-                                    showMenu=false"  
-                                    href="/#plans_section">Precios</a></li>
+                                    ga('event', 'Click boton', {'event_category': 'Header Landing', 'event_label': 'Precios header', 'value': 1}); moveTo(1)"  
+                                   >Precios</a></li>
                                 <li> <a @click="
-                                    ga('event', 'Click boton', {'event_category': 'Header Landing', 'event_label': 'Clientes header', 'value': 1})
-                                    showMenu=false"  
-                                    href="/#clients">Clientes</a></li>
+                                    ga('event', 'Click boton', {'event_category': 'Header Landing', 'event_label': 'Clientes header', 'value': 1}); moveTo(2)"  
+                                   >Clientes</a></li>
   															<li> <nuxt-link to="/blog">Blog</nuxt-link></li>
                                 <!-- <li> <a 
                                     @click="
@@ -41,7 +39,8 @@
                                 </li>
                             </ul>
                         </transition>
-                    </div>
+                      </div>
+                    </no-ssr >
                 </nav>
                 
                 <div class="header_main_content">
@@ -78,6 +77,7 @@
 
 <script>
 export default {
+    props: ['page'], 
     data () {
         return {
             showMenu: false,
@@ -98,9 +98,32 @@ export default {
             })
         })
         this.ga=window.ga
-        this.fbq=window.fbq
-      } 
+        this.fbq=window.fbq  
+      }
     },
+    mounted () {
+      setTimeout(() => {
+        if(this.$route.query.section) this.moveTo(this.$route.query.section)
+      }, 500);
+    },
+		methods: {
+			moveTo(section) {
+        if (process.client) { // en lado del servidor no existe window, document, etc
+          if ( this.page == 1 ) {
+            if (section == 1) {
+              window.scrollTo(0, document.getElementById('plans_section').getBoundingClientRect().top)
+            }else if(section == 2) {
+              window.scrollTo(0, document.getElementById('clients').getBoundingClientRect().top)
+            }
+            this.showMenu = false
+          } else {
+            this.$router.push({
+              path: `/?section=${section}`
+            })
+          }
+        }
+      }
+		}
 }
 </script>
 <style lang="sass">
@@ -144,6 +167,7 @@ header.header_content
               text-decoration: none
               font-family: $font_bold
               font-weight: normal
+              cursor: pointer
               &.button_login
                 padding: 12px 20px
                 box-sizing: border-box
@@ -235,6 +259,7 @@ header.header_content
               box-sizing: border-box
               border-radius: 2px
               border: 1px solid $accent_color
+              cursor: pointer
               i
                   font-size: 22px
                   margin-left: 20px
@@ -268,7 +293,7 @@ header.header_content
             p
               font-size: 16px
               width: 400px
-              margin-bottom: 15px
+              margin-bottom: 20px
             span
               width: 400px
               a
@@ -381,5 +406,5 @@ header.header_content
             p
               width: 100%
               text-align: center
-              font-size: 14px
+              font-size: 15px
 </style>

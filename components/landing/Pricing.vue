@@ -1,192 +1,194 @@
 <template>
     <div class="pricing_section" id="plans_section" >
-        <div class="pricing_wrapper">
-            <div class="title">
-                <h2>Elije el plan apropiado para ti<span>.</span></h2>
-                <small>Puedes cancelar tu plan en cualquier momento.</small>
-                <div class="switch_plan" >
-                    <h4  @click="monthly = true" :class="{mensual: !monthly}">MENSUAL</h4>
-                    <div class="switch"  @click="monthly = !monthly" :class="{mensual: !monthly}">
+            <div class="pricing_wrapper">
+                <div class="title">
+                    <h2>Elije el plan apropiado para ti<span>.</span></h2>
+                    <small>Puedes cancelar tu plan en cualquier momento.</small>
+                    <div class="switch_plan" >
+                        <h4  @click="monthly = true" :class="{mensual: !monthly}">MENSUAL</h4>
+                        <div class="switch"  @click="monthly = !monthly" :class="{mensual: !monthly}">
+                        </div>
+                        <h4  @click="monthly = false" :class="{mensual: monthly}">SEMESTRAL</h4>
                     </div>
-                    <h4  @click="monthly = false" :class="{mensual: monthly}">SEMESTRAL</h4>
                 </div>
-            </div>
-            <div class="tabs" v-if="mobile">
-                <p :class="{active: selectPlan == 1}" @click="selectPlan = 1" >Básico</p>
-                <p :class="{active: selectPlan == 2}" @click="selectPlan = 2">Estandar</p>
-                <p :class="{active: selectPlan == 3}" @click="selectPlan = 3">Premium</p>
-            </div>
-            <section class="pricing_content">
-                <transition name="fade">
-                    <aside v-if="!mobile || (mobile && selectPlan == 1)">
-                        <img src="@/assets/img/basico_icon.svg" alt="Easybill plan basico">
-                        <h3>BÁSICO</h3>
-                        <div class="price">
-                            <small>S/.</small>
-                            <h2>
-                                <animated-number 
-                                    :value="basic" 
-                                    :formatValue="formatToPrice" 
-                                    :duration="450"/>
-                            </h2>
-                            <small>{{monthly ? '/mes' : '/6 meses'}}</small>
-                        </div>
-                        <ul class="pricing_items">                         
-                            <li>
-                                <i class="icon icon-check"></i>
-                                <p>Facturas y boletas</p>
-                            </li>
-                            <li>
-                                <i class="icon icon-check"></i>
-                                <p>Notas de crédito y débito</p>
-                            </li>
-                            <li>
-                                <i class="icon icon-check"></i>
-                                <p>Control de stock e inventario</p>
-                            </li>
-                            <li>
-                                <i class="icon icon-check"></i>
-                                <p>Cuentas por cobrar y por pagar</p>
-                            </li>
-                            <li>
-                                <i class="icon icon-check"></i>
-                                <p>Envíos a whatsapp y correo</p>
-                            </li>                                                   
-                            <li>
-                                <i class="icon icon-check"></i>
-                                <p>Envíos automáticos a SUNAT</p>
-                            </li>                          
-                            <li>
-                                <i class="icon icon-check"></i>
-                                <p>Reportes en excel y kardex</p>
-                            </li>
+                <no-ssr >
+                    <div class="tabs" v-if="mobile">
+                        <p :class="{active: selectPlan == 1}" @click="selectPlan = 1" >Básico</p>
+                        <p :class="{active: selectPlan == 2}" @click="selectPlan = 2">Estandar</p>
+                        <p :class="{active: selectPlan == 3}" @click="selectPlan = 3">Premium</p>
+                    </div>
+                    <section class="pricing_content">
+                        <transition name="fade">
+                            <aside v-if="!mobile || (mobile && selectPlan == 1)">
+                                <img src="@/assets/img/basico_icon.svg" alt="Easybill plan basico">
+                                <h3>BÁSICO</h3>
+                                <div class="price">
+                                    <small>S/.</small>
+                                    <h2>
+                                        <animated-number 
+                                            :value="basic" 
+                                            :formatValue="formatToPrice" 
+                                            :duration="450"/>
+                                    </h2>
+                                    <small>{{monthly ? '/mes' : '/6 meses'}}</small>
+                                </div>
+                                <ul class="pricing_items">                         
+                                    <li>
+                                        <i class="icon icon-check"></i>
+                                        <p>Facturas y boletas</p>
+                                    </li>
+                                    <li>
+                                        <i class="icon icon-check"></i>
+                                        <p>Notas de crédito y débito</p>
+                                    </li>
+                                    <li>
+                                        <i class="icon icon-check"></i>
+                                        <p>Control de stock e inventario</p>
+                                    </li>
+                                    <li>
+                                        <i class="icon icon-check"></i>
+                                        <p>Cuentas por cobrar y por pagar</p>
+                                    </li>
+                                    <li>
+                                        <i class="icon icon-check"></i>
+                                        <p>Envíos a whatsapp y correo</p>
+                                    </li>                                                   
+                                    <li>
+                                        <i class="icon icon-check"></i>
+                                        <p>Envíos automáticos a SUNAT</p>
+                                    </li>                          
+                                    <li>
+                                        <i class="icon icon-check"></i>
+                                        <p>Reportes en excel y kardex</p>
+                                    </li>
 
-                            <li>
-                                <i class="icon icon-check"></i>
-                                <p>1 Usuario y Tienda</p>
-                            </li>
-                        </ul>
-                        <a class="button2" 
-                        @click=" ga('event', 'Click Boton', {'event_category': 'Landing Page', 'event_label': 'Plan basico', 'value': 1});
-                        fbq('track', 'AddToCart');" 
-                        href="https://app.easybill.pe/registro"> Empieza tu mes gratis </a>
-                    </aside>
-                </transition>         
-                <transition name="fade">
-                    <aside :class="{recomended: !mobile}" v-if="!mobile || (mobile && selectPlan == 2)">
-                        <img src="@/assets/img/estandar_icon.svg" alt="Easybill plan estandar">
-                        <h3>ESTANDAR</h3>
-                        <div class="price">
-                            <small>S/.</small>
-                            <h2>
-                                <animated-number 
-                                    :value="standar" 
-                                    :formatValue="formatToPrice" 
-                                    :duration="450"/>
-                            </h2>
-                            <small>{{monthly ? '/mes' : '/6 meses'}}</small>
-                        </div>
-                        <ul class="pricing_items">
-                            <li>
-                                <i class="icon icon-check"></i>
-                                <p>Facturas y boletas</p>
-                            </li>
-                            <li>
-                                <i class="icon icon-check"></i>
-                                <p>Notas y guias de remisión</p>
-                            </li>
-                            <li>
-                                <i class="icon icon-check"></i>
-                                <p>Control de stock e inventario</p>
-                            </li>
-                            <li>
-                                <i class="icon icon-check"></i>
-                                <p>Cuentas por cobrar y por pagar</p>
-                            </li>  
-                            <li>
-                                <i class="icon icon-check"></i>
-                                <p>Envíos a whatsapp y correo</p>
-                            </li>                                                   
-                            <li>
-                                <i class="icon icon-check"></i>
-                                <p>Envíos automáticos a SUNAT</p>
-                            </li>                          
-                            <li>
-                                <i class="icon icon-check"></i>
-                                <p>Reportes en excel y kardex</p>
-                            </li>
-                            <li>
-                                <i class="icon icon-check"></i>
-                                <p>Ventas rápidas</p>
-                            </li>
-                            <li>
-                                <i class="icon icon-check"></i>
-                                <p>1 Usuario y Tienda</p>
-                            </li>
-                        </ul>
-                    <a class="button" 
-                        @click=" ga('event', 'Click Boton', {'event_category': 'Landing Page', 'event_label': 'Plan estandar', 'value': 1})" 
-                        :class="{button2 : mobile }" href="https://app.easybill.pe/registro"> Empieza tu mes gratis </a>
-                    </aside>
-                </transition>
-                <transition name="fade" >
-                    <aside v-if="!mobile || (mobile && selectPlan == 3)">
-                        <img src="@/assets/img/premium_icon.svg" alt="Easybill plan estandar">
-                        <h3>PREMIUM</h3>
-                        <div class="price">
-                            <small>S/.</small>
-                            <h2>
-                                <animated-number 
-                                    :value="premium" 
-                                    :formatValue="formatToPrice" 
-                                    :duration="450"/>
-                            </h2>
-                            <small>{{monthly ? '/mes' : '/6 meses'}}</small>
-                        </div>
-                        <ul class="pricing_items">
-                           <li>
-                                <i class="icon icon-check"></i>
-                                <p>Facturas y boletas</p>
-                            </li>
-                            <li>
-                                <i class="icon icon-check"></i>
-                                <p>Notas y guias de remisión</p>
-                            </li>
-                            <li>
-                                <i class="icon icon-check"></i>
-                                <p>Control de stock e inventario</p>
-                            </li>
-                            <li>
-                                <i class="icon icon-check"></i>
-                                <p>Cuentas por cobrar y por pagar</p>
-                            </li>  
-                            <li>
-                                <i class="icon icon-check"></i>
-                                <p>Envíos a whatsapp y correo</p>
-                            </li>                                                   
-                            <li>
-                                <i class="icon icon-check"></i>
-                                <p>Envíos automáticos a SUNAT</p>
-                            </li>                          
-                            <li>
-                                <i class="icon icon-check"></i>
-                                <p>Reportes en excel y kardex</p>
-                            </li>
-                            <li>
-                                <i class="icon icon-check"></i>
-                                <p>Ventas rápidas</p>
-                            </li>
-                            <li>
-                                <i class="icon icon-check"></i>
-                                <p>Usuarios y tiendas ilimitados</p>
-                            </li>
-                        </ul>
-                        <a class="button2"  
-                        @click=" ga('event', 'Click Boton', {'event_category': 'Landing Page', 'event_label': 'Plan premium', 'value': 1})" 
-                        href="https://app.easybill.pe/registro"> Empieza tu mes gratis </a>
-                    </aside>
-                </transition>
-            </section>
+                                    <li>
+                                        <i class="icon icon-check"></i>
+                                        <p>1 Usuario y Tienda</p>
+                                    </li>
+                                </ul>
+                                <a class="button2" 
+                                @click=" ga('event', 'Click Boton', {'event_category': 'Landing Page', 'event_label': 'Plan basico', 'value': 1});
+                                fbq('track', 'AddToCart');" 
+                                href="https://app.easybill.pe/registro"> Empieza tu mes gratis </a>
+                            </aside>
+                        </transition>         
+                        <transition name="fade">
+                            <aside :class="{recomended: !mobile}" v-if="!mobile || (mobile && selectPlan == 2)">
+                                <img src="@/assets/img/estandar_icon.svg" alt="Easybill plan estandar">
+                                <h3>ESTANDAR</h3>
+                                <div class="price">
+                                    <small>S/.</small>
+                                    <h2>
+                                        <animated-number 
+                                            :value="standar" 
+                                            :formatValue="formatToPrice" 
+                                            :duration="450"/>
+                                    </h2>
+                                    <small>{{monthly ? '/mes' : '/6 meses'}}</small>
+                                </div>
+                                <ul class="pricing_items">
+                                    <li>
+                                        <i class="icon icon-check"></i>
+                                        <p>Facturas y boletas</p>
+                                    </li>
+                                    <li>
+                                        <i class="icon icon-check"></i>
+                                        <p>Notas y guias de remisión</p>
+                                    </li>
+                                    <li>
+                                        <i class="icon icon-check"></i>
+                                        <p>Control de stock e inventario</p>
+                                    </li>
+                                    <li>
+                                        <i class="icon icon-check"></i>
+                                        <p>Cuentas por cobrar y por pagar</p>
+                                    </li>  
+                                    <li>
+                                        <i class="icon icon-check"></i>
+                                        <p>Envíos a whatsapp y correo</p>
+                                    </li>                                                   
+                                    <li>
+                                        <i class="icon icon-check"></i>
+                                        <p>Envíos automáticos a SUNAT</p>
+                                    </li>                          
+                                    <li>
+                                        <i class="icon icon-check"></i>
+                                        <p>Reportes en excel y kardex</p>
+                                    </li>
+                                    <li>
+                                        <i class="icon icon-check"></i>
+                                        <p>Ventas rápidas</p>
+                                    </li>
+                                    <li>
+                                        <i class="icon icon-check"></i>
+                                        <p>1 Usuario y Tienda</p>
+                                    </li>
+                                </ul>
+                            <a class="button" 
+                                @click=" ga('event', 'Click Boton', {'event_category': 'Landing Page', 'event_label': 'Plan estandar', 'value': 1})" 
+                                :class="{button2 : mobile }" href="https://app.easybill.pe/registro"> Empieza tu mes gratis </a>
+                            </aside>
+                        </transition>
+                        <transition name="fade" >
+                            <aside v-if="!mobile || (mobile && selectPlan == 3)">
+                                <img src="@/assets/img/premium_icon.svg" alt="Easybill plan estandar">
+                                <h3>PREMIUM</h3>
+                                <div class="price">
+                                    <small>S/.</small>
+                                    <h2>
+                                        <animated-number 
+                                            :value="premium" 
+                                            :formatValue="formatToPrice" 
+                                            :duration="450"/>
+                                    </h2>
+                                    <small>{{monthly ? '/mes' : '/6 meses'}}</small>
+                                </div>
+                                <ul class="pricing_items">
+                                <li>
+                                        <i class="icon icon-check"></i>
+                                        <p>Facturas y boletas</p>
+                                    </li>
+                                    <li>
+                                        <i class="icon icon-check"></i>
+                                        <p>Notas y guias de remisión</p>
+                                    </li>
+                                    <li>
+                                        <i class="icon icon-check"></i>
+                                        <p>Control de stock e inventario</p>
+                                    </li>
+                                    <li>
+                                        <i class="icon icon-check"></i>
+                                        <p>Cuentas por cobrar y por pagar</p>
+                                    </li>  
+                                    <li>
+                                        <i class="icon icon-check"></i>
+                                        <p>Envíos a whatsapp y correo</p>
+                                    </li>                                                   
+                                    <li>
+                                        <i class="icon icon-check"></i>
+                                        <p>Envíos automáticos a SUNAT</p>
+                                    </li>                          
+                                    <li>
+                                        <i class="icon icon-check"></i>
+                                        <p>Reportes en excel y kardex</p>
+                                    </li>
+                                    <li>
+                                        <i class="icon icon-check"></i>
+                                        <p>Ventas rápidas</p>
+                                    </li>
+                                    <li>
+                                        <i class="icon icon-check"></i>
+                                        <p>Usuarios y tiendas ilimitados</p>
+                                    </li>
+                                </ul>
+                                <a class="button2"  
+                                @click=" ga('event', 'Click Boton', {'event_category': 'Landing Page', 'event_label': 'Plan premium', 'value': 1})" 
+                                href="https://app.easybill.pe/registro"> Empieza tu mes gratis </a>
+                            </aside>
+                        </transition>
+                    </section>
+                </no-ssr >
         </div>
     </div>
 </template>
@@ -489,7 +491,7 @@ export default {
                 padding: 0 20px
                 box-sizing: border-box
                 h2
-                    font-size: 23px
+                    font-size: 20px
                 small
                     font-size: 13px
             .pricing_content
@@ -503,4 +505,5 @@ export default {
                 padding: 0 20px
                 box-sizing: border-box
                 margin-top: 30px
+                text-align: center
 </style>

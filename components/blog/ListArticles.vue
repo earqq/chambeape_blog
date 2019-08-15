@@ -104,7 +104,12 @@ export default {
 @media screen and (max-width: 500px)
   .articles_section
     .articles_wrapper
-        padding: 20px
+        padding: 0px
         box-sizing: border-box
         width: $extra-small
+        .articles_content
+          grid-gap: 0
+          aside
+            border-bottom: 1px solid rgba($primary_color, .2)
+            border-radius: 0
 </style>
