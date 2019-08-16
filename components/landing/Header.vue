@@ -1,5 +1,6 @@
 <template>
     <header class="header_content">
+        <modal-info :openModal="openModal" @closeModal="closeModalCotizar"></modal-info>
         <div class="header_wrapper">
             <div class="header_body">
                 <nav>
@@ -21,6 +22,8 @@
                                     ga('event', 'Click boton', {'event_category': 'Header Landing', 'event_label': 'Clientes header', 'value': 1}); moveTo(2)"  
                                    >Clientes</a></li>
   															<li> <nuxt-link to="/blog">Blog</nuxt-link></li>
+
+                                <li> <span @click="openModalCotizar" > Cotizar</span> </li>
                                 <!-- <li> <a 
                                     @click="
                                     ga('event', 'Click boton', {'event_category': 'Header Landing', 'event_label': 'Guia header', 'value': 1})"                                    
@@ -76,14 +79,17 @@
 </template>
 
 <script>
+import ModalInfo from '@/components/ModalInfo'
 export default {
+    components: { ModalInfo },
     props: ['page'], 
     data () {
         return {
             showMenu: false,
             mobile: false,
             ga:{},
-            fbq:{}
+            fbq:{},
+            openModal: false
         }
     },
     created () {
@@ -97,16 +103,25 @@ export default {
                 else this.mobile = false
             })
         })
-        this.ga=window.ga
+        this.ga=window.gtag
         this.fbq=window.fbq  
       }
     },
     mounted () {
+
+      if(this.$route.query.cotizar) this.openModalCotizar()
+
       setTimeout(() => {
         if(this.$route.query.section) this.moveTo(this.$route.query.section)
       }, 500);
     },
 		methods: {
+      closeModalCotizar () {
+        this.openModal = false
+      },
+      openModalCotizar () {
+        this.openModal = true
+      },
 			moveTo(section) {
         if (process.client) { // en lado del servidor no existe window, document, etc
           if ( this.page == 1 ) {
@@ -155,13 +170,13 @@ header.header_content
         ul
           display: flex
           align-items: center
-          width: 550px
+          width: 600px
           justify-content: space-between
           .close_menu
             display: none
           li
             list-style: none
-            a
+            a, span
               font-size: 15px
               color: white
               text-decoration: none

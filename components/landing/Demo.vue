@@ -19,7 +19,7 @@ export default {
     },
     created(){
         if (process.client) {
-            this.ga=window.ga
+            this.ga=window.gtag
             this.fbq=window.fbq
         }
     }

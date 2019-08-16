@@ -46,8 +46,8 @@ export default {
     },
     created() {
         if (process.client) {
-          this.ga=window.ga
-          window.ga('event', 'Vista', {'event_category': 'Landing page', 'event_label': 'Llegada a easybill', 'value': 1})   
+          this.ga=window.gtag
+          window.gtag('event', 'Vista', {'event_category': 'Landing page', 'event_label': 'Llegada a easybill', 'value': 1})   
         }
         this.getData();
     },
