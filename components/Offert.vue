@@ -39,15 +39,16 @@ export default {
             if (this.validateName && this.validateEmail && this.validatePhone) this.call()
         },
         call(){
+            const self=this
             this.$axios.post('/api/sendEmail/'+this.userName+'/'+this.userEmail+'/'+this.userPhone,{
             }).then(function(res){
-                this.sent = true
-                this.userName=''
-                this.userEmail=''
-                this.userPhone=''
-                this.trigger = false
+                self.sent = true
+                self.userName=''
+                self.userEmail=''
+                self.userPhone=''
+                self.trigger = false
                 setTimeout(() => {
-                this.sent = false
+                self.sent = false
                 }, 5000);
             })
         }
