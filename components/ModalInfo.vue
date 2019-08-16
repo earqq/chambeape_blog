@@ -4,13 +4,13 @@
             .modal_wrapper
                 .close( @click="closeModal" )
                     i.icon.icon-close
-                info( :modal="true" ) 
+                offert( :modal="true" ) 
 </template>
 <script>
-import Info from '@/components/Info'
+import Offert from '@/components/Offert'
 export default {
     props: ['openModal'],
-    components: { Info },
+    components: { Offert },
     methods: {
         closeModal () {
             this.$emit("closeModal")

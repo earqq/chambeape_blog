@@ -103,7 +103,7 @@ export default {
                 else this.mobile = false
             })
         })
-        this.ga=window.ga
+        this.ga=window.gtag
         this.fbq=window.fbq  
       }
     },
