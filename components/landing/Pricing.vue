@@ -59,13 +59,14 @@
                                     </li>                          
                                     <li>
                                         <i class="icon icon-check"></i>
-                                        <p>Reportes en excel y kardex</p>
+                                        <p>Reportes en excel</p>
                                     </li>
 
                                     <li>
                                         <i class="icon icon-check"></i>
-                                        <p>1 Usuario y Tienda</p>
+                                        <p>1 Usuario y  1 Tienda</p>
                                     </li>
+
                                 </ul>
                                 <a class="button2" 
                                 @click=" ga('event', 'Click Boton', {'event_category': 'Landing Page', 'event_label': 'Plan basico', 'value': 1});
@@ -94,7 +95,11 @@
                                     </li>
                                     <li>
                                         <i class="icon icon-check"></i>
-                                        <p>Notas y guias de remisión</p>
+                                        <p>Notas de crédito y débito</p>
+                                    </li>
+                                    <li>
+                                        <i class="icon icon-check"></i>
+                                        <p>Guías de remisión</p>
                                     </li>
                                     <li>
                                         <i class="icon icon-check"></i>
@@ -114,16 +119,21 @@
                                     </li>                          
                                     <li>
                                         <i class="icon icon-check"></i>
-                                        <p>Reportes en excel y kardex</p>
+                                        <p>Reportes en excel </p>
                                     </li>
                                     <li>
                                         <i class="icon icon-check"></i>
-                                        <p>Ventas rápidas</p>
+                                        <p>Reportes Kardex</p>
                                     </li>
                                     <li>
                                         <i class="icon icon-check"></i>
-                                        <p>1 Usuario y Tienda</p>
+                                        <p>Módulo de Ventas rápidas</p>
                                     </li>
+                                    <li>
+                                        <i class="icon icon-check"></i>
+                                        <p>2 Usuarios y 2 Tiendas</p>
+                                    </li>
+                                    
                                 </ul>
                             <a class="button" 
                                 @click=" ga('event', 'Click Boton', {'event_category': 'Landing Page', 'event_label': 'Plan estandar', 'value': 1})" 
@@ -151,7 +161,11 @@
                                     </li>
                                     <li>
                                         <i class="icon icon-check"></i>
-                                        <p>Notas y guias de remisión</p>
+                                        <p>Notas de crédito y débito</p>
+                                    </li>
+                                    <li>
+                                        <i class="icon icon-check"></i>
+                                        <p>Guías de remisión</p>
                                     </li>
                                     <li>
                                         <i class="icon icon-check"></i>
@@ -171,11 +185,23 @@
                                     </li>                          
                                     <li>
                                         <i class="icon icon-check"></i>
-                                        <p>Reportes en excel y kardex</p>
+                                        <p>Reportes en excel</p>
                                     </li>
                                     <li>
                                         <i class="icon icon-check"></i>
-                                        <p>Ventas rápidas</p>
+                                        <p>Reportes Kardex</p>
+                                    </li>
+                                    <li>
+                                        <i class="icon icon-check"></i>
+                                        <p>Reportes Personalizados</p>
+                                    </li>
+                                    <li>
+                                        <i class="icon icon-check"></i>
+                                        <p>Módulo de Ventas rápidas</p>
+                                    </li>
+                                    <li>
+                                        <i class="icon icon-check"></i>
+                                        <p>Módulo de Ventas rápidas por puntos en tienda</p>
                                     </li>
                                     <li>
                                         <i class="icon icon-check"></i>
