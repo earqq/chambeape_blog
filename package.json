@@ -21,7 +21,8 @@
     "firebase": "^6.3.3",
     "marked": "^0.7.0",
     "nodemailer": "^4.4.1 ",
-    "nuxt": "^2.0.0"
+    "nuxt": "^2.0.0",
+    "vue-social-sharing": "^2.4.6"
   },
   "devDependencies": {
     "@nuxtjs/eslint-config": "^1.0.1",
