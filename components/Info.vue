@@ -19,7 +19,7 @@
             .input_wrapper(  :class="{ require : !validatePhone && trigger }" )
               .validate_msg Celular no es válido
               input(type='tel' class='form_control' v-model='userPhone' placeholder='Celular')
-          a( @click='sendCall()' class="button_login button2" ) Solicitar Asesoramiento
+          a( @click='sendCall()' class="button_login button2" ) ¡Quiero mi asesoramiento!
 </template>
 <script>
 export default {
@@ -39,15 +39,16 @@ export default {
             if (this.validateName && this.validateEmail && this.validatePhone) this.call()
         },
         call(){
+            const self=this
             this.$axios.post('/api/sendEmail/'+this.userName+'/'+this.userEmail+'/'+this.userPhone,{
             }).then(function(res){
-                this.sent = true
-                this.userName=''
-                this.userEmail=''
-                this.userPhone=''
-                this.trigger = false
+                self.sent = true
+                self.userName=''
+                self.userEmail=''
+                self.userPhone=''
+                self.trigger = false
                 setTimeout(() => {
-                this.sent = false
+                self.sent = false
                 }, 5000);
             })
         }

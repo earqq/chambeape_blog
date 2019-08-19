@@ -36,7 +36,7 @@ app.post("/sendEmail/:name/:email/:phone", (req, res) => {
     let mailOptions = {
         from: 'erosalesq@gmail.com', // sender address
         to: 'teamakeasy@gmail.com', // list of receivers
-        subject: 'Easybill Blog Prospecto requiere llamada', // Subject line
+        subject: 'Easybill Blog Prospecto '+req.params.name+' requiere llamada', // Subject line
         text: 'Nuevo Contacto ', // plain text body
         html: output// html body
     };
