@@ -28,6 +28,11 @@
   <priority>0.80</priority>
 </url>
 <url>
+  <loc>https://easybill.pe/blog/1565970059429/anular-factura-electronica</loc>
+  <lastmod>2019-08-19T16:45:21+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
   <loc>https://easybill.pe/blog/1565306032877/datos-facturacion-electronica</loc>
   <lastmod>2019-08-09T16:45:21+00:00</lastmod>
   <priority>0.64</priority>
@@ -57,6 +62,7 @@
   <lastmod>2019-08-09T16:45:21+00:00</lastmod>
   <priority>0.64</priority>
 </url>
+
 <url>
   <loc>https://easybill.pe/consulta/ruc</loc>
   <lastmod>2019-08-09T16:45:21+00:00</lastmod>
