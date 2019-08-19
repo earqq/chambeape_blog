@@ -52,6 +52,7 @@ module.exports = {
     "~/plugins/firebase.js",
     "~/plugins/vuefire.js",
     "~/plugins/vue-moment.js",
+    "~/plugins/vue-social-sharing.js",
     { src: "~plugins/ga.js", ssr: false },
     { src: "~plugins/fbq.js", ssr: false },
     { src: "~plugins/hotjar.js", ssr: false }
@@ -101,6 +102,7 @@ module.exports = {
           name: "fonts/[name].[hash:7].[ext]"
         }
       });
-    }
+    },
+    vendor: ['vue-social-sharing'],
   }
 };

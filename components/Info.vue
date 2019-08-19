@@ -1,37 +1,68 @@
 <template lang="pug">
     aside.card_register( :class="{modal: modal}" )
-        transition( name="fade" mode="in-out" )
-          .success_message( v-if="sent" )
-            i.icon.icon-check
-            h3 Solicitud Enviada
-            p Nos pondremos en contacto contigo tan pronto sea posible.
-        .image_wrap
-          img( src="@/assets/img/header_image.svg" alt="Laptop abierta" )
-        .description
-          h3 Asesoramiento Gratuito sobre Facturación Electrónica.
-          .card_form
-            .input_wrapper( :class="{ require : !validateName && trigger }" )
-              .validate_msg Nombre muy corto
-              input(type='text' class='form_control' v-model='userName' placeholder='Nombre'  )
-            .input_wrapper( :class="{ require : !validateEmail && trigger }"  )
-              .validate_msg Email no es válido
-              input(type='text' class='form_control' v-model='userEmail' placeholder='Email'  )
-            .input_wrapper(  :class="{ require : !validatePhone && trigger }" )
-              .validate_msg Celular no es válido
-              input(type='tel' class='form_control' v-model='userPhone' placeholder='Celular')
-          a( @click='sendCall()' class="button_login button2" ) ¡Quiero mi asesoramiento!
+        div.card
+          transition( name="fade" mode="in-out" )
+            .success_message( v-if="sent" )
+              i.icon.icon-check
+              h3 Solicitud Enviada
+              p Nos pondremos en contacto contigo tan pronto sea posible.
+          .image_wrap
+            img( src="@/assets/img/header_image.svg" alt="Laptop abierta" )
+          .description
+            h3 Asesoramiento Gratuito en Facturación Electrónica.
+            .card_form
+              .input_wrapper( :class="{ require : !validateName && trigger }" )
+                .validate_msg Nombre muy corto
+                input(type='text' class='form_control' v-model='userName' placeholder='Nombre'  )
+              .input_wrapper( :class="{ require : !validateEmail && trigger }"  )
+                .validate_msg Email no es válido
+                input(type='text' class='form_control' v-model='userEmail' placeholder='Email'  )
+              .input_wrapper(  :class="{ require : !validatePhone && trigger }" )
+                .validate_msg Celular no es válido
+                input(type='tel' class='form_control' v-model='userPhone' placeholder='Celular')
+            a( @click='sendCall()' class="button_login button2" ) ¡Quiero mi asesoramiento!       
+        div.offert
+          h3.description Comparte el Post
+          social-sharing( 
+            :url='"https://easybill.pe/"+$route.path' 
+            :title='document.title' 
+            :description='document.title'
+            hashtags='easybill,facturacionelectronica,facturacion'
+            twitter-user='easybill'
+            inline-template='')
+            div
+              network(network='facebook')
+                i.icon.icon-social-facebook
+                |  Facebook                                      
+              network(network='whatsapp')
+                i.icon.icon-whatsapp
+                |  Whatsapp
+              network(network='twitter')
+                i.icon.icon-twitter
+                |  Twitter             
+
+          
+
 </template>
 <script>
+import SocialSharing from '~/plugins/vue-social-sharing'
 export default {
+    components: { SocialSharing },
     props: ['modal'],
     data() {
         return {
             userName:'',
             userEmail:'',
             userPhone:'',
+            process:process,
             trigger: false,
-            sent: false
+            sent: false,
+            document:''
         }
+    },
+    created(){
+      if(process.client)
+      this.document=window.document
     },
     methods: {
         sendCall () {
@@ -73,14 +104,18 @@ $line_button_color: rgba(42, 48, 56, 0.25)
 $border_radius_button: 0.1rem
 
 aside.card_register
-    height: fit-content
-    margin-top: 2rem
-    border-radius: 2px
-    border: 1px solid rgba($primary_color, .1)
-    overflow: hidden
-    position: sticky
-    top: 20px
-    margin-bottom: 20px
+    .offert
+      top: 510px
+      position: sticky
+    .card
+      top: 20px
+      position: sticky
+      height: fit-content
+      margin-top: 2rem
+      border-radius: 2px
+      border: 1px solid rgba($primary_color, .1)
+      overflow: hidden
+      margin-bottom: 20px
     &.modal
         display: flex
         align-items: center
