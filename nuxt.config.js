@@ -55,6 +55,7 @@ module.exports = {
     "~/plugins/vue-social-sharing.js",
     { src: "~plugins/ga.js", ssr: false },
     { src: "~plugins/fbq.js", ssr: false },
+    { src: "~plugins/mail-chimp.js", ssr: false },
     { src: "~plugins/hotjar.js", ssr: false }
   ],
   /*
