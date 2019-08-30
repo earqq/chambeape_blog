@@ -6,7 +6,7 @@ import _6f6c098b from '../layouts/default.vue'
 const layouts = { "_default": _6f6c098b }
 
 export default {
-  head: {"title":"easybill.pe","meta":[{"charset":"utf-8"},{"name":"viewport","content":"width=device-width, initial-scale=1"},{"hid":"description","name":"description","content":"easybill landing page"}],"link":[{"rel":"icon","type":"image\u002Fx-icon","href":"\u002Ffavicon.ico"},{"rel":"stylesheet","href":"\u002Ffont.css"},{"rel":"stylesheet","href":"\u002Ffonts.css"}],"style":[],"script":[]},
+  head: {"title":"easybill.pe","meta":[{"charset":"utf-8"},{"name":"viewport","content":"width=device-width, initial-scale=1"},{"hid":"description","name":"description","content":"easybill landing page"}],"link":[{"rel":"icon","type":"image\u002Fx-icon","href":"\u002Ffavicon.ico"},{"rel":"stylesheet","href":"\u002Ffont.css"},{"rel":"stylesheet","href":"\u002Ffonts.css"}],"script":[{"src":"https:\u002F\u002Fchimpstatic.com\u002Fmcjs-connected\u002Fjs\u002Fusers\u002F1b0b360fc9f0201e5378fadef\u002F9919899c57d8e2198d239afbd.js"}],"style":[]},
 
   render(h, props) {
     const loadingEl = h('NuxtLoading', { ref: 'loading' })
