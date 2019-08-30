@@ -13,7 +13,7 @@
                     <div class="service" v-if="currentService === 1">
                         <b>01</b>
                         <h2>¿Qué es Easybill?<span>.</span></h2>
-                        <p>Easybill es un sistema de ventas online que integra un sistema de ventas rápidas y un sistema de gestión administrativa, diseñado especialmente para impulsar el crecimiento de negocios minoristas como:
+                        <p>Easybill es un sistema de ventas online que integra un módulo de ventas rápidas y un sistema de gestión administrativa, diseñado especialmente para impulsar el crecimiento de negocios minoristas como:
                         Bodegas, Ferreterias, Minimarkets, Librerias, etc.</p>
                     </div>
                     <div class="service" v-if="currentService === 2">
