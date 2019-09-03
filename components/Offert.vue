@@ -8,7 +8,7 @@
         .image_wrap
           img( src="@/assets/img/header_image.svg" alt="Laptop abierta" )
         .description
-          h3 Oferta por Agosto hasta 50% Descuento en Pagina Web por suscripcion a Easybill.
+          h3 Por el mes de Septiembre Certificado Digital incluido en cualquiera de los planes.
           .card_form
             .input_wrapper( :class="{ require : !validateName && trigger }" )
               .validate_msg Nombre muy corto
@@ -19,7 +19,7 @@
             .input_wrapper(  :class="{ require : !validatePhone && trigger }" )
               .validate_msg Celular no es válido
               input(type='tel' class='form_control' v-model='userPhone' placeholder='Celular')
-          a( @click='sendCall()' class="button_login button2" ) Obtener Hasta 50% de descuento
+          a( @click='sendCall()' class="button_login button2" ) Obtener Oferta
 </template>
 <script>
 export default {
