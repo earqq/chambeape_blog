@@ -30,7 +30,15 @@ export default {
             userEmail:'',
             userPhone:'',
             trigger: false,
-            sent: false
+            sent: false,
+            ga:{},
+            fbq:{}
+        }
+    },
+    created(){
+      	if (process.client) {
+          this.ga=window.gtag
+          this.fbq=window.fbq
         }
     },
     methods: {
@@ -39,6 +47,8 @@ export default {
             if (this.validateName && this.validateEmail && this.validatePhone) this.call()
         },
         call(){
+            this.ga('event', 'conversion', {'send_to': 'AW-792324811/SwvnCIPi6qcBEMvV5_kC'});
+            this.fbq('track','Contact')
             const self=this
             this.$axios.post('/api/sendEmailOffert/'+this.userName+'/'+this.userEmail+'/'+this.userPhone,{
             }).then(function(res){
