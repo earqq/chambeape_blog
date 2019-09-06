@@ -1,6 +1,7 @@
 <template>
     <header class="header_content">
         <modal-info :openModal="openModal" @closeModal="closeModalCotizar"></modal-info>
+        <modal-disenar :openModal="openModalDiseñarr" @closeModal="closeModalDisenar"></modal-disenar>
         <div class="header_wrapper">
             <div class="header_body">
                 <nav>
@@ -48,10 +49,9 @@
                 
                 <div class="header_main_content">
                     <div class="header_main_text">
-                        <h1>Facturación Electrónica y ventas rápidas en Perú<span>.</span></h1>
-                        <p>Cientos de Empresas en todo el Perú ya emiten con nosotros. Gestiona tu negocio y acelera tus ventas desde hoy. Empieza tu mes gratis</p>
+                        <h1>Sistema de venta intuitivo y personalizable para gestionar tu negocio<span>.</span></h1>
+                        <p> Crece tu negocio y acelera tus ventas desde hoy. Empieza tu mes gratis.</p>
                         <span>
-
                             <a  
                                 @click="ga('event', 'Click Boton', {'event_category': 'Header Landing', 'event_label': 'Demostración ventas rápidas', 'value': 1});
                                 fbq('track', 'StartTrial');
@@ -80,8 +80,9 @@
 
 <script>
 import ModalInfo from '@/components/ModalInfo'
+import ModalDisenar from '@/components/ModalDisenar'
 export default {
-    components: { ModalInfo },
+    components: { ModalInfo, ModalDisenar },
     props: ['page'], 
     data () {
         return {
@@ -89,7 +90,8 @@ export default {
             mobile: false,
             ga:{},
             fbq:{},
-            openModal: false
+            openModal: false,
+            openModalDiseñarr:false
         }
     },
     created () {
@@ -110,7 +112,7 @@ export default {
     mounted () {
 
       if(this.$route.query.cotizar) this.openModalCotizar()
-
+      if(this.$route.query.diseñar) this.openModalDisenar()
       setTimeout(() => {
         if(this.$route.query.section) this.moveTo(this.$route.query.section)
       }, 500);
@@ -119,8 +121,14 @@ export default {
       closeModalCotizar () {
         this.openModal = false
       },
+      closeModalDisenar () {
+        this.openModalDiseñarr = false
+      },
       openModalCotizar () {
         this.openModal = true
+      },
+      openModalDisenar () {
+        this.openModalDiseñarr = true
       },
 			moveTo(section) {
         if (process.client) { // en lado del servidor no existe window, document, etc

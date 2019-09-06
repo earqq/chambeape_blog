@@ -89,6 +89,43 @@ app.post("/sendEmailOffert/:name/:email/:phone", (req, res) => {
         res.json({msg: "Tu mensaje a sido enviado correctamente"});
     });
 })
+app.post("/sendEmailDisenar/:name/:email", (req, res) => {
+    const output = `
+    <h2>Solicitud de herramienta de diseño</h2>
+    <h2>Nombre: ${req.params.name}</h2>
+    <h2>Email: ${req.params.email}</h2>
+    `
+    let transporter = nodemailer.createTransport({
+        host: 'smtp.mailgun.org',
+        port: 587,
+        secure: false, // true for 465, false for other ports
+        auth: {
+            user: "postmaster@sandbox5018c68236ad4aefb21e717c30f8b13e.mailgun.org", // generated ethereal user
+            pass: "2ad984d84df17aa351dd7c10f332169f-73ae490d-5f796562"  // generated ethereal password
+        },
+        tls:{
+            rejectUnauthorized:false
+        }
+    });
+    // // setup email data with unicode symbols
+    let mailOptions = {
+        from: 'erosalesq@gmail.com', // sender address
+        to: 'teamakeasy@gmail.com', // list of receivers
+        subject: 'Easybill Landing Prospecto requiere herramienta', // Subject line
+        text: 'Nuevo Contacto ', // plain text body
+        html: output// html body
+    };
+    // // send mail with defined transport object
+    transporter.sendMail(mailOptions, (error, info) => {
+        if (error) {
+            return console.log(error);
+            
+        }
+        console.log('Message sent: %s', info.messageId);
+        console.log('Preview URL: %s', nodemailer.getTestMessageUrl(info));
+        res.json({msg: "Tu mensaje a sido enviado correctamente"});
+    });
+})
 // export the server middleware
 module.exports = {
   path: '/api',

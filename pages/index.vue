@@ -2,6 +2,7 @@
   section
     header-section( :page="1" )
     services-section
+    benefits-section
     pricing-section
     demo-section
     about-section
@@ -14,6 +15,7 @@ import HeaderSection from '@/components/landing/Header'
 import AboutSection from '@/components/landing/About'
 import ServicesSection from '@/components/landing/Services'
 import PricingSection from '@/components/landing/Pricing'
+import BenefitsSection from '@/components/landing/Benefits'
 import FooterSection from '@/components/landing/Footer'
 import ClientsSection from '@/components/landing/Clients'
 import DemoSection from '@/components/landing/Demo'
@@ -22,6 +24,7 @@ export default {
     HeaderSection,
     AboutSection,
     ServicesSection,
+    BenefitsSection,
     PricingSection,
     FooterSection,
     ClientsSection,
