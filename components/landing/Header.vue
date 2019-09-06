@@ -112,7 +112,7 @@ export default {
     mounted () {
 
       if(this.$route.query.cotizar) this.openModalCotizar()
-      if(this.$route.query.diseñar) this.openModalDisenar()
+      if(this.$route.query.disenar) this.openModalDisenar()
       setTimeout(() => {
         if(this.$route.query.section) this.moveTo(this.$route.query.section)
       }, 500);
