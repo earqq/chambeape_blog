@@ -4,16 +4,16 @@
           .success_message( v-if="sent" )
             i.icon.icon-check
             h3 Solicitud Enviada
-            p Te enviaremos el acceso al editor de comprobantes cuando finalicemos su desarrollo.
+            p !Gracias por tu interés en nuestra nueva versión! <br> Te enviaremos tus accesos cuando este listo. :)  
         .image_wrap
           img( src="@/assets/img/header_image.svg" alt="Laptop abierta" )
         .description
-          p Estamos trabajando arduamente para traerte esta herramienta gratuita.<br> Para tener la versión gratuita por favor dejame tu email y te la enviare una vez finalizada .
-          .card_form
+          p ¡Nos estamos renovando! <br> Serás de los primeros en tener nuestra version 2.0 para que fidelices a tus clientes. <br> Solo un poco de paciencia :)
+          .card_form           
             .input_wrapper( :class="{ require : !validateEmail && trigger }"  )
               .validate_msg Email no es válido
-              input(type='text' class='form_control' v-model='userEmail' placeholder='Email'  )
-          a( @click='sendCall()' class="button_login button2" ) Quiero recibir la herramienta
+              input(type='text' name='email' class='form_control' v-model='userEmail' placeholder='Email'  )
+          a( @click='sendCall()' class="button_login button2" ) Quiero fidelizar a mis clientes
 </template>
 <script>
 export default {
@@ -38,28 +38,25 @@ export default {
     methods: {
         sendCall () {
             this.trigger = true
-            if (this.validateEmail ) this.call()
+            if ( this.validateEmail ) this.call()
         },
         call(){
             this.ga('event', 'conversion', {'send_to': 'AW-792324811/SwvnCIPi6qcBEMvV5_kC'});
             this.fbq('track','Contact')
             const self=this
-            this.$axios.post('/api/sendEmailDisenar/'+this.userEmail,{
+            this.$axios.post('/api/sendEmailBrand/'+this.userEmail,{
             }).then(function(res){
-                self.sent = true
-                self.$emit("showButton")
+              self.sent = true
                 self.userEmail=''
                 self.trigger = false
+                self.$emit("showButton")
                 setTimeout(() => {
                 self.sent = false
-                }, 8000);
+                }, 10000);
             })
         }
     },
-    computed: {
-        validateName () {
-        return this.userName.length > 2
-        },
+    computed: {       
         validateEmail () {
         let re = /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
         return re.test(String(this.userEmail).toLowerCase());

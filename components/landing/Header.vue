@@ -2,6 +2,7 @@
     <header class="header_content">
         <modal-info :openModal="openModal" @closeModal="closeModalCotizar"></modal-info>
         <modal-disenar :openModal="openModalDiseñarr" @closeModal="closeModalDisenar"></modal-disenar>
+        <modal-brand :openModal="openModalBrand" @closeModal="closeModalBrand"></modal-brand>
         <div class="header_wrapper">
             <div class="header_body">
                 <nav>
@@ -81,8 +82,9 @@
 <script>
 import ModalInfo from '@/components/ModalInfo'
 import ModalDisenar from '@/components/ModalDisenar'
+import ModalBrand from '@/components/ModalBrand'
 export default {
-    components: { ModalInfo, ModalDisenar },
+    components: { ModalInfo, ModalDisenar, ModalBrand },
     props: ['page'], 
     data () {
         return {
@@ -91,7 +93,8 @@ export default {
             ga:{},
             fbq:{},
             openModal: false,
-            openModalDiseñarr:false
+            openModalDiseñarr:false,
+            openModalBrand:false
         }
     },
     created () {
@@ -113,6 +116,7 @@ export default {
 
       if(this.$route.query.cotizar) this.openModalCotizar()
       if(this.$route.query.disenar) this.openModalDisenar()
+      if(this.$route.query.brand) this.openModalBrandFunction()
       setTimeout(() => {
         if(this.$route.query.section) this.moveTo(this.$route.query.section)
       }, 500);
@@ -123,6 +127,12 @@ export default {
       },
       closeModalDisenar () {
         this.openModalDiseñarr = false
+      },
+      closeModalBrand () {
+        this.openModalBrand = false
+      },
+      openModalBrandFunction () {
+        this.openModalBrand = true
       },
       openModalCotizar () {
         this.openModal = true

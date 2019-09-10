@@ -1,26 +1,37 @@
 <template>
     <div class="try_demo_container">
+    <modal-info :openModal="openModal" @closeModal="closeModalCotizar"></modal-info>
         <div class="try_demo_wrapper"><img src="@/assets/img/try_image.svg" alt='Grafico de computadora' />
-            <h2>Factura facilmente desde hoy<span>.</span></h2>
-            <p>Regístrate gratis y prueba las funcionalidades que hemos creado para ti.</p>
+            <h2>¿Aún con dudas?<span></span></h2>
+            <p>Te devolvemos tu dinero si nuestro sistema no se adecua a las necesidades <br> de tu empresa durante los 2 primeros meses.</p>
             <a class="button"
-            @click="ga('event', 'Click Boton', {'event_category': 'Landing Page', 'event_label': 'Probar demo seccion', 'value': 1}); fbq('track', 'StartTrial');" 
-            href="http://demo.easybill.pe/pos" rel="noopener" target="_blank"> Probar Demo<i class="icon icon-log-in"> </i></a></div>
+            @click="ga('event', 'Click Boton', {'event_category': 'Landing Page', 'event_label': 'Probar demo seccion', 'value': 1}); fbq('track', 'StartTrial'); openModalCotizar()" 
+            rel="noopener"  > Solicita cotización<i class="icon icon-log-in"> </i></a></div>
     </div>
 </template>
 
 <script>
+import ModalInfo from '@/components/ModalInfo'
 export default {
+    components: { ModalInfo },
     data(){
         return{
             ga: {},
-            fbq: {}
+            fbq: {},
+            openModal: false,
         }
     },
     created(){
         if (process.client) {
             this.ga=window.gtag
             this.fbq=window.fbq
+        }
+    },methods:{
+        openModalCotizar(){
+            this.openModal = true
+        },
+        closeModalCotizar () {
+            this.openModal = false
         }
     }
 }

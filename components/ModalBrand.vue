@@ -4,18 +4,18 @@
             .modal_wrapper
                 .close( @click="closeModal" )
                     i.icon.icon-close(v-if='show')
-                disenar( :modal="true" @showButton='show=true' ) 
+                brand( :modal="true" @showButton='show=true' ) 
 </template>
 <script>
-import Disenar from '@/components/Disenar'
+import Brand from '@/components/Brand'
 export default {
     props: ['openModal'],
-    components: { Disenar },
+    components: { Brand },
     data(){
         return{
             show:false
         }
-    },
+    }   , 
     methods: {
         closeModal () {
             this.$emit("closeModal")
