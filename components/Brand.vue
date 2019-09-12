@@ -8,12 +8,12 @@
         .image_wrap
           img( src="@/assets/img/header_image.svg" alt="Laptop abierta" )
         .description
-          p ¡Nos estamos renovando! <br> Serás de los primeros en tener nuestra version 2.0 para que fidelices a tus clientes. <br> Solo un poco de paciencia :)
+          p ¡Se viene algo grande! <br> Solo dejanos tu correo y te enviaremos los accesos cuando lanzemos nuestro sistema. <br> Solo un poco de paciencia :)
           .card_form           
             .input_wrapper( :class="{ require : !validateEmail && trigger }"  )
               .validate_msg Email no es válido
               input(type='text' name='email' class='form_control' v-model='userEmail' placeholder='Email'  )
-          a( @click='sendCall()' class="button_login button2" ) Quiero fidelizar a mis clientes
+          a( @click='sendCall()' class="button_login button2" ) Enviar
 </template>
 <script>
 export default {

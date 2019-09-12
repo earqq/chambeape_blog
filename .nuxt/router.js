@@ -3,6 +3,7 @@ import Router from 'vue-router'
 import { interopDefault } from './utils'
 
 const _71fef336 = () => interopDefault(import('../pages/blog/index.vue' /* webpackChunkName: "pages/blog/index" */))
+const _af9c9e68 = () => interopDefault(import('../pages/fidelizar/index.vue' /* webpackChunkName: "pages/fidelizar/index" */))
 const _7bd2e4fa = () => interopDefault(import('../pages/politicas.vue' /* webpackChunkName: "pages/politicas" */))
 const _677be4f4 = () => interopDefault(import('../pages/terminos.vue' /* webpackChunkName: "pages/terminos" */))
 const _60892ed6 = () => interopDefault(import('../pages/consulta/dni.vue' /* webpackChunkName: "pages/consulta/dni" */))
@@ -88,6 +89,10 @@ export function createRouter() {
       path: "/blog",
       component: _71fef336,
       name: "blog"
+    }, {
+      path: "/fidelizar",
+      component: _af9c9e68,
+      name: "fidelizar"
     }, {
       path: "/politicas",
       component: _7bd2e4fa,
