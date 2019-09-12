@@ -13,7 +13,7 @@ export default {
     components: { Brand },
     data(){
         return{
-            show:false
+            show:true
         }
     }   , 
     methods: {
