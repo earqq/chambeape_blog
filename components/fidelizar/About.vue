@@ -8,7 +8,7 @@
             Sistema de venta 2.0 <span></span>
         </h2>
         <p>
-          Estamos desarrollando un nuevo concepto de sistema de venta(2.0) en el que tu cliente es la prioridad.<br>
+          Por eso estamos desarrollando un nuevo concepto de sistema de venta(2.0) en el que tu cliente es la prioridad.<br>
           Un sistema que te brindará las herramientas necesarias para poder fidelizar  a tu cliente.<br>
           - Ofertas personalizadas.<br>
           - Seguimiento de compras y ventas.<br>
@@ -17,12 +17,12 @@
           - Envio de ofertas masivas.<br>
           - Diseñar tu comprobante con los valores de tu empresa.<br>
           - Aplicativo especial para tu cliente y mucho más. <br>        <br>  
-          Un sistema que te ayudará a mejorar la experiencia de compra de las personas en tu local.<br>
+          Un sistema que te ayudará a mejorar la experiencia de compra de las personas en tu local.<br><br>
           En conclusión un sistema de venta para que engrias a tu cliente y se enamore de tu marca. <br>
 
 
         </p>
-        <p>PD: Si tú solamente quieres cumplir con la obligación de SUNAT para emitir comprobantes electrónicos <b>esto NO es para ti</b>.</p>
+        <p>PD: Si tú solamente quieres cumplir con la obligación de SUNAT para emitir comprobantes electrónicos <b>esto NO es para tí</b>.</p>
         </div>
     </div>   
   </div>

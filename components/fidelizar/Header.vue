@@ -9,16 +9,23 @@
                 
                 <div class="header_main_content">
                     <div class="header_main_text">
-                        <h1>Fidelizar a un cliente es más barato que conseguir uno nuevo.<span></span></h1>
-                        <p> Las personas van a tu local pero no vuelven.<br> Tu marca empresarial no es tan reconocida y tus ventas no aumentan con el paso de los meses.<br>
-                          Quieres poder diferenciarte de tu competencia y empezar a fidelizar a tus clientes pero...<br>
-                          Tu sistema de venta no te brinda las herramientas para poder fidelizar a tus clientes, para poder hacerles
-                          seguimiento y darle una atención personalizada.
-
+                        <h1>Temporada de vacas flacas...<span></span></h1>
+                        <p> 
+ 
+                          Un error común que cometemos al emprender un negocio es de no fidelizar a nuestros clientes
+                          o hacer un registro de ellos (su email, telefono) para poder hacerles ofertas personalizadas 
+                          y mantener una comunicación constante con ellos. 
+                          <br><br>
+                          Es por esta razón que muchos negocios sufren del clásico “ojalá fuera como antes” o “las cosas
+                          antes eran mejor”, porque no trabajan con un sistema para fidelizar a sus clientes y la verdad es que
+                          no siempre llegan clientes nuevos y algunos dejan de venir.
+                          <br><br>
+                          Tambíen es cierto que no hay sistemas de venta que te brinden las herramientas para
+                          que puedas fidelizar a tus clientes y les des una atención personalizada.
                           </p>                                         
                     </div>
                     <div class="header_3d">
-                        <div class="header_3d_wrapper"><img  src="@/assets/img/dashboard.png" alt='Persona usando laptop' /></div>
+                        <div class="header_3d_wrapper"><img  src="@/assets/img/frustrated.png" alt='Persona usando laptop' /></div>
                 </div>
             </div>
         </div>
