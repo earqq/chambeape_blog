@@ -13,8 +13,8 @@
                         <p> 
  
                           Un error común que cometemos al emprender un negocio es de no fidelizar a nuestros clientes
-                          o hacer un registro de ellos (su email, telefono) para poder hacerles ofertas personalizadas 
-                          y mantener una comunicación constante con ellos. 
+                          y no hacer un registro de su información (su email, telefono) para poder hacerles ofertas personalizadas 
+                          y mantener una comunicación constante. 
                           <br><br>
                           Es por esta razón que muchos negocios sufren del clásico “ojalá fuera como antes” o “las cosas
                           antes eran mejor”, porque no trabajan con un sistema para fidelizar a sus clientes y la verdad es que
