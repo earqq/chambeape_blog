@@ -2,6 +2,7 @@ import Vue from 'vue'
 import Router from 'vue-router'
 import { interopDefault } from './utils'
 
+<<<<<<< HEAD
 const _71fef336 = () => interopDefault(import('../pages/blog/index.vue' /* webpackChunkName: "pages/blog/index" */))
 const _af9c9e68 = () => interopDefault(import('../pages/fidelizar/index.vue' /* webpackChunkName: "pages/fidelizar/index" */))
 const _7bd2e4fa = () => interopDefault(import('../pages/politicas.vue' /* webpackChunkName: "pages/politicas" */))
@@ -10,6 +11,17 @@ const _60892ed6 = () => interopDefault(import('../pages/consulta/dni.vue' /* web
 const _50bdcbb7 = () => interopDefault(import('../pages/consulta/ruc.vue' /* webpackChunkName: "pages/consulta/ruc" */))
 const _110542b8 = () => interopDefault(import('../pages/blog/_id/_article.vue' /* webpackChunkName: "pages/blog/_id/_article" */))
 const _508f285e = () => interopDefault(import('../pages/index.vue' /* webpackChunkName: "pages/index" */))
+=======
+const _9244b8c0 = () => interopDefault(import('../pages/blog/index.vue' /* webpackChunkName: "pages/blog/index" */))
+const _30978c11 = () => interopDefault(import('../pages/errores-factura-electronica/index.vue' /* webpackChunkName: "pages/errores-factura-electronica/index" */))
+const _703a9abc = () => interopDefault(import('../pages/fidelizar/index.vue' /* webpackChunkName: "pages/fidelizar/index" */))
+const _9869b04e = () => interopDefault(import('../pages/politicas.vue' /* webpackChunkName: "pages/politicas" */))
+const _99f45f20 = () => interopDefault(import('../pages/terminos.vue' /* webpackChunkName: "pages/terminos" */))
+const _2f052680 = () => interopDefault(import('../pages/consulta/dni.vue' /* webpackChunkName: "pages/consulta/dni" */))
+const _4e9becbe = () => interopDefault(import('../pages/consulta/ruc.vue' /* webpackChunkName: "pages/consulta/ruc" */))
+const _087d270e = () => interopDefault(import('../pages/blog/_id/_article.vue' /* webpackChunkName: "pages/blog/_id/_article" */))
+const _1f53a127 = () => interopDefault(import('../pages/index.vue' /* webpackChunkName: "pages/index" */))
+>>>>>>> e974f6886929563f7019c00ef02cdcd34758b757
 
 Vue.use(Router)
 
@@ -89,6 +101,10 @@ export function createRouter() {
       path: "/blog",
       component: _71fef336,
       name: "blog"
+    }, {
+      path: "/errores-factura-electronica",
+      component: _30978c11,
+      name: "errores-factura-electronica"
     }, {
       path: "/fidelizar",
       component: _af9c9e68,
