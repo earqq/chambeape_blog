@@ -5,20 +5,59 @@
         <modal-brand :openModal="openModalBrand" @closeModal="closeModalBrand"></modal-brand>
         <div class="header_wrapper">
             <div class="header_body">
-              
+                <nav>
+                    <nuxt-link to="/"  class="logo">
+                      <div class="logo_wrapper"><img src="@/assets/img/logo_easybill.svg" alt="Logo easybill" /></div>
+                    </nuxt-link>
+                    <no-ssr >
+                      <div class="menu_right_top">
+                        <div class="menu_mobile"  @click="showMenu=true"><i class="icon icon-menu"></i></div>
+                        <transition name="fade" mode="in-out" >
+                            <ul v-if="!mobile || (mobile && showMenu)">
+                                <div class="close_menu" @click="showMenu=false">
+                                    <i class="icon icon-close"></i>
+                                </div>
+                                <li> <a @click="
+                                    ga('event', 'Click boton', {'event_category': 'Header Landing', 'event_label': 'Precios header', 'value': 1}); moveTo(1)"  
+                                   >Precios</a></li>
+                                <li> <a @click="
+                                    ga('event', 'Click boton', {'event_category': 'Header Landing', 'event_label': 'Clientes header', 'value': 1}); moveTo(2)"  
+                                   >Clientes</a></li>
+  															<li> <nuxt-link to="/blog">Blog</nuxt-link></li>
+
+                                <li> <span @click="openModalCotizar" > Cotizar</span> </li>
+                                <!-- <li> <a 
+                                    @click="
+                                    ga('event', 'Click boton', {'event_category': 'Header Landing', 'event_label': 'Guia header', 'value': 1})"                                    
+                                    href="http://guia.easybill.pe" rel="noopener" target="_blank">Guia  </a></li> -->
+                                <li>
+                                    <a
+                                    @click="
+                                    ga('event', 'Click boton', {'event_category': 'Header Landing', 'event_label': 'Ingresar header', 'value': 1})"                                     
+                                    class="button_login inline button_fill" href="https://app.easybill.pe">Ingresar</a>
+                                    <a 
+                                    @click="
+                                    ga('event', 'Click boton', {'event_category': 'Header Landing', 'event_label': 'Registrate header', 'value': 1});
+                                    "                                     
+                                    href='https://app.easybill.pe/registro'
+                                    class="button_login button"  >Regístrate</a>
+                                </li>
+                            </ul>
+                        </transition>
+                      </div>
+                    </no-ssr >
+                </nav>
                 
                 <div class="header_main_content">
                     <div class="header_main_text">
-                        <h1>Fidelizar a un cliente es más barato que conseguir uno nuevo.<span></span></h1>
-                        <p> Las personas van a tu local pero no vuelven.<br> Tu marca empresarial no es tan reconocida y tus ventas no aumentan con el paso de los meses.<br>
-                          Quieres poder diferenciarte de tu competencia y empezar a fidelizar a tus clientes pero...<br>
-                          Tu sistema de venta no te brinda las herramientas para poder fidelizar a tus clientes, para poder hacerles
-                          seguimiento y darle una atención personalizada.
-
-                          </p>                                         
+                        <h1>Listado de errores en facturas electrónicas SUNAT - Perú<span>.</span></h1>
+                        <p>EXCEPCIÓN: Error grave que imposibilita el procesamiento del comprobante. El comprobante se considera como <b>no enviado</b>.</p>
+                        <p>RECHAZO: Se proceso el comprobante pero se detectaron errores. El comprobante se considera <b> como enviado </b>pero invalido.</p>
+                        <p>OBSERVACIÓN: Son errores que no invalidan el comprobante. El comprobante se considera como enviado y <b> válido</b></p>
                     </div>
-                    <div class="header_3d">
-                        <div class="header_3d_wrapper"><img  src="@/assets/img/dashboard.png" alt='Persona usando laptop' /></div>
+                    <div
+                        class="header_3d">
+                        <div class="header_3d_wrapper"><img src="@/assets/img/header_image.svg" alt='Persona usando laptop' /></div>
                 </div>
             </div>
         </div>
@@ -189,8 +228,7 @@ header.header_content
         z-index: 5
         .header_3d
           .header_3d_wrapper
-            img
-              width: 500px
+            width: 450px
         .header_main_text
           color: black
           text-align: left
@@ -264,8 +302,7 @@ header.header_content
           width: $medium
           .header_3d
             .header_3d_wrapper
-              img
-                width: 350px
+              width: 350px
           .header_main_text
             width: $medium
             h1
@@ -338,8 +375,7 @@ header.header_content
           margin-bottom: 50px
           .header_3d
             .header_3d_wrapper
-              img
-                width: 250px
+              width: 250px
           .header_main_text
             width: $small
             display: flex

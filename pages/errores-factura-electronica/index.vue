@@ -1,22 +1,27 @@
 <template lang="pug">
   section.main_blog
-    header-section
-    about
-    to-action
+    header-section( :last_article="last_article" )
+    table-component
+    aside.card_register
+      .image_wrap
+        img( src="@/assets/img/service_image_1.svg" alt="Laptop abierta" )
+      .description
+        h3 Obtén 1 Mes Gratis de Facturación Electrónica
+        p Registrate ahora y podras obtener 1 mes gratis en el sistema de facturacion Easybill
+        a( href='https://app.easybill.pe/registro' class="button_login button" ) Comenzar Ahora!
+    footer-section
 </template>
 
 <script>
-import HeaderSection from '@/components/fidelizar/Header'
-import About from '@/components/fidelizar/About'
-import ToAction from '@/components/fidelizar/ToAction'
+import HeaderSection from '@/components/errors/Header'
+import TableComponent from '@/components/errors/TableComponent'
 import FooterSection from '@/components/landing/Footer'
 import { firestore } from '~/plugins/firebase.js'
 
 export default {
   components: {
     HeaderSection,
-    About,
-    ToAction,
+    TableComponent,
     FooterSection
   },
   data() {
@@ -27,13 +32,13 @@ export default {
   },
   head () {
     return {
-      title: 'Fideliza a tus clientes | Sistema de venta 2.0',
+      title: 'Listado de errores en facturas electrónicas SUNAT - Perú | Easybill',
       meta: [
         { 'http-equiv': 'X-UA-Compatible', content: 'IE=edge' },
         { name: 'theme-color', content:'#17de8b'},
-        { hid : 'description', name:'description', content:'Fideliza a tus clientes con este nuevo concepto de sistema de venta 2.0, mejora la experiencia de compra y que recuerden tu marca. ' },
-        { property: 'og:title', content: 'Fideliza a tus clientes | Sistema de venta 2.0' },
-        { property: 'og:description', content: 'Fideliza a tus clientes con este nuevo concepto de sistema de venta 2.0, mejora la experiencia de compra y que recuerden tu marca. ' },
+        { hid : 'description', name:'description', content:'Listado de errores que devuelve la SUNAT cuando rechaza u obseva un comprobante electrónico (Factura,Boleta,Nota de Crédito, Nota de Débito)' },
+        { property: 'og:title', content: 'Listado de errores en facturas electrónicas SUNAT - Perú | Easybill' },
+        { property: 'og:description', content: 'Listado de errores que devuelve la SUNAT cuando rechaza u obseva un comprobante electrónico (Factura,Boleta,Nota de Crédito, Nota de Débito)' },
         { property: 'og:image', content: 'https://firebasestorage.googleapis.com/v0/b/easybill-b9a91.appspot.com/o/landing%2Ffacebook-preview.png?alt=media&token=16577e76-02d9-4351-99f1-8663bbb90b92' },
         { property: 'og:url', content: 'https://easybill.pe' },
         { property: 'og:type', content: 'product' },
