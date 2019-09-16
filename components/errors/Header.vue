@@ -52,7 +52,7 @@
                     <div class="header_main_text">
                         <h1>Listado de errores en facturas electrónicas SUNAT - Perú<span>.</span></h1>
                         <p>EXCEPCIÓN: Error grave que imposibilita el procesamiento del comprobante. El comprobante se considera como <b>no enviado</b>.</p>
-                        <p>RECHAZO: Se proceso el comprobante pero se detectaron errores. El comprobante se considera <b> como enviado </b>pero invalido.</p>
+                        <p>RECHAZO: Se proceso el comprobante pero se detectaron errores. El comprobante se considera <b> como enviado </b>pero inválido.</p>
                         <p>OBSERVACIÓN: Son errores que no invalidan el comprobante. El comprobante se considera como enviado y <b> válido</b></p>
                     </div>
                     <div
