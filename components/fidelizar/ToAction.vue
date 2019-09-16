@@ -3,7 +3,7 @@
     <modal-info :openModal="openModal" @closeModal="closeModalCotizar"></modal-info>
         <div class="try_demo_wrapper"><img src="@/assets/img/try_image.svg" alt='Grafico de computadora' />
             <h2>Si siempre haces lo mismo no esperes resultados diferentes.<span></span></h2>
-            <p> Si quieres cambiar radicalmente la experiencia de compra de tus clientes.<b> Esto si es para tí</b>. <br>                
+            <p> Si quieres cambiar radicalmente la experiencia de compra de tus clientes.<b> Esto sí es para tí</b>. <br>                
                 Le daremos 3 meses gratuitos a los 100 primeros empresarios que quieran empezar a fidelizar a sus clientes. <br>
                 ¡No pierdas esta oportunidad!
             </p>   
