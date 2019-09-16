@@ -8073,16 +8073,16 @@ export default {
 	}
 	
 	/* Smartphones (portrait and landscape) ----------- */
-	@media only screen and (min-width : 320px) and (max-width : 480px) 
+	@media only screen and (min-width : 320px) and (max-width : 500px) 
 	{
-		body { width: 320px; }
+		body { width: $extra-small; }
 		.descarto {display:none;}
 	}
 	
 	/* iPads (portrait and landscape) ----------- */
 	@media only screen and (min-width: 768px) and (max-width: 1024px) 
 	{
-		body { width: 495px; }
+		body { width: $small; }
 		.descarto {display:none;}
 		.fontsize {font-size:10px}
 	}
