@@ -11,18 +11,19 @@
           Por eso estamos desarrollando un nuevo concepto de sistema de venta(2.0) en el que tu cliente es la prioridad.<br>
           Un sistema que te brindará las herramientas necesarias para poder fidelizar  a tu cliente.<br>
           - Ofertas personalizadas.<br>
-          - Seguimiento de compras y ventas.<br>
-          - Reportes personalizados por cliente.<br>
           - Recordatorios de fechas especiales.<br>
           - Envio de ofertas masivas.<br>
           - Diseñar tu comprobante con los valores de tu empresa.<br>
-          - Aplicativo especial para tu cliente y mucho más. <br>        <br>  
+          - Aplicación para tu cliente para que:<br> 1. Realizen pedidos online. 
+          <br>2. Puntuen a tus trabajadores y su atención.
+          <br>3. Brinden feedback sobre tu negocio.<br>4. Conozcan más de tu historia y marca.        
+          <br><br>  
           Un sistema que te ayudará a mejorar la experiencia de compra de las personas en tu local.<br><br>
           En conclusión un sistema de venta para que engrias a tu cliente y se enamore de tu marca. <br>
 
 
         </p>
-        <p>PD: Si tú solamente quieres cumplir con la obligación de SUNAT para emitir comprobantes electrónicos <b>esto NO es para tí</b>.</p>
+        <p>PD: Si tú solamente quieres cumplir con la obligación de SUNAT para emitir comprobantes electrónicos esto NO es para tí.</p>
         </div>
     </div>   
   </div>
