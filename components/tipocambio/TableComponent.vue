@@ -4,7 +4,7 @@
                 <div class="title">
                     <h2>Ingresa los dolares a cambiar<span>.</span></h2>
                 </div>
-                <input class='search_input' placeholder='Ejem: 1' @keyup='getChanges()' v-model='amount' type='text'>
+                <input class='search_input' placeholder='Ejem: 1' @keyup='getChanges()' v-model='amount' type='number'>
                 <div class='rwd'>
                   <table class="rwd_auto">
                     <thead>
