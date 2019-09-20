@@ -90,6 +90,7 @@ module.exports = {
   axios: {
     proxy:true
   },
+  
   /*
    ** Build configuration
    */
@@ -108,5 +109,5 @@ module.exports = {
       });
     },
     vendor: ['vue-social-sharing'],
-  }
+  },
 };

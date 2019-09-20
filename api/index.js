@@ -161,6 +161,46 @@ app.post("/sendEmailDisenar/:email", (req, res) => {
         res.json({msg: "Tu mensaje a sido enviado correctamente"});
     });
 })
+app.get('/exchange-rate', function(req, res) {
+    const request=require('request')
+    const cheerio=require('cheerio')
+    const textSales={}
+    const textPurchases={}
+    const totalTexts={}
+    request('https://cuantoestaeldolar.pe/', (error,
+    response, html)=>{
+      if(!error && response.statusCode == 200){
+        const $ = cheerio.load(html)
+        // const siteHeading=$('.tb_dollar_compra');
+        $('.tb_dollar_venta').each((i,el)=>{
+          if(i==1) textSales.wester=$(el).text();
+          else if(i==2) textSales.sunat=$(el).text();
+          else if(i==9) textSales.bcp=$(el).text();
+          else if(i==10){
+            textSales.interbank=$(el).text();
+          } 
+          else if(i==11) textSales.bbva=$(el).text();
+          else if(i==12) textSales.scotiabank=$(el).text();
+          else if(i==13) textSales.nacion=$(el).text();
+        })
+        $('.tb_dollar_compra').each((i,el)=>{
+            if(i==1) textPurchases.wester=$(el).text();
+            else if(i==2) textPurchases.sunat=$(el).text();
+            else if(i==9) textPurchases.bcp=$(el).text();
+            else if(i==10){
+              textPurchases.interbank=$(el).text();
+            } 
+            else if(i==11) textPurchases.bbva=$(el).text();
+            else if(i==12) textPurchases.scotiabank=$(el).text();
+            else if(i==13) textPurchases.nacion=$(el).text();
+          })
+        totalTexts.textSales=textSales
+        totalTexts.textPurchases=textPurchases
+        res.send(totalTexts)
+        // const output= siteHeading.find('div').text()
+      }
+    })
+});
 // export the server middleware
 module.exports = {
   path: '/api',
