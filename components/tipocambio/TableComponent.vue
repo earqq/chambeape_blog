@@ -18,8 +18,8 @@
                     <tbody>
                         <tr  >
                             <td title='Click para copiar' @click='copyText("sunat")'>SUNAT</td>
-                            <td title='Click para copiar' @click='copyText("sunat")'>{{changeSales.sunat}}</td>
                             <td title='Click para copiar' @click='copyText("sunat")'>{{changePurchases.sunat}}</td>
+                            <td title='Click para copiar' @click='copyText("sunat")'>{{changeSales.sunat}}</td>
                             <td>
                             <button class='button button-primary'  @click='copyText("sunat")' >Copiar</button>
                             <a target='_blank'  :href='"https://api.whatsapp.com/send?&text=Tipo cambio en SUNAT para "+amount+" dolar(es): P. Venta: "+changeSales.sunat+" | P. Compra "+changePurchases.sunat'>Whatsapp</a>
@@ -27,8 +27,8 @@
                         </tr>     
                         <tr  >
                             <td title='Click para copiar' @click='copyText("nacion")'>Banco de la nación</td>
-                            <td title='Click para copiar' @click='copyText("nacion")'>{{changeSales.nacion}}</td>
                             <td title='Click para copiar' @click='copyText("nacion")'>{{changePurchases.nacion}}</td>
+                            <td title='Click para copiar' @click='copyText("nacion")'>{{changeSales.nacion}}</td>
                             <td>
                             <button class='button button-primary'  @click='copyText("nacion")' >Copiar</button>
                             <a target='_blank'  :href='"https://api.whatsapp.com/send?&text=Tipo cambio en el Bancio de la Nación para "+amount+" dolar(es): P. Venta: "+changeSales.nacion+" | P. Compra "+changePurchases.nacion'>Whatsapp</a>
@@ -36,8 +36,8 @@
                         </tr>     
                         <tr  >
                             <td title='Click para copiar' @click='copyText("bcp")'>BCP</td>
-                            <td title='Click para copiar' @click='copyText("bcp")'>{{changeSales.bcp}}</td>
                             <td title='Click para copiar' @click='copyText("bcp")'>{{changePurchases.bcp}}</td>
+                            <td title='Click para copiar' @click='copyText("bcp")'>{{changeSales.bcp}}</td>
                             <td>
                             <button class='button button-primary'  @click='copyText("bcp")' >Copiar</button>
                             <a target='_blank'  :href='"https://api.whatsapp.com/send?&text=Tipo cambio en el BCP para "+amount+" dolar(es): P. Venta: "+changeSales.bcp+" | P. Compra "+changePurchases.bcp'>Whatsapp</a>
@@ -45,8 +45,8 @@
                         </tr>     
                         <tr  >
                             <td title='Click para copiar' @click='copyText("interbank")'>Interbank</td>
-                            <td title='Click para copiar' @click='copyText("interbank")'>{{changeSales.interbank}}</td>
                             <td title='Click para copiar' @click='copyText("interbank")'>{{changePurchases.interbank}}</td>
+                            <td title='Click para copiar' @click='copyText("interbank")'>{{changeSales.interbank}}</td>
                             <td>
                             <button class='button button-primary'  @click='copyText("interbank")' >Copiar</button>
                             <a target='_blank'  :href='"https://api.whatsapp.com/send?&text=Tipo cambio en el Interbank para "+amount+" dolar(es): P. Venta: "+changeSales.interbank+" | P. Compra "+changePurchases.interbank'>Whatsapp</a>
@@ -54,8 +54,8 @@
                         </tr>       
                         <tr  >
                             <td title='Click para copiar' @click='copyText("bbva")'>BBVA</td>
-                            <td title='Click para copiar' @click='copyText("bbva")'>{{changeSales.bbva}}</td>
                             <td title='Click para copiar' @click='copyText("bbva")'>{{changePurchases.bbva}}</td>
+                            <td title='Click para copiar' @click='copyText("bbva")'>{{changeSales.bbva}}</td>
                             <td>
                             <button class='button button-primary'  @click='copyText("bbva")' >Copiar</button>
                             <a target='_blank'  :href='"https://api.whatsapp.com/send?&text=Tipo cambio en el BBVA para "+amount+" dolar(es): P. Venta: "+changeSales.bbva+" | P. Compra "+changePurchases.bbva'>Whatsapp</a>
@@ -63,8 +63,8 @@
                         </tr>         
                         <tr  >
                             <td title='Click para copiar' @click='copyText("scotiabank")'>Scotiabank</td>
-                            <td title='Click para copiar' @click='copyText("scotiabank")'>{{changeSales.scotiabank}}</td>
                             <td title='Click para copiar' @click='copyText("scotiabank")'>{{changePurchases.scotiabank}}</td>
+                            <td title='Click para copiar' @click='copyText("scotiabank")'>{{changeSales.scotiabank}}</td>
                             <td>
                             <button class='button button-primary'  @click='copyText("scotiabank")' >Copiar</button>
                             <a target='_blank'  :href='"https://api.whatsapp.com/send?&text=Tipo cambio en el Scotiabank para "+amount+" dolar(es): P. Venta: "+changeSales.scotiabank+" | P. Compra "+changePurchases.scotiabank'>Whatsapp</a>
@@ -72,8 +72,8 @@
                         </tr>             
                         <tr  >
                             <td title='Click para copiar' @click='copyText("wester")'>Wester Union</td>
-                            <td title='Click para copiar' @click='copyText("wester")'>{{changeSales.wester}}</td>
                             <td title='Click para copiar' @click='copyText("wester")'>{{changePurchases.wester}}</td>
+                            <td title='Click para copiar' @click='copyText("wester")'>{{changeSales.wester}}</td>
                             <td>
                             <button class='button button-primary'  @click='copyText("wester")' >Copiar</button>
                             <a target='_blank'  :href='"https://api.whatsapp.com/send?&text=Tipo cambio en Wester Union para "+amount+" dolar(es): P. Venta: "+changeSales.wester+" | P. Compra "+changePurchases.wester'>Whatsapp</a>
