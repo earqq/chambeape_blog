@@ -175,24 +175,24 @@ app.get('/exchange-rate', function(req, res) {
         $('.tb_dollar_venta').each((i,el)=>{
           if(i==1) textSales.wester=$(el).text();
           else if(i==2) textSales.sunat=$(el).text();
-          else if(i==9) textSales.bcp=$(el).text();
-          else if(i==10){
+          else if(i==10) textSales.bcp=$(el).text();
+          else if(i==11){
             textSales.interbank=$(el).text();
           } 
-          else if(i==11) textSales.bbva=$(el).text();
-          else if(i==12) textSales.scotiabank=$(el).text();
-          else if(i==13) textSales.nacion=$(el).text();
+          else if(i==12) textSales.bbva=$(el).text();
+          else if(i==13) textSales.scotiabank=$(el).text();
+          else if(i==14) textSales.nacion=$(el).text();
         })
         $('.tb_dollar_compra').each((i,el)=>{
             if(i==1) textPurchases.wester=$(el).text();
             else if(i==2) textPurchases.sunat=$(el).text();
-            else if(i==9) textPurchases.bcp=$(el).text();
-            else if(i==10){
+            else if(i==10) textPurchases.bcp=$(el).text();
+            else if(i==11){
               textPurchases.interbank=$(el).text();
             } 
-            else if(i==11) textPurchases.bbva=$(el).text();
-            else if(i==12) textPurchases.scotiabank=$(el).text();
-            else if(i==13) textPurchases.nacion=$(el).text();
+            else if(i==12) textPurchases.bbva=$(el).text();
+            else if(i==13) textPurchases.scotiabank=$(el).text();
+            else if(i==14) textPurchases.nacion=$(el).text();
           })
         totalTexts.textSales=textSales
         totalTexts.textPurchases=textPurchases

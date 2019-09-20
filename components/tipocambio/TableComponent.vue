@@ -148,6 +148,7 @@ export default {
         .then(res=>{
             this.salesIn=res.data.textSales
             this.purchasesIn=res.data.textPurchases
+            console.log(this.salesIn)
             this.getChanges()
         })
     },
