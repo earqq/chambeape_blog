@@ -7,6 +7,7 @@ const _30978c11 = () => interopDefault(import('../pages/errores-factura-electron
 const _703a9abc = () => interopDefault(import('../pages/fidelizar/index.vue' /* webpackChunkName: "pages/fidelizar/index" */))
 const _9869b04e = () => interopDefault(import('../pages/politicas.vue' /* webpackChunkName: "pages/politicas" */))
 const _99f45f20 = () => interopDefault(import('../pages/terminos.vue' /* webpackChunkName: "pages/terminos" */))
+const _5a94e5c8 = () => interopDefault(import('../pages/tipo-cambio-sunat/index.vue' /* webpackChunkName: "pages/tipo-cambio-sunat/index" */))
 const _2f052680 = () => interopDefault(import('../pages/consulta/dni.vue' /* webpackChunkName: "pages/consulta/dni" */))
 const _4e9becbe = () => interopDefault(import('../pages/consulta/ruc.vue' /* webpackChunkName: "pages/consulta/ruc" */))
 const _087d270e = () => interopDefault(import('../pages/blog/_id/_article.vue' /* webpackChunkName: "pages/blog/_id/_article" */))
@@ -106,6 +107,10 @@ export function createRouter() {
       path: "/terminos",
       component: _99f45f20,
       name: "terminos"
+    }, {
+      path: "/tipo-cambio-sunat",
+      component: _5a94e5c8,
+      name: "tipo-cambio-sunat"
     }, {
       path: "/consulta/dni",
       component: _2f052680,
