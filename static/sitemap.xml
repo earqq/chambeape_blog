@@ -23,6 +23,16 @@
   <priority>0.80</priority>
 </url>
 <url>
+  <loc>https://easybill.pe/calculadora/igv</loc>
+  <lastmod>2019-09-20T17:45:21+00:00</lastmod>
+  <priority>0.50</priority>
+</url>
+<url>
+  <loc>https://easybill.pe/calculadora/detracciones</loc>
+  <lastmod>2019-09-20T17:45:21+00:00</lastmod>
+  <priority>0.50</priority>
+</url>
+<url>
   <loc>https://easybill.pe/politicas</loc>
   <lastmod>2019-08-09T16:46:21+00:00</lastmod>
   <priority>0.80</priority>

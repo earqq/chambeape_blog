@@ -8,6 +8,8 @@ const _703a9abc = () => interopDefault(import('../pages/fidelizar/index.vue' /* 
 const _9869b04e = () => interopDefault(import('../pages/politicas.vue' /* webpackChunkName: "pages/politicas" */))
 const _99f45f20 = () => interopDefault(import('../pages/terminos.vue' /* webpackChunkName: "pages/terminos" */))
 const _5a94e5c8 = () => interopDefault(import('../pages/tipo-cambio-sunat/index.vue' /* webpackChunkName: "pages/tipo-cambio-sunat/index" */))
+const _3da5def2 = () => interopDefault(import('../pages/calculadora/detracciones/index.vue' /* webpackChunkName: "pages/calculadora/detracciones/index" */))
+const _1b900ae0 = () => interopDefault(import('../pages/calculadora/igv/index.vue' /* webpackChunkName: "pages/calculadora/igv/index" */))
 const _2f052680 = () => interopDefault(import('../pages/consulta/dni.vue' /* webpackChunkName: "pages/consulta/dni" */))
 const _4e9becbe = () => interopDefault(import('../pages/consulta/ruc.vue' /* webpackChunkName: "pages/consulta/ruc" */))
 const _087d270e = () => interopDefault(import('../pages/blog/_id/_article.vue' /* webpackChunkName: "pages/blog/_id/_article" */))
@@ -111,6 +113,14 @@ export function createRouter() {
       path: "/tipo-cambio-sunat",
       component: _5a94e5c8,
       name: "tipo-cambio-sunat"
+    }, {
+      path: "/calculadora/detracciones",
+      component: _3da5def2,
+      name: "calculadora-detracciones"
+    }, {
+      path: "/calculadora/igv",
+      component: _1b900ae0,
+      name: "calculadora-igv"
     }, {
       path: "/consulta/dni",
       component: _2f052680,
