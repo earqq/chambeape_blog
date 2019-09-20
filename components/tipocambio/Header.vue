@@ -55,7 +55,7 @@
                     </div>
                     <div
                         class="header_3d">
-                        <div class="header_3d_wrapper"><img src="@/assets/img/cambio.png" alt='Persona usando laptop' /></div>
+                        <div class="header_3d_wrapper"><img src="@/assets/img/cambio.svg" alt='Cambio de moneda' /></div>
                 </div>
             </div>
         </div>
@@ -227,7 +227,7 @@ header.header_content
         .header_3d
           .header_3d_wrapper
             img
-              width: 500px
+              width: 300px
             width: 450px
         .header_main_text
           color: black
