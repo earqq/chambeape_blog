@@ -36,9 +36,9 @@ export default {
       meta: [
         { 'http-equiv': 'X-UA-Compatible', content: 'IE=edge' },
         { name: 'theme-color', content:'#17de8b'},
-        { hid : 'description', name:'description', content:'Listado de errores que devuelve la SUNAT cuando rechaza u obseva un comprobante electrónico (Factura,Boleta,Nota de Crédito, Nota de Débito)' },
-        { property: 'og:title', content: 'Listado de errores en facturas electrónicas SUNAT - Perú | Easybill' },
-        { property: 'og:description', content: 'Listado de errores que devuelve la SUNAT cuando rechaza u obseva un comprobante electrónico (Factura,Boleta,Nota de Crédito, Nota de Débito)' },
+        { hid : 'description', name:'description', content:'Tipo de cambio del dolar para SUNAT y principales entidades financieras del Perú | Envia la información por whatsapp' },
+        { property: 'og:title', content: 'Tipo de cambio para SUNAT | Easybill' },
+        { property: 'og:description', content: 'Tipo de cambio del dolar para SUNAT y principales entidades financieras del Perú | Envia la información por whatsapp' },
         { property: 'og:image', content: 'https://firebasestorage.googleapis.com/v0/b/easybill-b9a91.appspot.com/o/landing%2Ffacebook-preview.png?alt=media&token=16577e76-02d9-4351-99f1-8663bbb90b92' },
         { property: 'og:url', content: 'https://easybill.pe' },
         { property: 'og:type', content: 'product' },
