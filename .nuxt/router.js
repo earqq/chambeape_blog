@@ -2,18 +2,18 @@ import Vue from 'vue'
 import Router from 'vue-router'
 import { interopDefault } from './utils'
 
-const _9244b8c0 = () => interopDefault(import('../pages/blog/index.vue' /* webpackChunkName: "pages/blog/index" */))
-const _30978c11 = () => interopDefault(import('../pages/errores-factura-electronica/index.vue' /* webpackChunkName: "pages/errores-factura-electronica/index" */))
-const _703a9abc = () => interopDefault(import('../pages/fidelizar/index.vue' /* webpackChunkName: "pages/fidelizar/index" */))
-const _9869b04e = () => interopDefault(import('../pages/politicas.vue' /* webpackChunkName: "pages/politicas" */))
-const _99f45f20 = () => interopDefault(import('../pages/terminos.vue' /* webpackChunkName: "pages/terminos" */))
-const _5a94e5c8 = () => interopDefault(import('../pages/tipo-cambio-sunat/index.vue' /* webpackChunkName: "pages/tipo-cambio-sunat/index" */))
-const _3da5def2 = () => interopDefault(import('../pages/calculadora/detracciones/index.vue' /* webpackChunkName: "pages/calculadora/detracciones/index" */))
-const _1b900ae0 = () => interopDefault(import('../pages/calculadora/igv/index.vue' /* webpackChunkName: "pages/calculadora/igv/index" */))
-const _2f052680 = () => interopDefault(import('../pages/consulta/dni.vue' /* webpackChunkName: "pages/consulta/dni" */))
-const _4e9becbe = () => interopDefault(import('../pages/consulta/ruc.vue' /* webpackChunkName: "pages/consulta/ruc" */))
-const _087d270e = () => interopDefault(import('../pages/blog/_id/_article.vue' /* webpackChunkName: "pages/blog/_id/_article" */))
-const _1f53a127 = () => interopDefault(import('../pages/index.vue' /* webpackChunkName: "pages/index" */))
+const _71fef336 = () => interopDefault(import('../pages/blog/index.vue' /* webpackChunkName: "pages/blog/index" */))
+const _b751d88a = () => interopDefault(import('../pages/errores-factura-electronica/index.vue' /* webpackChunkName: "pages/errores-factura-electronica/index" */))
+const _af9c9e68 = () => interopDefault(import('../pages/fidelizar/index.vue' /* webpackChunkName: "pages/fidelizar/index" */))
+const _7bd2e4fa = () => interopDefault(import('../pages/politicas.vue' /* webpackChunkName: "pages/politicas" */))
+const _677be4f4 = () => interopDefault(import('../pages/terminos.vue' /* webpackChunkName: "pages/terminos" */))
+const _833e7d74 = () => interopDefault(import('../pages/tipo-cambio-sunat/index.vue' /* webpackChunkName: "pages/tipo-cambio-sunat/index" */))
+const _98acf0f0 = () => interopDefault(import('../pages/calculadora/detracciones/index.vue' /* webpackChunkName: "pages/calculadora/detracciones/index" */))
+const _06d39d8c = () => interopDefault(import('../pages/calculadora/igv/index.vue' /* webpackChunkName: "pages/calculadora/igv/index" */))
+const _60892ed6 = () => interopDefault(import('../pages/consulta/dni.vue' /* webpackChunkName: "pages/consulta/dni" */))
+const _50bdcbb7 = () => interopDefault(import('../pages/consulta/ruc.vue' /* webpackChunkName: "pages/consulta/ruc" */))
+const _110542b8 = () => interopDefault(import('../pages/blog/_id/_article.vue' /* webpackChunkName: "pages/blog/_id/_article" */))
+const _508f285e = () => interopDefault(import('../pages/index.vue' /* webpackChunkName: "pages/index" */))
 
 Vue.use(Router)
 
@@ -91,51 +91,51 @@ export function createRouter() {
 
     routes: [{
       path: "/blog",
-      component: _9244b8c0,
+      component: _71fef336,
       name: "blog"
     }, {
       path: "/errores-factura-electronica",
-      component: _30978c11,
+      component: _b751d88a,
       name: "errores-factura-electronica"
     }, {
       path: "/fidelizar",
-      component: _703a9abc,
+      component: _af9c9e68,
       name: "fidelizar"
     }, {
       path: "/politicas",
-      component: _9869b04e,
+      component: _7bd2e4fa,
       name: "politicas"
     }, {
       path: "/terminos",
-      component: _99f45f20,
+      component: _677be4f4,
       name: "terminos"
     }, {
       path: "/tipo-cambio-sunat",
-      component: _5a94e5c8,
+      component: _833e7d74,
       name: "tipo-cambio-sunat"
     }, {
       path: "/calculadora/detracciones",
-      component: _3da5def2,
+      component: _98acf0f0,
       name: "calculadora-detracciones"
     }, {
       path: "/calculadora/igv",
-      component: _1b900ae0,
+      component: _06d39d8c,
       name: "calculadora-igv"
     }, {
       path: "/consulta/dni",
-      component: _2f052680,
+      component: _60892ed6,
       name: "consulta-dni"
     }, {
       path: "/consulta/ruc",
-      component: _4e9becbe,
+      component: _50bdcbb7,
       name: "consulta-ruc"
     }, {
       path: "/blog/:id/:article?",
-      component: _087d270e,
+      component: _110542b8,
       name: "blog-id-article"
     }, {
       path: "/",
-      component: _1f53a127,
+      component: _508f285e,
       name: "index"
     }],
 
