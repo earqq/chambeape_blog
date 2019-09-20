@@ -209,6 +209,19 @@ export default {
     background-color: #f2f4f5
     display: flex
     justify-content: center
+    button
+        padding: 5px
+        padding-left: 10px
+        padding-right: 10px
+        background: #17de8b
+        border-radius: 7px
+    a
+        padding: 5px
+        text-decoration: none
+        background: #17de8b
+        border-radius: 7px
+        color: black
+        font-size: 14px
     .clients_wrapper
         width: $large
         display: flex

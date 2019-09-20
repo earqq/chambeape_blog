@@ -55,7 +55,7 @@
                     </div>
                     <div
                         class="header_3d">
-                        <div class="header_3d_wrapper"><img  src="@/assets/img/calc.svg" alt='Persona usando laptop' /></div>
+                        <div class="header_3d_wrapper"><img  src="@/assets/img/calc.svg" alt='Calculadora' /></div>
                 </div>
             </div>
         </div>
