@@ -94,7 +94,34 @@ export default {
           "@type":"SiteNavigationElement",
           "name":"Ingresar",
           "url":"https://app.easybill.pe"
-        }]
+        }],
+        "@context":"https://schema.org",
+        "@graph":[
+          {
+            "@type":"WebSite",
+            "@id":"https://easybill.pe/#website",
+            "url":"https://easybil.pe/",
+            "name":"Easybill",
+            "potentialAction":{
+              "@type":"SearchAction",
+              "target":"https://easybill.pe/?s={search_term_string}",
+              "query-input":"required name=search_term_string"
+            }
+          },
+          {
+            "@type":"WebPage",
+            "@id":"https://easybill.pe/#webpage",
+            "url":"https://easybill.pe/",
+            "inLanguage":"es",
+            "name":"Easybill | Facturación electrónica facil para SUNAT en Peru",
+            "isPartOf":{
+              "@id":"https://easybill.pe/#website"
+            },
+            "datePublished":"2019-01-01T20:12:54+00:00",
+            "dateModified":"2019-09-23T09:00:09+00:00",
+            "description":"Un sistema de venta para fidelizar a tus clientes incluye facturación electrónica damos soluciones informaticas a todo el Peru."
+          }
+        ]
       }
     return {
       jsonld
