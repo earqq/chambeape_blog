@@ -1,5 +1,5 @@
 <template>
-	<header class="header_blog_content">
+	<header itemscope="itemscope" itemtype="http://schema.org/WPHeader" class="header_blog_content">
 			<div class="article_cover">
 					<img alt='Imagen de fondo' :src="last_article.cover" >
 			</div>

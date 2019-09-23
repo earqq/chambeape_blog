@@ -1,5 +1,5 @@
 <template lang="pug">
-    aside.card_register( :class="{modal: modal}" )
+    aside.card_register( :class="{modal: modal}" itemscope="itemscope" itemtype="http://schema.org/WPSideBar")
         div.card
           transition( name="fade" mode="in-out" )
             .success_message( v-if="sent" )

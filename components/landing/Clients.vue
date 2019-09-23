@@ -7,19 +7,19 @@
                 <no-ssr >
                     <section class="clients_content">
                         <transition name="slide-fade-up">
-                            <aside v-show="!mobile || (mobile && selectQuote == 1)" class="client_testimonial"><i class="icon icon-quote"></i>
+                            <aside v-show="!mobile || (mobile && selectQuote == 1)"  itemscope="itemscope" itemtype="http://schema.org/WPSideBar" class="client_testimonial"><i class="icon icon-quote"></i>
                                 <p>Con la plataforma de Easybill le dimos mayor agilidad en el punto de venta eliminando las colas, además mejoramos en nuestra gestión de inventarios evitando así los quiebres de stock y automatizamos al 100% los comprobantes electrónicos. </p>
                                 <h3>Franz Westreicher</h3><small>Gerente de Biolett Gourmet</small>
                             </aside>
                         </transition>
                         <transition name="slide-fade-up">
-                            <aside v-show="!mobile || (mobile && selectQuote == 2)" class="client_testimonial"><i class="icon icon-quote"></i>
+                            <aside v-show="!mobile || (mobile && selectQuote == 2)" itemscope="itemscope" itemtype="http://schema.org/WPSideBar" class="client_testimonial"><i class="icon icon-quote"></i>
                                 <p>Easybill ayuda a mi empresa por que tengo reportes muchos mas exactos y aceleró nuestra forma de emisión, Nos permite llevar una contabilidad de manera sistemática y simplifica la facturación. Dejando atrás los comprobantes físicos.</p>
                                 <h3>Catherine Zarate </h3><small>Gerente de Portada del Sol</small>
                             </aside>
                         </transition>
                         <transition name="slide-fade-up">
-                            <aside v-show="!mobile || (mobile && selectQuote == 3)" class="client_testimonial"><i class="icon icon-quote"></i>
+                            <aside v-show="!mobile || (mobile && selectQuote == 3)" itemscope="itemscope" itemtype="http://schema.org/WPSideBar" class="client_testimonial"><i class="icon icon-quote"></i>
                                 <p> Easybill a ayudado a que los procesos de facturación sean rápidas, su plataforma contiene lo indispensable para un buen control. Lo mejor de todo, es que si existe algún inconveniente dan la solución rápida.</p>
                                 <h3>Jorge Peña  </h3><small>Gerente de Leones de Oro</small>
                             </aside>

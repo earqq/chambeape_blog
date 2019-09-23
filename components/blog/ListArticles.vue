@@ -2,7 +2,7 @@
   div(class="articles_section" )
     div(class="articles_wrapper")
         section(class="articles_content")
-          aside(v-for="a in articles" class="client_testimonial")
+          aside(v-for="a in articles" class="client_testimonial" itemscope="itemscope" itemtype="http://schema.org/WPSideBar")
             small {{a.created_at | moment("DD [de] MMMM [de] YYYY") }}
             h2 {{a.title}}
             p {{a.body_preview}}

@@ -19,7 +19,7 @@
                     </div>
                     <section class="pricing_content">
                         <transition name="fade">
-                            <aside v-if="!mobile || (mobile && selectPlan == 1)">
+                            <aside v-if="!mobile || (mobile && selectPlan == 1)" itemscope="itemscope" itemtype="http://schema.org/WPSideBar">
                                 <img src="@/assets/img/basico_icon.svg" alt="Easybill plan basico">
                                 <h3>BÁSICO</h3>
                                 <div class="price">
@@ -75,7 +75,7 @@
                             </aside>
                         </transition>         
                         <transition name="fade">
-                            <aside :class="{recomended: !mobile}" v-if="!mobile || (mobile && selectPlan == 2)">
+                            <aside :class="{recomended: !mobile}" v-if="!mobile || (mobile && selectPlan == 2)" itemscope="itemscope" itemtype="http://schema.org/WPSideBar">
                                 <img src="@/assets/img/estandar_icon.svg" alt="Easybill plan estandar">
                                 <h3>ESTANDAR</h3>
                                 <div class="price">
@@ -141,7 +141,7 @@
                             </aside>
                         </transition>
                         <transition name="fade" >
-                            <aside v-if="!mobile || (mobile && selectPlan == 3)">
+                            <aside v-if="!mobile || (mobile && selectPlan == 3)" itemscope="itemscope" itemtype="http://schema.org/WPSideBar">
                                 <img src="@/assets/img/premium_icon.svg" alt="Easybill plan estandar">
                                 <h3>PREMIUM</h3>
                                 <div class="price">
