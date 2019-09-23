@@ -9,7 +9,35 @@
     clients-section
     footer-section
     script(type='application/ld+json').
-      {"@context":"https://schema.org",
+     
+    script(type='application/ld+json').
+     
+
+</template>
+
+<script>
+import HeaderSection from '@/components/landing/Header'
+import AboutSection from '@/components/landing/About'
+import ServicesSection from '@/components/landing/Services'
+import PricingSection from '@/components/landing/Pricing'
+import BenefitsSection from '@/components/landing/Benefits'
+import FooterSection from '@/components/landing/Footer'
+import ClientsSection from '@/components/landing/Clients'
+import DemoSection from '@/components/landing/Demo'
+export default {
+  components: {
+    HeaderSection,
+    AboutSection,
+    ServicesSection,
+    BenefitsSection,
+    PricingSection,
+    FooterSection,
+    ClientsSection,
+    DemoSection
+  },
+  data(){
+    const jsonld={
+        "@context":"https://schema.org",
         "@type":"Organization",
         "name":"Easybill",
         "legalName":"MAKEASY S.R.L.",
@@ -46,45 +74,35 @@
           "email":"teamakeasy@gmail.com"},
         "sameAs":["https://www.facebook.com/Easybill.pe/",
           "https://www.youtube.com/channel/UCvz8-GgLr0z3Ty2cWffH_9w",
-          "https://www.instagram.com/easybill.pe/?hl=es-la"]
+          "https://www.instagram.com/easybill.pe/?hl=es-la"],
+        "@context":"https://schema.org",
+        "@graph":[{
+          "@context":"https://schema.org",
+          "@type":"SiteNavigationElement",
+          "name":"Pecios",
+          "url":"https://easybill.pe/?section=1"
+        },
+        {
+          "@context":"https://schema.org",
+          "@type":"SiteNavigationElement",
+          "name":"Clientes",
+          "url":"https://easybill.pe/?section=2"
+        },
+        {
+          "@context":"https://schema.org",
+          "@type":"SiteNavigationElement",
+          "name":"Blog",
+          "url":"https://easybill.pe/blog"},
+        {
+          "@context":"https://schema.org",
+          "@type":"SiteNavigationElement",
+          "name":"Ingresar",
+          "url":"https://app.easybill.pe"
+        }]
       }
-    script(type='application/ld+json').
-      {"@context":"https://schema.org",
-      "@graph":[{"@context":"https://schema.org",
-      "@type":"SiteNavigationElement",
-      "name":"Pecios","url":"https://easybill.pe/?section=1"},
-      {"@context":"https://schema.org",
-      "@type":"SiteNavigationElement",
-      "name":"Clientes","url":"https://easybill.pe/?section=2"},
-      {"@context":"https://schema.org",
-      "@type":"SiteNavigationElement","name":"Blog",
-      "url":"https://easybill.pe/blog"},
-      {"@context":"https://schema.org",
-      "@type":"SiteNavigationElement","name":"Ingresar",
-      "url":"https://app.easybill.pe"}]
-      }
-
-</template>
-
-<script>
-import HeaderSection from '@/components/landing/Header'
-import AboutSection from '@/components/landing/About'
-import ServicesSection from '@/components/landing/Services'
-import PricingSection from '@/components/landing/Pricing'
-import BenefitsSection from '@/components/landing/Benefits'
-import FooterSection from '@/components/landing/Footer'
-import ClientsSection from '@/components/landing/Clients'
-import DemoSection from '@/components/landing/Demo'
-export default {
-  components: {
-    HeaderSection,
-    AboutSection,
-    ServicesSection,
-    BenefitsSection,
-    PricingSection,
-    FooterSection,
-    ClientsSection,
-    DemoSection
+    return {
+      jsonld
+    }
   },
   head () {
     return {
