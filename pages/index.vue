@@ -8,11 +8,7 @@
     about-section
     clients-section
     footer-section
-    script(type='application/ld+json').
-     
-    script(type='application/ld+json').
-     
-
+    script(v-html='jsonld' type='application/ld+json')
 </template>
 
 <script>
