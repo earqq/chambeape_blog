@@ -103,7 +103,7 @@ export default {
             "url":"https://easybil.pe/",
             "name":"Easybill",
             "potentialAction":{
-              "@type":"SearchAction",
+              "@type":"EntryPoint",
               "target":"https://easybill.pe/?s={search_term_string}",
               "query-input":"required name=search_term_string"
             }
@@ -112,7 +112,7 @@ export default {
             "@type":"WebPage",
             "@id":"https://easybill.pe/#webpage",
             "url":"https://easybill.pe/",
-            "inLanguage":"es",
+            "inLanguage":"es-PE",
             "name":"Easybill | Facturación electrónica facil para SUNAT en Peru",
             "isPartOf":{
               "@id":"https://easybill.pe/#website"

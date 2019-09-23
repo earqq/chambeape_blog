@@ -115,6 +115,8 @@ export default {
     mounted () {
 
       if(this.$route.query.cotizar) this.openModalCotizar()
+      if(this.$route.query.s) this.openModalSearch()
+      if(this.$route.query.disenar) this.openModalDisenar()
       if(this.$route.query.disenar) this.openModalDisenar()
       if(this.$route.query.brand) this.openModalBrandFunction()
       setTimeout(() => {
@@ -139,6 +141,9 @@ export default {
       },
       openModalDisenar () {
         this.openModalDiseñarr = true
+      },
+      openModalSearch () {
+        this.openModal = true
       },
 			moveTo(section) {
         if (process.client) { // en lado del servidor no existe window, document, etc
