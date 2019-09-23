@@ -103,7 +103,7 @@ export default {
             "url":"https://easybil.pe/",
             "name":"Easybill",
             "potentialAction":{
-              "@type":"EntryPoint",
+              "@type":"SearchAction",
               "target":"https://easybill.pe/?s={search_term_string}",
               "query-input":"required name=search_term_string"
             }
