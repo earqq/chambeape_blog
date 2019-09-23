@@ -1,4 +1,4 @@
-<template itemscope itemtype="http://schema.org/WebPage" lang="pug">
+<template lang="pug">
   section.main_blog
     header-section( :last_article="last_article" )
     list-articles-section( :articles="articles" )

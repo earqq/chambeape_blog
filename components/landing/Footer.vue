@@ -1,5 +1,5 @@
 <template>
-    <footer itemscope="itemscope" itemtype="http://schema.org/WPFooter" class="footer_section">
+    <footer itemscope=itemscope itemtype=http://schema.org/WPFooter class="footer_section">
         <div class="footer_wrapper">
             
             <nuxt-link to="/"  class="logo">

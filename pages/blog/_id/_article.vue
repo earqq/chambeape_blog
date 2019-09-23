@@ -1,4 +1,4 @@
-<template lang="pug">
+<template  lang="pug">
   section.article_container
     header-article-section( v-if="article" :article="article" )
     .body_content
@@ -25,6 +25,8 @@ export default {
     return {
       htmlAttrs: {
       lang: 'es',
+      itemscope:'itemscope',
+      itemtype='http://schema.org/WebPage'
       },
       title: this.article.title + ' | Easybill',
       meta: [
