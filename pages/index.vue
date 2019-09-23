@@ -72,35 +72,11 @@ export default {
           "https://www.youtube.com/channel/UCvz8-GgLr0z3Ty2cWffH_9w",
           "https://www.instagram.com/easybill.pe/?hl=es-la"],
         "@context":"https://schema.org",
-        "@graph":[{
-          "@context":"https://schema.org",
-          "@type":"SiteNavigationElement",
-          "name":"Pecios",
-          "url":"https://easybill.pe/?section=1"
-        },
-        {
-          "@context":"https://schema.org",
-          "@type":"SiteNavigationElement",
-          "name":"Clientes",
-          "url":"https://easybill.pe/?section=2"
-        },
-        {
-          "@context":"https://schema.org",
-          "@type":"SiteNavigationElement",
-          "name":"Blog",
-          "url":"https://easybill.pe/blog"},
-        {
-          "@context":"https://schema.org",
-          "@type":"SiteNavigationElement",
-          "name":"Ingresar",
-          "url":"https://app.easybill.pe"
-        }],
-        "@context":"https://schema.org",
         "@graph":[
           {
             "@type":"WebSite",
             "@id":"https://easybill.pe/#website",
-            "url":"https://easybil.pe/",
+            "url":"https://easybill.pe/",
             "name":"Easybill",
             "potentialAction":{
               "@type":"SearchAction",
