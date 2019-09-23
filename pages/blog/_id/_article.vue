@@ -26,7 +26,7 @@ export default {
       htmlAttrs: {
       lang: 'es',
       itemscope:'itemscope',
-      itemtype='http://schema.org/WebPage'
+      itemtype:'http://schema.org/WebPage'
       },
       title: this.article.title + ' | Easybill',
       meta: [
