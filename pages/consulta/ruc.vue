@@ -133,7 +133,7 @@ export default {
             },
             "datePublished":"2019-01-01T20:12:54+00:00",
             "dateModified":"2019-09-23T09:00:09+00:00",
-            "description":"Herramienta gratuita para realizar consultas a la SUNAT  de EMPRESAS peruanas registradas a la fecha."
+            "description":"Herramienta gratuita para realizar consultas a la SUNAT  ingresando el número de RUC y devuelve toda su información."
           }
         ]
     }
