@@ -31,25 +31,18 @@ export default {
               "target":"https://easybill.pe/?s={search_term_string}",
               "query-input":"required name=search_term_string"
             }
-          },
-          {
-            "@type":"WebPage",
-            "@id":"https://easybill.pe/blog/"+this.article._id+"/"+this.article.slug+"/#webpage",
-            "url":"https://easybill.pe/blog/"+this.article._id+"/"+this.article.slug,
-            "inLanguage":"es-PE",
-            "name":this.article.title,
-            "isPartOf":{
-              "@id":"https://easybill.pe/#website"
-            },
-            "datePublished":this.article.created_at,
-            "dateModified":"2019-09-23T09:00:09+00:00",
-            "description":this.article.description_google
-          }
+          }          
         ]
       }
     return {
       jsonld,
-      article: {}
+      article: {
+        _id:'',
+        slug:'',
+        title:'',
+        created_at:'',
+        description_google:''
+      }
     }
   },
   head () {
