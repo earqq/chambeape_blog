@@ -10,6 +10,7 @@
         p Registrate ahora y podras obtener 1 mes gratis en el sistema de facturacion Easybill
         a( href='https://app.easybill.pe/registro' class="button_login button" ) Comenzar Ahora!
     footer-section
+    script(v-html='jsonld' type='application/ld+json')
 </template>
 
 <script>
@@ -25,7 +26,37 @@ export default {
     FooterSection
   },
   data() {
+    const jsonld={       
+        "@context":"https://schema.org",
+        "@graph":[
+          {
+            "@type":"WebSite",
+            "@id":"https://easybill.pe/#website",
+            "url":"https://easybill.pe/",
+            "name":"Easybill",
+            "potentialAction":{
+              "@type":"SearchAction",
+              "target":"https://easybill.pe/?s={search_term_string}",
+              "query-input":"required name=search_term_string"
+            }
+          },
+          {
+            "@type":"WebPage",
+            "@id":"https://easybill.pe/calculadora/igv/#webpage",
+            "url":"https://easybill.pe/calculadora/igv",
+            "inLanguage":"es-PE",
+            "name":"Calculadora para sacar el impuesto gravado (IGV) a las ventas  ",
+            "isPartOf":{
+              "@id":"https://easybill.pe/#website"
+            },
+            "datePublished":"2019-01-01T20:12:54+00:00",
+            "dateModified":"2019-09-23T09:00:09+00:00",
+            "description":"Herramienta gratuita para sacar el porcentaje del IGV del importe base de una factura."
+          }
+        ]
+      }
     return {
+      jsonld,
       articles: [],
       last_article: {}
     }

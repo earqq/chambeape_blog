@@ -46,6 +46,7 @@
           p CULQUI: con la pasarela debe ingresar datos de su tarjeta para que se realice el pago. Para realizar el pago debes dirigirte a la sección PAGO en EASYBILL (https://app.easybill.pe/main#/company/pays) a continuación seleccionar Crear Pago y se mostrará la opción Tarjeta, en el formulario quese muestra debe ingresar el Número de tarjeta, mes de vencimiento de sutarjeta, año de vencimiento de su tarjeta, CVV y su correo electrónico, para finalizar su pago debe hacer click en Pagar y el pago ya se encuentra realizado. Los datos ingresados de su tarjeta no son verificados por MAKEASY S.R.L. por lo que no se responsabiliza por la información incorrecta que se ingrese.
           p El usuario principal afirma y acepta bajo juramento que sus ingresos no tienen relación con ningún tipo de acto ilegal: lavado de   activos,narcotráfico, terrorismo u otro delito.
     footer-section
+    script(v-html='jsonld' type='application/ld+json')
 </template>
 
 <script>
@@ -57,7 +58,37 @@ export default {
     FooterSection
   },
   head () {
+    const jsonld={       
+        "@context":"https://schema.org",
+        "@graph":[
+          {
+            "@type":"WebSite",
+            "@id":"https://easybill.pe/#website",
+            "url":"https://easybill.pe/",
+            "name":"Easybill",
+            "potentialAction":{
+              "@type":"SearchAction",
+              "target":"https://easybill.pe/?s={search_term_string}",
+              "query-input":"required name=search_term_string"
+            }
+          },
+          {
+            "@type":"WebPage",
+            "@id":"https://easybill.pe/terminos/#webpage",
+            "url":"https://easybill.pe/terminos",
+            "inLanguage":"es-PE",
+            "name":"Terminos y condiciones de uso del sistema Easybill",
+            "isPartOf":{
+              "@id":"https://easybill.pe/#website"
+            },
+            "datePublished":"2019-01-01T20:12:54+00:00",
+            "dateModified":"2019-09-23T09:00:09+00:00",
+            "description":"Terminos y condiciones del sistema de facturacion electronica Easybill se debe leer antes de registrarse."
+          }
+        ]
+      }
     return {
+      jsonld,
       htmlAttrs: {
       lang: 'es',
       },

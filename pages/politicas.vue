@@ -31,6 +31,7 @@
         aside
           p En caso tenga consultas o comentarios sobre esta Política de Privacidad,puede hacerlo llegar a través del correo contactos@easybill.pe, Gerente General MAKEASY S.R.L.Huánuco, Perú
     footer-section
+    script(v-html='jsonld' type='application/ld+json')
 </template>
 
 <script>
@@ -42,7 +43,37 @@ export default {
     FooterSection
   },
   head () {
+    const jsonld={       
+        "@context":"https://schema.org",
+        "@graph":[
+          {
+            "@type":"WebSite",
+            "@id":"https://easybill.pe/#website",
+            "url":"https://easybill.pe/",
+            "name":"Easybill",
+            "potentialAction":{
+              "@type":"SearchAction",
+              "target":"https://easybill.pe/?s={search_term_string}",
+              "query-input":"required name=search_term_string"
+            }
+          },
+          {
+            "@type":"WebPage",
+            "@id":"https://easybill.pe/politicas/#webpage",
+            "url":"https://easybill.pe/politicas",
+            "inLanguage":"es-PE",
+            "name":"Politicas de uso del sistema de facturación Easybill",
+            "isPartOf":{
+              "@id":"https://easybill.pe/#website"
+            },
+            "datePublished":"2019-01-01T20:12:54+00:00",
+            "dateModified":"2019-09-23T09:00:09+00:00",
+            "description":"Las politicas de uso del sistema de facturacion electronica Easybill lealo antes de usar."
+          }
+        ]
+      }
     return {
+      jsonld,
       htmlAttrs: {
       lang: 'es',
       },

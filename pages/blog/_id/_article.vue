@@ -5,22 +5,7 @@
       main( v-if="article.body" v-html="toHtml(article.body)")
       info
     footer-section
-    script(type='application/ld+json').
-      {'@context':'https://schema.org',"@type":"Organization","name":"Easybill","legalName":"MAKEASY S.R.L.",
-      "url":"https://www.easybill.pe","logo":"https://easybill.pe/_nuxt/img/9ed2535.svg",
-      "foundingDate":"2017","founders":
-      [{"@type":"Person","name":"Elef Abner Rosales Quispe"}],
-      "address":{"@type":"PostalAddress","streetAddress":"Jiron Tarapaca 160","addressLocality":"Huanuco","addressRegion":"HUANUCO","postalCode":"10010",
-      "addressCountry":"PERU"},"contactPoint":{"@type":"ContactPoint","contactType":"customer service","telephone":"[+51999017080","email":"teamakeasy@gmail.com"},
-      "sameAs":["https://www.facebook.com/Easybill.pe/","https://www.youtube.com/channel/UCvz8-GgLr0z3Ty2cWffH_9w","https://www.instagram.com/easybill.pe/?hl=es-la"]}
-    script(type='application/ld+json').
-      {'@context':'https://schema.org',"@graph":[
-      {"@context":"https://schema.org","@type":"SiteNavigationElement","name":"Pecios","url":"https://easybill.pe/?section=1"},
-      {"@context":"https://schema.org","@type":"SiteNavigationElement","name":"Clientes","url":"https://easybill.pe/?section=2"},
-      {"@context":"https://schema.org","@type":"SiteNavigationElement","name":"Blog","url":"https://easybill.pe/blog"},
-      {"@context":"https://schema.org","@type":"SiteNavigationElement","name":"Ingresar","url":"https://app.easybill.pe"},
-      {"@context":"https://schema.org","@type":"SiteNavigationElement","name":"Registrarte","url":"https://app.easybill.pe/registro"}]}
-
+    script(v-html='jsonld' type='application/ld+json')
 </template>
 
 <script>
@@ -33,7 +18,37 @@ import marked from 'marked'
 export default {
   components: { HeaderArticleSection, FooterSection, Info },
   data() {
+    const jsonld={       
+        "@context":"https://schema.org",
+        "@graph":[
+          {
+            "@type":"WebSite",
+            "@id":"https://easybill.pe/#website",
+            "url":"https://easybill.pe/",
+            "name":"Easybill",
+            "potentialAction":{
+              "@type":"SearchAction",
+              "target":"https://easybill.pe/?s={search_term_string}",
+              "query-input":"required name=search_term_string"
+            }
+          },
+          {
+            "@type":"WebPage",
+            "@id":"https://easybill.pe/blog/"+this.article._id+"/"+this.article.slug+"/#webpage",
+            "url":"https://easybill.pe/blog/"+this.article._id+"/"+this.article.slug,
+            "inLanguage":"es-PE",
+            "name":this.article.title,
+            "isPartOf":{
+              "@id":"https://easybill.pe/#website"
+            },
+            "datePublished":this.article.created_at,
+            "dateModified":"2019-09-23T09:00:09+00:00",
+            "description":this.article.description_google
+          }
+        ]
+      }
     return {
+      jsonld,
       article: {}
     }
   },

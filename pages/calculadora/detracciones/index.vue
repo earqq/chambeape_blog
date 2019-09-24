@@ -10,16 +10,7 @@
         p Registrate ahora y podras obtener 1 mes gratis en el sistema de facturacion Easybill
         a( href='https://app.easybill.pe/registro' class="button_login button" ) Comenzar Ahora!
     footer-section
-    script(type='application/ld+json').
-      {'@context':'https://schema.org',"@type":"Organization","name":"Easybill","legalName":"MAKEASY S.R.L.",
-      "url":"https://www.easybill.pe","logo":"https://easybill.pe/_nuxt/img/9ed2535.svg",
-      "foundingDate":"2017","founders":
-      [{"@type":"Person","name":"Elef Abner Rosales Quispe"}],
-      "address":{"@type":"PostalAddress","streetAddress":"Jiron Tarapaca 160","addressLocality":"Huanuco","addressRegion":"HUANUCO","postalCode":"10010",
-      "addressCountry":"PERU"},"contactPoint":{"@type":"ContactPoint","contactType":"customer service","telephone":"[+51999017080","email":"teamakeasy@gmail.com"},
-      "sameAs":["https://www.facebook.com/Easybill.pe/","https://www.youtube.com/channel/UCvz8-GgLr0z3Ty2cWffH_9w","https://www.instagram.com/easybill.pe/?hl=es-la"]}
-  
-
+    script(v-html='jsonld' type='application/ld+json')
 </template>
 
 <script>
@@ -35,7 +26,37 @@ export default {
     FooterSection
   },
   data() {
+    const jsonld={       
+        "@context":"https://schema.org",
+        "@graph":[
+          {
+            "@type":"WebSite",
+            "@id":"https://easybill.pe/#website",
+            "url":"https://easybill.pe/",
+            "name":"Easybill",
+            "potentialAction":{
+              "@type":"SearchAction",
+              "target":"https://easybill.pe/?s={search_term_string}",
+              "query-input":"required name=search_term_string"
+            }
+          },
+          {
+            "@type":"WebPage",
+            "@id":"https://easybill.pe/calculadora/detracciones/#webpage",
+            "url":"https://easybill.pe/calculadora/detracciones",
+            "inLanguage":"es-PE",
+            "name":"Calculadora para sacar porcentaje de detracciones",
+            "isPartOf":{
+              "@id":"https://easybill.pe/#website"
+            },
+            "datePublished":"2019-01-01T20:12:54+00:00",
+            "dateModified":"2019-09-23T09:00:09+00:00",
+            "description":"Herramienta gratuita para sacar el porcentaje de las detracciones facil y rapido."
+          }
+        ]
+      }
     return {
+      jsonld,
       articles: [],
       last_article: {}
     }

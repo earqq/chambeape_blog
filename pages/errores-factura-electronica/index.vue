@@ -10,22 +10,7 @@
         p Registrate ahora y podras obtener 1 mes gratis en el sistema de facturacion Easybill
         a( href='https://app.easybill.pe/registro' class="button_login button" ) Comenzar Ahora!
     footer-section
-    script(type='application/ld+json').
-      {'@context':'https://schema.org',"@type":"Organization","name":"Easybill","legalName":"MAKEASY S.R.L.",
-      "url":"https://www.easybill.pe","logo":"https://easybill.pe/_nuxt/img/9ed2535.svg",
-      "foundingDate":"2017","founders":
-      [{"@type":"Person","name":"Elef Abner Rosales Quispe"}],
-      "address":{"@type":"PostalAddress","streetAddress":"Jiron Tarapaca 160","addressLocality":"Huanuco","addressRegion":"HUANUCO","postalCode":"10010",
-      "addressCountry":"PERU"},"contactPoint":{"@type":"ContactPoint","contactType":"customer service","telephone":"[+51999017080","email":"teamakeasy@gmail.com"},
-      "sameAs":["https://www.facebook.com/Easybill.pe/","https://www.youtube.com/channel/UCvz8-GgLr0z3Ty2cWffH_9w","https://www.instagram.com/easybill.pe/?hl=es-la"]}
-    script(type='application/ld+json').
-      {'@context':'https://schema.org',"@graph":[
-      {"@context":"https://schema.org","@type":"SiteNavigationElement","name":"Pecios","url":"https://easybill.pe/?section=1"},
-      {"@context":"https://schema.org","@type":"SiteNavigationElement","name":"Clientes","url":"https://easybill.pe/?section=2"},
-      {"@context":"https://schema.org","@type":"SiteNavigationElement","name":"Blog","url":"https://easybill.pe/blog"},
-      {"@context":"https://schema.org","@type":"SiteNavigationElement","name":"Ingresar","url":"https://app.easybill.pe"},
-      {"@context":"https://schema.org","@type":"SiteNavigationElement","name":"Registrarte","url":"https://app.easybill.pe/registro"}]}
-
+    script(v-html='jsonld' type='application/ld+json')
 </template>
 
 <script>
@@ -41,7 +26,37 @@ export default {
     FooterSection
   },
   data() {
+    const jsonld={       
+        "@context":"https://schema.org",
+        "@graph":[
+          {
+            "@type":"WebSite",
+            "@id":"https://easybill.pe/#website",
+            "url":"https://easybill.pe/",
+            "name":"Easybill",
+            "potentialAction":{
+              "@type":"SearchAction",
+              "target":"https://easybill.pe/?s={search_term_string}",
+              "query-input":"required name=search_term_string"
+            }
+          },
+          {
+            "@type":"WebPage",
+            "@id":"https://easybill.pe/errores-factura-electronica/#webpage",
+            "url":"https://easybill.pe/errores-factura-electronica",
+            "inLanguage":"es-PE",
+            "name":"Listado de errores de rechazo de facturas electronicas devueltas por SUNAT",
+            "isPartOf":{
+              "@id":"https://easybill.pe/#website"
+            },
+            "datePublished":"2019-01-01T20:12:54+00:00",
+            "dateModified":"2019-09-23T09:00:09+00:00",
+            "description":"Herramienta gratuita para encontrar la descripcion de los codigos de errores devueltos por SUNAT al rechazar un comprobante electronico"
+          }
+        ]
+      }
     return {
+      jsonld,
       articles: [],
       last_article: {}
     }

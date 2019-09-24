@@ -1,5 +1,5 @@
 <template>
-    <header itemscope="itemscope" itemtype="http://schema.org/WPHeader" class="header_content">
+    <header  class="header_content">
         <modal-info :openModal="openModal" @closeModal="closeModalCotizar"></modal-info>
         <modal-disenar :openModal="openModalDiseñarr" @closeModal="closeModalDisenar"></modal-disenar>
         <modal-brand :openModal="openModalBrand" @closeModal="closeModalBrand"></modal-brand>
