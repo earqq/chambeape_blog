@@ -49,42 +49,81 @@
 				</div>
 			</div>
 		</div>
-    <script type="application/ld+json">
-    {
-      '@context': 'https://schema.org',
-      "@type": "Organization",
-      "name": "Easybill",
-      "legalName": "MAKEASY S.R.L.",
-      "url": "https://www.easybill.pe",
-      "logo": "https://easybill.pe/_nuxt/img/9ed2535.svg",
-      "foundingDate": "2017",
-      "founders": [{
-          "@type": "Person",
-          "name": "Elef Abner Rosales Quispe"
-      }],
-      "address": {
-          "@type": "PostalAddress",
-          "streetAddress": "Jiron Tarapaca 160",
-          "addressLocality": "Huanuco",
-          "addressRegion": "HUANUCO",
-          "postalCode": "10010",
-          "addressCountry": "PERU"
-      },
-      "contactPoint": {
-          "@type": "ContactPoint",
-          "contactType": "customer service",
-          "telephone": "[+51999017080",
-          "email": "teamakeasy@gmail.com"
-      },
-      "sameAs": ["https://www.facebook.com/Easybill.pe/", "https://www.youtube.com/channel/UCvz8-GgLr0z3Ty2cWffH_9w", "https://www.instagram.com/easybill.pe/?hl=es-la"]
-    }
-  </script>
+    <script v-html="jsonld" type="application/ld+json"></script>
 	</section>
 </template>
 <script>
 export default {
   data() {
+    const jsonld={
+        "@context":"https://schema.org",
+        "@type":"Organization",
+        "name":"Easybill",
+        "legalName":"MAKEASY S.R.L.",
+        "url":"https://www.easybill.pe",
+        "logo":"https://easybill.pe/_nuxt/img/9ed2535.svg",
+        "foundingDate":"2017-12-11",
+        "founders": [
+        {
+        "@type": "Person",
+        "name": "Elef Abner Rosales Quispe"
+        },
+        {
+        "@type": "Person",
+        "name": "Max Houston Ramirez Martel"
+        },
+        {
+        "@type": "Person",
+        "name": "Thalia Soledad Damian Aguirre"
+        },
+        {
+        "@type": "Person",
+        "name": "Omar Benjamin Chagua Ramos"
+        }
+        ],
+        "address":{"@type":"PostalAddress",
+        "streetAddress":"Jiron Tarapaca 160",
+        "addressLocality":"Huanuco",
+        "addressRegion":"HUANUCO",
+        "postalCode":"10010",
+        "addressCountry":"PERU"},
+        "contactPoint":{"@type":"ContactPoint",
+        "contactType":"customer service",
+        "telephone":"[+51-999017080]",
+        "email":"teamakeasy@gmail.com"},
+        "sameAs":["https://www.facebook.com/Easybill.pe/",
+        "https://www.youtube.com/channel/UCvz8-GgLr0z3Ty2cWffH_9w",
+        "https://www.instagram.com/easybill.pe/?hl=es-la"],
+        "@context":"https://schema.org",
+        "@graph":[
+          {
+            "@type":"WebSite",
+            "@id":"https://easybill.pe/#website",
+            "url":"https://easybill.pe/",
+            "name":"Easybill",
+            "potentialAction":{
+              "@type":"SearchAction",
+              "target":"https://easybill.pe/?s={search_term_string}",
+              "query-input":"required name=search_term_string"
+            }
+          },
+          {
+            "@type":"WebPage",
+            "@id":"https://easybill.pe/consulta/dni/#webpage",
+            "url":"https://easybill.pe/consulta/dni",
+            "inLanguage":"es-PE",
+            "name":"Consulta DNI de la RENIEC | Easybill",
+            "isPartOf":{
+              "@id":"https://easybill.pe/#website"
+            },
+            "datePublished":"2019-01-01T20:12:54+00:00",
+            "dateModified":"2019-09-23T09:00:09+00:00",
+            "description":"Herramienta gratuita para realizar consultas a la RENIEC  de DNI  de personas mayores a 18 años."
+          }
+        ]
+    }
     return {
+      jsonld,
       dni: '',
       trigger: false,
       result: null
