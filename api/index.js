@@ -1,6 +1,11 @@
 const express = require('express')
 const app = express()
+var bodyParser = require('body-parser')
+app.use(bodyParser.urlencoded({ extended: false }))
+app.use(bodyParser.json())
 var nodemailer = require('nodemailer')  
+var mongoose =require('./db.js')
+var SuggestionModel = require('./suggestion_model.js');
 // app.use((req, res, next) => { //doesn't send response just adjusts it
 //    res.header("Access-Control-Allow-Origin", "") // to give access to any origin
 //    res.header(
@@ -200,6 +205,36 @@ app.get('/exchange-rate', function(req, res) {
         // const output= siteHeading.find('div').text()
       }
     })
+});
+app.get('/suggestions', function(req, res) {
+    SuggestionModel.find(function(error, result) { 
+        res.send(result)
+    });
+});
+app.post('/suggestion/save', function(req, res) {
+    var suggest = new SuggestionModel()
+    suggest.description=req.body.description
+    suggest.email=req.body.email
+    suggest.votes=0
+    suggest.save(function(err) {
+        if (err){ //Si hay un error, lo regresamos
+          res.send(err);
+    }
+    res.json({ message: 'Se creo una sugerencia!' });
+    });
+});
+app.post('/suggestion/update/:id', function(req, res) {
+    
+    var conditions = { _id: req.params.id }
+    , update = { $inc: { votes: 1 }}
+    , options = { multi: true };
+    
+    SuggestionModel.update(conditions, update, options, callback);
+    
+    function callback (err, numAffected) {
+        res.json({ message: numAffected });
+    // numAffected is the number of updated documents
+    }
 });
 // export the server middleware
 module.exports = {
