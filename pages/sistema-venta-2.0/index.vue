@@ -42,16 +42,16 @@ export default {
           },
           {
             "@type":"WebPage",
-            "@id":"https://easybill.pe/tipo-cambio-sunat/#webpage",
-            "url":"https://easybill.pe/tipo-cambio-sunat",
+            "@id":"https://easybill.pe/sistema-venta-2.0/#webpage",
+            "url":"https://easybill.pe/sistema-venta-2.0",
             "inLanguage":"es-PE",
-            "name":"Tipo de cambio del dolar en la SUNAT actualizado",
+            "name":"Sistema de venta 2.0 ",
             "isPartOf":{
               "@id":"https://easybill.pe/#website"
             },
             "datePublished":"2019-01-01T20:12:54+00:00",
             "dateModified":"2019-09-23T09:00:09+00:00",
-            "description":"Herramienta gratuita para saber el tipo de cambio del dolar de la SUNAT  y las principales entidades financieras del Peru."
+            "description":"Sistema de venta 2.0 un nuevo concepto para gestionar tu negocio con un sistema enfocado a fidelizar a tus clientes."
           }
         ]
       }
@@ -63,13 +63,13 @@ export default {
   },
   head () {
     return {
-      title: 'Tipo de cambio para SUNAT | Easybill',
+      title: 'Sistema de venta 2.0 | Easybill',
       meta: [
         { 'http-equiv': 'X-UA-Compatible', content: 'IE=edge' },
         { name: 'theme-color', content:'#17de8b'},
-        { hid : 'description', name:'description', content:'Tipo de cambio del dolar para SUNAT y principales entidades financieras del Perú | Envia la información por whatsapp' },
-        { property: 'og:title', content: 'Tipo de cambio para SUNAT | Easybill' },
-        { property: 'og:description', content: 'Tipo de cambio del dolar para SUNAT y principales entidades financieras del Perú | Envia la información por whatsapp' },
+        { hid : 'description', name:'description', content:'Sistema de venta 2.0 un nuevo concepto para gestionar tu negocio enfocado en la fidelización de tus clientes.' },
+        { property: 'og:title', content: 'Sistema de venta 2.0 | Easybill' },
+        { property: 'og:description', content: 'Sistema de venta 2.0 un nuevo concepto para gestionar tu negocio enfocado en la fidelización de tus clientes.' },
         { property: 'og:image', content: 'https://firebasestorage.googleapis.com/v0/b/easybill-b9a91.appspot.com/o/landing%2Ffacebook-preview.png?alt=media&token=16577e76-02d9-4351-99f1-8663bbb90b92' },
         { property: 'og:url', content: 'https://easybill.pe' },
         { property: 'og:type', content: 'product' },
