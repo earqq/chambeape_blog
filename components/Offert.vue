@@ -8,7 +8,7 @@
         .image_wrap
           img( src="@/assets/img/header_image.svg" alt="Laptop abierta" )
         .description
-          h3 Por el mes de Septiembre Certificado Digital incluido en cualquiera de los planes.
+          h3 Te brindamos una atención personalizada para integrar tu negocio a facturación electrónica con Easybill.
           .card_form
             .input_wrapper( :class="{ require : !validateName && trigger }" )
               .validate_msg Nombre muy corto
@@ -19,7 +19,7 @@
             .input_wrapper(  :class="{ require : !validatePhone && trigger }" )
               .validate_msg Celular no es válido
               input(type='tel' class='form_control' v-model='userPhone' placeholder='Celular')
-          a( @click='sendCall()' class="button_login button2" ) Obtener Oferta
+          a( @click='sendCall()' class="button_login button2" ) Obtener Cotización
 </template>
 <script>
 export default {

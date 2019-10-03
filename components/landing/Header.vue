@@ -54,14 +54,14 @@
                         <p> Crece tu negocio y acelera tus ventas desde hoy. Empieza tu mes gratis.</p>
                         <span>
                             <a  
-                                @click="ga('event', 'Click Boton', {'event_category': 'Header Landing', 'event_label': 'Demostración ventas rápidas', 'value': 1});
+                                @click="ga('event', 'Click Boton', {'event_category': 'Header Landing', 'event_label': 'Iniciar registro', 'value': 1});
                                 fbq('track', 'StartTrial');
                                 " 
-                                href='http://demo.easybill.pe/pos'
+                                href='http://app.easybill.pe/registro'
                                 target="_blank"
                                 rel="noopener"
                                 class="button" > 
-                                    Probar Demo
+                                    Registrate
                                 <i class="icon icon-log-in"> </i>
                             </a>
                             <a 
