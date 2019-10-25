@@ -6,9 +6,9 @@ const _9244b8c0 = () => interopDefault(import('../pages/blog/index.vue' /* webpa
 const _30978c11 = () => interopDefault(import('../pages/errores-factura-electronica/index.vue' /* webpackChunkName: "pages/errores-factura-electronica/index" */))
 const _703a9abc = () => interopDefault(import('../pages/fidelizar/index.vue' /* webpackChunkName: "pages/fidelizar/index" */))
 const _9869b04e = () => interopDefault(import('../pages/politicas.vue' /* webpackChunkName: "pages/politicas" */))
-const _0fc60b20 = () => interopDefault(import('../pages/sistema-venta-2.0/index.vue' /* webpackChunkName: "pages/sistema-venta-2.0/index" */))
 const _99f45f20 = () => interopDefault(import('../pages/terminos.vue' /* webpackChunkName: "pages/terminos" */))
 const _5a94e5c8 = () => interopDefault(import('../pages/tipo-cambio-sunat/index.vue' /* webpackChunkName: "pages/tipo-cambio-sunat/index" */))
+const _c1701868 = () => interopDefault(import('../pages/validez-factura-electronica/index.vue' /* webpackChunkName: "pages/validez-factura-electronica/index" */))
 const _3da5def2 = () => interopDefault(import('../pages/calculadora/detracciones/index.vue' /* webpackChunkName: "pages/calculadora/detracciones/index" */))
 const _1b900ae0 = () => interopDefault(import('../pages/calculadora/igv/index.vue' /* webpackChunkName: "pages/calculadora/igv/index" */))
 const _2f052680 = () => interopDefault(import('../pages/consulta/dni.vue' /* webpackChunkName: "pages/consulta/dni" */))
@@ -107,10 +107,6 @@ export function createRouter() {
       component: _9869b04e,
       name: "politicas"
     }, {
-      path: "/sistema-venta-2.0",
-      component: _0fc60b20,
-      name: "sistema-venta-2.0"
-    }, {
       path: "/terminos",
       component: _99f45f20,
       name: "terminos"
@@ -118,6 +114,10 @@ export function createRouter() {
       path: "/tipo-cambio-sunat",
       component: _5a94e5c8,
       name: "tipo-cambio-sunat"
+    }, {
+      path: "/validez-factura-electronica",
+      component: _c1701868,
+      name: "validez-factura-electronica"
     }, {
       path: "/calculadora/detracciones",
       component: _3da5def2,

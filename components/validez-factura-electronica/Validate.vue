@@ -2,34 +2,19 @@
     <div class="clients_section" id="clients">
             <div class="clients_wrapper">
                 <div class="title">
-                    <h2>Ingresa tu sugerencia<span>.</span></h2>
+                    <h2>Ingresa los datos del comprobante<span>.</span></h2>
                 </div>
-                <p>Sugerencia</p>
-                <input class='search_input' placeholder='Ejem: Yo creo podrian .....' v-model='suggestion.description' type='text'>                             
-                <p>Correo</p>
-                <input class='search_input' placeholder='Email' v-model='suggestion.email' type='text'> 
-                <br>            
-                <button @click='sendSuggestion()'>Enviar sugerencia</button>                
-                <div class='rwd'>
-                    <table class="rwd_auto">
-                        <thead>
-                        <tr>
-                        <th>Idea</th>
-                        <th>Votos</th>
-                        <th>Votar</th>
-                        <th></th>
-                        </tr>
-                        </thead>
-                        <tbody>
-                            <tr  v-for='suggestionVote in suggestions' v-bind:key='suggestionVote.id' >
-                                <td >{{suggestionVote.description}}</td>
-                                <td >{{suggestionVote.votes}}</td>
-                                <td ><button class='button button-primary'  @click='addVote(suggestionVote._id)' >Votar</button></td>
-                            </tr>                           
-                        </tbody>
-                    </table>
-                </div>  
+                <p>RUC Emisor</p>
+                <input class='search_input' maxlength="11" placeholder='Ejem: 20602768059' v-model='voucher.ruc' type='text'>                             
+                <p>Serie</p>
+                <input class='search_input' placeholder='Email: F001' v-model='voucher.serie' maxlength='4' type='text'>                 
+                <p>Número</p>
+                <input class='search_input' placeholder='Email: 0001' v-model='voucher.number' type='number'> 
+                <br>      
+                <button @click='consult()'>Consultar</button>        
+                <p class='response' v-if='message!=""' >{{message}}</p>    
             </div>
+            
     </div>
 </template>
 
@@ -39,14 +24,13 @@ export default {
         return {
             selectQuote: 1,
             mobile: false,
-            suggestion:{
-                id:0,
-                description:'',
-                email:'',
-                votes:0
+            message:'',
+            voucher:{
+                ruc:'',
+                serie:'',
+                number:'',
 
             },
-            suggestions:[]
         }
     },
     created () {
@@ -62,38 +46,27 @@ export default {
                 })
             })
         }       
-        this.getSuggestions()
     },
-    methods:{
-        getSuggestions(){
-            this.$axios.get('/api/suggestions')
-            .then(res=>{
-                this.suggestions=res.data
-                console.log(this.suggestions)
-            }).catch(err=>{
-                console.log("error")
-                console.log(err)
-            })
-        },
-        sendSuggestion(){
-            if(this.suggestion.description!='' && this.suggestion.email!=''){
-                this.$axios.post('/api/suggestion/save', this.suggestion)
+    methods:{   
+        consult(){
+            this.message=''
+            if(this.voucher.serie!='' && this.voucher.ruc!='' && this.voucher.number!=''){
+                this.$axios.get('https://app.easybill.pe/tools/consult/bill/sunat/'
+                +this.voucher.ruc+'/'+this.voucher.serie+'/'+this.voucher.number)
                 .then(res=>{
-                    this.getSuggestions()
-                    this.suggestion={}
-                    console.log("guardo")
+                    if(res.data.code=='0011')
+                        this.message='La factura no existe en los registros de SUNAT';
+                    else{
+                        if(res.data.code=='0')
+                            this.message=res.data.description
+                        else 
+                            this.message='La factura esta rechazada con código: '+res.data.code+' | '+res.data.description;
+                    }
                 })                
             }else{
                 alert('Llene todos los campos')
             }            
-        },
-        addVote(id){
-            this.$axios.post('/api/suggestion/update/'+id)
-            .then(res=>{
-                this.getSuggestions()
-                console.log("actualizo")
-            })
-        }
+        },      
     }
     
 }
@@ -106,6 +79,12 @@ export default {
     background-color: #f2f4f5
     display: flex
     justify-content: center
+    .response
+        background: #201c22;
+        border-radius: 5px;
+        margin: 20px;
+        color: white;
+        padding: 30px;
     button
         padding: 5px
         padding-left: 10px

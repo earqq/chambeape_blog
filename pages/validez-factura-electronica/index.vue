@@ -1,7 +1,7 @@
 <template lang="pug">
   section.main_blog
     header-section( :last_article="last_article" )
-    questions
+    validate
     aside.card_register
       .image_wrap
         img( src="@/assets/img/service_image_1.svg" alt="Laptop abierta" )
@@ -14,15 +14,15 @@
 </template>
 
 <script>
-import HeaderSection from '@/components/sistema-venta/Header'
-import Questions from '@/components/sistema-venta/Questions'
+import HeaderSection from '@/components/validez-factura-electronica/Header'
+import Validate from '@/components/validez-factura-electronica/Validate'
 import FooterSection from '@/components/landing/Footer'
 import { firestore } from '~/plugins/firebase.js'
 
 export default {
   components: {
     HeaderSection,
-    Questions,
+    Validate,
     FooterSection
   },
   data() {
@@ -63,13 +63,13 @@ export default {
   },
   head () {
     return {
-      title: 'Sistema de venta 2.0 | Easybill',
+      title: 'Validez de tu factura electrónica en SUNAT | Easybill',
       meta: [
         { 'http-equiv': 'X-UA-Compatible', content: 'IE=edge' },
         { name: 'theme-color', content:'#17de8b'},
-        { hid : 'description', name:'description', content:'Sistema de venta 2.0 un nuevo concepto para gestionar tu negocio enfocado en la fidelización de tus clientes.' },
-        { property: 'og:title', content: 'Sistema de venta 2.0 | Easybill' },
-        { property: 'og:description', content: 'Sistema de venta 2.0 un nuevo concepto para gestionar tu negocio enfocado en la fidelización de tus clientes.' },
+        { hid : 'description', name:'description', content:'¿Estás seguro que la factura electrónica que te entregaron es válida ante SUNAT? Entra y averigualo rápidamente' },
+        { property: 'og:title', content: 'Consulta la validez de tu factura electrónica en SUNAT | Easybill' },
+        { property: 'og:description', content: '¿Estás seguro que la factura electrónica que te entregaron es válida ante SUNAT? Entra y averigualo rápidamente' },
         { property: 'og:image', content: 'https://firebasestorage.googleapis.com/v0/b/easybill-b9a91.appspot.com/o/landing%2Ffacebook-preview.png?alt=media&token=16577e76-02d9-4351-99f1-8663bbb90b92' },
         { property: 'og:url', content: 'https://easybill.pe' },
         { property: 'og:type', content: 'product' },

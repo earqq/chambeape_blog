@@ -7,8 +7,11 @@
             Crecemos contigo<span>.</span>
         </h2>
         <p>
-            La tecnología hoy en día ha dejado de ser un lujo o privilegio en todo el mundo, su uso se ha convertido en un elemento fundamental en las empresas. 
-            Queremos crecer contigo y eliminar las barreras tecnológicas a través de nuestra plataforma el cual se adapta a tus necesidades y proyecciones de crecimiento para poder competir en este mercado.
+          La tecnología hoy en día ha dejado de ser un lujo o privilegio en todo el mundo, 
+          su uso se ha convertido en un elemento fundamental en las empresas.
+          Queremos crecer contigo y eliminar las barreras tecnológicas a 
+          través de nuestra plataforma el cual se adapta a tus necesidades
+          y proyecciones de crecimiento para poder competir en este mercado.     
         </p>
       </div>
       <img src="@/assets/img/about_image.svg" alt="Persona usando computadora">

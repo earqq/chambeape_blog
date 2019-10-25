@@ -5,7 +5,8 @@
                 <transition name="slide-fade-r" mode="out-in">
                     <img v-if="currentService === 1" src="@/assets/img/service_image_1.svg" alt="Laptop abierta" />
                     <img v-if="currentService === 2" src="@/assets/img/service_image_2.svg"  alt="Laptop abierta con graficos" />
-                    <img v-if="currentService === 3" src="@/assets/img/service_image_1.svg"  alt="Laptop abierta con datos" />
+                    <img v-if="currentService === 3" src="@/assets/img/service_image_1.svg"  alt="Laptop abierta con graficos" />
+                    <img v-if="currentService === 4" src="@/assets/img/service_image_1.svg"  alt="Laptop abierta con datos" />
                 </transition>
             </div>
             <div class="service_info">
@@ -13,19 +14,26 @@
                     <div class="service" v-if="currentService === 1">
                         <b>01</b>
                         <h2>¿Qué es Easybill?<span>.</span></h2>
-                        <p>Easybill es un sistema de ventas online que integra un módulo de ventas rápidas y un sistema de gestión administrativa, diseñado especialmente para impulsar el crecimiento de negocios minoristas como:
-                        Bodegas, Ferreterias, Minimarkets, Librerias, etc.</p>
+                        <p>Easybill es un sistema de ventas online que integra un módulo de ventas rápidas y un sistema de gestión administrativa, diseñado especialmente para impulsar el crecimiento de negocios minoristas como: Bodegas, Ferreterias, Minimarkets, Librerias, etc.</p>
                     </div>
                     <div class="service" v-if="currentService === 2">
                         <b>02</b>
                         <h2>Ventas rápidas<span>.</span></h2>
-                        <p>Genera tus facturas y boletas de una manera más rápida y eficiente con tan solo 3 pasos en nuestro modulo de ventas rápidas, solo rellena la información necesaria. Envia el comprobante por email o whatsapp de forma segura.</p>
+                        <p>Genera tus facturas y boletas electrónicas de una manera más rápida con tan solo 3 pasos en nuestro módulo de ventas rápidas. 
+                            Envia el comprobante por email o whatsapp de forma segura.
+                        </p>
                     </div>
+                    <!-- <div class="service" v-if="currentService === 3">
+                        <b>03</b>
+                        <h2>Enamora a tus clientes<span>.</span></h2>
+                        <p>Te brindamos las herramientas para que puedas fidelizar a tus clientes. Ofertas y descuentos personalizados, recordatorios de fechas importantes, personalización de tu comprobante y envío de ofertas masivas.</p>
+                    </div> -->
                     <div class="service" v-if="currentService === 3">
                         <b>03</b>
                         <h2>Gestión administrativa<span>.</span></h2>
                         <p>Tienes información en tiempo real de las ventas,compras de tu negocio, genera reportes a medida y gestiona tus oficinas y usuarios, todo esto desde nuestra plataforma alojada en la nube para que puedas acceder desde cualquier lugar o cualquier dispositivo. </p>
                     </div>
+                    
                 </transition>
                 <div class="controls"><span class="prev" @click="prevService"><i class="icon icon-keyboard_arrow_left"></i></span><span class="next" @click="nextService"><i class="icon icon-keyboard_arrow_right"></i></span></div>
             </div>
@@ -52,7 +60,7 @@ export default {
             this.currentService = 0
             setTimeout(() => {
                 if (step > 1) this.currentService = step - 1
-                else this.currentService = 3 
+                else this.currentService = 3
             }, 100);
         },
         nextService() {

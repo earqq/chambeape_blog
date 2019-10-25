@@ -51,7 +51,7 @@
                 <div class="header_main_content">
                     <div class="header_main_text">
                         <h1>Sistema de venta intuitivo y personalizable para gestionar tu negocio<span>.</span></h1>
-                        <p> Crece tu negocio y acelera tus ventas desde hoy. Empieza tu mes gratis.</p>
+                        <p> Mejora la gestión de tu negocio y aumenta tus ventas desde hoy. Empieza tu mes gratis.</p>
                         <span>
                             <a  
                                 @click="ga('event', 'Click Boton', {'event_category': 'Header Landing', 'event_label': 'Iniciar registro', 'value': 1});
@@ -61,7 +61,7 @@
                                 target="_blank"
                                 rel="noopener"
                                 class="button" > 
-                                    Registrate
+                                    Regístrate
                                 <i class="icon icon-log-in"> </i>
                             </a>
                             <a 

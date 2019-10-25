@@ -50,13 +50,12 @@
                 
                 <div class="header_main_content">
                     <div class="header_main_text">
-                        <h1>Sistema de venta 2<span>.</span>0</h1>
-                        <p>Estamos armando juntos un nuevo concepto de sistema de venta enfocado a fidelizar y enamorar a tus clientes. </p>
-                        <p>Lo que TU piensas es muy importante para nosotros para brindarte el mejor servicio posible.</p>
+                        <h1>Consulta la validez de tu factura electrónica<span>.</span></h1>
+                        <p>¿Estás seguro que la factura electrónica que te entregaron es valida ante SUNAT?</p>
                     </div>
                     <div
                         class="header_3d">
-                        <div class="header_3d_wrapper"><img src="@/assets/img/sistema2.0.png" alt='Cambio de moneda' /></div>
+                        <div class="header_3d_wrapper"><img src="@/assets/img/pagofactura.png" alt='Cambio de moneda' /></div>
                 </div>
             </div>
         </div>
