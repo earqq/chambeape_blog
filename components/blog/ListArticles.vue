@@ -6,7 +6,7 @@
             small {{a.created_at | moment("DD [de] MMMM [de] YYYY") }}
             h2 {{a.title}}
             p {{a.body_preview}}
-            nuxt-link( :to="{name: 'blog-id-article', params: {id: a._id, article: a.slug}}" )
+            nuxt-link( :to="{name: 'blog-slug-article', params: { slug: a.slug}}" )
               span Leer Articulo
               i.icon.icon-keyboard_arrow_right
 </template>

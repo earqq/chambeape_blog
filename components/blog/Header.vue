@@ -36,7 +36,7 @@
 									<div class="header_blog_main_text">
 											<small> Publicado el {{last_article.created_at | moment("DD [de] MMMM [de] YYYY")}} </small>
 											<h1>{{last_article.title}}<span>.</span></h1>
-											<nuxt-link :to="{name: 'blog-id-article', params: {id: last_article._id, article: last_article.slug}}"  class="button_fill">
+											<nuxt-link :to="{name: 'blog-slug-article', params: {slug: last_article.slug}}"  class="button_fill">
 												Continuar Leyendo
 											</nuxt-link>
 									</div>

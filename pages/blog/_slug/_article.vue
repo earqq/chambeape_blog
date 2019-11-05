@@ -72,7 +72,7 @@ export default {
     }
   },
   async asyncData ({ params }) {
-    const ref = firestore.collection('articles').where("_id", "==", parseInt(params.id))
+    const ref = firestore.collection('articles').where("slug", "==", params.slug)
     let snap
     try {
       snap = await ref.get()
