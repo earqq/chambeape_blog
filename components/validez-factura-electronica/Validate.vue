@@ -1,8 +1,22 @@
 <template>
     <div class="clients_section" id="clients">
             <div class="clients_wrapper">
+                <div>
+                    <div  class="title">
+                    <h2>Consulta la validez de tu factura electrónica<span>.</span></h2>
+                    </div>
+                    <br>
+                    <p>Cuando te entregan una factura electronica es muy importante saber la validez de la misma
+                        ante la SUNAT.
+                    </p>
+                    <br>
+                    <p>Para poder declarar ante la SUNAT consulta primero aquí la factura electrónica que te entregaron.</p>
+
+                </div>
+                <br>
                 <div class="title">
-                    <h2>Ingresa los datos del comprobante<span>.</span></h2>
+                <h3>Ingresa los datos del comprobante<span>.</span></h3>
+                <br>
                 </div>
                 <p>RUC Emisor</p>
                 <input class='search_input' maxlength="11" placeholder='Ejem: 20602768059' v-model='voucher.ruc' type='text'>                             

@@ -63,11 +63,19 @@ export default {
   },
   head () {
     return {
+      htmlAttrs: {
+      lang: 'es',
+      },
       title: 'Calculadora IGV para SUNAT - Perú | Easybill',
+      link:[
+        {
+          rel:'canonical',href:'https://easybill.pe/calculadora/igv', 
+        }
+      ],
       meta: [
         { 'http-equiv': 'X-UA-Compatible', content: 'IE=edge' },
         { name: 'theme-color', content:'#17de8b'},
-        { hid : 'description', name:'description', content:'Calcula aquí tu impuesto IGV con monto base o desde el total. Consulta tu IGV con nuestra calculadora gratuita.' },
+        { hid : 'description', name:'description', content:'Calculadora para sacar tu impuesto IGV con monto base o desde el total basado en SUNAT - Perú. Consulta tu IGV con nuestra calculadora gratuita. Suscribete al blog para tener más herramientas.' },
         { property: 'og:title', content: 'Calculadora IGV para SUNAT - Perú | Easybill' },
         { property: 'og:description', content: 'Calcula aquí tu impuesto IGV con monto base o desde el total. Consulta tu IGV con nuestra calculadora gratuita.' },
         { property: 'og:image', content: 'https://firebasestorage.googleapis.com/v0/b/easybill-b9a91.appspot.com/o/landing%2Ffacebook-preview.png?alt=media&token=16577e76-02d9-4351-99f1-8663bbb90b92' },

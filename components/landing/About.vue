@@ -2,17 +2,18 @@
   <div class="about_section">
     <div class="about_wrapper">
       <div class="about_description">
-        <b>NOSOTROS</b>
+        <br>
         <h2>
-            Crecemos contigo<span>.</span>
+            ¿Cómo emitir factura electrónica? <span>.</span>
         </h2>
         <p>
-          La tecnología hoy en día ha dejado de ser un lujo o privilegio en todo el mundo, 
-          su uso se ha convertido en un elemento fundamental en las empresas.
-          Queremos crecer contigo y eliminar las barreras tecnológicas a 
-          través de nuestra plataforma el cual se adapta a tus necesidades
-          y proyecciones de crecimiento para poder competir en este mercado.     
+          Para emitir facturas electrónicas tienes que seguir 3 simples pasos:
         </p>
+        <li>Regístrarte en nuestro sistema de venta Easybill.</li>
+        <li>Crear un usuario secundario en SUNAT</li>
+        <li>Adquirir un certificado digital para firmar tus comprobantes.</li>
+        <br>
+        <p>Te lo hacemos más facil, solo contáctanos al 980 687 918 y hacemos todo el proceso por tí.</p>
       </div>
       <img src="@/assets/img/about_image.svg" alt="Persona usando computadora">
     </div>
@@ -34,17 +35,52 @@
           <p>Productos y Servicios</p>
       </div>
     </div>
+    <script v-html='jsonld' type='application/ld+json'></script>
   </div>
 </template>
 
 <script>
 export default {
     data () {
-        return {
+      const jsonld={       
+          "@context": "http://schema.org",
+          "@type": "Question",
+          "name": "¿Cómo emitir factura electrónica?",
+          "upvoteCount": "190",
+          "text": "¿Cómo puedo empezar a emitir comprobantes electrónicos hacia la SUNAT?",
+          "dateCreated": "2019-11-04T20:07Z",
+          "author": {
+              "@type": "Person",
+              "name": "EASYBILL"
+          },
+          "answerCount": "4",
+          "acceptedAnswer": {
+              "@type": "Answer",
+              "upvoteCount": "1300",
+              "text": "Para emitir facturas electrónicas tienes que  registrarte en un Sistema de venta como Easybill, crear un usuario secundario en SUNAT y adquirir un certificado digital para firmar tus comprobantes electrónicos.",
+              "dateCreated": "2019-11-01T22:01Z",
+              "author": {
+                  "@type": "Person",
+                  "name": "Easybill"
+              }
+          },
+          "suggestedAnswer": {
+              "@type": "Answer",
+              "upvoteCount": "39",
+              "text": "Para emitir facturas electrónicas tienes que darte de alta como emisor electrónico en SUNAT con tu usuario secundario y registrarte en un sistema de venta.",
+              "dateCreated": "2019-11-06T21:11Z",
+              "author": {
+                  "@type": "Person",
+                  "name": "Easybill1"
+              }
+          }
+      }
+      return {
             docs: 0,
             items: 0,
             tenants: 0,
             ga: {},
+            jsonld
         }
     },
     created() {
@@ -116,7 +152,13 @@ export default {
         font-size: 17px
         font-family: $font_regular
         line-height: 1.7
-        margin-bottom: 15px                
+        margin-bottom: 15px      
+      li
+        color: #575F66
+        font-size: 17px
+        font-family: $font_regular
+        line-height: 1.7
+        margin-bottom: 15px             
     img
       width: 400px
   .about_numbers
@@ -151,6 +193,8 @@ export default {
           margin-bottom: 15px
         p
           font-size: 16px
+        li
+          font-size: 16px
       img
         width: 350px  
     .about_numbers
@@ -175,6 +219,9 @@ export default {
         h2
           font-size: 25px
         p
+          font-size: 15px
+          margin-bottom: 0
+        li
           font-size: 15px
           margin-bottom: 0
       img
@@ -209,6 +256,9 @@ export default {
         h2
           font-size: 20px
         p
+          font-size: 15px
+          text-align: left
+        li
           font-size: 15px
           text-align: left
     .about_numbers

@@ -50,7 +50,7 @@
                 
                 <div class="header_main_content">
                     <div class="header_main_text">
-                        <h1>Calculadora de detracciones actualizado al {{ new Date() | moment("DD [de] MMMM [de] YYYY")}}<span>.</span></h1>
+                        <h1>Calculadora de detracciones basado en SUNAT - Perú<span>.</span></h1>
                         <p>El importe base para las detracciones en Perú debe ser mayor a S/ 700 .</p>
                     </div>
                     <div
@@ -59,6 +59,7 @@
                 </div>
             </div>
         </div>
+        <script v-html='jsonld' type='application/ld+json'></script>
         </div>
     </header>
 </template>
@@ -71,10 +72,44 @@ export default {
     components: { ModalInfo, ModalDisenar, ModalBrand },
     props: ['page'], 
     data () {
+        const jsonld={       
+            "@context": "http://schema.org",
+            "@type": "Question",
+            "name": "¿Cómo calcular el igv?",
+            "upvoteCount": "250",
+            "text": "¿Como se calcula los impuestos IGV para SUNAT en Perú?",
+            "dateCreated": "2019-11-02T20:07Z",
+            "author": {
+                "@type": "Person",
+                "name": "SUNAT"
+            },
+            "answerCount": "4",
+            "acceptedAnswer": {
+                "@type": "Answer",
+                "upvoteCount": "150",
+                "text": "El IGV se calcula aplicando el 18% al importe base, por ejemplo: IGV =  Importe Base x 0.18",
+                "dateCreated": "2010-12-01T22:01Z",
+                "author": {
+                    "@type": "Person",
+                    "name": "SUNAT"
+                }
+            },
+            "suggestedAnswer": {
+                "@type": "Answer",
+                "upvoteCount": "10",
+                "text": "El calculo del IGV  se realiza multiplicando 0.18 al importe base",
+                "dateCreated": "2019-11-016T21:11Z",
+                "author": {
+                    "@type": "Person",
+                    "name": "Easybill"
+                }
+            }
+        }
         return {
             showMenu: false,
             mobile: false,
             ga:{},
+            jsonld,
             fbq:{},
             openModal: false,
             openModalDiseñarr:false,

@@ -18,11 +18,6 @@
   <priority>0.80</priority>
 </url>
 <url>
-  <loc>https://easybill.pe/tipo-cambio-sunat</loc>
-  <lastmod>2019-09-20T16:45:21+00:00</lastmod>
-  <priority>0.80</priority>
-</url>
-<url>
   <loc>https://easybill.pe/calculadora/igv</loc>
   <lastmod>2019-09-20T17:45:21+00:00</lastmod>
   <priority>0.50</priority>
@@ -101,17 +96,6 @@
   <loc>https://easybill.pe/blog/4/guia-emisor-electronico</loc>
   <lastmod>2019-08-09T16:45:21+00:00</lastmod>
   <priority>0.64</priority>
-</url>
-
-<url>
-  <loc>https://easybill.pe/consulta/ruc</loc>
-  <lastmod>2019-08-09T16:45:21+00:00</lastmod>
-  <priority>0.51</priority>
-</url>
-<url>
-  <loc>https://easybill.pe/consulta/dni</loc>
-  <lastmod>2019-08-09T16:45:21+00:00</lastmod>
-  <priority>0.51</priority>
 </url>
 
 

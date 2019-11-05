@@ -1,7 +1,31 @@
 <template>
     <div class="clients_section" id="clients">
             <div class="clients_wrapper">
+                <div>     
+                    <h2>¿Cómo calcular el igv?</h2>                 
+                    <br>
+                    <p>
+                        El cálculo de IGV se hace aplicando el 18% en caso de tener el importe base, por ejemplo:
+                        IGV =  Importe Base x 0.18
+                    </p>
+                    <br>
+                    <p>
+                        En caso de saber el importe total es decir incluido IGV entonces el cálculo sería así:
+                    </p>
+                    <p>Primero obtenemos el monto base de la siguiente manera:</p>
+
+                    <p>- Base = Total / (1 + 0.18)  o Base = Total / 1.18</p>
+
+                    <p>Finalmente restando el monto total menos el monto base nos da como resultado el IGV:</p>
+                    <p>- IGV =  Total – Base</p>
+                    <br>
+                    <p>Enseguida se mostrará el equivalente en los otros dos valores, 
+                        y si utiliza nuestra calculadora le facilitará obtener el resultado para llenarlo en una factura.
+                    </p>
+                </div>
+                <br>
                 <div class="title calc">
+                    
                     <h2>Calculadora IGV </h2>
                     <br>
                     <table>

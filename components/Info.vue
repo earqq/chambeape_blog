@@ -28,7 +28,6 @@
             :title='document.title' 
             :description='document.title'
             hashtags='easybill,facturacionelectronica,facturacion'
-            twitter-user='easybill'
             inline-template='')
             div
               network(network='facebook')
@@ -37,10 +36,6 @@
               network(network='whatsapp')
                 i.icon.icon-whatsapp
                 |  Whatsapp
-              network(network='twitter')
-                i.icon.icon-twitter
-                |  Twitter             
-
           
 
 </template>

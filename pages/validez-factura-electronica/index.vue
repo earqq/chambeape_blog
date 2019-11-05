@@ -63,11 +63,19 @@ export default {
   },
   head () {
     return {
+      htmlAttrs: {
+      lang: 'es',
+      },
       title: 'Validez de tu factura electrónica en SUNAT | Easybill',
+      link:[
+        {
+          rel:'canonical',href:'https://easybill.pe/validez-factura-electronica', 
+        }
+      ],
       meta: [
         { 'http-equiv': 'X-UA-Compatible', content: 'IE=edge' },
         { name: 'theme-color', content:'#17de8b'},
-        { hid : 'description', name:'description', content:'¿Estás seguro que la factura electrónica que te entregaron es válida ante SUNAT? Entra y averigualo rápidamente' },
+        { hid : 'description', name:'description', content:'¿Estás seguro que la factura electrónica que te entregaron es válida ante SUNAT? Entra y averigualo rápidamente, consulta de facturas electrónicas emitidas a SUNAT' },
         { property: 'og:title', content: 'Consulta la validez de tu factura electrónica en SUNAT | Easybill' },
         { property: 'og:description', content: '¿Estás seguro que la factura electrónica que te entregaron es válida ante SUNAT? Entra y averigualo rápidamente' },
         { property: 'og:image', content: 'https://firebasestorage.googleapis.com/v0/b/easybill-b9a91.appspot.com/o/landing%2Ffacebook-preview.png?alt=media&token=16577e76-02d9-4351-99f1-8663bbb90b92' },

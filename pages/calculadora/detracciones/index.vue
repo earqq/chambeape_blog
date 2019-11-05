@@ -63,11 +63,19 @@ export default {
   },
   head () {
     return {
+      htmlAttrs: {
+      lang: 'es',
+      },
       title: 'Calculadora de detracciones para SUNAT - Perú | Easybill',
+      link:[
+        {
+          rel:'canonical',href:'https://easybill.pe/calculadora/detracciones', 
+        }
+      ],
       meta: [
         { 'http-equiv': 'X-UA-Compatible', content: 'IE=edge' },
         { name: 'theme-color', content:'#17de8b'},
-        { hid : 'description', name:'description', content:'Calcula aquí tu impuesto de detracciones con monto base y el porcentaje de detracción. Consulta tu monto de detracciones con nuestra calculadora gratuita.' },
+        { hid : 'description', name:'description', content:'Calculadora de detracciones basado en SUNAT con monto base y diversos tipos de porcentaje de detracciones. Consulta tu monto de detracciones con nuestra calculadora gratuita.' },
         { property: 'og:title', content: 'Calculadora de detracciones para SUNAT - Perú | Easybill' },
         { property: 'og:description', content: 'Calcula aquí tu impuesto IGV con monto base y el porcentaje de detracción. Consulta tu monto de detracciones con nuestra calculadora gratuita.' },
         { property: 'og:image', content: 'https://firebasestorage.googleapis.com/v0/b/easybill-b9a91.appspot.com/o/landing%2Ffacebook-preview.png?alt=media&token=16577e76-02d9-4351-99f1-8663bbb90b92' },

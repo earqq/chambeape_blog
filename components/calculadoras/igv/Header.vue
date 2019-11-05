@@ -48,9 +48,9 @@
                     </no-ssr >
                 </nav>
                 
-                <div class="header_main_content">
+                <div class="header_main_content">                    
                     <div class="header_main_text">
-                        <h1>Calculadora de IGV actualizado al {{ new Date() | moment("DD [de] MMMM [de] YYYY")}}<span>.</span></h1>
+                        <h1>Calculadora de IGV basado en SUNAT - Perú<span>.</span></h1>
                         <p>El cálculo de IGV se calcula aplicando el 18%  al importe base de la operación.</p>
                     </div>
                     <div

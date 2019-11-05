@@ -50,8 +50,8 @@
                 
                 <div class="header_main_content">
                     <div class="header_main_text">
-                        <h1>Sistema de venta intuitivo y personalizable para gestionar tu negocio<span>.</span></h1>
-                        <p> Mejora la gestión de tu negocio y aumenta tus ventas desde hoy. Empieza tu mes gratis.</p>
+                        <h1>Sistema de punto de venta con facturación electrónica para SUNAT <span>.</span></h1>
+                        <p> Cientos de empresas ya estan gestionando su negocio con Easybill. Empieza tu mes gratis.</p>
                         <span>
                             <a  
                                 @click="ga('event', 'Click Boton', {'event_category': 'Header Landing', 'event_label': 'Iniciar registro', 'value': 1});
@@ -60,7 +60,7 @@
                                 href='http://app.easybill.pe/registro'
                                 target="_blank"
                                 rel="noopener"
-                                class="button" > 
+                                class="button" >  
                                     Regístrate
                                 <i class="icon icon-log-in"> </i>
                             </a>

@@ -135,6 +135,11 @@ export default {
       lang: 'es',
       },
       title: 'Consulta DNI de RENIEC rápido y confiable  | Easybill',
+      link:[
+        {
+          rel:'canonical',href:'https://easybill.pe'
+        }
+      ],
       meta: [
         { 'http-equiv': 'X-UA-Compatible', content: 'IE=edge' },
         { name: 'theme-color', content:'#17de8b'},

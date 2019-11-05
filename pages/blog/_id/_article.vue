@@ -52,6 +52,11 @@ export default {
       itemscope:'',
       itemtype:'http://schema.org/WebPage'
       },
+      link:[
+        {
+          rel:'canonical',href:`https://easybill.pe/blog/${this.article._id}/${this.article.slug}`
+        }
+      ],
       title: this.article.title + ' | Easybill',
       meta: [
         { 'http-equiv': 'X-UA-Compatible', content: 'IE=edge' },

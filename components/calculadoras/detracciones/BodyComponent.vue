@@ -1,6 +1,34 @@
 <template>
     <div class="clients_section" id="clients">
-            <div class="clients_wrapper">
+            <div class="clients_wrapper">                
+                <div>
+                    <h2>¿Que son las detracciones?</h2>
+                        <br>
+                        <p> 
+                            Las detracciones son un sistema creado para garantizar el pago de impuestos en sectores con alto grado 
+                            de evasión tributaria.
+                            Entre ellos se incluyen la agricultura, la pesca, la industria azucarera, los servicios, entre otros.
+                        </p><br>
+                        <p>
+                            Consiste básicamente en la detracción (descuento)
+                            que efectúa el comprador o usuario de un bien o servicio, de un porcentaje del importe
+                            a pagar por estas operaciones, para luego depositarlo en el Banco de la Nación,
+                            en una cuenta corriente a nombre del vendedor o prestador del servicio, el cual,
+                            por su parte, utilizará los fondos depositados en su cuenta del Banco de la Nación
+                            para efectuar el pago de tributos, multas y pagos a cuenta incluidos sus
+                            respectivos intereses y la actualización que se efectúe de dichas deudas
+                            tributarias de conformidad
+                            con el artículo 33° del Código Tributario, que sean administradas y/o recaudadas por la SUNAT. 
+                        </p>
+                        <br>    
+                        <p>El sistema de detracciones se aplica a las siguientes operaciones:</p>
+                        <br>
+                        <li>La venta interna de bienes y prestación de servicios</li>
+                        <li>Servicio de transporte público de pasajeros realizado por vía terrestre</li>
+                        <li>Servicio de transporte de bienes por vía terrestre</li>
+                        <li>Operaciones sujetas al IVAP (Impuesto a la Venta de Arroz Pilado)     </li>
+                </div>     
+                <br><br>    
                 <div class="title calc">
                     <h2>Calculadora de detracciones </h2>
                     <br>
@@ -28,21 +56,55 @@
                             </tr>
                         </tbody>
                     </table>                  
-                </div>               
+                </div> 
             </div>
+    <script v-html='jsonld' type='application/ld+json'></script>
     </div>
 </template>
 
 <script>
 export default {
     data () {
+        const jsonld={       
+            "@context": "http://schema.org",
+            "@type": "Question",
+            "name": "¿Qué son las detracciones?",
+            "upvoteCount": "196",
+            "text": "¿Como funcionan las detracciones para SUNAT en Perú?",
+            "dateCreated": "2019-11-02T20:07Z",
+            "author": {
+                "@type": "Person",
+                "name": "SUNAT"
+            },
+            "answerCount": "4",
+            "acceptedAnswer": {
+                "@type": "Answer",
+                "upvoteCount": "150",
+                "text": "El sistema de detracciones, es un mecanismo administrativo que coadyuva con la recaudación de determinados tributos y consiste básicamente en la detracción (descuento) que efectúa el comprador o usuario de un bien o servicio afecto al sistema, de un porcentaje del importe a pagar por estas operaciones, para luego depositarlo en el Banco de la Nación, en una cuenta corriente a nombre del vendedor o prestador del servicio, el cual, por su parte, utilizará los fondos depositados en su cuenta del Banco de la Nación para efectuar el pago de tributos, multas y pagos a cuenta incluidos sus respectivos intereses y la actualización que se efectúe de dichas deudas tributarias de conformidad con el artículo 33° del Código Tributario, que sean administradas y/o recaudadas por la SUNAT.",
+                "dateCreated": "2010-12-01T22:01Z",
+                "author": {
+                    "@type": "Person",
+                    "name": "SUNAT"
+                }
+            },
+            "suggestedAnswer": {
+                "@type": "Answer",
+                "upvoteCount": "10",
+                "text": "Las detracciones son un sistema creado para garantizar el pago de impuestos en sectores con alto grado de evasión tributaria. Entre ellos se incluyen la agricultura, la pesca, la industria azucarera, los servicios, entre otros. Consiste en la generación de un descuento anticipado al momento de pagar a un proveedor por un producto o servicio. Luego se deposita ese monto en una cuenta a nombre del proveedor. El objetivo es que ese fondo sirva para que el proveedor cumpla luego con sus obligaciones tributarias.",
+                "dateCreated": "2019-11-016T21:11Z",
+                "author": {
+                    "@type": "Person",
+                    "name": "RPP"
+                }
+            }
+        }
         return {
             selectQuote: 1,
             mobile: false,
             base:0,
             percent:4,
             total:0,
-
+            jsonld
         }
     },
     methods:{
@@ -73,7 +135,6 @@ export default {
     
 }
 </script>
-
 <style lang="sass">
 @import './assets/css/main'
 @import './assets/css/animations'
