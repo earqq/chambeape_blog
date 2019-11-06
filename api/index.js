@@ -4,7 +4,7 @@ var bodyParser = require('body-parser')
 app.use(bodyParser.urlencoded({ extended: false }))
 app.use(bodyParser.json())
 var nodemailer = require('nodemailer')  
-var mongoose =require('./db.js')
+// var mongoose =require('./db.js')
 var SuggestionModel = require('./suggestion_model.js');
 // app.use((req, res, next) => { //doesn't send response just adjusts it
 //    res.header("Access-Control-Allow-Origin", "") // to give access to any origin

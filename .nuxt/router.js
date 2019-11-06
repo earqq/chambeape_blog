@@ -2,17 +2,10 @@ import Vue from 'vue'
 import Router from 'vue-router'
 import { interopDefault } from './utils'
 
-const _c293dc34 = () => interopDefault(import('../pages/errores-factura-electronica/index.vue' /* webpackChunkName: "pages/errores-factura-electronica/index" */))
 const _40d59cae = () => interopDefault(import('../pages/politicas.vue' /* webpackChunkName: "pages/politicas" */))
 const _2dc2260a = () => interopDefault(import('../pages/terminos.vue' /* webpackChunkName: "pages/terminos" */))
-const _0d6679a1 = () => interopDefault(import('../pages/validez-factura-electronica/index.vue' /* webpackChunkName: "pages/validez-factura-electronica/index" */))
-const _be9f9d86 = () => interopDefault(import('../pages/calculadora/detracciones/index.vue' /* webpackChunkName: "pages/calculadora/detracciones/index" */))
-const _1238d7e5 = () => interopDefault(import('../pages/calculadora/igv/index.vue' /* webpackChunkName: "pages/calculadora/igv/index" */))
-const _0761686a = () => interopDefault(import('../pages/consulta/dni.vue' /* webpackChunkName: "pages/consulta/dni" */))
-const _26f82ea8 = () => interopDefault(import('../pages/consulta/ruc.vue' /* webpackChunkName: "pages/consulta/ruc" */))
 const _261bc87c = () => interopDefault(import('../pages/index.vue' /* webpackChunkName: "pages/index" */))
 const _65b8c13c = () => interopDefault(import('../pages/_slug/_article.vue' /* webpackChunkName: "pages/_slug/_article" */))
-const _64d3c387 = () => interopDefault(import('../pages/_slug/_slug/_article.vue' /* webpackChunkName: "pages/_slug/_slug/_article" */))
 
 Vue.use(Router)
 
@@ -89,10 +82,6 @@ export function createRouter() {
     scrollBehavior,
 
     routes: [{
-      path: "/errores-factura-electronica",
-      component: _c293dc34,
-      name: "errores-factura-electronica"
-    }, {
       path: "/politicas",
       component: _40d59cae,
       name: "politicas"
@@ -101,26 +90,6 @@ export function createRouter() {
       component: _2dc2260a,
       name: "terminos"
     }, {
-      path: "/validez-factura-electronica",
-      component: _0d6679a1,
-      name: "validez-factura-electronica"
-    }, {
-      path: "/calculadora/detracciones",
-      component: _be9f9d86,
-      name: "calculadora-detracciones"
-    }, {
-      path: "/calculadora/igv",
-      component: _1238d7e5,
-      name: "calculadora-igv"
-    }, {
-      path: "/consulta/dni",
-      component: _0761686a,
-      name: "consulta-dni"
-    }, {
-      path: "/consulta/ruc",
-      component: _26f82ea8,
-      name: "consulta-ruc"
-    }, {
       path: "/",
       component: _261bc87c,
       name: "index"
@@ -128,10 +97,6 @@ export function createRouter() {
       path: "/:slug/:article?",
       component: _65b8c13c,
       name: "slug-article"
-    }, {
-      path: "/:slug/:slug?/:article?",
-      component: _64d3c387,
-      name: "slug-slug-article"
     }],
 
     fallback: false

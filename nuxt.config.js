@@ -2,6 +2,10 @@
 // const { firestore } = require('./plugins/firebase.js')
 
 module.exports = {
+  server: {
+    port: 3002, // default: 3000
+    host: '0.0.0.0' // default: localhost
+  },
   mode: "universal",
   generate: {
     html: {

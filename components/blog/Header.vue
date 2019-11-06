@@ -7,7 +7,7 @@
 					<div class="header_blog_body">
 							<nav>
 								<nuxt-link to="/"  class="logo">
-									<div class="logo_wrapper"><img src="@/assets/img/logo_easybill.svg" alt="Logo easybill" /></div>
+									<div class="logo_wrapper"><img src="@/assets/img/logo_easyjobs.png" alt="Logo easybill" /></div>
 								</nuxt-link>
 								<no-ssr >
 									<div class="menu_right_top">
@@ -151,11 +151,11 @@ header.header_blog_content
 				display: flex
 				align-items: center
 				.logo_wrapper
-					width: 130px
+					width: 50px
 					height: 55px
 					margin-left: -5px
-					path, circle
-						fill: $accent_color
+					img
+						width: 100px
 
 		.header_blog_body
 			background-size: cover
@@ -256,7 +256,7 @@ header.header_blog_content
 				width: $small
 				.logo
 					.logo_wrapper
-						width: 120px
+						width: 50px
 				.menu_right_top
 					.menu_mobile
 						display: block
