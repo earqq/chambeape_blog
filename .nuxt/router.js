@@ -2,17 +2,17 @@ import Vue from 'vue'
 import Router from 'vue-router'
 import { interopDefault } from './utils'
 
-const _9244b8c0 = () => interopDefault(import('../pages/blog/index.vue' /* webpackChunkName: "pages/blog/index" */))
-const _30978c11 = () => interopDefault(import('../pages/errores-factura-electronica/index.vue' /* webpackChunkName: "pages/errores-factura-electronica/index" */))
-const _9869b04e = () => interopDefault(import('../pages/politicas.vue' /* webpackChunkName: "pages/politicas" */))
-const _99f45f20 = () => interopDefault(import('../pages/terminos.vue' /* webpackChunkName: "pages/terminos" */))
-const _c1701868 = () => interopDefault(import('../pages/validez-factura-electronica/index.vue' /* webpackChunkName: "pages/validez-factura-electronica/index" */))
-const _3da5def2 = () => interopDefault(import('../pages/calculadora/detracciones/index.vue' /* webpackChunkName: "pages/calculadora/detracciones/index" */))
-const _1b900ae0 = () => interopDefault(import('../pages/calculadora/igv/index.vue' /* webpackChunkName: "pages/calculadora/igv/index" */))
-const _2f052680 = () => interopDefault(import('../pages/consulta/dni.vue' /* webpackChunkName: "pages/consulta/dni" */))
-const _4e9becbe = () => interopDefault(import('../pages/consulta/ruc.vue' /* webpackChunkName: "pages/consulta/ruc" */))
-const _98c7e684 = () => interopDefault(import('../pages/blog/_slug/_article.vue' /* webpackChunkName: "pages/blog/_slug/_article" */))
-const _1f53a127 = () => interopDefault(import('../pages/index.vue' /* webpackChunkName: "pages/index" */))
+const _c293dc34 = () => interopDefault(import('../pages/errores-factura-electronica/index.vue' /* webpackChunkName: "pages/errores-factura-electronica/index" */))
+const _40d59cae = () => interopDefault(import('../pages/politicas.vue' /* webpackChunkName: "pages/politicas" */))
+const _2dc2260a = () => interopDefault(import('../pages/terminos.vue' /* webpackChunkName: "pages/terminos" */))
+const _0d6679a1 = () => interopDefault(import('../pages/validez-factura-electronica/index.vue' /* webpackChunkName: "pages/validez-factura-electronica/index" */))
+const _be9f9d86 = () => interopDefault(import('../pages/calculadora/detracciones/index.vue' /* webpackChunkName: "pages/calculadora/detracciones/index" */))
+const _1238d7e5 = () => interopDefault(import('../pages/calculadora/igv/index.vue' /* webpackChunkName: "pages/calculadora/igv/index" */))
+const _0761686a = () => interopDefault(import('../pages/consulta/dni.vue' /* webpackChunkName: "pages/consulta/dni" */))
+const _26f82ea8 = () => interopDefault(import('../pages/consulta/ruc.vue' /* webpackChunkName: "pages/consulta/ruc" */))
+const _261bc87c = () => interopDefault(import('../pages/index.vue' /* webpackChunkName: "pages/index" */))
+const _65b8c13c = () => interopDefault(import('../pages/_slug/_article.vue' /* webpackChunkName: "pages/_slug/_article" */))
+const _64d3c387 = () => interopDefault(import('../pages/_slug/_slug/_article.vue' /* webpackChunkName: "pages/_slug/_slug/_article" */))
 
 Vue.use(Router)
 
@@ -89,49 +89,49 @@ export function createRouter() {
     scrollBehavior,
 
     routes: [{
-      path: "/blog",
-      component: _9244b8c0,
-      name: "blog"
-    }, {
       path: "/errores-factura-electronica",
-      component: _30978c11,
+      component: _c293dc34,
       name: "errores-factura-electronica"
     }, {
       path: "/politicas",
-      component: _9869b04e,
+      component: _40d59cae,
       name: "politicas"
     }, {
       path: "/terminos",
-      component: _99f45f20,
+      component: _2dc2260a,
       name: "terminos"
     }, {
       path: "/validez-factura-electronica",
-      component: _c1701868,
+      component: _0d6679a1,
       name: "validez-factura-electronica"
     }, {
       path: "/calculadora/detracciones",
-      component: _3da5def2,
+      component: _be9f9d86,
       name: "calculadora-detracciones"
     }, {
       path: "/calculadora/igv",
-      component: _1b900ae0,
+      component: _1238d7e5,
       name: "calculadora-igv"
     }, {
       path: "/consulta/dni",
-      component: _2f052680,
+      component: _0761686a,
       name: "consulta-dni"
     }, {
       path: "/consulta/ruc",
-      component: _4e9becbe,
+      component: _26f82ea8,
       name: "consulta-ruc"
     }, {
-      path: "/blog/:slug/:article?",
-      component: _98c7e684,
-      name: "blog-slug-article"
-    }, {
       path: "/",
-      component: _1f53a127,
+      component: _261bc87c,
       name: "index"
+    }, {
+      path: "/:slug/:article?",
+      component: _65b8c13c,
+      name: "slug-article"
+    }, {
+      path: "/:slug/:slug?/:article?",
+      component: _64d3c387,
+      name: "slug-slug-article"
     }],
 
     fallback: false
