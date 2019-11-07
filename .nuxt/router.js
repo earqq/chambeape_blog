@@ -4,8 +4,8 @@ import { interopDefault } from './utils'
 
 const _40d59cae = () => interopDefault(import('../pages/politicas.vue' /* webpackChunkName: "pages/politicas" */))
 const _2dc2260a = () => interopDefault(import('../pages/terminos.vue' /* webpackChunkName: "pages/terminos" */))
+const _7f6e3b53 = () => interopDefault(import('../pages/blog/_slug/_article.vue' /* webpackChunkName: "pages/blog/_slug/_article" */))
 const _261bc87c = () => interopDefault(import('../pages/index.vue' /* webpackChunkName: "pages/index" */))
-const _65b8c13c = () => interopDefault(import('../pages/_slug/_article.vue' /* webpackChunkName: "pages/_slug/_article" */))
 
 Vue.use(Router)
 
@@ -90,13 +90,13 @@ export function createRouter() {
       component: _2dc2260a,
       name: "terminos"
     }, {
+      path: "/blog/:slug?/:article?",
+      component: _7f6e3b53,
+      name: "blog-slug-article"
+    }, {
       path: "/",
       component: _261bc87c,
       name: "index"
-    }, {
-      path: "/:slug/:article?",
-      component: _65b8c13c,
-      name: "slug-article"
     }],
 
     fallback: false
