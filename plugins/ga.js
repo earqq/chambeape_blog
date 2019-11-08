@@ -14,8 +14,8 @@ export default ({ app }) => {
     /*
     ** Set the current page
     */
-    gtag('create', 'UA-123783343-1', 'auto')
-    gtag('config', 'AW-792324811');
+    gtag('create', 'UA-123783343-5', 'auto')
+    // gtag('config', 'AW-792324811');
     /*
     ** Every time the route changes (fired on initialization too)
     */
