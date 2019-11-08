@@ -24,27 +24,27 @@ export default {
         "@graph":[
           {
             "@type":"WebSite",
-            "@id":"https://easybill.pe/#website",
-            "url":"https://easybill.pe/",
-            "name":"Easybill",
+            "@id":"https://easyjobs.site/#website",
+            "url":"https://easyjobs.site/",
+            "name":"Easyjobs",
             "potentialAction":{
               "@type":"SearchAction",
-              "target":"https://easybill.pe/?s={search_term_string}",
+              "target":"https://easyjobs.site/?s={search_term_string}",
               "query-input":"required name=search_term_string"
             }
           },
           {
             "@type":"WebPage",
-            "@id":"https://easybill.pe/blog/#webpage",
-            "url":"https://easybill.pe/blog",
+            "@id":"https://easyjobs.site/blog/#webpage",
+            "url":"https://easyjobs.site/blog",
             "inLanguage":"es-PE",
-            "name":"Blog de Easybill | Temas relacionados a facturacion electronica y sistemas de venta",
+            "name":"Blog de Easyjobs | Temas relacionados a herramientas para whatsapp, instagram y facebook",
             "isPartOf":{
-              "@id":"https://easybill.pe/#website"
+              "@id":"https://easyjobs.site/#website"
             },
             "datePublished":"2019-01-01T20:12:54+00:00",
             "dateModified":"2019-09-23T09:00:09+00:00",
-            "description":"Un blog muy didactico y de facil lectura, tratamos temas de facturación electrónica y sistemas de venta."
+            "description":"Un blog muy didactico y de facil lectura, tratamos temas relacionados a herramientas para whatsapp, instagram y facebook."
           }
         ]
     }
@@ -61,18 +61,17 @@ export default {
       },
       link:[
         {
-          rel:'canonical',href:'https://easybill.pe/blog', 
+          rel:'canonical',href:'https://easyjobs.site', 
         }
       ],
-      title: 'Easybill | Blog',
+      title: 'Blog de Easyjobs',
       meta: [
         { 'http-equiv': 'X-UA-Compatible', content: 'IE=edge' },
         { name: 'theme-color', content:'#17de8b'},
-        { hid : 'description', name:'description', content:'Blog para contadores, empresarios y personas interesadas en facturación electrónica y manejo de negocios con un sistema de venta. Suscribete para que te llege más información. ' },
-        { property: 'og:title', content: 'Facturación Electrónica y ventas rápidas en Perú - SUNAT | Easybill' },
-        { property: 'og:description', content: 'Descubre nuestra innovadora solución a facturación electrónica. Ventas rápidas, reportes kardex, facturas, boletas, guías de remisión y mucho más. ' },
-        { property: 'og:image', content: 'https://firebasestorage.googleapis.com/v0/b/easybill-b9a91.appspot.com/o/landing%2Ffacebook-preview.png?alt=media&token=16577e76-02d9-4351-99f1-8663bbb90b92' },
-        { property: 'og:url', content: 'https://easybill.pe' },
+        { hid : 'description', name:'description', content:'Blog de herramientas de whatsapp, facebook e instagram | Easyjobs' },
+        { property: 'og:title', content: 'Blog de easyjobs para herramientas de whatsapp facebook e instagram.' },
+        { property: 'og:description', content: 'Descubre nuestra innovadora solución a facturación electrónica. Ventas rápidas, reportes kardex, facturas, boletas, guías de remisión y mucho más. ' },        
+        { property: 'og:url', content: 'https://easyjobs.site' },
         { property: 'og:type', content: 'product' },
         { property: 'fb:app_id', content: '1994748484137426' }
       ]
