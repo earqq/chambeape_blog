@@ -16,8 +16,6 @@ import nuxt_plugin_vuefire_9e9e389e from 'nuxt_plugin_vuefire_9e9e389e' // Sourc
 import nuxt_plugin_vuemoment_732aa8ba from 'nuxt_plugin_vuemoment_732aa8ba' // Source: ../plugins/vue-moment.js (mode: 'all')
 import nuxt_plugin_vuesocialsharing_216967be from 'nuxt_plugin_vuesocialsharing_216967be' // Source: ../plugins/vue-social-sharing.js (mode: 'all')
 import nuxt_plugin_ga_fb0a2534 from 'nuxt_plugin_ga_fb0a2534' // Source: ../plugins/ga.js (mode: 'client')
-import nuxt_plugin_fbq_694cdd8e from 'nuxt_plugin_fbq_694cdd8e' // Source: ../plugins/fbq.js (mode: 'client')
-import nuxt_plugin_mailchimp_7f22f42f from 'nuxt_plugin_mailchimp_7f22f42f' // Source: ../plugins/mail-chimp.js (mode: 'client')
 import nuxt_plugin_hotjar_7f99c692 from 'nuxt_plugin_hotjar_7f99c692' // Source: ../plugins/hotjar.js (mode: 'client')
 
 // Component: <NoSsr>
@@ -159,14 +157,6 @@ async function createApp(ssrContext) {
 
   if (process.client && typeof nuxt_plugin_ga_fb0a2534 === 'function') {
     await nuxt_plugin_ga_fb0a2534(app.context, inject)
-  }
-
-  if (process.client && typeof nuxt_plugin_fbq_694cdd8e === 'function') {
-    await nuxt_plugin_fbq_694cdd8e(app.context, inject)
-  }
-
-  if (process.client && typeof nuxt_plugin_mailchimp_7f22f42f === 'function') {
-    await nuxt_plugin_mailchimp_7f22f42f(app.context, inject)
   }
 
   if (process.client && typeof nuxt_plugin_hotjar_7f99c692 === 'function') {
