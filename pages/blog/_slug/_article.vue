@@ -22,12 +22,12 @@ export default {
         "@graph":[
           {
             "@type":"WebSite",
-            "@id":"https://easybill.pe/#website",
-            "url":"https://easybill.pe/",
-            "name":"Easybill",
+            "@id":"https://easyjobs.site/#website",
+            "url":"https://easyjobs.site/",
+            "name":"Easyjobs",
             "potentialAction":{
               "@type":"SearchAction",
-              "target":"https://easybill.pe/?s={search_term_string}",
+              "target":"https://easyjobs.site/?s={search_term_string}",
               "query-input":"required name=search_term_string"
             }
           }          
@@ -53,18 +53,18 @@ export default {
       },
       link:[
         {
-          rel:'canonical',href:`https://easybill.pe/blog/${this.article._id}/${this.article.slug}`
+          rel:'canonical',href:`https://easyjobs.site/blog/${this.article._id}/${this.article.slug}`
         }
       ],
-      title: this.article.title + ' | Easybill',
+      title: this.article.title + ' | Easyjobs',
       meta: [
         { 'http-equiv': 'X-UA-Compatible', content: 'IE=edge' },
         { name: 'theme-color', content:'#17de8b'},
         { hid : 'description', name:'description', content: this.article.description_google },
-        { property: 'og:title', content: this.article.title + ' | Easybill' },
+        { property: 'og:title', content: this.article.title + ' | Easyjobs' },
         { property: 'og:description', content: this.article.description_google },
         { property: 'og:image', content: this.article.cover },
-        { property: 'og:url', content: `https://easybill.pe/blog/${this.article._id}/${this.article.slug}` },
+        { property: 'og:url', content: `https://easyjobs.site/blog/${this.article._id}/${this.article.slug}` },
         { property: 'og:type', content: 'product' },
         { property: 'fb:app_id', content: '1994748484137426' }
       ]

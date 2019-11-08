@@ -32,9 +32,9 @@ export default {
             "@type":"Organization",
             "name":"Easyjobs",
             "legalName":"MAKEASY S.R.L.",
-            "url":"https://www.easyjobs.ste",
-            "logo":"https://easyjobs.site/_nuxt/img/9ed2535.svg",
-            "foundingDate":"2017-12-11",
+            "url":"https://www.easyjobs.site",
+            "logo":"https://easyjobs.site/_nuxt/img/805aa18.png",
+            "foundingDate":"2018-05-11",
             "founders": [
             {
             "@type": "Person",
@@ -63,7 +63,7 @@ export default {
             "contactType":"customer service",
             "telephone":"[+51-999017080]",
             "email":"teamakeasy@gmail.com"},
-            "sameAs":["https://www.facebook.com/Chambeap/",
+            "sameAs":["https://business.facebook.com/easyjobsapp/?",
             "https://www.youtube.com/channel/UCvz8-GgLr0z3Ty2cWffH_9w",
             "https://www.instagram.com/chambeap/?hl=es-la"],
         }

@@ -7,7 +7,7 @@
             <div class="header_body">
                 <nav>
                     <nuxt-link to="/"  class="logo">
-                      <div class="logo_wrapper"><img src="@/assets/img/logo_easybill.svg" alt="Logo easybill" /></div>
+                      <div class="logo_wrapper"><img src="@/assets/img/logo_easyjobs.png" alt="Logo easyjobs" /></div>
                     </nuxt-link>
                     <no-ssr >
                       <div class="menu_right_top">
@@ -26,10 +26,6 @@
   															<li> <nuxt-link to="/blog">Blog</nuxt-link></li>
 
                                 <li> <span @click="openModalCotizar" > Cotizar</span> </li>
-                                <!-- <li> <a 
-                                    @click="
-                                    ga('event', 'Click boton', {'event_category': 'Header Landing', 'event_label': 'Guia header', 'value': 1})"                                    
-                                    href="http://guia.easybill.pe" rel="noopener" target="_blank">Guia  </a></li> -->
                                 <li>
                                     <a
                                     @click="
