@@ -3,12 +3,12 @@
         <div class="footer_wrapper">
             
             <nuxt-link to="/"  class="logo">
-                <div class="logo_wrapper"><img src="@/assets/img/logo_easybill.svg" alt="Logo easybill" /></div>
+                <div class="logo_wrapper"><img src="@/assets/img/logo_easyjobs.png" alt="Logo easyjobs" /></div>
             </nuxt-link>
 
-            <div class="footer_col"><span>+51 980 687 918</span><a class="link" href="mailto:contactos@easybill.pe">contactos@easybill.pe</a>
-                <div class="social"><a href="https://www.facebook.com/Easybill.pe/" rel="noopener" target="_blank"><i class="icon icon-social-facebook"></i></a><a href="https://www.youtube.com/channel/UCvz8-GgLr0z3Ty2cWffH_9w" rel="noopener" target="_blank"><i class="icon icon-youtube"></i></a><a href="https://www.facebook.com/Easybill.pe/"
-                   rel="noopener"     target="_blank"><i class="icon icon-twitter"></i></a><a href="https://www.instagram.com/easybill.pe/" rel="noopener" target="_blank"><i class="icon icon-instagram"></i></a></div>
+            <div class="footer_col"><span>+51 980 687 918</span><a class="link" href="mailto:teamakeasy@gmail.com">teamakeasy@gmail.com</a>
+                <div class="social"><a href="https://www.facebook.com/Chambeap/" rel="noopener" target="_blank"><i class="icon icon-social-facebook"></i></a><a href="https://www.youtube.com/channel/UCvz8-GgLr0z3Ty2cWffH_9w" rel="noopener" target="_blank"><i class="icon icon-youtube"></i></a><a href="https://www.facebook.com/Chambeap/"
+                   rel="noopener"     target="_blank"><i class="icon icon-twitter"></i></a><a href="https://www.instagram.com/chambeaap/" rel="noopener" target="_blank"><i class="icon icon-instagram"></i></a></div>
             </div>
             <div class="footer_col">
                 <nuxt-link class="link"  to="/politicas"   >
@@ -17,7 +17,7 @@
                  <nuxt-link class="link"  to="/terminos"   >
                     Términos y condiciones
                 </nuxt-link>
-                <p>© 2019 easybill.pe, Todos los derechos reservados. </p>
+                <p>© 2019 easyjobs.site, Todos los derechos reservados. </p>
             </div>
         </div>
     <script v-html="jsonld" type="application/ld+json"></script>
@@ -30,10 +30,10 @@ export default {
         const jsonld={
             "@context":"https://schema.org",
             "@type":"Organization",
-            "name":"Easybill",
+            "name":"Easyjobs",
             "legalName":"MAKEASY S.R.L.",
-            "url":"https://www.easybill.pe",
-            "logo":"https://easybill.pe/_nuxt/img/9ed2535.svg",
+            "url":"https://www.easyjobs.ste",
+            "logo":"https://easyjobs.site/_nuxt/img/9ed2535.svg",
             "foundingDate":"2017-12-11",
             "founders": [
             {
@@ -63,9 +63,9 @@ export default {
             "contactType":"customer service",
             "telephone":"[+51-999017080]",
             "email":"teamakeasy@gmail.com"},
-            "sameAs":["https://www.facebook.com/Easybill.pe/",
+            "sameAs":["https://www.facebook.com/Chambeap/",
             "https://www.youtube.com/channel/UCvz8-GgLr0z3Ty2cWffH_9w",
-            "https://www.instagram.com/easybill.pe/?hl=es-la"],
+            "https://www.instagram.com/chambeap/?hl=es-la"],
         }
         return {
             jsonld
@@ -90,7 +90,7 @@ export default {
             display: flex
             align-items: flex-start
             img
-                width: 130px
+                width: 100px
         .footer_col
             flex: 1
             flex-basis: 0

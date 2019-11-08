@@ -7,7 +7,7 @@
             <div class="header_article_body">
                 <nav>
                     <nuxt-link to="/"  class="logo">
-						<div class="logo_wrapper"><img src="@/assets/img/logo_easybill.svg" alt="Logo easybill" /></div>
+						<div class="logo_wrapper"><img src="@/assets/img/logo_easyjobs.png" alt="Logo easyjobs" /></div>
 					</nuxt-link>
 					<no-ssr >
 						<div class="menu_right_top">
@@ -162,6 +162,8 @@ header.header_article_content
 					width: 130px
 					height: 55px
 					margin-left: -5px
+					img
+						width: 75px
 					path, circle
 						fill: $accent_color
 
@@ -264,7 +266,8 @@ header.header_article_content
 				width: $small
 				.logo
 					.logo_wrapper
-						width: 120px
+						img
+							width: 75px
 				.menu_right_top
 					.menu_mobile
 						display: block

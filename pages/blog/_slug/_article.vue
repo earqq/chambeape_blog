@@ -3,7 +3,6 @@
     header-article-section( v-if="article" :article="article" )
     .body_content
       main( v-if="article.body" v-html="toHtml(article.body)")
-      info
     footer-section
     script(v-html='jsonld' type='application/ld+json')
 </template>

@@ -47,7 +47,7 @@ module.exports = {
   /*
    ** Customize the progress-bar color
    */
-  loading: { color: " #17de8b" },
+  loading: { color: " #d74a47" },
   /*
    ** Global CSS
    */
@@ -61,8 +61,6 @@ module.exports = {
     "~/plugins/vue-moment.js",
     "~/plugins/vue-social-sharing.js",
     { src: "~plugins/ga.js", ssr: false },
-    { src: "~plugins/fbq.js", ssr: false },
-    { src: "~plugins/mail-chimp.js", ssr: false },
     { src: "~plugins/hotjar.js", ssr: false }
   ],
   /*

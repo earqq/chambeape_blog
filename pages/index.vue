@@ -2,13 +2,6 @@
   section.main_blog
     header-section( :last_article="last_article" )
     list-articles-section( :articles="articles" )
-    aside.card_register
-      .image_wrap
-        img( src="@/assets/img/service_image_1.svg" alt="Laptop abierta" )
-      .description
-        h3 Obtén 1 Mes Gratis de Facturación Electrónica
-        p Registrate ahora y podras obtener 1 mes gratis en el sistema de facturacion Easybill
-        a( href='https://app.easybill.pe/registro' class="button_login button" ) Comenzar Ahora!
     footer-section
     script(v-html='jsonld' type='application/ld+json')
 </template>
