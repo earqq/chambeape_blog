@@ -53,7 +53,7 @@ export default {
       },
       link:[
         {
-          rel:'canonical',href:`https://easyjobs.site/blog/${this.article._id}/${this.article.slug}`
+          rel:'canonical',href:`https://easyjobs.site/blog/${this.article.slug}`
         }
       ],
       title: this.article.title + ' | Easyjobs',
@@ -64,7 +64,7 @@ export default {
         { property: 'og:title', content: this.article.title + ' | Easyjobs' },
         { property: 'og:description', content: this.article.description_google },
         { property: 'og:image', content: this.article.cover },
-        { property: 'og:url', content: `https://easyjobs.site/blog/${this.article._id}/${this.article.slug}` },
+        { property: 'og:url', content: `https://easyjobs.site/blog/${this.article.slug}` },
         { property: 'og:type', content: 'product' },
         { property: 'fb:app_id', content: '1994748484137426' }
       ]
