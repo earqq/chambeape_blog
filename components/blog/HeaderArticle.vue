@@ -21,7 +21,7 @@
 										ga('event', 'Click boton', {'event_category': 'Header Blog', 'event_label': 'Precios header blog', 'value': 1}); moveTo(1)" >Precios</a></li>
 									<li> <a @click="
 										ga('event', 'Click boton', {'event_category': 'Header Blog', 'event_label': 'Clientes header blog', 'value': 1}); moveTo(2)">Clientes</a></li>
-									<li> <nuxt-link to="/blog">Blog</nuxt-link></li>
+									<li> <nuxt-link to="/">Blog</nuxt-link></li>
 									<li>
 										<a																				
 										class="button_login inline button_fill" href="#">Ingresar</a>
