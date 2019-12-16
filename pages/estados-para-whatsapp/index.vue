@@ -6,6 +6,7 @@
     script(v-html='jsonld' type='application/ld+json')
 </template>
 
+
 <script>
 import HeaderSection from '@/components/estados-whatsapp/Header'
 import BodyList from '@/components/estados-whatsapp/BodyList'
