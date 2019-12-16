@@ -5,7 +5,7 @@
           aside(v-for="a in posts" class="client_testimonial" )
             small {{a.created_at | moment("DD [de] MMMM [de] YYYY") }}
             img(:src='a.url' :alt='a.alt' height=275 @click='addLike()' )   
-            a( target='_blank' :href='"whatsapp://send?text="+encodeURIComponent(a.url)')    
+            a( @click='shareImg(a.url)')    
               i.icon.icon-whatsapp  Click para compartir 
             br
             a(target='_blank' :href='a.url')  Click para Descargar
@@ -19,6 +19,21 @@ export default {
   components: { SocialSharing },
   props: ['posts'],
   methods:{
+    shareImg(url){
+      if (navigator.share) {
+        navigator.share({
+          title:"Post para whatsapp",
+          url:url
+        }).then(() => {
+          showMessage(shareBtn, 'Thanks! 😄');
+        })
+        .catch(err => {
+          showMessage(shareBtn, `Couldn't share 🙁`);
+        });
+      } else {
+        showMessage(shareBtn, 'Not supported 🙅‍');
+      }
+    },
     addLike(){
         if (process.client) {
           this.ga=window.gtag
