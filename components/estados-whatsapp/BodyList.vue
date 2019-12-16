@@ -4,15 +4,12 @@
         section(class="articles_content")
           aside(v-for="a in posts" class="client_testimonial" )
             small {{a.created_at | moment("DD [de] MMMM [de] YYYY") }}
-            img(:src='a.url' :alt='a.alt' height=275 @click='addLike()' )             
-            social-sharing( 
-              @open='open()'
-              :url='a.url'            
-              inline-template='')
-              div
-                network(network='whatsapp')
-                  i.icon.icon-whatsapp
-                  |  Click para compartir
+            img(:src='a.url' :alt='a.alt' height=275 @click='addLike()' )   
+            a( target='_blank' :href='"whatsapp://send?text="+encodeURIComponent(a.url)')    
+              i.icon.icon-whatsapp  Click para compartir 
+            br
+            a(target='_blank' :href='a.url')  Click para Descargar
+            
 </template>
 
 <script>
@@ -74,8 +71,8 @@ export default {
                 display: block
                 margin-bottom: 5px
             img
-              margin-bottom: 20px
-            social-sharing
+              margin-bottom: 18px
+            a
               color: $accent_color
               font-family: $font_bold
               text-align: left

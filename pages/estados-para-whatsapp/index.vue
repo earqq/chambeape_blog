@@ -68,7 +68,7 @@ export default {
       meta: [
         { 'http-equiv': 'X-UA-Compatible', content: 'IE=edge' },
         { name: 'theme-color', content:'#17de8b'},
-        { hid : 'description', name:'description', content:'Herramienta gratuita para compartir estados que estan en tendencia, los más compartidos, con más me gusta y lo que esta en las noticias, memes actualizados y frase motivadoras.' },
+        { hid : 'description', name:'description', content:'Herramienta gratuita para compartir estados que estan en tendencia, los más compartidos, con más me gusta y lo que esta en las noticias, memes actualizados y frase motivadoras .' },
         { property: 'og:title', content: 'Herramienta gratuita para compartir estados a whatsapp.' },
         { property: 'og:description', content: 'Herramienta gratuita para compartir estados que estan en tendencia, los más compartidos, con más me gusta y lo que esta en las noticias, memes actualizados.' },        
         { property: 'og:url', content: 'https://easyjobs.site/estados-whatsapp' },
