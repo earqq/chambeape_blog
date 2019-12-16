@@ -35,8 +35,8 @@ export default {
           },
           {
             "@type":"WebPage",
-            "@id":"https://easyjobs.site/estados-whatsapp/#webpage",
-            "url":"https://easyjobs.site/estados-whatsapp",
+            "@id":"https://easyjobs.site/estados-para-whatsapp/#webpage",
+            "url":"https://easyjobs.site/estados-para-whatsapp",
             "inLanguage":"es-PE",
             "name":"Herramienta gratuita para compartir estados a whatsapp",
             "isPartOf":{
@@ -61,7 +61,7 @@ export default {
       },
       link:[
         {
-          rel:'canonical',href:'https://easyjobs.site/estados-whatsapp', 
+          rel:'canonical',href:'https://easyjobs.site/estados-para-whatsapp', 
         }
       ],
       title: '≫Los mejores estados para whatsapp. 🥇  ',
@@ -71,7 +71,7 @@ export default {
         { hid : 'description', name:'description', content:'Herramienta gratuita para compartir estados que estan en tendencia, los más compartidos, con más me gusta y lo que esta en las noticias, memes actualizados y frase motivadoras .' },
         { property: 'og:title', content: 'Herramienta gratuita para compartir estados a whatsapp.' },
         { property: 'og:description', content: 'Herramienta gratuita para compartir estados que estan en tendencia, los más compartidos, con más me gusta y lo que esta en las noticias, memes actualizados.' },        
-        { property: 'og:url', content: 'https://easyjobs.site/estados-whatsapp' },
+        { property: 'og:url', content: 'https://easyjobs.site/estados-para-whatsapp' },
         { property: 'og:type', content: 'product' },
         { property: 'fb:app_id', content: '1994748484137426' }
       ]
