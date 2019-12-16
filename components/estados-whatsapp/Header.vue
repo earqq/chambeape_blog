@@ -33,7 +33,7 @@
 							</nav>
 							<div class="header_blog_main_content">
 									<div class="header_blog_main_text">
-											<h1>Estados de whatsapp en tendencia para compartir<span>.</span></h1>											
+											<h1>Los mejores estados para whatsapp para compartir<span>.</span></h1>											
 											<h2>Se actualizan todos los dias<span></span></h2>											
 											<h3>Buenos memes y frases<span>.</span></h3>											
 									</div>
