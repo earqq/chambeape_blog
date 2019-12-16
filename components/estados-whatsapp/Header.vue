@@ -1,7 +1,7 @@
 <template>
 	<header class="header_blog_content">
 			<div class="article_cover">
-					<img alt='Imagen de fondo' :src="last_article.url" >
+					<img alt='Imagen de fondo' :src="last_post.url" >
 			</div>
 			<div class="header_blog_wrapper">
 					<div class="header_blog_body">
@@ -33,22 +33,20 @@
 							</nav>
 							<div class="header_blog_main_content">
 									<div class="header_blog_main_text">
-											<small> Publicado el {{last_article.created_at | moment("DD [de] MMMM [de] YYYY")}} </small>
-											<h1>{{last_article.title}}<span>.</span></h1>
-											<nuxt-link :to="{name: 'blog-slug-article', params: {slug: last_article.slug}}"  class="button_fill">
-												Continuar Leyendo
-											</nuxt-link>
+											<h1>Estados de whatsapp en tendencia para compartir<span>.</span></h1>											
+											<h2>Se actualizan todos los dias<span></span></h2>											
+											<h3>Buenos memes y frases<span>.</span></h3>											
 									</div>
 							</div>
 					</div>
 			</div>
 	</header>
-</template>
+</template>	
 
 <script>
 import { firestore } from '~/plugins/firebase.js'
 export default {
-		props: ['last_article'],
+		props: ['last_post'],
 		data () {
 				return {
 						showMenu: false,
@@ -57,7 +55,7 @@ export default {
 						
 				}
 		},
-		created () {
+		created () {			
 			if (process.client) { // en lado del servidor no existe windown, document, etc
 				if (window.innerWidth < 850) this.mobile = true
 				else this.mobile = false
@@ -187,6 +185,22 @@ header.header_blog_content
 						display: block
 					h1
 						font-size: 32px
+						font-family: $font_black
+						color: white
+						text-align: center
+						span
+								display: inline
+								color: $accent_color
+					h2
+						font-size: 22px
+						font-family: $font_black
+						color: white
+						text-align: center
+						span
+								display: inline
+								color: $accent_color
+					h3
+						font-size: 15px
 						font-family: $font_black
 						color: white
 						text-align: center
