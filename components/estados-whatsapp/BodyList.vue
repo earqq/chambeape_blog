@@ -25,13 +25,13 @@ export default {
           title:"Post para whatsapp",
           url:url
         }).then(() => {
-          showMessage(shareBtn, 'Thanks! 😄');
+          console.log( 'Thanks! 😄');
         })
         .catch(err => {
-          showMessage(shareBtn, `Couldn't share 🙁`);
+          console.log( `Couldn't share 🙁`);
         });
       } else {
-        showMessage(shareBtn, 'Not supported 🙅‍');
+        console.log( 'Not supported 🙅‍');
       }
     },
     addLike(){
