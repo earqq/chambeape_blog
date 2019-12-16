@@ -64,7 +64,7 @@ export default {
           rel:'canonical',href:'https://easyjobs.site/estados-whatsapp', 
         }
       ],
-      title: 'Estados para whatsapp GRATIS',
+      title: '≫Los mejores estados para whatsapp. 🥇  ',
       meta: [
         { 'http-equiv': 'X-UA-Compatible', content: 'IE=edge' },
         { name: 'theme-color', content:'#17de8b'},
