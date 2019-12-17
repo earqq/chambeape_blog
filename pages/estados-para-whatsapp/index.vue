@@ -82,6 +82,7 @@ export default {
                 }
             ],
             "publisher": {
+                "@type": "Organization",
                 "@id": "#organization"
             },
             "mainEntityOfPage": "https://easyjobs.site/estados-para-whatsapp"
