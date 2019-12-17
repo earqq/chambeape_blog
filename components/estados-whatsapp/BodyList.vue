@@ -4,8 +4,8 @@
         section(class="articles_content")
           aside(v-for="a in posts" class="client_testimonial" )
             small {{a.created_at | moment("DD [de] MMMM [de] YYYY") }}
-            img(:src='a.url' :alt='a.alt' height=275 @click='addLike()' )   
-            a( @click='shareImg(a.url)')    
+            img( :id='a._id' :src='a.url' :alt='a.alt' height=275 @click='addLike()' )   
+            a( @click='shareImg(a)')    
               i.icon.icon-whatsapp  Click para compartir 
             br
             a(target='_blank' :href='a.url')  Click para Descargar
@@ -19,19 +19,20 @@ export default {
   components: { SocialSharing },
   props: ['posts'],
   methods:{
-    shareImg(url){
-      if (navigator.share) {
+    shareImg(post){
+      var filesArray = new Array();
+      filesArray[0] = new Image();
+      filesArray[0].src = post.url;  
+      if (navigator.canShare && navigator.canShare({ files: filesArray })) {
         navigator.share({
-          title:"Post para whatsapp",
-          url:url
-        }).then(() => {
-          console.log( 'Thanks! 😄');
+          files: filesArray,
+          title: 'Vacation Pictures',
+          text: 'Photos from September 27 to October 14.',
         })
-        .catch(err => {
-          console.log( `Couldn't share 🙁`);
-        });
+        .then(() => console.log('Share was successful.'))
+        .catch((error) => console.log('Sharing failed', error));
       } else {
-        console.log( 'Not supported 🙅‍');
+        console.log(`Your system doesn't support sharing files.`);
       }
     },
     addLike(){
