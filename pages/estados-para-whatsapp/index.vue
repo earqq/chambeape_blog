@@ -84,7 +84,8 @@ export default {
             "publisher": {
               "@type": "Organization",
               "name": "MAKEASY",
-              "url": "https://makeasy.io"
+              "url": "https://makeasy.io",
+              "logo" :"https://makeasy.io/public/img/logo_makeasy.svg"
             },
             "mainEntityOfPage": "https://easyjobs.site/estados-para-whatsapp"
 
