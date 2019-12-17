@@ -46,6 +46,46 @@ export default {
             "datePublished":"2019-12-16T20:12:54+00:00",
             "dateModified":"2019-12-16T09:00:09+00:00",
             "description":"Herramienta gratuita para compartir estados que estan en tendencia, los más compartidos, con más me gusta y lo que esta en las noticias, memes actualizados."
+          },
+          {
+            "@type": "CreativeWorkSeries",
+            "name": "Estados para whatsapp de influencers",
+            "aggregateRating": {
+                "@type": "AggregateRating",
+                "ratingValue": "4.2",
+                "bestRating": "5",
+                "ratingCount": "115"
+            }
+          },
+          {
+            "@type": "BlogPosting",
+            "headline": "Estados para whatsapp de influencers",
+            "description": "Los mejores estados para whatsapp de influencers. Comparte los estados que estan de moda en las principales redes sociales de internet. Comparte haciendo un solo click.",
+            "datePublished": "2019-12-17",
+            "dateModified": "2019-12-17",
+            "author": {
+                "@type": "Person",
+                "@id": "#makeasy",
+                "name": "MAKEASY"
+            },
+            "image": {
+                "@type": "ImageObject",
+                "url": "https://firebasestorage.googleapis.com/v0/b/easyjobs-7eb74.appspot.com/o/articles%2F1574462371464-91c679c1f56d070532d57804028b373e.jpg?alt=media&token=9241fd91-cca7-4516-a4f5-049617cb7a7e",
+                "width": 600,
+                "height": 600
+            },
+            "interactionStatistic": [
+                {
+                    "@type": "InteractionCounter",
+                    "interactionType": "http:/schema.org/CommentAction",
+                    "userInteractionCount": "7"
+                }
+            ],
+            "publisher": {
+                "@id": "#organization"
+            },
+            "mainEntityOfPage": "https://easyjobs.site/estados-para-whatsapp"
+
           }
         ]
     }
@@ -65,13 +105,13 @@ export default {
           rel:'canonical',href:'https://easyjobs.site/estados-para-whatsapp', 
         }
       ],
-      title: '≫Los estados para whatsapp más populares.',
+      title: '🥇【TOP】 Estados para whatsapp de INFLUENCERS.',
       meta: [
         { 'http-equiv': 'X-UA-Compatible', content: 'IE=edge' },
         { name: 'theme-color', content:'#17de8b'},
-        { hid : 'description', name:'description', content:'Herramienta gratuita para compartir estados que estan en tendencia, los más compartidos, con más me gusta y lo que esta en las noticias, memes actualizados y frase motivadoras .' },
+        { hid : 'description', name:'description', content:'Los mejores estados de whatsapp compartidos por INFLUENCERS. ≫ Comparte los estados rapidamente desde tu celular a tu estado de whatsapp con un solo click. 【TENDENCIA DE INFLUENCERS】' },
         { property: 'og:title', content: 'Herramienta gratuita para compartir estados a whatsapp.' },
-        { property: 'og:description', content: 'Herramienta gratuita para compartir estados que estan en tendencia, los más compartidos, con más me gusta y lo que esta en las noticias, memes actualizados.' },        
+        { property: 'og:description', content: 'Los mejores estados de whatsapp compartidos por INFLUENCERS. ≫ Comparte los estados rapidamente desde tu celular a tu estado de whatsapp con un solo click. 【TENDENCIA DE INFLUENCERS】' },        
         { property: 'og:url', content: 'https://easyjobs.site/estados-para-whatsapp' },
         { property: 'og:type', content: 'product' },
         { property: 'fb:app_id', content: '1994748484137426' }
