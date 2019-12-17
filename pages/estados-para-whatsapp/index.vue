@@ -65,7 +65,7 @@ export default {
           rel:'canonical',href:'https://easyjobs.site/estados-para-whatsapp', 
         }
       ],
-      title: '≫Los estados de whatsapp más populares.',
+      title: '≫Los estados para whatsapp más populares.',
       meta: [
         { 'http-equiv': 'X-UA-Compatible', content: 'IE=edge' },
         { name: 'theme-color', content:'#17de8b'},

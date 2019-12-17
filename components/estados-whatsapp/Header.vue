@@ -1,7 +1,7 @@
 <template>
 	<header class="header_blog_content">
 			<div class="article_cover">
-					<img alt='Imagen de fondo' :src="last_post.url" >
+					<img alt='Imagen de fondo' src="https://firebasestorage.googleapis.com/v0/b/easyjobs-7eb74.appspot.com/o/articles%2F1574462371464-91c679c1f56d070532d57804028b373e.jpg?alt=media&token=9241fd91-cca7-4516-a4f5-049617cb7a7e" >
 			</div>
 			<div class="header_blog_wrapper">
 					<div class="header_blog_body">
@@ -33,7 +33,7 @@
 							</nav>
 							<div class="header_blog_main_content">
 									<div class="header_blog_main_text">
-											<h1>Los estados de whatsapp más populares [En tendencia]<span>.</span></h1>											
+											<h1>Los estados para whatsapp más populares [En tendencia]<span>.</span></h1>											
 											<h2>Para compartir (desde el celular):<span></span></h2>											
 											<h3>1. Presiona por dos segundos sobre la imagen</h3>											
 											<h3>2. Click en compartir imagen</h3>											
