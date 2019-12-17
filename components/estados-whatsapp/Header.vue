@@ -33,9 +33,11 @@
 							</nav>
 							<div class="header_blog_main_content">
 									<div class="header_blog_main_text">
-											<h1>Los mejores estados para whatsapp para compartir<span>.</span></h1>											
-											<h2>Se actualizan todos los dias<span></span></h2>											
-											<h3>Buenos memes y frases<span>.</span></h3>											
+											<h1>Los estados de whatsapp más populares [En tendencia]<span>.</span></h1>											
+											<h2>Para compartir (desde el celular):<span></span></h2>											
+											<h3>1. Presiona por dos segundos sobre la imagen</h3>											
+											<h3>2. Click en compartir imagen</h3>											
+											<h3>3. Seleccionar whatsapp</h3>											
 									</div>
 							</div>
 					</div>

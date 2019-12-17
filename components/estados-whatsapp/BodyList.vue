@@ -5,10 +5,6 @@
           aside(v-for="a in posts" class="client_testimonial" )
             small {{a.created_at | moment("DD [de] MMMM [de] YYYY") }}
             img( :id='a._id' :src='a.url' :alt='a.alt' height=275 @click='addLike()' )   
-            a( @click='shareImg(a)')    
-              i.icon.icon-whatsapp  Click para compartir 
-            br
-            a(target='_blank' :href='a.url')  Click para Descargar
             
 </template>
 
@@ -18,38 +14,13 @@ import { firestore } from '~/plugins/firebase.js'
 export default {
   components: { SocialSharing },
   props: ['posts'],
-  methods:{
-    shareImg(post){
-      var filesArray = new Array();
-      filesArray[0] = new Image();
-      filesArray[0].src = post.url;
-      filesArray[0].height=250
-      filesArray[0].height=250
-      console.log(filesArray)  
-      if (navigator.canShare && navigator.canShare({ files: filesArray })) {
-        navigator.share({
-          files: filesArray,
-          title: 'Vacation Pictures',
-          text: 'Photos from September 27 to October 14.',
-        })
-        .then(() => alert("compartido"))
-        .catch((error) => alert(error));
-      } else {
-        alert("no soporta");
-      }
-    },
+  methods:{   
     addLike(){
         if (process.client) {
           this.ga=window.gtag
-          window.gtag('event', 'Click', {'event_category': 'Post', 'event_label': 'Agregar like', 'value': 1})   
+          window.gtag('event', 'Click', {'event_category': 'Post', 'event_label': 'Compartir imagen', 'value': 1})   
         }
     },
-    open(){
-        if (process.client) {
-          this.ga=window.gtag
-          window.gtag('event', 'Click', {'event_category': 'Post', 'event_label': 'Compartir post', 'value': 1})   
-        }
-    }
   }
   // firestore ()  {
   //   return {
