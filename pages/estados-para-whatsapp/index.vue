@@ -80,7 +80,12 @@ export default {
                     "interactionType": "http:/schema.org/CommentAction",
                     "userInteractionCount": "7"
                 }
-            ],           
+            ],
+            "publisher": {
+              "@type": "Organization",
+              "name": "MAKEASY",
+              "url": "https://makeasy.io"
+            },
             "mainEntityOfPage": "https://easyjobs.site/estados-para-whatsapp"
 
           }
