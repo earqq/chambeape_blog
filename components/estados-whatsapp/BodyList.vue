@@ -4,7 +4,7 @@
         section(class="articles_content")
           aside(v-for="a in posts" class="client_testimonial" )
             small {{a.created_at | moment("DD [de] MMMM [de] YYYY") }}
-            img( :id='a._id' :src='a.url' :alt='a.alt' height=275 @click='addLike()' )   
+            img( :id='a._id' :src='a.url' :alt='a.alt' height=275 width=275 @click='addLike()' )   
             
 </template>
 
