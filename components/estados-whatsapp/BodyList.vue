@@ -22,17 +22,20 @@ export default {
     shareImg(post){
       var filesArray = new Array();
       filesArray[0] = new Image();
-      filesArray[0].src = post.url;  
+      filesArray[0].src = post.url;
+      filesArray[0].height=250
+      filesArray[0].height=250
+      console.log(filesArray)  
       if (navigator.canShare && navigator.canShare({ files: filesArray })) {
         navigator.share({
           files: filesArray,
           title: 'Vacation Pictures',
           text: 'Photos from September 27 to October 14.',
         })
-        .then(() => console.log('Share was successful.'))
-        .catch((error) => console.log('Sharing failed', error));
+        .then(() => alert("compartido"))
+        .catch((error) => alert(error));
       } else {
-        console.log(`Your system doesn't support sharing files.`);
+        alert("no soporta");
       }
     },
     addLike(){
