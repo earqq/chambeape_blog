@@ -4,7 +4,7 @@
         section(class="articles_content")
           aside(v-for="a in posts" class="client_testimonial" )
             small {{a.created_at | moment("DD [de] MMMM [de] YYYY") }}
-            img( :id='a._id' :src='a.url' :alt='a.alt' height=275 width=275 @click='addLike()' )   
+            img( :id='a._id' :src='a.url' :alt='a.alt' height=275 width=325 @click='addLike()' )   
             
 </template>
 
@@ -85,7 +85,13 @@ export default {
     .articles_wrapper
         width: $medium
         .articles_content
-            grid-template-columns: repeat(2, 1fr)
+          grid-template-columns: repeat(2, 1fr)
+          aside
+            img
+                margin-bottom: 18px
+                height: 275px
+                width: 325px
+          
 
 @media screen and (max-width: 850px)
   .articles_section
@@ -93,7 +99,12 @@ export default {
         width: $small
         padding: 2rem 0
         .articles_content
-            grid-template-columns: 1fr
+          grid-template-columns: 1fr
+          aside
+            img
+              margin-bottom: 18px
+              height: 275px
+              width: 325px
 
 @media screen and (max-width: 500px)
   .articles_section
@@ -106,4 +117,8 @@ export default {
           aside
             border-bottom: 1px solid rgba($primary_color, .2)
             border-radius: 0
+            img
+              margin-bottom: 18px
+              height: 275px
+              width: 325px
 </style>
