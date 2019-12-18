@@ -111,7 +111,7 @@ export default {
           rel:'canonical',href:'https://easyjobs.site/estados-para-whatsapp', 
         }
       ],
-      title: '🥇【TOP】 Estados para whatsapp de INFLUENCERS.',
+      title: '🥰🥰  Estados para whatsapp para que lo(a) enamores.【PABLO NERUDA】.',
       meta: [
         { 'http-equiv': 'X-UA-Compatible', content: 'IE=edge' },
         { name: 'theme-color', content:'#17de8b'},

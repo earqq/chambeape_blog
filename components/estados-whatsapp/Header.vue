@@ -33,8 +33,8 @@
 							</nav>
 							<div class="header_blog_main_content">
 									<div class="header_blog_main_text">
-											<h1>【TOP】 Estados para whatsapp más compartidos por INFLUENCERS<span>.</span></h1>											
-											<h2>Comparte de tu celular:<span></span></h2>											
+											<h1>🥰🥰 Estados para whatsapp frases de amor<span>.</span></h1>											
+											<p>Comparte de tu celular:<span></span></p>											
 											<h3>1. Presiona por dos segundos sobre la imagen</h3>											
 											<h3>2. Click en compartir imagen</h3>											
 											<h3>3. Seleccionar whatsapp</h3>											
@@ -191,7 +191,7 @@ header.header_blog_content
 						span
 								display: inline
 								color: $accent_color
-					h2
+					p
 						font-size: 22px
 						font-family: $font_black
 						color: white
