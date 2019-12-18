@@ -62,23 +62,23 @@
       div(class="articles_wrapper")
           section(class="articles_content")
             aside( class="client_testimonial" )
-              small Tú eres mi cielo ☺️☺️
-              img( src='@/assets/img/estados-para-whatsapp/musica2.jpg' alt='Tu eres mi cielo' height=300 width=350  )
+              small El universo a mi favor ☺️☺️
+              img( src='@/assets/img/estados-para-whatsapp/musica2.jpg' alt='El universo' height=300 width=350  )
             aside( class="client_testimonial" )
-              small Me encantas 😍😍
-              img( src='@/assets/img/estados-para-whatsapp/musica3.jpg' alt='Tu eres mi cielo' height=300 width=350  ) 
+              small Decir adios 😍😍
+              img( src='@/assets/img/estados-para-whatsapp/musica3.jpg' alt='Decir adios' height=300 width=350  ) 
             aside( class="client_testimonial" )
-              small Tu imborrable sonrisa 🥺🥺
-              img( src='@/assets/img/estados-para-whatsapp/ricardo_1.jpg' alt='Tu sonrisa' height=300 width=350  ) 
+              small Te mueres por regresar 🥺🥺
+              img( src='@/assets/img/estados-para-whatsapp/ricardo_1.jpg' alt='Te mueres' height=300 width=350  ) 
             aside( class="client_testimonial" )
-              small Siempre con tigo 😻😻
-              img( src='@/assets/img/estados-para-whatsapp/musica5.jpg' alt='Siempre con tigo' height=300 width=350  ) 
+              small Los sueños 😻😻
+              img( src='@/assets/img/estados-para-whatsapp/musica5.jpg' alt='Los sueños' height=300 width=350  ) 
             aside( class="client_testimonial" )
-              small Somos la mejor combinación 🥰🥰
-              img( src='@/assets/img/estados-para-whatsapp/ricardo6.jpg' alt='Quequito' height=300 width=350  ) 
+              small Me enseñaste 🥰🥰
+              img( src='@/assets/img/estados-para-whatsapp/ricardo6.jpg' alt='Me enseñaste' height=300 width=350  ) 
             aside( class="client_testimonial" )
-              small Me terminaste gustando 🥺🥺
-              img( src='@/assets/img/estados-para-whatsapp/musica4.jpg' alt='Terminaste gustando' height=300 width=350  ) 
+              small Nostalga 🥺🥺
+              img( src='@/assets/img/estados-para-whatsapp/musica4.jpg' alt='Nostalgia' height=300 width=350  ) 
     div(class='text_image')
         h2 Estados para whatsapp graciosos        
         p Va un coche muy rápido y un policía lo para: - ¡Alto! Se ha saltado un semáforo en rojo. Tengo que ponerle una multa. Dígame su nombre. - Josetxu Aristeguicorteneindiaguirre de Urrutxomengasalaberría y Mendiagorrialbizu de Gurruchagagoitiaga. - Bueno, rojo.... lo que se dice rojo.. no era: era ámbar intenso, más bien. Siga, por favor..         
