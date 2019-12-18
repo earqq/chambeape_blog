@@ -3,6 +3,7 @@ import Router from 'vue-router'
 import { interopDefault } from './utils'
 
 const _d017b068 = () => interopDefault(import('../pages/estados-para-whatsapp/index.vue' /* webpackChunkName: "pages/estados-para-whatsapp/index" */))
+const _aee95410 = () => interopDefault(import('../pages/imagenes-de-amor/index.vue' /* webpackChunkName: "pages/imagenes-de-amor/index" */))
 const _40d59cae = () => interopDefault(import('../pages/politicas.vue' /* webpackChunkName: "pages/politicas" */))
 const _2dc2260a = () => interopDefault(import('../pages/terminos.vue' /* webpackChunkName: "pages/terminos" */))
 const _7f6e3b53 = () => interopDefault(import('../pages/blog/_slug/_article.vue' /* webpackChunkName: "pages/blog/_slug/_article" */))
@@ -86,6 +87,10 @@ export function createRouter() {
       path: "/estados-para-whatsapp",
       component: _d017b068,
       name: "estados-para-whatsapp"
+    }, {
+      path: "/imagenes-de-amor",
+      component: _aee95410,
+      name: "imagenes-de-amor"
     }, {
       path: "/politicas",
       component: _40d59cae,
