@@ -1,7 +1,7 @@
 <template lang="pug">
   div
     div(class='text_image')
-        h2 Frases para estados de amor para whatsapp
+        h2 Estados para whatsapp frases de amor
         p El amor ascendía entre nosotros como la luna entre las dos palmeras que nunca se abrazaron. El íntimo rumor de los dos cuerpos hacia el arrullo un oleaje trajo, pero la ronca voz fue atenazada, fueron pétreos los labios. El ansia de ceñir movió la carne, esclareció los huesos inflamados, pero los brazos al querer tenderse murieron en los brazos. Pasó el amor, la luna, entre nosotros y devoró los cuerpos solitarios. Y somos dos fantasmas que se buscan y se encuentran lejanos.
         li Si supieras lo enamorado que estoy, De ti, y dirigido a tu corazon voy. Con palabras llenas de sentimiento.  A la persona que me roba el aliento.
         li Tu que me besas intensamente. Hasta ponerme demente. Tu que me seduces con tu caminar. Yo nunca te llegaré a cambiar.
@@ -27,7 +27,86 @@
             aside( class="client_testimonial" )
               small Me terminaste gustando 🥺🥺
               img( src='@/assets/img/imagenes-de-amor/terminaste_gustando.jpg' alt='Terminaste gustando' height=300 width=350  ) 
-            
+    div(class='text_image')
+        h2 Estados para whatsapp tristes [sad]
+        p Mi corazón oprimido Siente junto a la alborada. El dolor de sus amores. Y el sueño de las distancias. La luz de la aurora lleva Semilleros de nostalgias Y la tristeza sin ojos.  De la médula del alma. La gran tumba de la noche Su negro velo levanta. Para ocultar con el día La inmensa cumbre estrellada.
+        li Entre mi amor y yo han de levantarse trescientas noches como trescientas paredes y el mar será una magia entre nosotros. [Jorge Luis Borges]
+    div(class="articles_section" )
+      div(class="articles_wrapper")
+          section(class="articles_content")
+            aside( class="client_testimonial" )
+              small Imaginanos juntos 😰😰
+              img( src='@/assets/img/estados-para-whatsapp/imaginamos_juntos.jpg' alt='Imaginanos' height=300 width=350  )
+            aside( class="client_testimonial" )
+              small En mil formas .. 💔💔
+              img( src='@/assets/img/estados-para-whatsapp/corazon_roto.jpg' alt='Mil formas' height=300 width=350  ) 
+            aside( class="client_testimonial" )
+              small Adios ☹️☹️
+              img( src='@/assets/img/estados-para-whatsapp/decir_adios.jpg' alt='Adios' height=300 width=350  ) 
+            aside( class="client_testimonial" )
+              small Siempre con tigo 😻😻
+              img( src='@/assets/img/estados-para-whatsapp/deja_de_lado.jpg' alt='Siempre con tigo' height=300 width=350  ) 
+            aside( class="client_testimonial" )
+              small La peor cosa del mundo 😭😭
+              img( src='@/assets/img/estados-para-whatsapp/desaparecer_vida.jpg' alt='Peor cosa del mundo' height=300 width=350  ) 
+            aside( class="client_testimonial" )
+              small Fue un placer 😔😔
+              img( src='@/assets/img/estados-para-whatsapp/triste-equi.jpg' alt='Fue un placer' height=300 width=350  ) 
+    div(class='text_image')
+        h2 Estados para whatsapp de canciones
+        p ¿Qué estás haciendo tú? ¿Qué estoy haciendo yo? Subastando en el mercado, besos tan improvisados, con despecho al portador ¿Qué estás haciendo tú? ¿Qué estoy haciendo yo? Malgastando en cualquier cama lo que se nos dé la gana, para vengarnos de los dos.
+        li Acompáñame a decir sin las palabras lo bendito que es tenerte.
+        li Mujer de corazón partido en dos, dime a cual mitad yo pertenezco.
+        li Son iguales los defectos que hoy me tiras en la cara que al principio eran perfectos.
+    div(class="articles_section" )
+      div(class="articles_wrapper")
+          section(class="articles_content")
+            aside( class="client_testimonial" )
+              small Tú eres mi cielo ☺️☺️
+              img( src='@/assets/img/estados-para-whatsapp/musica2.jpg' alt='Tu eres mi cielo' height=300 width=350  )
+            aside( class="client_testimonial" )
+              small Me encantas 😍😍
+              img( src='@/assets/img/estados-para-whatsapp/musica3.jpg' alt='Tu eres mi cielo' height=300 width=350  ) 
+            aside( class="client_testimonial" )
+              small Tu imborrable sonrisa 🥺🥺
+              img( src='@/assets/img/estados-para-whatsapp/ricardo_1.jpg' alt='Tu sonrisa' height=300 width=350  ) 
+            aside( class="client_testimonial" )
+              small Siempre con tigo 😻😻
+              img( src='@/assets/img/estados-para-whatsapp/musica5.jpg' alt='Siempre con tigo' height=300 width=350  ) 
+            aside( class="client_testimonial" )
+              small Somos la mejor combinación 🥰🥰
+              img( src='@/assets/img/estados-para-whatsapp/ricardo6.jpg' alt='Quequito' height=300 width=350  ) 
+            aside( class="client_testimonial" )
+              small Me terminaste gustando 🥺🥺
+              img( src='@/assets/img/estados-para-whatsapp/musica4.jpg' alt='Terminaste gustando' height=300 width=350  ) 
+    div(class='text_image')
+        h2 Estados para whatsapp graciosos        
+        p Va un coche muy rápido y un policía lo para: - ¡Alto! Se ha saltado un semáforo en rojo. Tengo que ponerle una multa. Dígame su nombre. - Josetxu Aristeguicorteneindiaguirre de Urrutxomengasalaberría y Mendiagorrialbizu de Gurruchagagoitiaga. - Bueno, rojo.... lo que se dice rojo.. no era: era ámbar intenso, más bien. Siga, por favor..         
+        li Abuelo, ¿por qué estás delante del ordenador con los ojos cerrados? Es que Windows me ha dicho que cierre las pestañas.
+        li  ¿Qué es un pez en un cine? Un mero espectador
+        li ¿Para que van una caja al gimnasio? Para hacerse caja fuerte.
+    div(class="articles_section" )
+      div(class="articles_wrapper")
+          section(class="articles_content")
+            aside( class="client_testimonial" )
+              small Un buen ambiente laboral 🙄🙄
+              img( src='@/assets/img/estados-para-whatsapp/ambiente.jpg' alt='Buen ambiente laboral' height=300 width=350  )
+            aside( class="client_testimonial" )
+              small La musica!! 😖😖
+              img( src='@/assets/img/estados-para-whatsapp/bañar.jpg' alt='Simpson' height=300 width=350  ) 
+            aside( class="client_testimonial" )
+              small Para más placer 😰😰
+              img( src='@/assets/img/estados-para-whatsapp/coldplay.jpg' alt='Patricio' height=300 width=350  ) 
+            aside( class="client_testimonial" )
+              small Sorprendido.. 😂😂
+              img( src='@/assets/img/estados-para-whatsapp/despedido.jpg' alt='Despedido' height=300 width=350  ) 
+            aside( class="client_testimonial" )
+              small Vine por cobre y encontre otro 😆😆
+              img( src='@/assets/img/estados-para-whatsapp/doctorhouse.jpg' alt='Doctor house' height=300 width=350  ) 
+            aside( class="client_testimonial" )
+              small Rumba!! 😜😜
+              img( src='@/assets/img/estados-para-whatsapp/carcel.jpg' alt='Carcel' height=300 width=350  ) 
+                
 </template>
 
 <script>

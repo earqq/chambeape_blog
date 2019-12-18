@@ -111,13 +111,13 @@ export default {
           rel:'canonical',href:'https://easyjobs.site/estados-para-whatsapp', 
         }
       ],
-      title: '🥰🥰  Estados para whatsapp para que lo(a) enamores.【PABLO NERUDA】.',
+      title: '🥰🥰  Estados para whatsapp para fortalecer tu relación.【Enamóralo(a)】.',
       meta: [
         { 'http-equiv': 'X-UA-Compatible', content: 'IE=edge' },
         { name: 'theme-color', content:'#17de8b'},
-        { hid : 'description', name:'description', content:'Los mejores estados de whatsapp compartidos por INFLUENCERS. ≫ Comparte los estados rapidamente desde tu celular a tu estado de whatsapp con un solo click. 【TENDENCIA DE INFLUENCERS】' },
+        { hid : 'description', name:'description', content:'Fortalece tu relación con estos estados para whatsapp de amor, tristeza, de canciones y riete con nuestros estados para whatsapp graciosos. | Compartelo faciclmente en tan solo 3 segundos.' },
         { property: 'og:title', content: 'Herramienta gratuita para compartir estados a whatsapp.' },
-        { property: 'og:description', content: 'Los mejores estados de whatsapp compartidos por INFLUENCERS. ≫ Comparte los estados rapidamente desde tu celular a tu estado de whatsapp con un solo click. 【TENDENCIA DE INFLUENCERS】' },        
+        { property: 'og:description', content: 'Fortalece tu relación con estos estados para whatsapp de amor, tristeza, de canciones y riete con nuestros estados para whatsapp graciosos. | Compartelo faciclmente en tan solo 3 segundos.' },        
         { property: 'og:url', content: 'https://easyjobs.site/estados-para-whatsapp' },
         { property: 'og:type', content: 'product' },
         { property: 'fb:app_id', content: '1994748484137426' }
