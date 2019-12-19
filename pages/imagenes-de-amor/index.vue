@@ -111,13 +111,13 @@ export default {
           rel:'canonical',href:'https://easyjobs.site/imagenes-de-amor', 
         }
       ],
-      title: '【💗】Imagenes de amor para mi novio(a) 【Recuerdale cuanto lo(a) amas】',
+      title: '🥰🥰 Las 24 imagenes de amor para que tu novia te perdone 【CUPIDO】',
       meta: [
         { 'http-equiv': 'X-UA-Compatible', content: 'IE=edge' },
         { name: 'theme-color', content:'#17de8b'},
-        { hid : 'description', name:'description', content:'¿Hoy ya le dijiste a tu novio(a) cuanto lo amas? Dicen que una imagen dice más que mil palabras. Demuestrale cuanto lo amás con una imagen de amor. Envialo por whatsapp en 3 segundos ' },
-        { property: 'og:title', content: '【💗】Imagenes de amor para mi novio(a) 【Recuerdale cuanto lo(a) amas】' },
-        { property: 'og:description', content: '¿Hoy ya le dijiste a tu novio(a) cuanto lo amas? Dicen que una imagen dice más que mil palabras. Demuestrale cuanto lo amás con una imagen de amor. Envialo por whatsapp en 3 segundos' },        
+        { hid : 'description', name:'description', content:'Una imagen dice más que mil palabras. Demuestrale cuanto lo amás con una imagen de amor. Envialo por whatsapp en 3 segundos |  Cupido al rescate te ayuda a reconquistar tu novia con imagenes de amor' },
+        { property: 'og:title', content: '🥰🥰 Las 24 imagenes de amor para que tu novia te perdone 【CUPIDO AL RESCATE】' },
+        { property: 'og:description', content: 'Una imagen dice más que mil palabras. Demuestrale cuanto lo amás con una imagen de amor. Envialo por whatsapp en 3 segundos | Cupido al rescate te ayuda a reconquistar tu novia con imagenes de amor' },        
         { property: 'og:url', content: 'https://easyjobs.site/imagenes-de-amor' },
         { property: 'og:type', content: 'product' },
         { property: 'fb:app_id', content: '1994748484137426' }
