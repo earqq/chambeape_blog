@@ -111,7 +111,7 @@ export default {
           rel:'canonical',href:'https://easyjobs.site/estados-para-whatsapp', 
         }
       ],
-      title: '🥰🥰  Estados para whatsapp para fortalecer tu relación.【Enamóralo(a)】.',
+      title: '🥰🥰 Los 18 Estados para whatsapp más románticos【CUPIDO AL RESCATE】',
       meta: [
         { 'http-equiv': 'X-UA-Compatible', content: 'IE=edge' },
         { name: 'theme-color', content:'#17de8b'},

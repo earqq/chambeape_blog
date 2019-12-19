@@ -204,6 +204,10 @@ export default {
                 font-size: 20px
 
 @media screen and (max-width: 1100px)
+  .text_image
+    p
+      margin-left: 150px
+      margin-right: 150px
   .articles_section
     .articles_wrapper
         width: $medium
@@ -217,6 +221,10 @@ export default {
           
 
 @media screen and (max-width: 850px)
+  .text_image
+    p
+      margin-left: 100px
+      margin-right: 100px
   .articles_section
     .articles_wrapper
         width: $small
@@ -230,6 +238,10 @@ export default {
               width: 325px
 
 @media screen and (max-width: 500px)
+  .text_image
+    p
+      margin-left: 0px
+      margin-right: 0px
   .articles_section
     .articles_wrapper
         padding: 0px

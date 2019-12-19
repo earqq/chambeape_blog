@@ -1,7 +1,7 @@
 <template>
 	<header class="header_blog_content">
 			<div class="article_cover">
-					<img alt='Imagen de fondo' src="@/assets/img/influ3.jpg" >
+					<img alt='Imagen de fondo' src="@/assets/img/estados-para-whatsapp/love.jpg" >
 			</div>
 			<div class="header_blog_wrapper">
 					<div class="header_blog_body">
