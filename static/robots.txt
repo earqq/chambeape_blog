@@ -1,6 +1,6 @@
 # Grupo 1
 User-agent: Googlebot
-Allow: /blog
+Allow: /
 
 # Grupo 2
 #User-agent: *

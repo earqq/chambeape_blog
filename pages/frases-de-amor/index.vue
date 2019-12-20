@@ -8,8 +8,8 @@
 
 
 <script>
-import HeaderSection from '@/components/imagenes-de-amor/Header'
-import BodyList from '@/components/imagenes-de-amor/BodyList'
+import HeaderSection from '@/components/frases-de-amor/Header'
+import BodyList from '@/components/frases-de-amor/BodyList'
 import FooterSection from '@/components/landing/Footer'
 import { firestore } from '~/plugins/firebase.js'
 
@@ -36,8 +36,8 @@ export default {
           },
           {
             "@type":"WebPage",
-            "@id":"https://easyjobs.site/imagenes-de-amor/#webpage",
-            "url":"https://easyjobs.site/imagenes-de-amor",
+            "@id":"https://easyjobs.site/frases-de-amor/#webpage",
+            "url":"https://easyjobs.site/frases-de-amor",
             "inLanguage":"es-PE",
             "name":"Imagenes de amor para compartir a whatsapp",
             "isPartOf":{
@@ -45,11 +45,11 @@ export default {
             },
             "datePublished":"2019-12-16T20:12:54+00:00",
             "dateModified":"2019-12-16T09:00:09+00:00",
-            "description":"Galería de imagenes de amor para compartir rapidamente por whatsapp. Para demostrar tus sentimientos con una imagen."
+            "description":"Galería de frases de amor para compartir rapidamente por whatsapp. Para demostrar tus sentimientos con una imagen."
           },
           {
             "@type": "CreativeWorkSeries",
-            "name": "Imagenes de amor para mi novio",
+            "name": "Frases de amor para mi novio",
             "aggregateRating": {
                 "@type": "AggregateRating",
                 "ratingValue": "4.4",
@@ -59,8 +59,8 @@ export default {
           },
           {
             "@type": "BlogPosting",
-            "headline": "Imagenes de amor para mi novio",
-            "description": "Galería de imagenes de amor para compartir rapidamente por whatsapp. Para demostrar tus sentimientos con una imagen.",
+            "headline": "Frases de amor para mi novio",
+            "description": "Galería de frases de amor para compartir rapidamente por whatsapp. Para demostrar tus sentimientos con una imagen.",
             "datePublished": "2019-12-17",
             "dateModified": "2019-12-17",
             "author": {
@@ -90,7 +90,7 @@ export default {
                 "url": "https://makeasy.io/public/img/easyjobs.jpg"
               }
             },
-            "mainEntityOfPage": "https://easyjobs.site/imagenes-de-amor"
+            "mainEntityOfPage": "https://easyjobs.site/frases-de-amor"
 
           }
         ]
@@ -108,17 +108,17 @@ export default {
       },
       link:[
         {
-          rel:'canonical',href:'https://easyjobs.site/imagenes-de-amor', 
+          rel:'canonical',href:'https://easyjobs.site/frases-de-amor', 
         }
       ],
-      title: '🥰🥰 Las 18 imagenes de amor para que tu novio te perdone 【CUPIDO】',
+      title: '24 Frases de amor para que tu novio no te deje. 【CUPIDO】',
       meta: [
         { 'http-equiv': 'X-UA-Compatible', content: 'IE=edge' },
         { name: 'theme-color', content:'#17de8b'},
-        { hid : 'description', name:'description', content:'Una imagen dice más que mil palabras. Demuestrale cuanto lo amás con una imagen de amor. Envialo por whatsapp en 3 segundos |  Reconquistar tu novio con imagenes de amor' },
-        { property: 'og:title', content: '🥰🥰 Las 24 imagenes de amor para que tu novia te perdone 【CUPIDO AL RESCATE】' },
-        { property: 'og:description', content: 'Una imagen dice más que mil palabras. Demuestrale cuanto lo amás con una imagen de amor. Envialo por whatsapp en 3 segundos | Reconquistar tu novio con imagenes de amor' },        
-        { property: 'og:url', content: 'https://easyjobs.site/imagenes-de-amor' },
+        { hid : 'description', name:'description', content:'Enamora a tu novio con estas frases de amor. Demuestrale cuanto lo amás con una imagen de amor. Envialo por whatsapp en 3 segundos |  Reconquistar tu novio con imagenes de amor' },
+        { property: 'og:title', content: '24 Frases de amor para que tu novio no te deje. 【◁】' },
+        { property: 'og:description', content: 'Enamora a tu novio con estas frases de amor. Demuestrale cuanto lo amás con una imagen de amor. Envialo por whatsapp en 3 segundos | Reconquistar tu novio con imagenes de amor' },        
+        { property: 'og:url', content: 'https://easyjobs.site/frases-de-amor' },
         { property: 'og:type', content: 'product' },
         { property: 'fb:app_id', content: '1994748484137426' }
       ]
