@@ -17,15 +17,16 @@
 												<div class="close_menu" @click="showMenu=false">
 														<i class="icon icon-close"></i>
 												</div>
-												<li> <a href='#'> Noticias</a></li>
-												<li> <a href='#' >Ultimos</a></li>
+												<li> <a href='/estados-para-whatsapp'> Estados whatsapp</a></li>
+												<li> <a href='/imagenes-de-amor' >Imagenes de amor</a></li>
+												<li> <a href='/frases-de-amor' >Frases de amor</a></li>
 												<li> <nuxt-link to="/">Blog</nuxt-link></li>
 												<!-- <li> <a @click="
 														ga('event', 'Click boton', {'event_category': 'Header blog', 'event_label': 'Guia header', 'value': 1})" href="http://guia.easybill.pe" target="_blank">Guia  </a></li> -->
-												<li>
+												<!-- <li>
 													<a href='#' class="button_login inline button_fill" >Ingresar</a>
 													<a href='#' class="button_login button">Regístrate</a>
-												</li>
+												</li> -->
 											</ul>
 										</transition>
 									</div>
@@ -121,7 +122,7 @@ header.header_blog_content
 				ul
 					display: flex
 					align-items: center
-					width: 550px
+					width: 750px
 					justify-content: space-between
 					.close_menu
 						display: none
