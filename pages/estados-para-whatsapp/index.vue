@@ -92,6 +92,50 @@ export default {
             },
             "mainEntityOfPage": "https://easyjobs.site/estados-para-whatsapp"
 
+          },
+          {
+            "@context": "http://schema.org",
+            "@type": "ItemList",
+            "itemListElement": [
+              {
+            "@type": "ListItem",
+            "position": 1,
+            "item":
+              {
+                "name": "Mujer de corazón partido en dos, dime a cual mitad yo pertenezco.",
+                "url":"https://easyjobs.site/estados-para-whatsappr"
+              }
+            },
+            {
+            "@type": "ListItem",
+            "position": 2,
+            "item":
+              {
+                "name": "La mejor paradoja del amor es que, sin dejar de ser uno mismo, de repente te conviertes en dos.",
+                "url":"https://easyjobs.site/estados-para-whatsappr#paradoja"
+              }
+            },
+            {
+            "@type": "ListItem",
+            "position": 3,
+            "item":
+              {
+                "name": "Acompáñame a decir sin las palabras lo bendito que es tenerte.",
+                "url":"https://easyjobs.site/estados-para-whatsappr#enamorado"
+              }
+            },
+            {
+            "@type": "ListItem",
+            "position": 4,
+            "item":
+              {
+                "name": "Una despedida es tan triste que te diré 'Hasta mañana' hasta el amanecer.",
+                "url":"https://easyjobs.site/estados-para-whatsappr#despedida"
+              }
+            }     
+            ],
+            "itemListOrder": "http://schema.org/ItemListOrderDescending",
+            "name": "Estados para whatsapp de amor"
           }
         ]
     }
