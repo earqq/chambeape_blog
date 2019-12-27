@@ -1,6 +1,6 @@
 <template lang="pug">
   section.main_blog
-    header-section( :last_post="last_post" )
+    header-section( :last_article="last_article" )
     body-list( :posts="posts" )
     footer-section
     script(v-html='jsonld' type='application/ld+json')

@@ -1,6 +1,6 @@
 <template  lang="pug">
   section.article_container
-    header-article-section( v-if="article" :article="article" )
+    header-section( :article="article" )
     .body_content
       main( v-if="article.body" v-html="toHtml(article.body)")
     footer-section
@@ -8,14 +8,14 @@
 </template>
 
 <script>
-import HeaderArticleSection from '@/components/blog/HeaderArticle'
+import HeaderSection from '@/components/estados-whatsapp/Header'
 import FooterSection from '@/components/landing/Footer'
 import Info from '@/components/Info'
 import { firestore } from '~/plugins/firebase.js'
 import marked from 'marked'
 
 export default {
-  components: { HeaderArticleSection, FooterSection, Info },
+  components: { HeaderSection, FooterSection, Info },
   data() {
     const jsonld={       
         "@context":"https://schema.org",
