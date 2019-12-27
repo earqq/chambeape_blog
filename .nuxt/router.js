@@ -8,6 +8,7 @@ const _1aa4e983 = () => interopDefault(import('../pages/frases-de-amor/index.vue
 const _aee95410 = () => interopDefault(import('../pages/imagenes-de-amor/index.vue' /* webpackChunkName: "pages/imagenes-de-amor/index" */))
 const _40d59cae = () => interopDefault(import('../pages/politicas.vue' /* webpackChunkName: "pages/politicas" */))
 const _2dc2260a = () => interopDefault(import('../pages/terminos.vue' /* webpackChunkName: "pages/terminos" */))
+const _468cb281 = () => interopDefault(import('../pages/amp/estados-para-whatsapp/index.vue' /* webpackChunkName: "pages/amp/estados-para-whatsapp/index" */))
 const _7f6e3b53 = () => interopDefault(import('../pages/blog/_slug/_article.vue' /* webpackChunkName: "pages/blog/_slug/_article" */))
 const _261bc87c = () => interopDefault(import('../pages/index.vue' /* webpackChunkName: "pages/index" */))
 
@@ -109,6 +110,10 @@ export function createRouter() {
       path: "/terminos",
       component: _2dc2260a,
       name: "terminos"
+    }, {
+      path: "/amp/estados-para-whatsapp",
+      component: _468cb281,
+      name: "amp-estados-para-whatsapp"
     }, {
       path: "/blog/:slug/:article?",
       component: _7f6e3b53,

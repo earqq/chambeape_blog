@@ -3,7 +3,7 @@
         <div class="footer_wrapper">
             
             <nuxt-link to="/"  class="logo">
-                <div class="logo_wrapper"><img src="@/assets/img/logo_easyjobs.png" alt="Logo easyjobs" /></div>
+                <div class="logo_wrapper"><img src="@/assets/img/logo_easyjobs.png" alt="Logo easyjobs"  height="75" width="100"/></div>
             </nuxt-link>
 
             <div class="footer_col"><span>+51 980 687 918</span><a class="link" href="mailto:teamakeasy@gmail.com">teamakeasy@gmail.com</a>

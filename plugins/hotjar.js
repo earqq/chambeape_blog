@@ -1,4 +1,5 @@
 export default ({ app }) => {
+    
     (function(h,o,t,j,a,r){
         h.hj=h.hj||function(){(h.hj.q=h.hj.q||[]).push(arguments)};
         h._hjSettings={hjid:1563489,hjsv:6};
