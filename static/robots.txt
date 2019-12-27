@@ -2,6 +2,14 @@
 User-agent: Googlebot
 Allow: /
 
+
+# Grupo 1
+User-agent: Googlebot
+Disallow: /register
+Disallow: /blog/1573249023779/como-usar-whatsapp-web
+Disallow: /easybill.pe
+Disallow: /easyjobs.site/
+
 # Grupo 2
 #User-agent: *
 #Allow: /

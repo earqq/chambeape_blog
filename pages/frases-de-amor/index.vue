@@ -92,6 +92,59 @@ export default {
             },
             "mainEntityOfPage": "https://easyjobs.site/frases-de-amor"
 
+          },
+          {
+            "@context": "http://schema.org",
+            "@type": "ItemList",
+            "itemListElement": [
+              {
+            "@type": "ListItem",
+            "position": 1,
+            "item":
+              {
+                "name": "Ando tan textual que podria comerte a versos..",
+                "url":"https://easyjobs.site/frases-de-amor"
+              }
+            },
+            {
+            "@type": "ListItem",
+            "position": 2,
+            "item":
+              {
+                "name": "La mejor paradoja del amor es que, sin dejar de ser uno mismo, de repente te conviertes en dos.",
+                "url":"https://easyjobs.site/frases-de-amor#paradoja"
+              }
+            },
+            {
+            "@type": "ListItem",
+            "position": 3,
+            "item":
+              {
+                "name": "Me di cuenta de que estaba enamorado de ti cuando, de repente, no quería irme a dormir: la vida real superaba a mis sueños.",
+                "url":"https://easyjobs.site/frases-de-amor#enamorado"
+              }
+            },
+            {
+            "@type": "ListItem",
+            "position": 4,
+            "item":
+              {
+                "name": "Qué cortas se quedan las palabras para expresar lo que siento por ti. Si las letras de verdad pudieran decirte cuánto te quiero… Eres mi vida entera.",
+                "url":"https://easyjobs.site/frases-de-amor#palabras"
+              }
+            },
+            {
+            "@type": "ListItem",
+            "position": 5,
+            "item":
+              {
+                "name": "No me importa tener que atravesar el más oscuro sendero, si es que al finalizar el camino tu luz me estará esperando.",
+                "url":"https://easyjobs.site/frases-de-amor#sendero"
+              }
+            }            
+            ],
+            "itemListOrder": "http://schema.org/ItemListOrderDescending",
+            "name": "Frases de amor para mi novio"
           }
         ]
     }
@@ -111,13 +164,13 @@ export default {
           rel:'canonical',href:'https://easyjobs.site/frases-de-amor', 
         }
       ],
-      title: '24 Frases de amor para que tu novio no te deje. 【CUPIDO】',
+      title: '24 Frases de amor de Romeo para su novia Julieta',
       meta: [
         { 'http-equiv': 'X-UA-Compatible', content: 'IE=edge' },
         { name: 'theme-color', content:'#17de8b'},
-        { hid : 'description', name:'description', content:'Enamora a tu novio con estas frases de amor. Demuestrale cuanto lo amás con una imagen de amor. Envialo por whatsapp en 3 segundos |  Reconquistar tu novio con imagenes de amor' },
+        { hid : 'description', name:'description', content:'Las mejores frases de amor basados en el gran amor que tuvo Romeo por Julieta. Demuestra tus sentimientos una frase de amor. Envialo por whatsapp en 3 segundos |  Reconquistar tu novio con imagenes de amor' },
         { property: 'og:title', content: '24 Frases de amor para que tu novio no te deje. 【◁】' },
-        { property: 'og:description', content: 'Enamora a tu novio con estas frases de amor. Demuestrale cuanto lo amás con una imagen de amor. Envialo por whatsapp en 3 segundos | Reconquistar tu novio con imagenes de amor' },        
+        { property: 'og:description', content: 'Las mejores frases de amor basados en el gran amor que tuvo Romeo por Julieta. Demuestra tus sentimientos una frase de amor. Envialo por whatsapp en 3 segundos | Reconquistar tu novio con imagenes de amor' },        
         { property: 'og:url', content: 'https://easyjobs.site/frases-de-amor' },
         { property: 'og:type', content: 'product' },
         { property: 'fb:app_id', content: '1994748484137426' }

@@ -11,12 +11,6 @@
                    rel="noopener"     target="_blank"><i class="icon icon-twitter"></i></a><a href="https://www.instagram.com/chambeaap/" rel="noopener" target="_blank"><i class="icon icon-instagram"></i></a></div>
             </div>
             <div class="footer_col">
-                <nuxt-link class="link"  to="/politicas"   >
-                    Políticas de privacidad
-                </nuxt-link>
-                 <nuxt-link class="link"  to="/terminos"   >
-                    Términos y condiciones
-                </nuxt-link>
                 <p>© 2019 easyjobs.site, Todos los derechos reservados. </p>
             </div>
         </div>

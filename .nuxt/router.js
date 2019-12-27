@@ -2,6 +2,7 @@ import Vue from 'vue'
 import Router from 'vue-router'
 import { interopDefault } from './utils'
 
+const _69bc6d2a = () => interopDefault(import('../pages/blog/index.vue' /* webpackChunkName: "pages/blog/index" */))
 const _d017b068 = () => interopDefault(import('../pages/estados-para-whatsapp/index.vue' /* webpackChunkName: "pages/estados-para-whatsapp/index" */))
 const _1aa4e983 = () => interopDefault(import('../pages/frases-de-amor/index.vue' /* webpackChunkName: "pages/frases-de-amor/index" */))
 const _aee95410 = () => interopDefault(import('../pages/imagenes-de-amor/index.vue' /* webpackChunkName: "pages/imagenes-de-amor/index" */))
@@ -85,6 +86,10 @@ export function createRouter() {
     scrollBehavior,
 
     routes: [{
+      path: "/blog",
+      component: _69bc6d2a,
+      name: "blog"
+    }, {
       path: "/estados-para-whatsapp",
       component: _d017b068,
       name: "estados-para-whatsapp"
@@ -105,7 +110,7 @@ export function createRouter() {
       component: _2dc2260a,
       name: "terminos"
     }, {
-      path: "/blog/:slug?/:article?",
+      path: "/blog/:slug/:article?",
       component: _7f6e3b53,
       name: "blog-slug-article"
     }, {

@@ -111,13 +111,13 @@ export default {
           rel:'canonical',href:'https://easyjobs.site/estados-para-whatsapp', 
         }
       ],
-      title: '🥰🥰 Los 18 Estados para whatsapp más románticos【CUPIDO AL RESCATE】',
+      title: '18 estados para whatsapp de amor para conquistarla.',
       meta: [
         { 'http-equiv': 'X-UA-Compatible', content: 'IE=edge' },
         { name: 'theme-color', content:'#17de8b'},
-        { hid : 'description', name:'description', content:'Fortalece tu relación con estos estados para whatsapp de amor, tristeza, de canciones y riete con nuestros estados para whatsapp graciosos. | Compartelo faciclmente en tan solo 3 segundos.' },
+        { hid : 'description', name:'description', content:'Enamorala con estados para whatsapp de amor,  de canciones y riete con nuestros estados para whatsapp graciosos. | Compartelo facilmente en tan solo 3 segundos desde tu celular.' },
         { property: 'og:title', content: 'Herramienta gratuita para compartir estados a whatsapp.' },
-        { property: 'og:description', content: 'Fortalece tu relación con estos estados para whatsapp de amor, tristeza, de canciones y riete con nuestros estados para whatsapp graciosos. | Compartelo faciclmente en tan solo 3 segundos.' },        
+        { property: 'og:description', content: 'Enamorala con estados para whatsapp de amor,  de canciones y riete con nuestros estados para whatsapp graciosos. | Compartelo facilmente en tan solo 3 segundos desde tu celular.' },        
         { property: 'og:url', content: 'https://easyjobs.site/estados-para-whatsapp' },
         { property: 'og:type', content: 'product' },
         { property: 'fb:app_id', content: '1994748484137426' }

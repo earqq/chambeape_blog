@@ -34,8 +34,8 @@
 							</nav>
 							<div class="header_blog_main_content">
 									<div class="header_blog_main_text">
-											<h1>Imagenes de amor para mi novio 【💗】<span>.</span></h1>											
-											<p>Comparte con tu novio:<span></span></p>											
+											<h1>18 Imagenes de amor que usé para enamorar a mi novia. 【💗】<span>.</span></h1>											
+											<p>Comparte con tu novia:<span></span></p>											
 											<h3>1. Presiona por dos segundos sobre la imagen</h3>											
 											<h3>2. Click en compartir imagen</h3>											
 											<h3>3. Seleccionar whatsapp</h3>											

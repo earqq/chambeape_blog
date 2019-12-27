@@ -2,10 +2,10 @@
   div
     div(class='text_image')
       h2 Frases de amor cortas y bonitas
-      p Tener la gracia de que a nuestro lado este el amor de la vida, es un sentimiento incomparable y maravilloso que no siempre es fácil explicar. Siempre tenemos que mostrar lo que sentimos todo el día, nunca tenemos que olvidar en compartir este sentimiento para que la llama del amor se siga nutriendo con nuestro amor
-      li Soy la persona con más suerte en el mundo, sin buscarlo encontré la felicidad y ahora descubrí que es el amor, todo gracias a ti.
-      li Me gane la lotería aunque fue casi imposible, de tantas oportunidades de perder todo en mi vida y estar sola… ¡gane!… encontré al amor de mi vida y soy feliz.
-      li Cada mañana a tu lado es lo más hermoso que me pasa en mi vida, nunca pensé que tendría esa dicha de tener ese amor a mi lado.
+      p Tus labios son más peligrosos que treinta soldados desafiándome. Un solo beso me dará el coraje para enfrentarme a todos con temeridad. ¿Me lo concedes?
+      li Es casi ley, que los amores eternos son los más breves.
+      li Si tengo que guardarme un objeto tuyo para recordarte, significa que te voy a olvidar.
+      li Una despedida es tan triste que te diré "Hasta mañana" hasta el amanecer.
     div(class="articles_section" )
       div(class="articles_wrapper")
           section(class="articles_content")
@@ -29,7 +29,7 @@
               img( src='@/assets/img/frases-de-amor/tunobesas.jpg' alt='Amor a mis labios' height=300 width=350  ) 
     div(class='text_image')
       h2 Frases de amor para mi esposo
-      p Justo después de la boda un matrimonio el amor estalla como fuegos artificiales y vibra con la luz más brillantes de todas, con el paso del tiempo las responsabilidades de la vida y la monotonía este amor puede verse opacado, especialmente cuando añadimos niños a la ecuación y los problemas no parecen dejar de llegar. Si ese es tu caso, desde Frasescortas.Top te recomendamos algunas frases de amor para mi amado marido, con ellas podrás enamorar a tu esposo de nuevo y recordarle que es importante dedicar un poco de tiempo a reforzar su relación y llenarse de amor.
+      p ¿Y puedes marcharte así mi amor, mi dueño, mi compañero? Es necesario que yo reciba noticias tuyas cada hora del día, porque cada hora de tu ausencia representa más de un día.
       li Agradezco al cielo estos años de matrimonio, por otorgarme un esposo tan maravilloso como tu, atento, hábil y amoroso, te quiero mucho, mi amor.
       li Eres el mejor padre y esposo que Dios pudo colocar en mi camino, no pedí un hombre perfecto, solo uno que conociera el valor del amor, tú me sorprendiste, eres maravilloso.
       li Cariño, te agradezco todos esos hermosos momentos que hemos compartido, te quiero muchísimo, gracias por llegar a mi vida.
@@ -58,7 +58,7 @@
       h2 Frases de amor largas para mi novio   
       p Solo soy un tonto con una gran cantidad de suerte. ¿Sabes por qué? Porque eres amorosa, alegre, hermosa, amable, risueña y no logro darme cuenta cómo yo un tipo como yo ha sido tan afortunado de tenerte a su lado. Eres la mujer maravillosa que todo hombre desearía amar.
       li Ha llovido mucho desde aquel día que nos conocimos, y créeme que todavía me encuentro sorprendido de que hayan transcurrido algunos años, y todavía te siga amando incluso más que el primer día.
-      li Ayer soñé contigo, que hacíamos una pareja perfecta, éramos felices, yo te estaba abrazando y tú me besabas. Si me vuelve a pasar prefiero no despertar, porque deseo pasar mi vida entera junto a ti.
+      li No jures por la luna, no, la luna inconstante, que cambia cada mes en su órbita redonda, no sea que tu amor, como ella, se vuelva caprichoso.
       li No me importa tener que atravesar el más oscuro sendero, si es que al finalizar el camino tu luz me estará esperando.
     div(class="articles_section" )
       div(class="articles_wrapper")

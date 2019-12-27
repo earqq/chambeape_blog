@@ -2,7 +2,7 @@
   div
     div(class='text_image')
       h2 Imágenes de amor hermosas
-      p Nada es más hermoso en la vida que contar con el amor de la persona de la cual nos hemos enamorado. Cuando eso sucede, dedicar frases bonitas de amor es una de las mejores maneras de demostrarle cuanto lo amas y lo importante que es en tu vida. 
+      p Es complicado ganarse el corazón de una persona que ha sufrido durante toda su vida, yo estaba tratando de llegar a ella por años. Con mucha resistencia resiliencia pero sobre todo mucha paciencia se que todo es posible. Incluso conquistar a la chica de tus sueños.
       li Si supieras lo enamorado que estoy, De ti, y dirigido a tu corazon voy. Con palabras llenas de sentimiento.  A la persona que me roba el aliento.
       li Tu que me besas intensamente. Hasta ponerme demente. Tu que me seduces con tu caminar. Yo nunca te llegaré a cambiar.
       li Tu largo cabello, y pequeña estatura Eres una mujer llena de hermosura. Con tu boca que roba mi atención. A tus ojos hago alusión. Que son tan hermosos. [Escritor: ldAguiarg]

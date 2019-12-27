@@ -34,7 +34,7 @@
 							</nav>
 							<div class="header_blog_main_content">
 									<div class="header_blog_main_text">
-											<h1>🥰🥰 Estados para whatsapp de amor<span>.</span></h1>											
+											<h1>Estados para whatsapp de amor<span>.</span></h1>											
 											<p>Comparte de tu celular:<span></span></p>											
 											<h3>1. Presiona por dos segundos sobre la imagen</h3>											
 											<h3>2. Click en compartir imagen</h3>											

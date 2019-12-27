@@ -111,13 +111,13 @@ export default {
           rel:'canonical',href:'https://easyjobs.site/imagenes-de-amor', 
         }
       ],
-      title: '🥰🥰 Las 18 imagenes de amor para que tu novio te perdone 【CUPIDO】',
+      title: '18 Imagenes de amor que use para ENAMORAR a mi novia',
       meta: [
         { 'http-equiv': 'X-UA-Compatible', content: 'IE=edge' },
         { name: 'theme-color', content:'#17de8b'},
-        { hid : 'description', name:'description', content:'Una imagen dice más que mil palabras. Demuestrale cuanto lo amás con una imagen de amor. Envialo por whatsapp en 3 segundos |  Reconquistar tu novio con imagenes de amor' },
-        { property: 'og:title', content: '🥰🥰 Las 24 imagenes de amor para que tu novia te perdone 【CUPIDO AL RESCATE】' },
-        { property: 'og:description', content: 'Una imagen dice más que mil palabras. Demuestrale cuanto lo amás con una imagen de amor. Envialo por whatsapp en 3 segundos | Reconquistar tu novio con imagenes de amor' },        
+        { hid : 'description', name:'description', content:'Una imagen dice más que mil palabras. Enamora a cualquiera con estas grandiosas imagenes de amor. Compartelo por whatsapp en 3 segundos |  Reconquistar tu novia o novio con imagenes de amor' },
+        { property: 'og:title', content: 'Te voy a enamorar con estas 18 imagenes de amor' },
+        { property: 'og:description', content: 'Una imagen dice más que mil palabras. Enamora a cualquiera con estas grandiosas imagenes de amor. Compartelo por whatsapp en 3 segundos | Reconquistar tu novia o novio con imagenes de amor' },        
         { property: 'og:url', content: 'https://easyjobs.site/imagenes-de-amor' },
         { property: 'og:type', content: 'product' },
         { property: 'fb:app_id', content: '1994748484137426' }
