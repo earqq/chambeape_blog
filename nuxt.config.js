@@ -1,6 +1,6 @@
-const ampify = require('./plugins/ampify.js')
-// const { firestore } = require('./plugins/firebase.js')
 
+// const { firestore } = require('./plugins/firebase.js')
+const ampify = require('./plugins/ampify.js')
 module.exports = {
   server: {
     port: 3002, // default: 3000
@@ -61,7 +61,7 @@ module.exports = {
   /*
    ** Customize the progress-bar color
    */
-  loading: { color: " #d74a47" },
+  loading: { color: " #17de8b" },
   /*
    ** Global CSS
    */
@@ -70,10 +70,10 @@ module.exports = {
    ** Plugins to load before mounting the App
    */
   plugins: [
-    {src:"~/plugins/firebase.js",ssr:false},
+  {src:"~/plugins/firebase.js",ssr:false},
     {src:"~/plugins/vuefire.js",ssr:false},
     {src:"~/plugins/vue-moment.js",ssr:false},
-    {src:"~/plugins/vue-social-sharing.js",ssr:false},
+    {src: "~/plugins/vue-social-sharing.js",ssr:false},
     { src: "~plugins/ga.js", ssr: false },
     { src: "~plugins/hotjar.js", ssr: false }
   ],
@@ -99,21 +99,6 @@ module.exports = {
     // }]
 
   ],
-  render: {
-    csp: {
-      hashAlgorithm: 'sha256',
-      policies: {
-        'script-src': [
-          'https://www.google-analytics.com',
-          'https://name.example.com'
-        ],
-        'report-uri': [
-          'https://report.example.com/report-csp-violations'
-        ]
-      },
-      addMeta: true
-    }
-  },
   /*
    ** Axios module configuration
    ** See https://axios.nuxtjs.org/options
