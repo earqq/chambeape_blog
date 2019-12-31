@@ -103,7 +103,7 @@ export default {
             "item":
               {
                 "name": "Mujer de corazón partido en dos, dime a cual mitad yo pertenezco.",
-                "url":"https://easyjobs.site/estados-para-whatsappr"
+                "url":"https://easyjobs.site/estados-para-whatsapp"
               }
             },
             {
@@ -112,7 +112,7 @@ export default {
             "item":
               {
                 "name": "La mejor paradoja del amor es que, sin dejar de ser uno mismo, de repente te conviertes en dos.",
-                "url":"https://easyjobs.site/estados-para-whatsappr#paradoja"
+                "url":"https://easyjobs.site/estados-para-whatsapp#paradoja"
               }
             },
             {
@@ -121,7 +121,7 @@ export default {
             "item":
               {
                 "name": "Acompáñame a decir sin las palabras lo bendito que es tenerte.",
-                "url":"https://easyjobs.site/estados-para-whatsappr#enamorado"
+                "url":"https://easyjobs.site/estados-para-whatsapp#enamorado"
               }
             },
             {
@@ -130,7 +130,7 @@ export default {
             "item":
               {
                 "name": "Una despedida es tan triste que te diré 'Hasta mañana' hasta el amanecer.",
-                "url":"https://easyjobs.site/estados-para-whatsappr#despedida"
+                "url":"https://easyjobs.site/estados-para-whatsapp#despedida"
               }
             }     
             ],
