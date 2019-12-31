@@ -109,6 +109,7 @@ export default {
       link:[
         {
           rel:'canonical',href:'https://easyjobs.site/imagenes-de-amor', 
+          rel:'amphtml', href:'https://easyjobs.site/amp/imagenes-de-amor'
         }
       ],
       title: '18 Imagenes de amor que use para ENAMORAR a mi novia',

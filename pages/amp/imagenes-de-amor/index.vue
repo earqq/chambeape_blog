@@ -1,26 +1,15 @@
 <template lang="pug">
   section.main_blog
-    header-section(  )
+    header-section( :last_post="last_post" )
     body-list( :posts="posts" )
     footer-section
     script(v-html='jsonld' type='application/ld+json')
-    script(async='' custom-element='amp-analytics' src='https://cdn.ampproject.org/v0/amp-analytics-0.1.js')
-    amp-analytics(type='gtag' data-credentials='include')
-      script(type='application/json').
-        {
-          "vars" : {
-          "gtag_id": "UA-123783343-5",
-          "config" : {
-          "UA-123783343-5": { "groups": "default" }
-          }
-          }
-        }
 </template>
 
 
 <script>
-import HeaderSection from '@/components/estados-whatsapp/Header'
-import BodyList from '@/components/estados-whatsapp/BodyList'
+import HeaderSection from '@/components/imagenes-de-amor/Header'
+import BodyList from '@/components/imagenes-de-amor/BodyList'
 import FooterSection from '@/components/landing/Footer'
 import { firestore } from '~/plugins/firebase.js'
 
@@ -47,31 +36,31 @@ export default {
           },
           {
             "@type":"WebPage",
-            "@id":"https://easyjobs.site/estados-para-whatsapp/#webpage",
-            "url":"https://easyjobs.site/estados-para-whatsapp",
+            "@id":"https://easyjobs.site/imagenes-de-amor/#webpage",
+            "url":"https://easyjobs.site/imagenes-de-amor",
             "inLanguage":"es-PE",
-            "name":"Herramienta gratuita para compartir estados a whatsapp",
+            "name":"Imagenes de amor para compartir a whatsapp",
             "isPartOf":{
               "@id":"https://easyjobs.site/#website"
             },
             "datePublished":"2019-12-16T20:12:54+00:00",
             "dateModified":"2019-12-16T09:00:09+00:00",
-            "description":"Herramienta gratuita para compartir estados que estan en tendencia, los más compartidos, con más me gusta y lo que esta en las noticias, memes actualizados."
+            "description":"Galería de imagenes de amor para compartir rapidamente por whatsapp. Para demostrar tus sentimientos con una imagen."
           },
           {
             "@type": "CreativeWorkSeries",
-            "name": "Estados para whatsapp de influencers",
+            "name": "Imagenes de amor para mi novio",
             "aggregateRating": {
                 "@type": "AggregateRating",
-                "ratingValue": "4.2",
+                "ratingValue": "4.4",
                 "bestRating": "5",
                 "ratingCount": "115"
             }
           },
           {
             "@type": "BlogPosting",
-            "headline": "Estados para whatsapp de influencers",
-            "description": "Los mejores estados para whatsapp de influencers. Comparte los estados que estan de moda en las principales redes sociales de internet. Comparte haciendo un solo click.",
+            "headline": "Imagenes de amor para mi novio",
+            "description": "Galería de imagenes de amor para compartir rapidamente por whatsapp. Para demostrar tus sentimientos con una imagen.",
             "datePublished": "2019-12-17",
             "dateModified": "2019-12-17",
             "author": {
@@ -89,7 +78,7 @@ export default {
                 {
                     "@type": "InteractionCounter",
                     "interactionType": "http:/schema.org/CommentAction",
-                    "userInteractionCount": "7"
+                    "userInteractionCount": "8"
                 }
             ],
             "publisher": {
@@ -101,52 +90,8 @@ export default {
                 "url": "https://makeasy.io/public/img/easyjobs.jpg"
               }
             },
-            "mainEntityOfPage": "https://easyjobs.site/estados-para-whatsapp"
+            "mainEntityOfPage": "https://easyjobs.site/imagenes-de-amor"
 
-          },
-          {
-            "@context": "http://schema.org",
-            "@type": "ItemList",
-            "itemListElement": [
-              {
-            "@type": "ListItem",
-            "position": 1,
-            "item":
-              {
-                "name": "Mujer de corazón partido en dos, dime a cual mitad yo pertenezco.",
-                "url":"https://easyjobs.site/estados-para-whatsappr"
-              }
-            },
-            {
-            "@type": "ListItem",
-            "position": 2,
-            "item":
-              {
-                "name": "La mejor paradoja del amor es que, sin dejar de ser uno mismo, de repente te conviertes en dos.",
-                "url":"https://easyjobs.site/estados-para-whatsappr#paradoja"
-              }
-            },
-            {
-            "@type": "ListItem",
-            "position": 3,
-            "item":
-              {
-                "name": "Acompáñame a decir sin las palabras lo bendito que es tenerte.",
-                "url":"https://easyjobs.site/estados-para-whatsappr#enamorado"
-              }
-            },
-            {
-            "@type": "ListItem",
-            "position": 4,
-            "item":
-              {
-                "name": "Una despedida es tan triste que te diré 'Hasta mañana' hasta el amanecer.",
-                "url":"https://easyjobs.site/estados-para-whatsappr#despedida"
-              }
-            }     
-            ],
-            "itemListOrder": "http://schema.org/ItemListOrderDescending",
-            "name": "Estados para whatsapp de amor"
           }
         ]
     }
@@ -163,17 +108,17 @@ export default {
       },
       link:[
         {
-          rel:'canonical',href:'https://easyjobs.site/estados-para-whatsapp', 
+          rel:'canonical',href:'https://easyjobs.site/imagenes-de-amor', 
         }
       ],
-      title: '18 estados para whatsapp de amor para conquistarla.',
+      title: '18 Imagenes de amor que use para ENAMORAR a mi novia',
       meta: [
         { 'http-equiv': 'X-UA-Compatible', content: 'IE=edge' },
         { name: 'theme-color', content:'#17de8b'},
-        { hid : 'description', name:'description', content:'Enamorala con estados para whatsapp de amor,  de canciones y riete con nuestros estados para whatsapp graciosos. | Compartelo facilmente en tan solo 3 segundos desde tu celular.' },
-        { property: 'og:title', content: 'Herramienta gratuita para compartir estados a whatsapp.' },
-        { property: 'og:description', content: 'Enamorala con estados para whatsapp de amor,  de canciones y riete con nuestros estados para whatsapp graciosos. | Compartelo facilmente en tan solo 3 segundos desde tu celular.' },        
-        { property: 'og:url', content: 'https://easyjobs.site/estados-para-whatsapp' },
+        { hid : 'description', name:'description', content:'Una imagen dice más que mil palabras. Enamora a cualquiera con estas grandiosas imagenes de amor. Compartelo por whatsapp en 3 segundos |  Reconquistar tu novia o novio con imagenes de amor' },
+        { property: 'og:title', content: 'Te voy a enamorar con estas 18 imagenes de amor' },
+        { property: 'og:description', content: 'Una imagen dice más que mil palabras. Enamora a cualquiera con estas grandiosas imagenes de amor. Compartelo por whatsapp en 3 segundos | Reconquistar tu novia o novio con imagenes de amor' },        
+        { property: 'og:url', content: 'https://easyjobs.site/imagenes-de-amor' },
         { property: 'og:type', content: 'product' },
         { property: 'fb:app_id', content: '1994748484137426' }
       ]

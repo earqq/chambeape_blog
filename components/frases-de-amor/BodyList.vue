@@ -11,22 +11,22 @@
           section(class="articles_content")
             aside( class="client_testimonial" )
               small Coincidir con tigo ☺️☺️
-              img( src='@/assets/img/frases-de-amor/coincidir.jpg' alt='Coincidir contigo' height=300 width=350  )
+              img(  src='@/assets/img/frases-de-amor/coincidir.jpg' alt='Coincidir contigo' height=300 width=350  )
             aside( class="client_testimonial" )
               small Me gusta.. 😍😍
-              img( src='@/assets/img/frases-de-amor/megusta.jpg' alt='Me gustas' height=300 width=350  ) 
+              img(  src='@/assets/img/frases-de-amor/megusta.jpg' alt='Me gustas' height=300 width=350  ) 
             aside( class="client_testimonial" )
               small Quiero manosearte 🥺🥺
-              img( src='@/assets/img/frases-de-amor/quiero.jpg' alt='Quiero manosearte' height=300 width=350  ) 
+              img(  src='@/assets/img/frases-de-amor/quiero.jpg' alt='Quiero manosearte' height=300 width=350  ) 
             aside( class="client_testimonial" )
               small Comerte a besos 😻😻
-              img( src='@/assets/img/frases-de-amor/tantextual.jpg' alt='Comerte a besos' height=300 width=350  ) 
+              img(  src='@/assets/img/frases-de-amor/tantextual.jpg' alt='Comerte a besos' height=300 width=350  ) 
             aside( class="client_testimonial" )
               small Te amo 🥰🥰
-              img( src='@/assets/img/frases-de-amor/teamopero.jpg' alt='Te amo' height=300 width=350  ) 
+              img(  src='@/assets/img/frases-de-amor/teamopero.jpg' alt='Te amo' height=300 width=350  ) 
             aside( class="client_testimonial" )
               small Amor a mis labios 🥺🥺
-              img( src='@/assets/img/frases-de-amor/tunobesas.jpg' alt='Amor a mis labios' height=300 width=350  ) 
+              img(  src='@/assets/img/frases-de-amor/tunobesas.jpg' alt='Amor a mis labios' height=300 width=350  ) 
     div(class='text_image')
       h2 Frases de amor para mi esposo
       p ¿Y puedes marcharte así mi amor, mi dueño, mi compañero? Es necesario que yo reciba noticias tuyas cada hora del día, porque cada hora de tu ausencia representa más de un día.
@@ -38,22 +38,22 @@
           section(class="articles_content")
             aside( class="client_testimonial" )
               small 10 verbos 🤭🤭
-              img( src='@/assets/img/frases-de-amor/10verbos.jpg' alt='10 verbos' height=300 width=350  )
+              img(  src='@/assets/img/frases-de-amor/10verbos.jpg' alt='10 verbos' height=300 width=350  )
             aside( class="client_testimonial" )
               small Mejor parte de mi dia 😽😽
-              img( src='@/assets/img/frases-de-amor/atulado.jpg' alt='Mejor parte' height=300 width=350  ) 
+              img(  src='@/assets/img/frases-de-amor/atulado.jpg' alt='Mejor parte' height=300 width=350  ) 
             aside( class="client_testimonial" )
               small Por ti 🥰🥰
-              img( src='@/assets/img/frases-de-amor/bodas.jpg' alt='I Love you' height=300 width=350  ) 
+              img(  src='@/assets/img/frases-de-amor/bodas.jpg' alt='I Love you' height=300 width=350  ) 
             aside( class="client_testimonial" )
               small Me gustas demasiado 🤩🤩
-              img( src='@/assets/img/frases-de-amor/edredon.jpg' alt='Me gustas' height=300 width=350  ) 
+              img(  src='@/assets/img/frases-de-amor/edredon.jpg' alt='Me gustas' height=300 width=350  ) 
             aside( class="client_testimonial" )
               small El amor 🥰🥰
-              img( src='@/assets/img/frases-de-amor/matrimonio.jpg' alt='El amor' height=300 width=350  ) 
+              img(  src='@/assets/img/frases-de-amor/matrimonio.jpg' alt='El amor' height=300 width=350  ) 
             aside( class="client_testimonial" )
               small Por el resto de mis dias 😻😻
-              img( src='@/assets/img/frases-de-amor/mejorregalo.jpg' alt='Eres perfecto' height=300 width=350  )  
+              img(  src='@/assets/img/frases-de-amor/mejorregalo.jpg' alt='Eres perfecto' height=300 width=350  )  
     div(class='text_image') 
       h2 Frases de amor largas para mi novio   
       p Solo soy un tonto con una gran cantidad de suerte. ¿Sabes por qué? Porque eres amorosa, alegre, hermosa, amable, risueña y no logro darme cuenta cómo yo un tipo como yo ha sido tan afortunado de tenerte a su lado. Eres la mujer maravillosa que todo hombre desearía amar.
@@ -65,22 +65,22 @@
           section(class="articles_content")
             aside( class="client_testimonial" )
               small Hagamos el amor 🥰🥰
-              img( src='@/assets/img/frases-de-amor/hagamosel.jpg' alt='Hagamos el amor' height=300 width=350  )
+              img(  src='@/assets/img/frases-de-amor/hagamosel.jpg' alt='Hagamos el amor' height=300 width=350  )
             aside( class="client_testimonial" )
               small Solo contigo..  😻😻
-              img( src='@/assets/img/frases-de-amor/nopreguntes.jpg' alt='Solo contigo' height=300 width=350  ) 
+              img(  src='@/assets/img/frases-de-amor/nopreguntes.jpg' alt='Solo contigo' height=300 width=350  ) 
             aside( class="client_testimonial" )
               small Por siempre 🤬🤬
-              img( src='@/assets/img/frases-de-amor/silavida.jpg' alt='Por siempre' height=300 width=350  ) 
+              img(  src='@/assets/img/frases-de-amor/silavida.jpg' alt='Por siempre' height=300 width=350  ) 
             aside( class="client_testimonial" )
               small Mandame una señal😞😞
-              img( src='@/assets/img/frases-de-amor/simeextrañas.jpg' alt='Una señal' height=300 width=350  ) 
+              img(  src='@/assets/img/frases-de-amor/simeextrañas.jpg' alt='Una señal' height=300 width=350  ) 
             aside( class="client_testimonial" )
               small Siempre en mi vida   🥰🥰
-              img( src='@/assets/img/frases-de-amor/teconoci.jpg' alt='Siempre en mi vida' height=300 width=350  ) 
+              img(  src='@/assets/img/frases-de-amor/teconoci.jpg' alt='Siempre en mi vida' height=300 width=350  ) 
             aside( class="client_testimonial" )
               small Nunca me arrepentire 😿😿
-              img( src='@/assets/img/frases-de-amor/nunca.jpg' alt='Nunca me arrepentire' height=300 width=350  ) 
+              img(  src='@/assets/img/frases-de-amor/nunca.jpg' alt='Nunca me arrepentire' height=300 width=350  ) 
     div(class='text_image') 
       h2 Frases de amor para dedicar
       p Pienso en ti 24 horas al día y siempre me parecen pocas. Desde que me levanto hasta que me acuesto estás rondando mi mente. Cuando me duermo, apareces entre mis mejores sueños. ¡Qué afortunado me siento!
@@ -92,22 +92,22 @@
           section(class="articles_content")
             aside( class="client_testimonial" )
               small Cada noche 😢😢
-              img( src='@/assets/img/frases-de-amor/cadanoche.jpg' alt='Cada noche' height=300 width=350  )
+              img(  src='@/assets/img/frases-de-amor/cadanoche.jpg' alt='Cada noche' height=300 width=350  )
             aside( class="client_testimonial" )
               small Cada dia.. 🥰🥰
-              img( src='@/assets/img/frases-de-amor/hacesque.jpg' alt='Cada dia' height=300 width=350  ) 
+              img(  src='@/assets/img/frases-de-amor/hacesque.jpg' alt='Cada dia' height=300 width=350  ) 
             aside( class="client_testimonial" )
               small Soñar contigo 🤬🤬
-              img( src='@/assets/img/frases-de-amor/hazmeespacio.jpg' alt='Contigo' height=300 width=350  ) 
+              img(  src='@/assets/img/frases-de-amor/hazmeespacio.jpg' alt='Contigo' height=300 width=350  ) 
             aside( class="client_testimonial" )
               small Mil veces mas😞😞
-              img( src='@/assets/img/frases-de-amor/mepasaque.jpg' alt='Mil veces mas' height=300 width=350  ) 
+              img(  src='@/assets/img/frases-de-amor/mepasaque.jpg' alt='Mil veces mas' height=300 width=350  ) 
             aside( class="client_testimonial" )
               small Tu eres la mejor opcion 🥰🥰
-              img( src='@/assets/img/frases-de-amor/quelindo.jpg' alt='La mejor opcion' height=300 width=350  ) 
+              img(  src='@/assets/img/frases-de-amor/quelindo.jpg' alt='La mejor opcion' height=300 width=350  ) 
             aside( class="client_testimonial" )
               small Mi estrella 😿😿
-              img( src='@/assets/img/frases-de-amor/siempreseras.jpg' alt='Mi estrella' height=300 width=350  )                
+              img(  src='@/assets/img/frases-de-amor/siempreseras.jpg' alt='Mi estrella' height=300 width=350  )                
 </template>
 
 <script>

@@ -153,7 +153,7 @@ export default {
       link:[
         {
           rel:'canonical',href:'https://easyjobs.site/estados-para-whatsapp', 
-          rel:"amphtml", href:"https://easyjobs.site/amp/estados-para-whatsapp"
+          rel:'amphtml', href:'https://easyjobs.site/amp/estados-para-whatsapp'
         }
       ],
       title: '18 estados para whatsapp de amor para conquistarla.',

@@ -1,13 +1,13 @@
 <template>
 	<header class="header_blog_content">
 			<div class="article_cover">
-					<img alt='Imagen de fondo' src="@/assets/img/imagenes-de-amor/love_gif.gif" >
+					<img alt='Imagen de fondo' width="1050" height='465' layout='responsive' src="@/assets/img/imagenes-de-amor/love_gif.gif" >
 			</div>
 			<div class="header_blog_wrapper">
 					<div class="header_blog_body">
 							<nav>
 								<nuxt-link to="/"  class="logo">
-									<div class="logo_wrapper"><img src="@/assets/img/logo_easyjobs.png" alt="Logo easyjobs" /></div>
+									<div class="logo_wrapper"><img src="@/assets/img/logo_easyjobs.png" height="75" width="100" layout='responsive' alt="Logo easyjobs" /></div>
 								</nuxt-link>
 								<no-ssr >
 									<div class="menu_right_top">

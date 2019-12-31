@@ -11,22 +11,22 @@
           section(class="articles_content")
             aside( class="client_testimonial" )
               small Tú eres mi cielo ☺️☺️
-              img( src='@/assets/img/imagenes-de-amor/cielos.jpg' alt='Tu eres mi cielo' height=300 width=350  )
+              img(  src='@/assets/img/imagenes-de-amor/cielos.jpg' alt='Tu eres mi cielo' height=350 width=350  )
             aside( class="client_testimonial" )
               small Me encantas 😍😍
-              img( src='@/assets/img/imagenes-de-amor/encata_tenerte.jpg' alt='Tu eres mi cielo' height=300 width=350  ) 
+              img(  src='@/assets/img/imagenes-de-amor/encata_tenerte.jpg' alt='Tu eres mi cielo' height=350 width=350  ) 
             aside( class="client_testimonial" )
               small Tu imborrable sonrisa 🥺🥺
-              img( src='@/assets/img/imagenes-de-amor/me_gusta_sonrisa.jpg' alt='Tu sonrisa' height=300 width=350  ) 
+              img(  src='@/assets/img/imagenes-de-amor/me_gusta_sonrisa.jpg' alt='Tu sonrisa' height=350 width=350  ) 
             aside( class="client_testimonial" )
               small Siempre con tigo 😻😻
-              img( src='@/assets/img/imagenes-de-amor/otros_365_tigo.jpg' alt='Siempre con tigo' height=300 width=350  ) 
+              img(  src='@/assets/img/imagenes-de-amor/otros_365_tigo.jpg' alt='Siempre con tigo' height=350 width=350  ) 
             aside( class="client_testimonial" )
               small Somos la mejor combinación 🥰🥰
-              img( src='@/assets/img/imagenes-de-amor/panquesito.jpg' alt='Quequito' height=300 width=350  ) 
+              img(  src='@/assets/img/imagenes-de-amor/panquesito.jpg' alt='Quequito' height=350 width=350  ) 
             aside( class="client_testimonial" )
               small Me terminaste gustando 🥺🥺
-              img( src='@/assets/img/imagenes-de-amor/terminaste_gustando.jpg' alt='Terminaste gustando' height=300 width=350  ) 
+              img(  src='@/assets/img/imagenes-de-amor/terminaste_gustando.jpg' alt='Terminaste gustando' height=350 width=350  ) 
     div(class='text_image')
         h2 Estados para whatsapp tristes [sad]
         p Mi corazón oprimido Siente junto a la alborada. El dolor de sus amores. Y el sueño de las distancias. La luz de la aurora lleva Semilleros de nostalgias Y la tristeza sin ojos.  De la médula del alma. La gran tumba de la noche Su negro velo levanta. Para ocultar con el día La inmensa cumbre estrellada.
@@ -36,22 +36,22 @@
           section(class="articles_content")
             aside( class="client_testimonial" )
               small Imaginanos juntos 😰😰
-              img( src='@/assets/img/estados-para-whatsapp/imaginamos_juntos.jpg' alt='Imaginanos' height=300 width=350  )
+              img(  src='@/assets/img/estados-para-whatsapp/imaginamos_juntos.jpg' alt='Imaginanos' height=350 width=350  )
             aside( class="client_testimonial" )
               small En mil formas .. 💔💔
-              img( src='@/assets/img/estados-para-whatsapp/corazon_roto.jpg' alt='Mil formas' height=300 width=350  ) 
+              img(  src='@/assets/img/estados-para-whatsapp/corazon_roto.jpg' alt='Mil formas' height=350 width=350  ) 
             aside( class="client_testimonial" )
               small Adios ☹️☹️
-              img( src='@/assets/img/estados-para-whatsapp/decir_adios.jpg' alt='Adios' height=300 width=350  ) 
+              img(  src='@/assets/img/estados-para-whatsapp/decir_adios.jpg' alt='Adios' height=350 width=350  ) 
             aside( class="client_testimonial" )
               small Siempre con tigo 😻😻
-              img( src='@/assets/img/estados-para-whatsapp/deja_de_lado.jpg' alt='Siempre con tigo' height=300 width=350  ) 
+              img(  src='@/assets/img/estados-para-whatsapp/deja_de_lado.jpg' alt='Siempre con tigo' height=350 width=350  ) 
             aside( class="client_testimonial" )
               small La peor cosa del mundo 😭😭
-              img( src='@/assets/img/estados-para-whatsapp/desaparecer_vida.jpg' alt='Peor cosa del mundo' height=300 width=350  ) 
+              img(  src='@/assets/img/estados-para-whatsapp/desaparecer_vida.jpg' alt='Peor cosa del mundo' height=350 width=350  ) 
             aside( class="client_testimonial" )
               small Fue un placer 😔😔
-              img( src='@/assets/img/estados-para-whatsapp/triste-equi.jpg' alt='Fue un placer' height=300 width=350  ) 
+              img(  src='@/assets/img/estados-para-whatsapp/triste-equi.jpg' alt='Fue un placer' height=350 width=350  ) 
     div(class='text_image')
         h2 Estados para whatsapp de canciones
         p ¿Qué estás haciendo tú? ¿Qué estoy haciendo yo? Subastando en el mercado, besos tan improvisados, con despecho al portador ¿Qué estás haciendo tú? ¿Qué estoy haciendo yo? Malgastando en cualquier cama lo que se nos dé la gana, para vengarnos de los dos.
@@ -63,22 +63,22 @@
           section(class="articles_content")
             aside( class="client_testimonial" )
               small El universo a mi favor ☺️☺️
-              img( src='@/assets/img/estados-para-whatsapp/musica2.jpg' alt='El universo' height=300 width=350  )
+              img(  src='@/assets/img/estados-para-whatsapp/musica2.jpg' alt='El universo' height=350 width=350  )
             aside( class="client_testimonial" )
               small Decir adios 😍😍
-              img( src='@/assets/img/estados-para-whatsapp/musica3.jpg' alt='Decir adios' height=300 width=350  ) 
+              img(  src='@/assets/img/estados-para-whatsapp/musica3.jpg' alt='Decir adios' height=350 width=350  ) 
             aside( class="client_testimonial" )
               small Te mueres por regresar 🥺🥺
-              img( src='@/assets/img/estados-para-whatsapp/ricardo_1.jpg' alt='Te mueres' height=300 width=350  ) 
+              img(  src='@/assets/img/estados-para-whatsapp/ricardo_1.jpg' alt='Te mueres' height=350 width=350  ) 
             aside( class="client_testimonial" )
               small Los sueños 😻😻
-              img( src='@/assets/img/estados-para-whatsapp/musica5.jpg' alt='Los sueños' height=300 width=350  ) 
+              img(  src='@/assets/img/estados-para-whatsapp/musica5.jpg' alt='Los sueños' height=350 width=350  ) 
             aside( class="client_testimonial" )
               small Me enseñaste 🥰🥰
-              img( src='@/assets/img/estados-para-whatsapp/ricardo6.jpg' alt='Me enseñaste' height=300 width=350  ) 
+              img(  src='@/assets/img/estados-para-whatsapp/ricardo6.jpg' alt='Me enseñaste' height=350 width=350  ) 
             aside( class="client_testimonial" )
               small Nostalga 🥺🥺
-              img( src='@/assets/img/estados-para-whatsapp/musica4.jpg' alt='Nostalgia' height=300 width=350  ) 
+              img(  src='@/assets/img/estados-para-whatsapp/musica4.jpg' alt='Nostalgia' height=350 width=350  ) 
     div(class='text_image')
         h2 Estados para whatsapp graciosos        
         p Va un coche muy rápido y un policía lo para: - ¡Alto! Se ha saltado un semáforo en rojo. Tengo que ponerle una multa. Dígame su nombre. - Josetxu Aristeguicorteneindiaguirre de Urrutxomengasalaberría y Mendiagorrialbizu de Gurruchagagoitiaga. - Bueno, rojo.... lo que se dice rojo.. no era: era ámbar intenso, más bien. Siga, por favor..         
@@ -90,22 +90,22 @@
           section(class="articles_content")
             aside( class="client_testimonial" )
               small Un buen ambiente laboral 🙄🙄
-              img( src='@/assets/img/estados-para-whatsapp/ambiente.jpg' alt='Buen ambiente laboral' height=300 width=350  )
+              img(  src='@/assets/img/estados-para-whatsapp/ambiente.jpg' alt='Buen ambiente laboral' height=350 width=350  )
             aside( class="client_testimonial" )
               small La musica!! 😖😖
-              img( src='@/assets/img/estados-para-whatsapp/bañar.jpg' alt='Simpson' height=300 width=350  ) 
+              img(  src='@/assets/img/estados-para-whatsapp/bañar.jpg' alt='Simpson' height=350 width=350  ) 
             aside( class="client_testimonial" )
               small Para más placer 😰😰
-              img( src='@/assets/img/estados-para-whatsapp/coldplay.jpg' alt='Patricio' height=300 width=350  ) 
+              img(  src='@/assets/img/estados-para-whatsapp/coldplay.jpg' alt='Patricio' height=350 width=350  ) 
             aside( class="client_testimonial" )
               small Sorprendido.. 😂😂
-              img( src='@/assets/img/estados-para-whatsapp/despedido.jpg' alt='Despedido' height=300 width=350  ) 
+              img(  src='@/assets/img/estados-para-whatsapp/despedido.jpg' alt='Despedido' height=350 width=350  ) 
             aside( class="client_testimonial" )
               small Vine por cobre y encontre otro 😆😆
-              img( src='@/assets/img/estados-para-whatsapp/doctorhouse.jpg' alt='Doctor house' height=300 width=350  ) 
+              img(  src='@/assets/img/estados-para-whatsapp/doctorhouse.jpg' alt='Doctor house' height=350 width=350  ) 
             aside( class="client_testimonial" )
               small Rumba!! 😜😜
-              img( src='@/assets/img/estados-para-whatsapp/carcel.jpg' alt='Carcel' height=300 width=350  ) 
+              img(  src='@/assets/img/estados-para-whatsapp/carcel.jpg' alt='Carcel' height=350 width=350  ) 
                 
 </template>
 

@@ -9,6 +9,9 @@ const _aee95410 = () => interopDefault(import('../pages/imagenes-de-amor/index.v
 const _40d59cae = () => interopDefault(import('../pages/politicas.vue' /* webpackChunkName: "pages/politicas" */))
 const _2dc2260a = () => interopDefault(import('../pages/terminos.vue' /* webpackChunkName: "pages/terminos" */))
 const _468cb281 = () => interopDefault(import('../pages/amp/estados-para-whatsapp/index.vue' /* webpackChunkName: "pages/amp/estados-para-whatsapp/index" */))
+const _5491d06e = () => interopDefault(import('../pages/amp/frases-de-amor/index.vue' /* webpackChunkName: "pages/amp/frases-de-amor/index" */))
+const _1ada2e23 = () => interopDefault(import('../pages/amp/imagenes-de-amor/index.vue' /* webpackChunkName: "pages/amp/imagenes-de-amor/index" */))
+const _47b969f0 = () => interopDefault(import('../pages/amp/blog/_slug/_article.vue' /* webpackChunkName: "pages/amp/blog/_slug/_article" */))
 const _7f6e3b53 = () => interopDefault(import('../pages/blog/_slug/_article.vue' /* webpackChunkName: "pages/blog/_slug/_article" */))
 const _261bc87c = () => interopDefault(import('../pages/index.vue' /* webpackChunkName: "pages/index" */))
 
@@ -114,6 +117,18 @@ export function createRouter() {
       path: "/amp/estados-para-whatsapp",
       component: _468cb281,
       name: "amp-estados-para-whatsapp"
+    }, {
+      path: "/amp/frases-de-amor",
+      component: _5491d06e,
+      name: "amp-frases-de-amor"
+    }, {
+      path: "/amp/imagenes-de-amor",
+      component: _1ada2e23,
+      name: "amp-imagenes-de-amor"
+    }, {
+      path: "/amp/blog/:slug?/:article?",
+      component: _47b969f0,
+      name: "amp-blog-slug-article"
     }, {
       path: "/blog/:slug/:article?",
       component: _7f6e3b53,

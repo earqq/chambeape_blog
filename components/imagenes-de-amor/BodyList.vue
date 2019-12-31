@@ -11,22 +11,22 @@
           section(class="articles_content")
             aside( class="client_testimonial" )
               small Tú eres mi cielo ☺️☺️
-              img( src='@/assets/img/imagenes-de-amor/cielos.jpg' alt='Tu eres mi cielo' height=300 width=350  )
+              img(  src='@/assets/img/imagenes-de-amor/cielos.jpg' alt='Tu eres mi cielo' height=300 width=350  )
             aside( class="client_testimonial" )
               small Me encantas 😍😍
-              img( src='@/assets/img/imagenes-de-amor/encata_tenerte.jpg' alt='Tu eres mi cielo' height=300 width=350  ) 
+              img(  src='@/assets/img/imagenes-de-amor/encata_tenerte.jpg' alt='Tu eres mi cielo' height=300 width=350  ) 
             aside( class="client_testimonial" )
               small Tu imborrable sonrisa 🥺🥺
-              img( src='@/assets/img/imagenes-de-amor/me_gusta_sonrisa.jpg' alt='Tu sonrisa' height=300 width=350  ) 
+              img(  src='@/assets/img/imagenes-de-amor/me_gusta_sonrisa.jpg' alt='Tu sonrisa' height=300 width=350  ) 
             aside( class="client_testimonial" )
               small Siempre con tigo 😻😻
-              img( src='@/assets/img/imagenes-de-amor/otros_365_tigo.jpg' alt='Siempre con tigo' height=300 width=350  ) 
+              img(  src='@/assets/img/imagenes-de-amor/otros_365_tigo.jpg' alt='Siempre con tigo' height=300 width=350  ) 
             aside( class="client_testimonial" )
               small Somos la mejor combinación 🥰🥰
-              img( src='@/assets/img/imagenes-de-amor/panquesito.jpg' alt='Quequito' height=300 width=350  ) 
+              img(  src='@/assets/img/imagenes-de-amor/panquesito.jpg' alt='Quequito' height=300 width=350  ) 
             aside( class="client_testimonial" )
               small Me terminaste gustando 🥺🥺
-              img( src='@/assets/img/imagenes-de-amor/terminaste_gustando.jpg' alt='Terminaste gustando' height=300 width=350  ) 
+              img(  src='@/assets/img/imagenes-de-amor/terminaste_gustando.jpg' alt='Terminaste gustando' height=300 width=350  ) 
     div(class='text_image')
       h2 Imágenes de amor con frases
       p «Tú iluminas mi mundo, y me haces olvidar todos mis miedos, tu risa ilumina mis días, Y alimentas todas mis lágrimas.; Tú eres mi sueño hecho realidad, Nadie más lo hará;  Porque solo tú puedes hacerme sentir bien lo mismo que yo a ti también.; Mi corazón late por lo menos un millón de veces, Cada vez que cruzas por mi mente. Tienes una manera especial conmigo, La cual me hace crecer y creer  en este amor que hemos encontrado, Y te prometo nunca alejarnos.» 
@@ -35,22 +35,22 @@
           section(class="articles_content")
             aside( class="client_testimonial" )
               small Tus labios 🤭🤭
-              img( src='@/assets/img/imagenes-de-amor/boca_enamoro.jpg' alt='Tu eres mi cielo' height=300 width=350  )
+              img(  src='@/assets/img/imagenes-de-amor/boca_enamoro.jpg' alt='Tu eres mi cielo' height=300 width=350  )
             aside( class="client_testimonial" )
               small Tú eres todo 😽😽
-              img( src='@/assets/img/imagenes-de-amor/ingles.jpg' alt='Ingles' height=300 width=350  ) 
+              img(  src='@/assets/img/imagenes-de-amor/ingles.jpg' alt='Ingles' height=300 width=350  ) 
             aside( class="client_testimonial" )
               small Te amo 🥰🥰
-              img( src='@/assets/img/imagenes-de-amor/loveyou.jpg' alt='I Love you' height=300 width=350  ) 
+              img(  src='@/assets/img/imagenes-de-amor/loveyou.jpg' alt='I Love you' height=300 width=350  ) 
             aside( class="client_testimonial" )
               small Me gustas demasiado 🤩🤩
-              img( src='@/assets/img/imagenes-de-amor/me_gustass.jpg' alt='Me gustas' height=300 width=350  ) 
+              img(  src='@/assets/img/imagenes-de-amor/me_gustass.jpg' alt='Me gustas' height=300 width=350  ) 
             aside( class="client_testimonial" )
               small Al fin te encontre 🥰🥰
-              img( src='@/assets/img/imagenes-de-amor/secreto_.jpg' alt='Te encontre' height=300 width=350  ) 
+              img(  src='@/assets/img/imagenes-de-amor/secreto_.jpg' alt='Te encontre' height=300 width=350  ) 
             aside( class="client_testimonial" )
               small Tu eres perfecto(a) 😻😻
-              img( src='@/assets/img/imagenes-de-amor/tal_como_Eres.jpg' alt='Eres perfecto' height=300 width=350  )  
+              img(  src='@/assets/img/imagenes-de-amor/tal_como_Eres.jpg' alt='Eres perfecto' height=300 width=350  )  
     div(class='text_image') 
       h2 Imágenes de amor tristeza
       p Estar a tu lado para mí es mi mayor aspiración, en un deseo egoísta pero no falto de razón, porque tú has sido siempre la protagonista de mis deseos, a pesar de saber que apenas nos vemos. Voy a conseguir que seamos uno solo, en un gesto que demuestre que realmente nos amamos, a pesar de lo difícil que es conseguirlo, en un mundo que se niega a permitirlo. Hacía mucho que no notaba este sentimiento, donde comprendo todo lo que necesito un beso, cuando sé que va a venir de tus labios, esos que tanto me hicieron suspirar en tus brazos. Es increíble lo que una persona puede lograr, con solo saber cómo se debe amar, logrando que el mundo se reduzca a ti, deseando volver contigo a vivir.
@@ -59,22 +59,22 @@
           section(class="articles_content")
             aside( class="client_testimonial" )
               small Nunca fui tu prioridad 😢😢
-              img( src='@/assets/img/imagenes-de-amor/atencion.jpg' alt='Prioridad' height=300 width=350  )
+              img(  src='@/assets/img/imagenes-de-amor/atencion.jpg' alt='Prioridad' height=300 width=350  )
             aside( class="client_testimonial" )
               small Muere de errores.. 😢😢
-              img( src='@/assets/img/imagenes-de-amor/ceguera.jpg' alt='Errores' height=300 width=350  ) 
+              img(  src='@/assets/img/imagenes-de-amor/ceguera.jpg' alt='Errores' height=300 width=350  ) 
             aside( class="client_testimonial" )
               small !Muy rápido! 🤬🤬
-              img( src='@/assets/img/imagenes-de-amor/me_olvidaste.jpg' alt='Me olvidaste' height=300 width=350  ) 
+              img(  src='@/assets/img/imagenes-de-amor/me_olvidaste.jpg' alt='Me olvidaste' height=300 width=350  ) 
             aside( class="client_testimonial" )
               small Dejame volar 😞😞
-              img( src='@/assets/img/imagenes-de-amor/plumas.jpg' alt='Angel' height=300 width=350  ) 
+              img(  src='@/assets/img/imagenes-de-amor/plumas.jpg' alt='Angel' height=300 width=350  ) 
             aside( class="client_testimonial" )
               small Te di todo 🤕🤕
-              img( src='@/assets/img/imagenes-de-amor/sabes.jpg' alt='Frase' height=300 width=350  ) 
+              img(  src='@/assets/img/imagenes-de-amor/sabes.jpg' alt='Frase' height=300 width=350  ) 
             aside( class="client_testimonial" )
               small Tu lo qusiste asi 😿😿
-              img( src='@/assets/img/imagenes-de-amor/tu_decidiste.jpg' alt='frase' height=300 width=350  )                
+              img(  src='@/assets/img/imagenes-de-amor/tu_decidiste.jpg' alt='frase' height=300 width=350  )                
 </template>
 
 <script>

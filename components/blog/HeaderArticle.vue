@@ -1,13 +1,13 @@
 <template>
     <header  class="header_article_content">
         <div class="article_cover">
-            <img alt='Imagen de fondo post' :src="article.cover" >
+            <img alt='Imagen de fondo post' width="1050" height='465' layout='responsive' :src="article.cover" >
         </div>
         <div class="header_article_wrapper">
             <div class="header_article_body">
                 <nav>
                     <nuxt-link to="/"  class="logo">
-						<div class="logo_wrapper"><img src="@/assets/img/logo_easyjobs.png" alt="Logo easyjobs" /></div>
+						<div class="logo_wrapper"><img src="@/assets/img/logo_easyjobs.png" height="75" width="100" alt="Logo easyjobs" /></div>
 					</nuxt-link>
 					<no-ssr >
 						<div class="menu_right_top">
