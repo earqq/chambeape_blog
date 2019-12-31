@@ -17,7 +17,7 @@ const cleanStyleTags = (html) => {
 }
 module.exports = (html) => {
   // Add ⚡ to html tag
-  html = html.replace(/<html/gi, '<html lang="es" data-n-head="lang" ⚡')
+  html = html.replace(/<html/gi, '<html lang="es"  ⚡')
 
 
   
