@@ -1,7 +1,7 @@
 <template>
 	<header class="header_blog_content">
 			<div class="article_cover">
-					<img alt='Imagen de fondo' width="1050" height='465' layout='responsive' src="@/assets/img/estados-para-whatsapp/love.jpg" >
+					<img alt='Imagen de fondo' width="1050" height='465'  src="@/assets/img/estados-para-whatsapp/love.jpg" >
 			</div>
 			<div class="header_blog_wrapper">
 					<div class="header_blog_body">
