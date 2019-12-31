@@ -12,25 +12,23 @@
 					<no-ssr >
 						<div class="menu_right_top">
 							<div class="menu_mobile"  @click="showMenu=true"><i class="icon icon-menu"></i></div>
-							<transition name="fade" mode="in-out" >
-								<ul v-if="!mobile || (mobile && showMenu)">
-									<div class="close_menu" @click="showMenu=false">
-										<i class="icon icon-close"></i>
-									</div>
-									<li> <a @click="
-										ga('event', 'Click boton', {'event_category': 'Header Blog', 'event_label': 'Precios header blog', 'value': 1}); moveTo(1)" >Precios</a></li>
-									<li> <a @click="
-										ga('event', 'Click boton', {'event_category': 'Header Blog', 'event_label': 'Clientes header blog', 'value': 1}); moveTo(2)">Clientes</a></li>
-									<li> <nuxt-link to="/">Blog</nuxt-link></li>
-									<li>
-										<a																				
-										class="button_login inline button_fill" href="#">Ingresar</a>
-										<a 
-										href='#'
-										class="button_login button"  >Regístrate</a>
-									</li>
-								</ul>
-							</transition>
+								<transition name="fade" mode="in-out">
+									<ul v-if="!mobile || (mobile && showMenu)">
+										<div class="close_menu" @click="showMenu=false">
+												<i class="icon icon-close"></i>
+										</div>
+										<li> <a href='/estados-para-whatsapp'> Estados whatsapp</a></li>
+										<li> <a href='/imagenes-de-amor' >Imagenes de amor</a></li>
+										<li> <a href='/frases-de-amor' >Frases de amor</a></li>
+										<li> <nuxt-link to="/">Blog</nuxt-link></li>
+										<!-- <li> <a @click="
+												ga('event', 'Click boton', {'event_category': 'Header blog', 'event_label': 'Guia header', 'value': 1})" href="http://guia.easybill.pe" target="_blank">Guia  </a></li> -->
+										<!-- <li>
+											<a href='#' class="button_login inline button_fill" >Ingresar</a>
+											<a href='#' class="button_login button">Regístrate</a>
+										</li> -->
+									</ul>
+								</transition>
 						</div>
                 	</no-ssr >
                 </nav>

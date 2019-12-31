@@ -161,8 +161,10 @@ export default {
       },
       link:[
         {
-          rel:'canonical',href:'https://easyjobs.site/frases-de-amor', 
-        }
+          rel:'canonical',href:'https://easyjobs.site/frases-de-amor'
+        },{
+          rel:'amphtml', href:'https://easyjobs.site/amp/frases-de-amor'
+        }       
       ],
       title: '24 Frases de amor de Romeo para su novia Julieta',
       meta: [

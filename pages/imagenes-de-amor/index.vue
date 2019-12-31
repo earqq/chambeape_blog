@@ -108,7 +108,8 @@ export default {
       },
       link:[
         {
-          rel:'canonical',href:'https://easyjobs.site/imagenes-de-amor', 
+          rel:'canonical',href:'https://easyjobs.site/imagenes-de-amor'
+        },{
           rel:'amphtml', href:'https://easyjobs.site/amp/imagenes-de-amor'
         }
       ],

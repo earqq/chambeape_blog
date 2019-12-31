@@ -54,6 +54,8 @@ export default {
       link:[
         {
           rel:'canonical',href:`https://easyjobs.site/blog/${this.article.slug}`,
+        },
+        {
           rel:'amphtml',href:`https://easyjobs.site/amp/blog/${this.article.slug}`
         }
       ],

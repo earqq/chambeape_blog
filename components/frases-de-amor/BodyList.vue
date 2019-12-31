@@ -1,5 +1,13 @@
 <template lang="pug">
-  div
+  .main
+    .destacado
+      label Más destacado
+      li 
+        a(href='/imagenes-de-amor' target='_blank') Imagenes de amor
+      li
+        a(href='/estados-para-whatsapp' target='_blank') Estados para whatsapp
+      li 
+        a(href='/blog/ocultar-estados-de-whatsapp' target='_blank') Ocultar estados whatsapp
     div(class='text_image')
       h2 Frases de amor cortas y bonitas
       p Tus labios son más peligrosos que treinta soldados desafiándome. Un solo beso me dará el coraje para enfrentarme a todos con temeridad. ¿Me lo concedes?
@@ -135,6 +143,26 @@ export default {
 
 <style lang="sass">
 @import './assets/css/main'
+.main
+  background-color: white
+.destacado
+  align-items: center
+  justify-content: center
+  font-family: "ABeeZee", sans-serif
+  text-align: center
+  margin-top: 0px
+  margin-bottom: 25px
+  label
+    margin-top: 5px
+    font-size: 20px
+    color: black
+    margin: 0 auto
+  a
+    font-size: 15px
+    text-decoration: none
+    color: #d74a47
+    line-height: 2
+    letter-spacing: 1px
 .text_image
   align-items: center
   justify-content: center

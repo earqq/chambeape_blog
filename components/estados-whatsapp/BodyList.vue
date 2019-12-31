@@ -1,5 +1,13 @@
 <template lang="pug">
-  div
+  .main
+    .destacado
+      label Más destacado
+      li 
+        a(href='/imagenes-de-amor' target='_blank') Imagenes de amor
+      li
+        a(href='/frases-de-amor' target='_blank') Frases de amor
+      li 
+        a(href='/blog/ocultar-estados-de-whatsapp' target='_blank') Ocultar estados whatsapp
     div(class='text_image')
         h2 Estados para whatsapp frases de amor
         p El amor ascendía entre nosotros como la luna entre las dos palmeras que nunca se abrazaron. El íntimo rumor de los dos cuerpos hacia el arrullo un oleaje trajo, pero la ronca voz fue atenazada, fueron pétreos los labios. El ansia de ceñir movió la carne, esclareció los huesos inflamados, pero los brazos al querer tenderse murieron en los brazos. Pasó el amor, la luna, entre nosotros y devoró los cuerpos solitarios. Y somos dos fantasmas que se buscan y se encuentran lejanos.
@@ -133,18 +141,40 @@ export default {
 
 <style lang="sass">
 @import './assets/css/main'
+.main
+  background-color: white
+.destacado
+  align-items: center
+  justify-content: center
+  font-family: "ABeeZee", sans-serif
+  text-align: center
+  margin-top: 0px
+  margin-bottom: 25px
+  label
+    margin-top: 5px
+    font-size: 20px
+    color: black
+    margin: 0 auto
+  a
+    font-size: 15px
+    text-decoration: none
+    color: #d74a47
+    line-height: 2
+    letter-spacing: 1px
+    
+    
 .text_image
   align-items: center
   justify-content: center
   h2  
-    font-family: Barlow
+    font-family: "ABeeZee", sans-serif
     text-align: center
     font-size: 20px
     padding: 3px
     margin-bottom: 10px    
     margin-top: 10px    
   p
-    font-family: Barlow
+    font-family: "ABeeZee", sans-serif
     text-align: center
     margin-left: 150px
     line-height: 25px
@@ -153,11 +183,10 @@ export default {
     font-size: 15px    
   li 
     margin-top: 20px
-    font-family: Barlow
+    font-family: "ABeeZee", sans-serif
     text-align: center
     font-size: 15px
 .articles_section
-  background-color: #f2f4f5
   display: flex
   justify-content: center
   .articles_wrapper
