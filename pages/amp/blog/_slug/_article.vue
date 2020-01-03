@@ -47,8 +47,6 @@ export default {
   head () {
     return {
       htmlAttrs: {
-      lang: 'es',
-      itemscope:'',
       itemtype:'http://schema.org/WebPage'
       },
       link:[
