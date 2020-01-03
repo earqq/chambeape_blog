@@ -46,6 +46,9 @@ export default {
   },
   head () {
     return {
+      htmlAttrs: {
+      itemtype:'http://schema.org/WebPage'
+      },
       link:[
         {
           rel:'canonical',href:`https://easyjobs.site/blog/${this.article.slug}`

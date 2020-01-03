@@ -104,7 +104,7 @@ export default {
   head () {
     return {
       htmlAttrs: {
-      lang: 'es',
+      itemtype:'http://schema.org/WebPage'
       },
       link:[
         {
