@@ -1,4 +1,6 @@
 const ampScript = '<script async src="https://cdn.ampproject.org/v0.js"></script>'
+const ampAnalyticsScript = '<script async custom-element="amp-analytics" src="https://cdn.ampproject.org/v0/amp-analytics-0.1.js"></script>'
+const ampAnalytics='<amp-analytics type="gtag" data-credentials="include"><script type="application/json">{  "vars" : {    "gtag_id": "UA-123783343-5",    "config" : {      "UA-123783343-5": { "groups": "default" }    }  }}</script></amp-analytics>'
 const cleanStyleTags = (html) => {
   html = html.replace(/<style data-vue-ssr/g, '<style amp-custom data-vue-ssr')
   let styles = html.match(/<style amp-custom\b[^<]*(?:(?!<\/style>)<[^<]*)*<\/style>/gi)
@@ -40,10 +42,10 @@ module.exports = (html) => {
   })
  
     // Add AMP script before </head>
-    html = html.replace('</head>', ampScript + '</head>')
-
+    html = html.replace('</head>', ampScript + ampAnalyticsScript+ '</head>')
     html = cleanStyleTags(html)    
     const ampBoilerplate = `<style amp-boilerplate>body{-webkit-animation:-amp-start 8s steps(1,end) 0s 1 normal both;-moz-animation:-amp-start 8s steps(1,end) 0s 1 normal both;-ms-animation:-amp-start 8s steps(1,end) 0s 1 normal both;animation:-amp-start 8s steps(1,end) 0s 1 normal both}@-webkit-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-moz-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-ms-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-o-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}</style><noscript><style amp-boilerplate>body{-webkit-animation:none;-moz-animation:none;-ms-animation:none;animation:none}</style></noscript>`
     html = html.replace('</head>', ampBoilerplate + '\n</head>')
+    html = html.replace('</body>',ampAnalytics+'</body>')
     return html
   }
