@@ -10,7 +10,7 @@
         a(href='/blog/ocultar-estados-de-whatsapp' target='_blank') Ocultar estados whatsapp
     div(class='text_image')
       h2 Imágenes de amor hermosas
-      p Es complicado ganarse el corazón de una persona que ha sufrido durante toda su vida, yo estaba tratando de llegar a ella por años. Con mucha resistencia resiliencia pero sobre todo mucha paciencia se que todo es posible. Incluso conquistar a la chica de tus sueños.
+      li Es complicado ganarse el corazón de una persona que ha sufrido durante toda su vida, yo estaba tratando de llegar a ella por años. Con mucha resistencia resiliencia pero sobre todo mucha paciencia se que todo es posible. Incluso conquistar a la chica de tus sueños.
       li Si supieras lo enamorado que estoy, De ti, y dirigido a tu corazon voy. Con palabras llenas de sentimiento.  A la persona que me roba el aliento.
       li Tu que me besas intensamente. Hasta ponerme demente. Tu que me seduces con tu caminar. Yo nunca te llegaré a cambiar.
       li Tu largo cabello, y pequeña estatura Eres una mujer llena de hermosura. Con tu boca que roba mi atención. A tus ojos hago alusión. Que son tan hermosos. [Escritor: ldAguiarg]
@@ -37,7 +37,7 @@
               img(  src='@/assets/img/imagenes-de-amor/terminaste_gustando.jpg' alt='Terminaste gustando' height=300 width=350  ) 
     div(class='text_image')
       h2 Imágenes de amor con frases
-      p «Tú iluminas mi mundo, y me haces olvidar todos mis miedos, tu risa ilumina mis días, Y alimentas todas mis lágrimas.; Tú eres mi sueño hecho realidad, Nadie más lo hará;  Porque solo tú puedes hacerme sentir bien lo mismo que yo a ti también.; Mi corazón late por lo menos un millón de veces, Cada vez que cruzas por mi mente. Tienes una manera especial conmigo, La cual me hace crecer y creer  en este amor que hemos encontrado, Y te prometo nunca alejarnos.» 
+      li «Tú iluminas mi mundo, y me haces olvidar todos mis miedos, tu risa ilumina mis días, Y alimentas todas mis lágrimas.; Tú eres mi sueño hecho realidad, Nadie más lo hará;  Porque solo tú puedes hacerme sentir bien lo mismo que yo a ti también.; Mi corazón late por lo menos un millón de veces, Cada vez que cruzas por mi mente. Tienes una manera especial conmigo, La cual me hace crecer y creer  en este amor que hemos encontrado, Y te prometo nunca alejarnos.» 
     div(class="articles_section" )
       div(class="articles_wrapper")
           section(class="articles_content")
@@ -61,7 +61,7 @@
               img(  src='@/assets/img/imagenes-de-amor/tal_como_Eres.jpg' alt='Eres perfecto' height=300 width=350  )  
     div(class='text_image') 
       h2 Imágenes de amor tristeza
-      p Estar a tu lado para mí es mi mayor aspiración, en un deseo egoísta pero no falto de razón, porque tú has sido siempre la protagonista de mis deseos, a pesar de saber que apenas nos vemos. Voy a conseguir que seamos uno solo, en un gesto que demuestre que realmente nos amamos, a pesar de lo difícil que es conseguirlo, en un mundo que se niega a permitirlo. Hacía mucho que no notaba este sentimiento, donde comprendo todo lo que necesito un beso, cuando sé que va a venir de tus labios, esos que tanto me hicieron suspirar en tus brazos. Es increíble lo que una persona puede lograr, con solo saber cómo se debe amar, logrando que el mundo se reduzca a ti, deseando volver contigo a vivir.
+      li Estar a tu lado para mí es mi mayor aspiración, en un deseo egoísta pero no falto de razón, porque tú has sido siempre la protagonista de mis deseos, a pesar de saber que apenas nos vemos. Voy a conseguir que seamos uno solo, en un gesto que demuestre que realmente nos amamos, a pesar de lo difícil que es conseguirlo, en un mundo que se niega a permitirlo. Hacía mucho que no notaba este sentimiento, donde comprendo todo lo que necesito un beso, cuando sé que va a venir de tus labios, esos que tanto me hicieron suspirar en tus brazos. Es increíble lo que una persona puede lograr, con solo saber cómo se debe amar, logrando que el mundo se reduzca a ti, deseando volver contigo a vivir.
     div(class="articles_section" )
       div(class="articles_wrapper")
           section(class="articles_content")
@@ -201,7 +201,7 @@ export default {
 
 @media screen and (max-width: 1100px)
   .text_image
-    p
+    p,h2 
       margin-left: 150px
       margin-right: 150px
   .articles_section
@@ -218,7 +218,7 @@ export default {
 
 @media screen and (max-width: 850px)
   .text_image
-    p
+    p, h2
       margin-left: 100px
       margin-right: 100px
   .articles_section
@@ -235,7 +235,7 @@ export default {
 
 @media screen and (max-width: 500px)
   .text_image
-    p
+    p, h2
       margin-left: 0px
       margin-right: 0px
   .articles_section
