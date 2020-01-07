@@ -17,18 +17,18 @@ import marked from 'marked'
 export default {
   components: { HeaderSection, FooterSection, Info },
   data() {
-    const jsonld={       
-        
-      }
     return {
-      jsonld,
       article: {
         _id:'',
         slug:'',
         title:'',
         created_at:'',
         description_google:''
-      }
+      },
+      jsonld: {
+     
+      },
+     
     }
   },
   head () {
@@ -62,7 +62,7 @@ export default {
   },
   mounted(){
     this.jsonld={
-      "@context":"https://schema.org",
+         "@context":"https://schema.org",
         "@graph":[
           {
             "@type":"WebSite",
@@ -135,8 +135,7 @@ export default {
 
           },
         ]
-    }
-    console.log(this.jsonld)
+    }    
   },
   async asyncData ({ params }) {
     const ref = firestore.collection('articles').where("slug", "==", params.slug)
