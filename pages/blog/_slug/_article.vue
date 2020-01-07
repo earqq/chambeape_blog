@@ -18,20 +18,7 @@ export default {
   components: { HeaderSection, FooterSection, Info },
   data() {
     const jsonld={       
-        "@context":"https://schema.org",
-        "@graph":[
-          {
-            "@type":"WebSite",
-            "@id":"https://easyjobs.site/#website",
-            "url":"https://easyjobs.site/",
-            "name":"Easyjobs",
-            "potentialAction":{
-              "@type":"SearchAction",
-              "target":"https://easyjobs.site/?s={search_term_string}",
-              "query-input":"required name=search_term_string"
-            }
-          }          
-        ]
+        
       }
     return {
       jsonld,
@@ -72,6 +59,84 @@ export default {
         { property: 'fb:app_id', content: '1994748484137426' }
       ]
     }
+  },
+  mounted(){
+    this.jsonld={
+      "@context":"https://schema.org",
+        "@graph":[
+          {
+            "@type":"WebSite",
+            "@id":"https://easyjobs.site/#website",
+            "url":"https://easyjobs.site/",
+            "name":"Easyjobs",
+            "potentialAction":{
+              "@type":"SearchAction",
+              "target":"https://easyjobs.site/?s={search_term_string}",
+              "query-input":"required name=search_term_string"
+            }
+          },    
+           {
+            "@type":"WebPage",
+            "@id":"https://easyjobs.site/"+this.article.slug+"/#webpage",
+            "url":"https://easyjobs.site/"+this.article.slug+"",
+            "inLanguage":"es-PE",
+            "name":this.article.title,
+            "isPartOf":{
+              "@id":"https://easyjobs.site/#website"
+            },
+            "datePublished":"2019-12-16T20:12:54+00:00",
+            "dateModified":"2019-12-16T09:00:09+00:00",
+            "description":this.article.description_google 
+          },   
+        {
+            "@type": "CreativeWorkSeries",
+            "name": this.article.title ,
+            "aggregateRating": {
+                "@type": "AggregateRating",
+                "ratingValue": "4.6",
+                "bestRating": "5",
+                "ratingCount": "119"
+            }
+          },
+          {
+            "@type": "BlogPosting",
+            "headline": this.article.title ,
+            "description": this.article.description_google ,
+            "datePublished": this.article.created_at ,
+            "dateModified": this.article.created_at ,
+            "author": {
+                "@type": "Person",
+                "@id": "#makeasy",
+                "name": "MAKEASY"
+            },
+            "image": {
+                "@type": "ImageObject",
+                "url": this.article.cover,
+                "width": 600,
+                "height": 600
+            },
+            "interactionStatistic": [
+                {
+                    "@type": "InteractionCounter",
+                    "interactionType": "http:/schema.org/CommentAction",
+                    "userInteractionCount": "9"
+                }
+            ],
+            "publisher": {
+              "@type": "Organization",
+              "name": "MAKEASY",
+              "url": "https://makeasy.io",
+              "logo" :{
+                "@type": "ImageObject",
+                "url": "https://makeasy.io/public/img/easyjobs.jpg"
+              }
+            },
+            "mainEntityOfPage": "https://easyjobs.site/estados-para-whatsapp"
+
+          },
+        ]
+    }
+    console.log(this.jsonld)
   },
   async asyncData ({ params }) {
     const ref = firestore.collection('articles').where("slug", "==", params.slug)
