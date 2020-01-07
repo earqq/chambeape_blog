@@ -72,6 +72,7 @@ module.exports = {
   plugins: [
   {src:"~/plugins/firebase.js",ssr:false},
     {src:"~/plugins/vuefire.js",ssr:false},
+    {src:"~/plugins/jsonld.js",ssr:false},
     {src:"~/plugins/vue-moment.js",ssr:false},
     {src: "~/plugins/vue-social-sharing.js",ssr:false},
     { src: "~plugins/ga.js", ssr: false },

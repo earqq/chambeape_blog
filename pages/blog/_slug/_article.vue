@@ -60,8 +60,8 @@ export default {
       ]
     }
   },
-  mounted(){
-    this.jsonld={
+  jsonld(){
+      return{
          "@context":"https://schema.org",
         "@graph":[
           {

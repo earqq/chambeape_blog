@@ -13,6 +13,7 @@ import { setContext, getLocation, getRouteData, normalizeError } from './utils'
 import nuxt_plugin_axios_7d4a3ba2 from 'nuxt_plugin_axios_7d4a3ba2' // Source: ./axios.js (mode: 'all')
 import nuxt_plugin_firebase_34d6f55a from 'nuxt_plugin_firebase_34d6f55a' // Source: ../plugins/firebase.js (mode: 'client')
 import nuxt_plugin_vuefire_9e9e389e from 'nuxt_plugin_vuefire_9e9e389e' // Source: ../plugins/vuefire.js (mode: 'client')
+import nuxt_plugin_jsonld_2ff766e1 from 'nuxt_plugin_jsonld_2ff766e1' // Source: ../plugins/jsonld.js (mode: 'client')
 import nuxt_plugin_vuemoment_732aa8ba from 'nuxt_plugin_vuemoment_732aa8ba' // Source: ../plugins/vue-moment.js (mode: 'client')
 import nuxt_plugin_vuesocialsharing_216967be from 'nuxt_plugin_vuesocialsharing_216967be' // Source: ../plugins/vue-social-sharing.js (mode: 'client')
 import nuxt_plugin_ga_fb0a2534 from 'nuxt_plugin_ga_fb0a2534' // Source: ../plugins/ga.js (mode: 'client')
@@ -145,6 +146,10 @@ async function createApp(ssrContext) {
 
   if (process.client && typeof nuxt_plugin_vuefire_9e9e389e === 'function') {
     await nuxt_plugin_vuefire_9e9e389e(app.context, inject)
+  }
+
+  if (process.client && typeof nuxt_plugin_jsonld_2ff766e1 === 'function') {
+    await nuxt_plugin_jsonld_2ff766e1(app.context, inject)
   }
 
   if (process.client && typeof nuxt_plugin_vuemoment_732aa8ba === 'function') {
