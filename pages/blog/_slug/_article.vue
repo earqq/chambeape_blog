@@ -17,16 +17,18 @@ import marked from 'marked'
 export default {
   components: { HeaderSection, FooterSection, Info },
   data() {
+    const jsonld={
+
+    }
     return {
+      jsonld,
       article: {
         _id:'',
         slug:'',
         title:'',
+        cover:"",
         created_at:'',
         description_google:''
-      },
-      jsonld: {
-     
       },
      
     }
@@ -60,9 +62,12 @@ export default {
       ]
     }
   },
-  jsonld(){
-      return{
-         "@context":"https://schema.org",
+  async asyncData ({ params }) {
+    const ref = firestore.collection('articles').where("slug", "==", params.slug)
+    let snap
+    try {
+      snap = await ref.get()
+      this.jsonld={"@context":"https://schema.org",
         "@graph":[
           {
             "@type":"WebSite",
@@ -75,22 +80,22 @@ export default {
               "query-input":"required name=search_term_string"
             }
           },    
-           {
+          {
             "@type":"WebPage",
-            "@id":"https://easyjobs.site/"+this.article.slug+"/#webpage",
-            "url":"https://easyjobs.site/"+this.article.slug+"",
+            "@id":`https://easyjobs.site/${snap.docs[0].data().slug}/#webpage`,
+            "url":`https://easyjobs.site/${snap.docs[0].data().slug}`,
             "inLanguage":"es-PE",
-            "name":this.article.title,
+            "name":`${snap.docs[0].data().title}`,
             "isPartOf":{
               "@id":"https://easyjobs.site/#website"
             },
             "datePublished":"2019-12-16T20:12:54+00:00",
             "dateModified":"2019-12-16T09:00:09+00:00",
-            "description":this.article.description_google 
+            "description":`${snap.docs[0].data().description_google}` 
           },   
-        {
+          {
             "@type": "CreativeWorkSeries",
-            "name": this.article.title ,
+            "name": `${snap.docs[0].data().title}` ,
             "aggregateRating": {
                 "@type": "AggregateRating",
                 "ratingValue": "4.6",
@@ -100,10 +105,10 @@ export default {
           },
           {
             "@type": "BlogPosting",
-            "headline": this.article.title ,
-            "description": this.article.description_google ,
-            "datePublished": this.article.created_at ,
-            "dateModified": this.article.created_at ,
+            "headline": `${snap.docs[0].data().title}` ,
+            "description": `${snap.docs[0].data().description_google }`,
+            "datePublished": `${snap.docs[0].data().created_at }`,
+            "dateModified": `${snap.docs[0].data().created_at }`,
             "author": {
                 "@type": "Person",
                 "@id": "#makeasy",
@@ -111,7 +116,7 @@ export default {
             },
             "image": {
                 "@type": "ImageObject",
-                "url": this.article.cover,
+                "url": `${snap.docs[0].data().cover}`,
                 "width": 600,
                 "height": 600
             },
@@ -135,13 +140,8 @@ export default {
 
           },
         ]
-    }    
-  },
-  async asyncData ({ params }) {
-    const ref = firestore.collection('articles').where("slug", "==", params.slug)
-    let snap
-    try {
-      snap = await ref.get()
+      }
+      console.log(this.jsonld)
     }
     catch(e) {console.error(e)}
     return {article: snap.docs[0].data()}
