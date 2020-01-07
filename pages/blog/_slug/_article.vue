@@ -4,7 +4,6 @@
     .body_content
       main( v-if="article.body" v-html="toHtml(article.body)")
     footer-section
-    script(v-html='jsonld' type='application/ld+json')
 </template>
 
 <script>
@@ -17,16 +16,11 @@ import marked from 'marked'
 export default {
   components: { HeaderSection, FooterSection, Info },
   data() {
-    const jsonld={
-
-    }
     return {
-      jsonld,
       article: {
         _id:'',
         slug:'',
         title:'',
-        cover:"",
         created_at:'',
         description_google:''
       },
@@ -62,86 +56,12 @@ export default {
       ]
     }
   },
+ 
   async asyncData ({ params }) {
     const ref = firestore.collection('articles').where("slug", "==", params.slug)
     let snap
     try {
       snap = await ref.get()
-      this.jsonld={"@context":"https://schema.org",
-        "@graph":[
-          {
-            "@type":"WebSite",
-            "@id":"https://easyjobs.site/#website",
-            "url":"https://easyjobs.site/",
-            "name":"Easyjobs",
-            "potentialAction":{
-              "@type":"SearchAction",
-              "target":"https://easyjobs.site/?s={search_term_string}",
-              "query-input":"required name=search_term_string"
-            }
-          },    
-          {
-            "@type":"WebPage",
-            "@id":`https://easyjobs.site/${snap.docs[0].data().slug}/#webpage`,
-            "url":`https://easyjobs.site/${snap.docs[0].data().slug}`,
-            "inLanguage":"es-PE",
-            "name":`${snap.docs[0].data().title}`,
-            "isPartOf":{
-              "@id":"https://easyjobs.site/#website"
-            },
-            "datePublished":"2019-12-16T20:12:54+00:00",
-            "dateModified":"2019-12-16T09:00:09+00:00",
-            "description":`${snap.docs[0].data().description_google}` 
-          },   
-          {
-            "@type": "CreativeWorkSeries",
-            "name": `${snap.docs[0].data().title}` ,
-            "aggregateRating": {
-                "@type": "AggregateRating",
-                "ratingValue": "4.6",
-                "bestRating": "5",
-                "ratingCount": "119"
-            }
-          },
-          {
-            "@type": "BlogPosting",
-            "headline": `${snap.docs[0].data().title}` ,
-            "description": `${snap.docs[0].data().description_google }`,
-            "datePublished": `${snap.docs[0].data().created_at }`,
-            "dateModified": `${snap.docs[0].data().created_at }`,
-            "author": {
-                "@type": "Person",
-                "@id": "#makeasy",
-                "name": "MAKEASY"
-            },
-            "image": {
-                "@type": "ImageObject",
-                "url": `${snap.docs[0].data().cover}`,
-                "width": 600,
-                "height": 600
-            },
-            "interactionStatistic": [
-                {
-                    "@type": "InteractionCounter",
-                    "interactionType": "http:/schema.org/CommentAction",
-                    "userInteractionCount": "9"
-                }
-            ],
-            "publisher": {
-              "@type": "Organization",
-              "name": "MAKEASY",
-              "url": "https://makeasy.io",
-              "logo" :{
-                "@type": "ImageObject",
-                "url": "https://makeasy.io/public/img/easyjobs.jpg"
-              }
-            },
-            "mainEntityOfPage": "https://easyjobs.site/estados-para-whatsapp"
-
-          },
-        ]
-      }
-      console.log(this.jsonld)
     }
     catch(e) {console.error(e)}
     return {article: snap.docs[0].data()}

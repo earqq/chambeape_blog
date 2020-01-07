@@ -14,7 +14,7 @@
                 <p>© 2019 easyjobs.site, Todos los derechos reservados. </p>
             </div>
         </div>
-    <!-- <script v-html="jsonld" type="application/ld+json"></script> -->
+    <script v-html="jsonld" type="application/ld+json"></script>
     </footer>
 </template>
 
