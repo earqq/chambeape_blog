@@ -1,6 +1,19 @@
 const ampScript = '<script async src="https://cdn.ampproject.org/v0.js"></script>'
 const ampAnalyticsScript = '<script async custom-element="amp-analytics" src="https://cdn.ampproject.org/v0/amp-analytics-0.1.js"></script>'
-const ampAnalytics='<amp-analytics type="gtag" data-credentials="include"><script type="application/json">{  "vars" : {    "gtag_id": "UA-123783343-5",    "config" : {      "UA-123783343-5": { "groups": "default" }    }  }}</script></amp-analytics>'
+const ampAnalytics=`<amp-analytics type="googleanalytics" data-credentials="include">
+<script type="application/json">
+  {
+    "vars": {
+      "account": "UA-123783343-5"
+    },
+    "triggers": {
+      "trackPageview": { 
+        "on": "visible",
+        "request": "pageview"
+      }
+    }
+  }
+</script></amp-analytics>`
 const cleanStyleTags = (html) => {
   html = html.replace(/<style data-vue-ssr/g, '<style amp-custom data-vue-ssr')
   let styles = html.match(/<style amp-custom\b[^<]*(?:(?!<\/style>)<[^<]*)*<\/style>/gi)
