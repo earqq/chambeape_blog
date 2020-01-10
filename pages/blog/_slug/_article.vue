@@ -2,19 +2,21 @@
   section.article_container
     header-section( :article="article" )
     .body_content
-      main( v-if="article.body" v-html="toHtml(article.body)")
+      main( v-if="article.body" v-html="toHtml(article.body)")     
+    share-section( :article='article')
     footer-section
 </template>
 
 <script>
 import HeaderSection from '@/components/blog/HeaderArticle'
 import FooterSection from '@/components/landing/Footer'
+import ShareSection from '@/components/landing/Share'
 import Info from '@/components/Info'
 import { firestore } from '~/plugins/firebase.js'
 import marked from 'marked'
 
 export default {
-  components: { HeaderSection, FooterSection, Info },
+  components: { HeaderSection, FooterSection, Info, ShareSection },
   data() {
     return {
       article: {
@@ -55,8 +57,7 @@ export default {
         { property: 'fb:app_id', content: '1994748484137426' }
       ]
     }
-  },
- 
+  }, 
   async asyncData ({ params }) {
     const ref = firestore.collection('articles').where("slug", "==", params.slug)
     let snap
@@ -78,6 +79,10 @@ export default {
 @import './assets/css/main'
 
 .body_content
+  position: relative;
+  .offert
+    bottom: 0px
+    position: absolute;
   display: grid
   grid-template-columns: 1fr 300px
   grid-gap: 20px
